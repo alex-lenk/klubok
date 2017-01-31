@@ -112,17 +112,6 @@ b, strong {
   }
 }
 
-button:focus, input:focus, select:focus {
-  outline: none;
-}
-
-.radio label:not(:last-child) {
-  margin-right: 15px;
-  @include from('s') {
-    margin-right: 20px;
-  }
-}
-
 @include to('xs') {
   .hidden-xs {
     display: none !important;
@@ -135,16 +124,6 @@ button:focus, input:focus, select:focus {
   }
 }
 
-/*
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-md {
-    display: none !important;
-  }
+.error-text {
+  color: $color-orange;
 }
-
-@media (min-width: 1200px) {
-  .hidden-lg {
-    display: none !important;
-  }
-}
-*/

@@ -1,7 +1,10 @@
-
 .radio, .checkbox {
   position: relative;
-  display: block;
+}
+
+.radio input[type="radio"] {
+  width: 14px;
+  height: 14px;
 }
 
 .radio label,
@@ -65,4 +68,11 @@ fieldset[disabled] .checkbox-inline {
 fieldset[disabled] .radio label,
 fieldset[disabled] .checkbox label {
   cursor: not-allowed;
+}
+
+.radio label:not(:last-child) {
+  margin-right: 15px;
+  @include from('l') {
+    margin-right: 20px;
+  }
 }

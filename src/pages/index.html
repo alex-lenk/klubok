@@ -1,162 +1,110 @@
 <!DOCTYPE html>
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="ru">
-<!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <title>Klubok</title>
-    <meta name="description" content="">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel='stylesheet' href='css/lib.css'>
-    <link rel='stylesheet' href='css/styles.css'>
-
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- include "templates/head.html" -->
 </head>
 <body>
-
-<div class="container-pages">
-
-    <div class="personal-data">
-        <div class="personal-data__title text-uppercase">Личные данные</div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">ФИО:</div>
-            <ul class="col-md-7 info-block list-data">
-                <li>Генералова Елена Николаевна</li>
-                <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
-                <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
-            </ul>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-
-            <div class="col-md-offset-4 show-more-info text-bold as-link">
-                Скрыть ФИО, которые были внесены ранее (2)
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Пол:</div>
-            <div class="col-md-7 info-block">женский</div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Дата рождения</div>
-            <div class="col-md-7 info-block">04.11.1976 г.</div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Домашний адрес</div>
-            <ul class="col-md-7 info-block list-data">
-                <li>606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
-            </ul>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="map">
-                <img src="img/map.gif" alt="">
-                <button class="btn btn-azure">ПЕРЕНЕСТИ МЕТКУ</button>
-            </div>
-
-            <ul class="col-md-offset-4 show-more-address list-data">
-                <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
-                    кв. 196 (01.01.1996 г. - 16.11.1997 г.)
-                </li>
-                <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
-                    кв. 196 (01.01.1990 г. - 31.12.1996 г.)
-                </li>
-                <li class="text-bold as-link">Скрыть домашние адреса, которые были внесены ранее (2)</li>
-            </ul>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Телефон</div>
-            <ul class="col-md-7 info-block list-data">
-                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-            </ul>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">E-mail:</div>
-            <div class="col-md-7 info-block">
-                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
-            </div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Пароль:</div>
-            <div class="col-md-7 info-block">* * * * * *</div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Зводская проиставка</div>
-            <div class="col-md-7 info-block">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Мои контактные данные видны:</div>
-            <div class="col-md-7 info-block">
-                <form action="#">
-                    <div class="radio">
-                        <label><input type="radio" name="radio"> только мне</label>
-                        <label><input type="radio" name="radio" checked> только друзьям</label>
-                        <label><input type="radio" name="radio"> всем</label>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-1 btn-block"></div>
-        </div>
-        <div class="personal-data__line clearfix">
-            <div class="col-md-4 label-block text-bold field-filled">Паспортные данные</div>
-            <div class="col-md-7 info-block">
-                <div>серия и номер паспорта - 4413 788256</div>
-                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
-                <div>код подразделения - 770-106</div>
-                <div>дата выдачи - 11.09.2001 г.</div>
-            </div>
-            <div class="col-md-1 btn-block">
-                <button class="btn btn-edit"></button>
-            </div>
-        </div>
-    </div>
-
+<div class="loader">
+    <div class="loader_inner"></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<div class="wrapper container">
+    <!-- include "templates/header.html" -->
 
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src='js/jquery.ba-throttle-debounce.min.js'></script>
-<script src='js/menu.js'></script>
-<script src='js/lib.js'></script>-->
+    <section class="header-middle">
+        <a href="#" class="upload-bg-img upload-img" data-toggle="tooltip" data-placement="bottom"
+           title="Заменить фоновое изображение"></a>
+        <div class="header-media">
+            <div class="header-media-img">
+                <div class="media-img">
+                    <img class="profile-img" src="img/avatar.jpg" alt="">
+                    <a href="#" class="upload-profile-img upload-img" data-toggle="tooltip"
+                       data-placement="bottom" title="Заменить портрет"></a>
+                </div>
+            </div>
+            <div class="header-media-content media-bottom">
+                <div class="profile clearfix">
+                    <div class="profile-info pull-left">
+                        <span class="name">Генералова Елена Николаевна</span><br>
+                        <span class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</span>
+                    </div>
+                    <div class="profile-actions pull-right">
+                        <ul class="text-right">
+                            <li>
+                                <a href="#">Добавить в друзья</a>
+                            </li>
+                            <li>
+                                <a href="#">Отслеживать публикации</a>
+                            </li>
+                            <li>
+                                <a href="#">Написать сообщение</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header-bottom text-center">
+        <ul class="profile-tabs owl-carousel" id="owl-carousel-2">
+            <li>
+                <a href="#">
+                    <div class="icon icon-hronika"></div>
+                    <span>Хроника</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-my_dogs"></div>
+                    <span>Мои собаки</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-my_dog"></div>
+                    <span>Мои щенки</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-my_vipuskniky"></div>
+                    <span>Мои выпускники</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-friends"></div>
+                    <span>Друзья</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-soobscheniya"></div>
+                    <span>Общение</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-my_pitomnik"></div>
+                    <span>Мои клубы</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon icon-user"></div>
+                    <span>Личные данные</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <br> <br> <br> <br> hey <br> <br> <br> <br>
+    <br> <br> <br> <br> hey <br> <br> <br> <br>
+    <br> <br> <br> <br> hey <br> <br> <br> <br>
+</div>
+
+<!-- include "templates/footer.html" -->
 
 </body>
 </html>

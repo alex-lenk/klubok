@@ -130,7 +130,7 @@
                 // список элементов для отрисовки
                 items_exists = {},
                 // текущий размер контейнера, в который надо вписать меню
-                container_width = $('section.content-container').width()-options.containerPaddingOnSmall
+                container_width = $('.wrapper').width()-options.containerPaddingOnSmall
                 ;
 
             obj.switchOffItems();

@@ -2,8 +2,6 @@
   padding: 35px 0;
   @include at('m') {
     overflow-x: hidden;
-  }
-  @include at('m') {
     .personal-data__line:not(.personal-data__map) {
       position: relative;
       padding-right: 75px;
@@ -14,6 +12,7 @@
     .info-block {
       margin-left: 300px;
       float: none;
+      padding-right: 40px;
     }
     .personal-data-btn {
       position: absolute;
@@ -30,6 +29,7 @@
   &__line {
     min-height: 35px;
     margin-bottom: 5px;
+    overflow: hidden;
     @include to('s') {
       padding: 0 10px;
     }
@@ -49,9 +49,10 @@
       padding-top: 10px;
     }
     .radio {
-      input[type="radio"] {
-        width: 14px;
-        height: 14px;
+      @include to('xs') {
+        width: 100%;
+        padding-top: 0;
+        display: block;
       }
       label {
         line-height: 1;
@@ -62,8 +63,12 @@
       list-style: none;
       li {
         @include to('s') {
-          &:first-child {
-            display: inline;
+          display: inline;
+          &:not(:last-child) {
+            &:after {
+              display: inline;
+              content: ', ';
+            }
           }
         }
         &:not(:last-child) {
@@ -79,8 +84,7 @@
   &__map {
     position: relative;
     .btn-azure {
-      padding-left: 44px;
-      padding-right: 44px;
+      width: 220px;
       position: absolute;
       top: 10px;
       right: 10px;
@@ -106,13 +110,7 @@
     padding-left: 10px;
     clear: left;
   }
-/*  .show-more-address {
-    padding-top: 15px;
-    padding-left: 10px;
-    clear: left;
-  }*/
 
-  .show-more-address,
   &-active {
     @include to('s') {
       width: 100%;
@@ -122,11 +120,9 @@
     }
     @include at('m') {
       margin-left: 300px;
+      padding-right: 80px;
+      width: auto;
     }
   }
 
-}
-
-.error-text {
-  color: $color-orange;
 }
