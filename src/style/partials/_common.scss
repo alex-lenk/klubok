@@ -1,0 +1,150 @@
+@import "variables";
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $color-black;
+}
+
+a:active, a:hover, a:link, a:visited {
+  text-decoration: none
+}
+
+a, .as-link {
+  color: $color-azure-link;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #1bbed2;
+  }
+}
+
+.as-link {
+  cursor: pointer;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+.text {
+  &-center {
+    text-align: center
+  }
+  &-left {
+    text-align: left
+  }
+  &-right {
+    text-align: right
+  }
+  &-justify {
+    text-align: justify
+  }
+  &-bold {
+    font-weight: 700
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.pull {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}
+
+.color {
+  &-black {
+    color: $color-black;
+  }
+  &-white {
+    color: $color-white;
+  }
+  &-grey {
+    color: $color-grey;
+    &-very-light {
+      color: $color-grey-very-light;
+    }
+    &-light {
+      color: $color-grey-light;
+    }
+    &-dark {
+      color: $color-grey-dark;
+    }
+  }
+  &-gray {
+    color: $color-gray;
+  }
+  &-azure {
+    color: $color-azure;
+    &-light {
+      color: $color-azure-light;
+    }
+    &-link {
+      color: $color-azure-link;
+    }
+    &-bottom {
+      color: $color-azure-bottom;
+    }
+  }
+  &-orange {
+    color: $color-orange;
+  }
+  &-blue {
+    color: $color-blue;
+  }
+  &-pink {
+    color: $color-pink;
+  }
+}
+
+.bread-crumbs {
+  &-light {
+    color: #8cc2aa;
+  }
+  &-darck {
+    color: #6aa289;
+  }
+}
+
+button:focus, input:focus, select:focus {
+  outline: none;
+}
+
+.radio label:not(:last-child) {
+  margin-right: 15px;
+  @include from('s') {
+    margin-right: 20px;
+  }
+}
+
+@include to('xs') {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@include to('s') {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+/*
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+*/

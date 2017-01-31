@@ -1,0 +1,35 @@
+.personal-edit {
+  .container {
+    @include from('m') {
+      width: 960px;
+    }
+  }
+  .personal-data__group {
+    margin-bottom: 15px;
+  }
+  .modal-content {
+    padding: 15px 0 0;
+  }
+  .label-block {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  .personal-data__input,
+  .personal-data__select {
+    padding: 2px 0 2px 10px;
+    border: 1px solid #00adbf;
+    color: #777777;
+    font-size: 14px;
+    height: 35px;
+    width: 100%;
+  }
+  .btn-azure {
+    width: 100%;
+  }
+  @include to('m') {
+    .personal-data-btn {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

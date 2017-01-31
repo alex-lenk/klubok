@@ -1,0 +1,132 @@
+.personal-data {
+  padding: 35px 0;
+  @include at('m') {
+    overflow-x: hidden;
+  }
+  @include at('m') {
+    .personal-data__line:not(.personal-data__map) {
+      position: relative;
+      padding-right: 75px;
+    }
+    .label-block {
+      min-width: 300px;
+    }
+    .info-block {
+      margin-left: 300px;
+      float: none;
+    }
+    .personal-data-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__title {
+    padding: 0 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__line {
+    min-height: 35px;
+    margin-bottom: 5px;
+    @include to('s') {
+      padding: 0 10px;
+    }
+    .label-block {
+      @include from('m') {
+        line-height: 35px;
+      }
+      @include to('s') {
+        padding-top: 5px;
+        &.as-link {
+          color: inherit;
+          cursor: default;
+        }
+      }
+    }
+    .info-block {
+      padding-top: 10px;
+    }
+    .radio {
+      input[type="radio"] {
+        width: 14px;
+        height: 14px;
+      }
+      label {
+        line-height: 1;
+      }
+    }
+    .list-data {
+      margin-bottom: 0;
+      list-style: none;
+      li {
+        @include to('s') {
+          &:first-child {
+            display: inline;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .phone-label {
+      min-width: 77px;
+      display: inline-block;
+    }
+  }
+  &__map {
+    position: relative;
+    .btn-azure {
+      padding-left: 44px;
+      padding-right: 44px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-weight: 700;
+    }
+    .list-data {
+      display: block;
+    }
+  }
+
+  /* .personal-data-btn */
+  &-btn {
+    text-align: right;
+    padding-left: 0;
+    @include to('s') {
+      display: none;
+    }
+  }
+
+  /* .personal-data-active */
+  &-active {
+    padding-top: 5px;
+    padding-left: 10px;
+    clear: left;
+  }
+/*  .show-more-address {
+    padding-top: 15px;
+    padding-left: 10px;
+    clear: left;
+  }*/
+
+  .show-more-address,
+  &-active {
+    @include to('s') {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+    }
+    @include at('m') {
+      margin-left: 300px;
+    }
+  }
+
+}
+
+.error-text {
+  color: $color-orange;
+}

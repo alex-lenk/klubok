@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<!-- include "templates/head.html" -->
+<body>
+
+<div class="container-pages">
+
+    <header style="display: none">
+        <section class="header-top clearfix text-center">
+            <a href="" class="logo pull-left">
+                <img src="img/logo.png">
+            </a>
+            <div class="user-menu pull-right">
+                <a href="" class="ava-mini pull-left">
+                    <img src="img/ava-mini.png">
+                </a>
+                <div class="user-actions pull-left">
+                    <div class="language text-left">
+                        <a href="" class="active-language">Рус</a>
+                        <a href="">Eng</a>
+                    </div>
+                    <ul class="options pull-left">
+                        <li class="users">
+                            <a href="" class="smaller-icon" data-toggle="tooltip" data-placement="bottom"
+                               title="Запрос на добавления в друзья"></a>
+                        </li>
+                        <li class="message active-options">
+                            <a href="" class="smaller-icon" data-toggle="tooltip" data-placement="bottom"
+                               title="Сообщения"></a>
+                        </li>
+                        <li class="notes">
+                            <a href="" class="smaller-icon" data-toggle="tooltip" data-placement="bottom"
+                               title="Уведомления"></a>
+                        </li>
+                        <li class="logout active-options">
+                            <a href="" class="smaller-icon" data-toggle="tooltip" data-placement="bottom"
+                               title="Выход"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header-nav text-center">
+                <div class="header-nav-slider">
+                    <ul class="owl-carousel" id="owl-carousel-1">
+                        <li><a href="">Собаки</a></li>
+                        <li><a href="">Щенки</a></li>
+                        <li><a href="">Сообщество</a></li>
+                        <li><a href="">Организации</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div class="breadcrumbs">
+            <a href="">Начало</a>
+            <a href="">Владельцам собак</a>
+            <a href="">Генералова Елена Николаевна</a>
+        </div>
+        <section class="header-middle">
+            <a href="" class="upload-bg-img upload-img" data-toggle="tooltip" data-placement="bottom"
+               title="Заменить фоновое изображение"></a>
+            <div class="header-media">
+                <div class="header-media-img">
+                    <div class="media-img">
+                        <img class="profile-img" src="img/avatar.jpg">
+                        <a href="" class="upload-profile-img upload-img" data-toggle="tooltip" data-placement="bottom"
+                           title="Заменить портрет"></a>
+                    </div>
+                </div>
+                <div class="header-media-content media-bottom">
+                    <div class="profile clearfix">
+                        <div class="profile-info pull-left">
+                            <span class="name">Генералова Елена Николаевна</span><br>
+                            <span class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</span>
+                        </div>
+                        <div class="profile-actions pull-right">
+                            <ul class="text-right">
+                                <li>
+                                    <a href="">Добавить в друзья</a>
+                                </li>
+                                <li>
+                                    <a href="">Отслеживать публикации</a>
+                                </li>
+                                <li>
+                                    <a href="">Написать сообщение</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-bottom text-center" style="display: none">
+            <ul class="profile-tabs owl-carousel" id="owl-carousel-2">
+                <li>
+                    <a href="">
+                        <div class="icon icon-hronika"></div>
+                        <span>Хроника</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-my_dogs"></div>
+                        <span>Мои собаки</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-my_dog"></div>
+                        <span>Мои щенки</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-my_vipuskniky"></div>
+                        <span>Мои выпускники</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-friends"></div>
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-soobscheniya"></div>
+                        <span>Общение</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-my_pitomnik"></div>
+                        <span>Мои клубы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-user"></div>
+                        <span>Личные данные</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+
+    <div class="personal-data">
+        <div class="personal-data__title text-uppercase">Личные данные</div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">ФИО:</div>
+            <div class="col-xs-7 info-block">
+                Генералова Елена <span class="error-text hidden-sm">(отчество не заполнено)</span>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#editFIO"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#chooseGender">
+                Выбрать пол:
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#dateBirth">
+                Добавить дату рождения
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#addAddress">
+                Добавить домашний адрес
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#addPhone">
+                Добавить телефон
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">E-mail:</div>
+            <div class="col-xs-7 info-block"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addEmail"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold">Пароль:</div>
+            <div class="col-xs-7 info-block">* * * * * *</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#editPassword"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#dateReceipt">
+                Добавить заводскую проиставку
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Мои контактные данные видны:</div>
+            <div class="col-xs-8 info-block">
+                <form action="#">
+                    <div class="radio">
+                        <label><input type="radio" name="radio"> только мне</label>
+
+                        <label><input type="radio" name="radio" checked> только друзьям</label>
+
+                        <label><input type="radio" name="radio"> всем</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold as-link" data-toggle="modal" data-target="#addPassport">
+                Добавить паспортные данные
+            </div>
+            <div class="col-xs-7 info-block">(будут отображаться толко в договорах купли продажи собак и щенков)</div>
+        </div>
+    </div>
+
+    <div class="personal-data">
+        <div class="personal-data__title text-uppercase">Личные данные</div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">ФИО:</div>
+            <div class="col-xs-7 info-block">
+                Генералова Елена Николаевна
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Пол:</div>
+            <div class="col-xs-7 info-block">женский</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Дата рождения</div>
+            <div class="col-xs-7 info-block">04.11.1976 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Домашний адрес</div>
+            <div class="col-xs-7 info-block">
+                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line personal-data__map">
+            <img src="img/map.gif" alt="">
+            <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Телефон</div>
+            <ul class="col-xs-7 info-block list-data">
+                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+            </ul>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">E-mail:</div>
+            <div class="col-xs-7 info-block">
+                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold">Пароль:</div>
+            <div class="col-xs-7 info-block">* * * * * *</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Зводская проиставка</div>
+            <div class="col-xs-7 info-block">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Мои контактные данные видны:</div>
+            <div class="col-xs-8 info-block">
+                <form action="#">
+                    <div class="radio">
+                        <label><input type="radio" name="radio"> только мне</label>
+                        <label><input type="radio" name="radio" checked> только друзьям</label>
+                        <label><input type="radio" name="radio"> всем</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Паспортные данные</div>
+            <div class="col-xs-7 info-block">
+                <div>серия и номер паспорта - 4413 788256</div>
+                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
+                <div>код подразделения - 770-106</div>
+                <div>дата выдачи - 11.09.2001 г.</div>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal-data">
+        <div class="personal-data__title text-uppercase">Личные данные</div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">ФИО:</div>
+            <div class="col-xs-7 info-block">Генералова Елена Николаевна</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+
+            <div class="col-xs-offset-4 personal-data-active">
+                <div>
+                    <span class="text-bold as-link">Показать ФИО, которые были внесены ранее (2)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Пол:</div>
+            <div class="col-xs-7 info-block">женский</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Дата рождения</div>
+            <div class="col-xs-7 info-block">04.11.1976 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Домашний адрес</div>
+            <div class="col-xs-7 info-block">
+                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line personal-data__map">
+            <div>
+                <img src="img/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </div>
+
+            <ul class="col-xs-offset-4 personal-data-active list-data">
+                <li>
+                    <span class="text-bold as-link">Показать домашние адреса, которые были внесены ранее (2)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Телефон</div>
+            <ul class="col-xs-7 info-block list-data">
+                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+            </ul>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">E-mail:</div>
+            <div class="col-xs-7 info-block">
+                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold">Пароль:</div>
+            <div class="col-xs-7 info-block">* * * * * *</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Зводская проиставка</div>
+            <div class="col-xs-7 info-block">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Мои контактные данные видны:</div>
+            <div class="col-xs-8 info-block">
+                <form action="#">
+                    <div class="radio">
+                        <label><input type="radio" name="radio"> только мне</label>
+                        <label><input type="radio" name="radio" checked> только друзьям</label>
+                        <label><input type="radio" name="radio"> всем</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Паспортные данные</div>
+            <div class="col-xs-7 info-block">
+                <div>серия и номер паспорта - 4413 788256</div>
+                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
+                <div>код подразделения - 770-106</div>
+                <div>дата выдачи - 11.09.2001 г.</div>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal-data">
+        <div class="personal-data__title text-uppercase">Личные данные</div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">ФИО:</div>
+            <ul class="col-xs-7 info-block list-data">
+                <li>Генералова Елена Николаевна</li>
+                <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
+                <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
+            </ul>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+
+            <div class="col-xs-offset-4 personal-data-active">
+                <div>
+                    <span class="text-bold as-link">Скрыть ФИО, которые были внесены ранее (2)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Пол:</div>
+            <div class="col-xs-7 info-block">женский</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Дата рождения</div>
+            <div class="col-xs-7 info-block">04.11.1976 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Домашний адрес</div>
+            <ul class="col-xs-7 info-block list-data">
+                <li>606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            </ul>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line personal-data__map">
+            <div>
+                <img src="img/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </div>
+
+            <ul class="col-xs-offset-4 col-xs-7 personal-data-active list-data">
+                <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
+                    кв. 196 (01.01.1996 г. - 16.11.1997 г.)
+                </li>
+                <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
+                    кв. 196 (01.01.1990 г. - 31.12.1996 г.)
+                </li>
+                <li>
+                    <span class="text-bold as-link">Скрыть домашние адреса, которые были внесены ранее (2)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Телефон</div>
+            <ul class="col-xs-7 info-block list-data">
+                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+            </ul>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">E-mail:</div>
+            <div class="col-xs-7 info-block">
+                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix hidden-sm">
+            <div class="col-xs-4 label-block text-bold">Пароль:</div>
+            <div class="col-xs-7 info-block">* * * * * *</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Зводская проиставка</div>
+            <div class="col-xs-7 info-block">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Мои контактные данные видны:</div>
+            <div class="col-xs-8 info-block">
+                <form action="#">
+                    <div class="radio">
+                        <label><input type="radio" name="radio"> только мне</label>
+                        <label><input type="radio" name="radio" checked> только друзьям</label>
+                        <label><input type="radio" name="radio"> всем</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="personal-data__line clearfix">
+            <div class="col-xs-4 label-block text-bold">Паспортные данные</div>
+            <div class="col-xs-7 info-block">
+                <div>серия и номер паспорта - 4413 788256</div>
+                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
+                <div>код подразделения - 770-106</div>
+                <div>дата выдачи - 11.09.2001 г.</div>
+            </div>
+            <div class="col-sm-1 col-xs-2 personal-data-btn">
+                <button class="btn btn-edit icon-pencil"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='js/common.js'></script>
+<script src='js/jquery.ba-throttle-debounce.min.js'></script>
+<script src='js/menu.js'></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src='js/lib.js'></script>
+<script src='js/scripts.js'></script>-->
+
+
+<!-- include "templates/modal.html" -->
+
+</body>
+</html>

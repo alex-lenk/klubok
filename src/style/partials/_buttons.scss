@@ -1,0 +1,60 @@
+@import "variables";
+
+.btn {
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+
+  //.btn-azure
+  &-azure {
+    background-color: $color-azure;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: $color-white;
+    @include to('l') {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 12px;
+    }
+    &:hover {
+      border-color: $color-azure;
+      color: $color-azure;
+      background-color: #ffffff;
+    }
+  }
+
+  &-edit,
+  &-uninstall {
+    width: 100%;
+    max-width: 60px;
+    height: 35px;
+    line-height: 38px;
+    background-size: 28px;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  //.btn-ediit
+  &-edit {
+    background: $color-azure;
+    &:hover {
+      border-color: $color-azure;
+      color: $color-azure;
+      background-color: #ffffff;
+    }
+  }
+  //.btn-uninstall
+  &-uninstall {
+    background: #ed5901;
+    &:hover {
+      border-color: #ed5901;
+      color: #ed5901;
+      background-color: #ffffff;
+    }
+  }
+}
