@@ -4,10 +4,14 @@ footer {
   z-index: 5;
   position: relative;
   overflow: hidden;
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
 }
 
 .pre-footer {
-  padding: 15px 10px 20px;
+  padding: 0 10px 20px;
   margin-bottom: 25px;
   border-radius: 0 0 10px 10px;
   background-color: #f5f3f4;

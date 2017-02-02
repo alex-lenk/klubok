@@ -9,96 +9,49 @@
 </div>
 
 <div class="wrapper container">
-    <!-- include "templates/header.html" -->
-
-    <section class="header-middle">
-        <a href="#" class="upload-bg-img upload-img" data-toggle="tooltip" data-placement="bottom"
-           title="Заменить фоновое изображение"></a>
-        <div class="header-media">
-            <div class="header-media-img">
-                <div class="media-img">
-                    <img class="profile-img" src="img/avatar.jpg" alt="">
-                    <a href="#" class="upload-profile-img upload-img" data-toggle="tooltip"
-                       data-placement="bottom" title="Заменить портрет"></a>
-                </div>
-            </div>
-            <div class="header-media-content media-bottom">
-                <div class="profile clearfix">
-                    <div class="profile-info pull-left">
-                        <span class="name">Генералова Елена Николаевна</span><br>
-                        <span class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</span>
-                    </div>
-                    <div class="profile-actions pull-right">
-                        <ul class="text-right">
-                            <li>
-                                <a href="#">Добавить в друзья</a>
-                            </li>
-                            <li>
-                                <a href="#">Отслеживать публикации</a>
-                            </li>
-                            <li>
-                                <a href="#">Написать сообщение</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <header class="clearfix">
+        <div class="logo pull-left">
+            <a href="index.html">
+                <img src="/img/logo.png">
+            </a>
         </div>
-    </section>
 
-    <section class="header-bottom text-center">
-        <ul class="profile-tabs owl-carousel" id="owl-carousel-2">
-            <li>
-                <a href="#">
-                    <div class="icon icon-hronika"></div>
-                    <span>Хроника</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-my_dogs"></div>
-                    <span>Мои собаки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-my_dog"></div>
-                    <span>Мои щенки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-my_vipuskniky"></div>
-                    <span>Мои выпускники</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-friends"></div>
-                    <span>Друзья</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-soobscheniya"></div>
-                    <span>Общение</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-my_pitomnik"></div>
-                    <span>Мои клубы</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon icon-user"></div>
-                    <span>Личные данные</span>
-                </a>
-            </li>
+        <div class="login pull-right">
+            <ul class="login__un-register list-unstyled">
+                <li><span class="as-link" data-toggle="modal" data-target="#loginTo">Вход</span></li>
+                <li><span class="as-link" data-toggle="modal" data-target="#register">Регистрация</span></li>
+            </ul>
+        </div>
+
+        <!-- include "templates/header/header-nav.html" -->
+
+        <!-- include "templates/breadcrumbs.html" -->
+    </header>
+
+    <div class="custom-header" style="background-image: url(/img/bg.jpg);">
+        <span class="custom-header__upload icon-camera2" data-toggle="tooltip" data-placement="bottom"
+              title="Заменить фоновое изображение"></span>
+
+        <div class="custom-header-img" style="background-image: url(/img/avatar.jpg)">
+            <span href="#" class="custom-header__upload icon-camera2" data-toggle="tooltip"
+                  data-placement="bottom" title="Заменить портрет"></span>
+        </div>
+
+        <ul class="custom-header-info list-unstyled">
+            <li class="name">Генералова Елена Николаевна</li>
+            <li class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</li>
         </ul>
-    </section>
 
+        <ul class="custom-header-actions list-unstyled">
+            <li><a href="#">Добавить в друзья</a></li>
+            <li><a href="#">Отслеживать публикации</a></li>
+            <li><a href="#">Написать сообщение</a></li>
+        </ul>
+    </div>
+
+    <!-- include "templates/header/header-bottom.html" -->
+
+    <br> <br> <br> <br> hey <br> <br> <br> <br>
     <br> <br> <br> <br> hey <br> <br> <br> <br>
     <br> <br> <br> <br> hey <br> <br> <br> <br>
     <br> <br> <br> <br> hey <br> <br> <br> <br>

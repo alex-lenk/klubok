@@ -1,0 +1,85 @@
+.login {
+  margin: 10px 5px 0;
+  &__un-register {
+    li {
+      padding: 15px 10px;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &-avatar {
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 5px
+  }
+  &-actions {
+    margin: 0 5px;
+  }
+  &-lang {
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    li {
+      display: inline-block;
+      width: 28px;
+      text-align: center;
+    }
+    a:hover {
+      color: #000;
+    }
+  }
+  &-options {
+    &__item {
+      display: inline-block;
+      position: relative;
+      margin: 8px 7px;
+      font-size: 16px;
+    }
+    &-active:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ED5901;
+    }
+
+    .users {
+      background-image: url(../img/user-menu/druzya.svg);
+    }
+
+    .message {
+      background-image: url(../img/user-menu/soobscheniya.svg);
+    }
+
+    .notes {
+      background-image: url(../img/user-menu/notes.png);
+    }
+
+    .logout {
+      background-image: url(../img/user-menu/logout.png);
+    }
+
+    .users:hover {
+      background-image: url(../img/user-menu/druzya-a.svg);
+    }
+
+    .message:hover {
+      background-image: url(../img/user-menu/soobscheniya-a.svg);
+    }
+
+    .notes:hover {
+      background-image: url(../img/user-menu/notes-a.png);
+    }
+
+    .logout:hover {
+      background-image: url(../img/user-menu/logout-a.png);
+    }
+  }
+}

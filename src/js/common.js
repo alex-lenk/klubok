@@ -8,9 +8,9 @@ function activeItemLogic(itemsSelector, activeClassName){
 	});
 }
 
-function bumpFooter(){
+/*function bumpFooter(){
 	$('.panel').css('min-height', $('body').height() - $('footer').height() - 20 +'px');
-}
+}*/
 
 var headerModule = {
 	profileMinWidth: 0, 
@@ -58,7 +58,7 @@ $(window).load(function() {
 
 	$('a').on('click', function(e){
 		e.preventDefault();
-	})
+	});
 
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
@@ -66,22 +66,22 @@ $(window).load(function() {
 
 
 	$('[data-toggle="tooltip"]').tooltip({
-		'delay': { show: 1000, hide: 1000 }
-	}); 
-
-	$(".options >li").click(function(){
-		$(this).toggleClass("active-options");
+		'delay': { show: 300, hide: 50 }
 	});
 
-	activeItemLogic('.language>a', 'active-language');
+	$(".login-options__item").click(function(){
+		$(this).toggleClass("login-options-active");
+	});
+
+/*	activeItemLogic('.language>a', 'active-language');*/
 
 	headerModule.init();
-	bumpFooter();
+/*	bumpFooter();*/
 
-	$(window).on("resize", function() {
+/*	$(window).on("resize", function() {
 		headerModule.resizeHeader();
 		bumpFooter();
-	});
+	});*/
 
 });
 

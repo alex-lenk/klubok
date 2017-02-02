@@ -1,0 +1,155 @@
+.header-bottom {
+  height: 70px;
+  padding-top: 10px;
+  color: #fff;
+  overflow: hidden;
+  background: -webkit-linear-gradient(#008290, #0097a7);
+  background: -o-linear-gradient(#008290, #0097a7);
+  background: -moz-linear-gradient(#008290, #0097a7);
+  background: linear-gradient(#008290, #0097a7);
+}
+
+.profile-tabs {
+  padding: 0 10px;
+  list-style: none;
+
+  .li {
+    padding: 10px;
+    display: block;
+    background: 0 0;
+    border-radius: 10px 10px 0 0;
+    transition: all .2s ease-in;
+    span {
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 5px;
+      display: block;
+    }
+    a {
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+  .active-nav {
+    .li {
+      background: #fff;
+      a {
+        &:before {
+          color: #34a2b0;
+        }
+        color: #000;
+      }
+    }
+  }
+  .menu-item:not(.active-nav):hover .li {
+    background: #34a2b0
+  }
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+  background: 0 0;
+  border-radius: 0;
+  opacity: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    margin: auto;
+    padding: 0;
+    border-width: 2px;
+    border-style: solid;
+    background: 0 0;
+    border-color: transparent
+  }
+}
+
+.owl-prev {
+  left: 0;
+  &:before {
+    left: 15px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+  }
+}
+
+.owl-next {
+  right: 0;
+  &:before {
+    right: 15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+}
+
+.profile-tabs .owl-next:before, .profile-tabs .owl-prev:before {
+  border-top-color: #fff;
+  border-right-color: #fff
+}
+
+.owl-next:after, .owl-prev:after {
+  content: attr(arrows-counter);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  margin: auto;
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 3px
+}
+
+.owl-next:hover:before,
+.owl-prev:hover:before,
+.owl-next[arrows-counter="0"]:before,
+.owl-prev[arrows-counter="0"]:before {
+  border-top-color: #6fd2db;
+  border-right-color: #6fd2db
+}
+
+.profile-tabs .owl-next:after, .profile-tabs .owl-prev:after {
+  color: #1497a7;
+  background: #fff
+}
+
+.owl-prev:after {
+  left: 15px;
+  right: 0
+}
+
+.owl-next:after {
+  left: 0;
+  right: 15px
+}
+
+[arrows-counter="0"]:after {
+  opacity: 0
+}
+
+.tooltip {
+  white-space: nowrap;
+}

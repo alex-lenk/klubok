@@ -58,15 +58,15 @@ $(window).load(function() {
 
 	$('a').on('click', function(e){
 		e.preventDefault();
-	})
+	});
 
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$(".loader").delay(300).fadeOut("slow");
 
 
 
 	$('[data-toggle="tooltip"]').tooltip({
-		'delay': { show: 1000, hide: 1000 }
+		'delay': { show: 300, hide: 50 }
 	}); 
 
 	$(".options >li").click(function(){
