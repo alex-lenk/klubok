@@ -51,35 +51,35 @@
     }
 
     .users {
-      background-image: url(../img/user-menu/druzya.svg);
+      background-image: url(/img/user-menu/druzya.svg);
     }
 
     .message {
-      background-image: url(../img/user-menu/soobscheniya.svg);
+      background-image: url(/img/user-menu/soobscheniya.svg);
     }
 
     .notes {
-      background-image: url(../img/user-menu/notes.png);
+      background-image: url(.img/user-menu/notes.png);
     }
 
     .logout {
-      background-image: url(../img/user-menu/logout.png);
+      background-image: url(/img/user-menu/logout.png);
     }
 
     .users:hover {
-      background-image: url(../img/user-menu/druzya-a.svg);
+      background-image: url(/img/user-menu/druzya-a.svg);
     }
 
     .message:hover {
-      background-image: url(../img/user-menu/soobscheniya-a.svg);
+      background-image: url(/img/user-menu/soobscheniya-a.svg);
     }
 
     .notes:hover {
-      background-image: url(../img/user-menu/notes-a.png);
+      background-image: url(/img/user-menu/notes-a.png);
     }
 
     .logout:hover {
-      background-image: url(../img/user-menu/logout-a.png);
+      background-image: url(/img/user-menu/logout-a.png);
     }
   }
 }
