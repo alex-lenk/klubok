@@ -8,11 +8,6 @@
 @import "lib/bootstrap";
 @import "partials/common";
 @import "partials/icons";
-
-@import "pages/main";
-@import "pages/media";
-@import "pages/menu";
-
 /* pages */
 @import "pages/personal-data";
 @import "pages/personal-edit";
@@ -23,16 +18,16 @@
 @import "pages/login";
 @import "pages/header-bottom";
 @import "pages/custom-header";
+@import "pages/loader";
+@import "pages/logo";
 
-body {
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 430px;
-    top: 0;
-    background: url(/img/bg-pattern.png) #bfe9ed;
-  }
+body:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  top: 0;
+  background: url(/img/bg-pattern.png) #bfe9ed;
 }
 
 .clearfix {
@@ -53,4 +48,16 @@ body {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
   background: #ffffff;
+}
+
+.owl-carousel div.menu-item {
+  display: table-cell;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.owl-carousel {
+  display: table;
+  width: 100%;
 }

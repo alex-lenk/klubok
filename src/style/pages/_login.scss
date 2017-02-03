@@ -1,20 +1,70 @@
+//@todo delete!
+header {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+  }
+}
+
 .login {
   margin: 10px 5px 0;
+  @include to('xs') {
+    margin-left: 0;
+    margin-right: 0;
+  }
   &__un-register {
+    .login-avatar {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      line-height: 1;
+      padding: 0;
+      @include to('xs') {
+        margin-right: 5px;
+      }
+    }
     li {
-      padding: 15px 10px;
+      padding: 15px 10px 15px 0;
       display: inline-block;
       font-size: 14px;
-      line-height: 18px;
-      font-weight: 700;
+      line-height: 19px;
       text-transform: uppercase;
+      @include to('xs') {
+        font-size: 13px;
+        line-height: 20px;
+      }
     }
   }
   &-avatar {
+    width: 38px;
+    height: 38px;
     margin: 5px 10px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    box-shadow: 1px 1px 5px
+    position: relative;
+    img {
+      border-radius: 50%;
+      position: relative;
+      z-index: 5;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      border: 1px solid #fff;
+    }
+    .icon-user {
+      position: absolute;
+      width: 33px;
+      height: 37px;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 34px;
+      z-index: 4;
+      color: #ebebeb;
+    }
   }
   &-actions {
     margin: 0 5px;
@@ -48,38 +98,6 @@
       height: 10px;
       border-radius: 50%;
       background: #ED5901;
-    }
-
-    .users {
-      background-image: url(/img/user-menu/druzya.svg);
-    }
-
-    .message {
-      background-image: url(/img/user-menu/soobscheniya.svg);
-    }
-
-    .notes {
-      background-image: url(.img/user-menu/notes.png);
-    }
-
-    .logout {
-      background-image: url(/img/user-menu/logout.png);
-    }
-
-    .users:hover {
-      background-image: url(/img/user-menu/druzya-a.svg);
-    }
-
-    .message:hover {
-      background-image: url(/img/user-menu/soobscheniya-a.svg);
-    }
-
-    .notes:hover {
-      background-image: url(/img/user-menu/notes-a.png);
-    }
-
-    .logout:hover {
-      background-image: url(/img/user-menu/logout-a.png);
     }
   }
 }

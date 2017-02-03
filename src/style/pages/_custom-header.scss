@@ -1,12 +1,41 @@
 .custom-header {
-  padding: 0 10px 20px;
+  padding: 10px 10px 10px 15px;
   position: relative;
   box-shadow: inset 0 1px 0 0 #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
-  display: flex;
-  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  display: table;
+  @include to('s') {
+    overflow: hidden;
+    padding-left: 10px;
+  }
+  .wrap {
+    height: 210px;
+    padding-bottom:10px;
+    padding-left: 25px;
+    display: table-cell;
+    vertical-align: bottom;
+    min-width: 120px;
+    z-index: 6;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include from('m') {
+      align-items: flex-end;
+    }
+    @include to('s') {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    @include to('xs') {
+      min-height: 220px;
+      height: auto;
+      padding-left: 20px;
+    }
+  }
   &:before {
     overflow: visible;
     content: '';
@@ -16,6 +45,7 @@
     top: 0;
     left: 0;
     z-index: 4;
+    background-color: rgba(0, 0, 0, .35);
     background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
   }
   &:after {
@@ -28,6 +58,7 @@
     z-index: 5;
     background-color: #008391;
   }
+
   &__upload {
     z-index: 7;
     width: 35px;
@@ -42,34 +73,59 @@
     background-color: rgba(#000000, .6);
     cursor: pointer;
   }
+
   &-img {
-    margin: 0 5px;
-    width: 220px;
-    height: 220px;
-    top: 15px;
-    outline: 5px solid #ffffff;
+    margin: 0 10px;
+    top: 5px;
     z-index: 6;
     position: relative;
-    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.2);
+    display: table-cell;
+    vertical-align: top;
+    width: 210px;
+    min-width: 70px;
+    div {
+      position: inherit;
+    }
+    @include to('xs') {
+      margin: 0 auto 20px;
+    }
+    @include to('s') {
+      width: 28%;
+    }
+    img {
+      outline: 5px solid #ffffff;
+      box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.2);
+      @include to('xs') {
+        outline-width: 1px;
+      }
+    }
     .custom-header__upload {
       top: auto;
       bottom: 0;
     }
   }
+
   &-info {
-    margin-left: 20px;
     color: #fff;
     letter-spacing: 0.1px;
-    z-index: 6;
-    position: relative;
+    padding-bottom: 15px;
+    @include at('s') {
+      padding-right: 25px;
+    }
+    @include to('xs') {
+      margin-left: 0;
+      .location {
+        line-height: 18px;
+      }
+    }
     .name {
-      margin-bottom: 5px;
       font-size: 20px;
       font-weight: 700;
-      text-transform: uppercase
+      text-transform: uppercase;
     }
     .location {
       font-size: 12px;
+      line-height: 18px;
       &:before {
         content: ' ';
         position: relative;
@@ -83,12 +139,21 @@
       }
     }
   }
+
   &-actions {
+    padding-top: 3px;
     color: #fff;
-    text-align: right;
-    flex-grow: 1;
-    z-index: 6;
-    position: relative;
+    @include from('m') {
+      text-align: right;
+    }
+    @include at('m') {
+      padding-left: 20px;
+      li {
+        white-space: nowrap;
+      }
+    }
+    @include at('s') {
+    }
     a {
       font-size: 12px;
       line-height: 20px;
@@ -101,73 +166,3 @@
     }
   }
 }
-
-/*
-
-.header-middle-small > .header-media {
-  background-color: rgba(0, 0, 0, .35);
-}
-
-
-.header-media {
-  margin: 0;
-  overflow: visible;
-  height: 100%;
-}
-
-
-
-.upload-profile-img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 5px;
-  transition: margin .5s ease-in
-}
-
-
-.smaller-icon {
-  height: 14px;
-  width: 14px;
-  display: block;
-}
-
-
-.header-media-content {
-  display: table-cell;
-  vertical-align: bottom;
-  height: 220px;
-  min-width: 120px;
-}
-
-
-.profile {
-  padding: 10px;
-}
-
-.profile a:hover {
-  color: #1497a7;
-}
-
-
-
-.header-middle-small .profile-actions,
-.header-middle-small .profile-info {
-  width: 100%
-}
-
-.header-middle-small .profile-info {
-  height: 200px;
-  margin-bottom: -60px;
-}
-
-.header-middle-small .profile-actions li {
-  text-align: left
-}
-
-.header-media-small > .header-media-img {
-  width: 100px;
-}
-
-
-*/

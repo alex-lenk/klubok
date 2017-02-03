@@ -3,6 +3,9 @@
   margin-bottom: 0;
   background-color: #8cc2aa;
   list-style: none;
+  @include to('s') {
+    display: none;
+  }
   a {
     color: #ffffff;
     &:hover {

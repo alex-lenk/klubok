@@ -1,0 +1,16 @@
+.logo {
+  margin: 14px 20px 10px;
+  @include to('xs') {
+    margin: 20px 0 20px 10px;
+    img {
+      height: 29px;
+      width: auto
+    }
+  }
+}
+
+.logo,
+.login {
+  position: relative;
+  z-index: 2;
+}
