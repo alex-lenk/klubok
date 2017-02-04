@@ -1,21 +1,27 @@
 footer {
-  padding-bottom: 35px;
+  padding: 0 0 15px;
   background-color: #ebebeb;
   z-index: 5;
   position: relative;
   overflow: hidden;
+  font-size: 1.2rem;
+  font-weight: 700;
+  white-space: nowrap;
   ul {
     list-style: none;
     margin-bottom: 0;
+  }
+  .clearfix.text-right {
+    padding: 0 10px;
   }
 }
 
 .pre-footer {
   padding: 0 10px 20px;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   border-radius: 0 0 10px 10px;
   background-color: #f5f3f4;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer-copy {

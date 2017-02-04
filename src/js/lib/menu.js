@@ -22,16 +22,16 @@
 
         // ** functions **
         this.clearActive = function(){
-            menu.children('.menu-item').each(function(i, e){
+            menu.children('div.menu-item').each(function(i, e){
                 $(e).removeClass(options.activeDivClass);
-                $('.li', e).removeClass(options.activeLiClass);
+                $('li', e).removeClass(options.activeLiClass);
             });
         };
         this.CountSizes = function(){
             var w = menu.width(),
                 items_min_sizes = {};
             menu.width(1);
-            menu.children('.menu-item').each(function(i, e){ items_min_sizes[i] = $(e).width(); } );
+            menu.children('div.menu-item').each(function(i, e){ items_min_sizes[i] = $(e).width(); } );
             menu.width(w);
             return items_min_sizes;
         };
@@ -47,7 +47,7 @@
                 // панель навигации
                 nav = $('div.owl-nav', menu);
 
-            menu.children('.menu-item').each(function(i, e){
+            menu.children('div.menu-item').each(function(i, e){
                 itemsState[i] = $(e).is(":visible") ? 1 : 0;
                 if(itemsState[i] == 1 && first_on === null){ first_on = i; }
                 if(itemsState[i] == 0 && first_on !== null && last_on === null){ last_on = i-1; }
@@ -84,7 +84,7 @@
 
             menu.data('central_element', 0);
             // add action onClick and div over li
-            menu.children('.li').each(function(i, e){
+            menu.children('li').each(function(i, e){
                 $(e).on('click', function(e){ $(e).clubokMenu('click', this); });
                 $(e).wrap($('<div>', {'class':'menu-item'}));
                 if($(e).hasClass('active')){
@@ -104,9 +104,9 @@
         this.ClickItem = function () {
             this.clearActive();
             $(data).addClass(options.activeLiClass);
-            $(data).parent('.menu-item').addClass(options.activeDivClass).siblings('.'+options.activeDivClass).removeClass(options.activeDivClass).children().removeClass(options.activeLiClass);
-            menu.children('.menu-item').each(function(i, e){
-                if($(e).children('.li').hasClass(options.activeLiClass)){
+            $(data).parent('div.menu-item').addClass(options.activeDivClass).siblings('.'+options.activeDivClass).removeClass(options.activeDivClass).children().removeClass(options.activeLiClass);
+            menu.children('div.menu-item').each(function(i, e){
+                if($(e).children('li').hasClass(options.activeLiClass)){
                     menu.data('central_element', i);
                 }
             });
@@ -130,7 +130,7 @@
                 // список элементов для отрисовки
                 items_exists = {},
                 // текущий размер контейнера, в который надо вписать меню
-                container_width = $('.wrapper').width()-options.containerPaddingOnSmall
+                container_width = $('header').width()-options.containerPaddingOnSmall
                 ;
 
             obj.switchOffItems();
@@ -208,7 +208,7 @@
                 first_on = null,
                 last_on = null;
 
-            menu.children('.menu-item').each(function(i, e){
+            menu.children('div.menu-item').each(function(i, e){
                 itemsState[i] = $(e).is(":visible") ? 1 : 0;
                 if(itemsState[i] == 1 && first_on === null){ first_on = i; }
                 if(itemsState[i] == 0 && first_on !== null && last_on === null){ last_on = i-1; }
@@ -235,7 +235,7 @@
                         break;
                 }
 
-                menu.children('.menu-item').each(function(i, e){
+                menu.children('div.menu-item').each(function(i, e){
                     switch(itemsState[i]){
                         case 1:
                             $(e).show();

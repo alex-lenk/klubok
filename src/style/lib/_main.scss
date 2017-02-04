@@ -1,0 +1,254 @@
+html {
+  font-size: 10px;
+}
+
+body, html {
+  min-height: 100vh;
+}
+
+.header-nav {
+  height: 70px;
+}
+
+.header-nav-slider {
+  display: inline-block;
+}
+
+.header-nav-slider > ul {
+  padding: 0 10px;
+}
+
+.header-nav .active-nav {
+  background: #cae3e8;
+  background: -webkit-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+  background: linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+}
+
+.header-nav .active-nav a {
+  color: #000;
+}
+
+.header-nav .menu-item:hover a {
+  color: #000;
+}
+
+.ava-mini {
+  margin: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 5px
+}
+
+.user-actions {
+  margin: 0 5px;
+}
+
+.language {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.language a {
+  color: #1497a7;
+  display: inline-block;
+  width: 28px;
+  text-align: center;
+}
+
+.language a.active-language {
+  pointer-events: none;
+}
+
+.language a:hover,
+.language a.active-language {
+  color: #000;
+}
+
+.options > li {
+  display: inline-block;
+  position: relative;
+  margin: 8px 7px;
+  background-size: 14px 14px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.smaller-icon {
+  height: 14px;
+  width: 14px;
+  display: block;
+}
+
+.options > li.active-options:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ED5901;
+}
+
+.header-middle {
+  position: relative;
+  border-top: 1px solid #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-media {
+  @include from('s') {
+    height: 220px;
+    overflow: hidden;
+  }
+}
+
+.header-middle > .header-media {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+  overflow: visible;
+}
+
+.header-middle-small > .header-media {
+  background-color: rgba(0, 0, 0, .35);
+}
+
+.media.header-media {
+  margin: 0;
+  overflow: visible;
+  height: 100%;
+}
+
+.header-media {
+  display: table;
+  width: 100%;
+}
+
+.header-media-img {
+  position: relative;
+  top: 10px;
+  display: table-cell;
+  vertical-align: top;
+  width: 240px;
+  min-width: 100px;
+}
+
+.media-img {
+  position: relative;
+  margin: 0 10px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 220px;
+  border-style: solid;
+  border-color: #fff;
+  transition: border-width .5s ease-in
+}
+
+.upload-profile-img {
+  bottom: 0;
+  top: auto;
+  margin: 5px;
+}
+
+.header-media-content {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 220px;
+  min-width: 120px;
+}
+
+.profile-info {
+  color: #fff;
+  letter-spacing: 0.1px;
+}
+
+.profile {
+  padding: 10px;
+}
+
+.profile a:hover {
+  color: #1497a7;
+}
+
+.profile-actions {
+  color: #fff;
+  text-align: left;
+}
+
+.header-middle-small .profile-actions,
+.header-middle-small .profile-info {
+  width: 100%
+}
+
+.header-middle-small .profile-info {
+  height: 200px;
+  margin-bottom: -60px;
+}
+
+.header-middle-small .profile-actions li {
+  text-align: left
+}
+
+.header-media-small > .header-media-img {
+  width: 100px;
+}
+
+.name {
+  font-size: 2rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.location {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.location:before {
+  content: ' ';
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  top: 5px;
+  margin-right: 5px;
+  background: url(/img/point.svg) 50% 50% no-repeat;
+  background-size: 100%
+}
+
+.profile-actions > ul > li > a {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase
+}
+
+footer .pre-footer + div {
+  padding: 5px 0;
+}
+
+footer span {
+  color: #8b8b8b
+}
+
+.search-couners > img {
+  min-width: 106px;
+  display: inline-block;
+}
+
+.search-couners > img:last-child {
+  margin-left: 15px;
+}
+
+.search-couners {
+  min-width: 230px;
+  display: inline-block;
+}

@@ -1,7 +1,11 @@
 //@todo delete!
 header {
+  @include from('l') {
+    height: 410px;
+    overflow: hidden;
+  }
   position: relative;
-  &:before {
+/*  &:before {
     content: '';
     position: absolute;
     top: 35px;
@@ -9,16 +13,14 @@ header {
     width: 100%;
     height: 1px;
     background-color: red;
-  }
+  }*/
 }
 
 .login {
-  margin: 10px 5px 0;
-  @include to('xs') {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  padding: 10px 5px 0;
   &__un-register {
+    height: 70px;
+    padding: 16px 0 0;
     .login-avatar {
       margin: 0 10px 0 0;
       vertical-align: middle;
@@ -28,22 +30,26 @@ header {
         margin-right: 5px;
       }
     }
-    li {
-      padding: 15px 10px 15px 0;
-      display: inline-block;
-      font-size: 14px;
-      line-height: 19px;
-      text-transform: uppercase;
-      @include to('xs') {
-        font-size: 13px;
-        line-height: 20px;
+    ul:not(.login-lang) {
+      line-height: 1;
+      li {
+        padding: 3px 10px 0 0;
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        .as-link {
+          color: $color-orange;
+        }
+        @include to('xs') {
+          padding: 7px 6px 15px 0;
+        }
       }
     }
   }
   &-avatar {
     width: 38px;
     height: 38px;
-    margin: 5px 10px;
+    margin: 5px 2px 5px 0;
     position: relative;
     img {
       border-radius: 50%;
@@ -73,13 +79,12 @@ header {
     font-size: 10px;
     line-height: 1;
     text-transform: uppercase;
+    text-align: left;
     li {
+      margin-left: -3px;
       display: inline-block;
       width: 28px;
       text-align: center;
-    }
-    a:hover {
-      color: #000;
     }
   }
   &-options {
@@ -87,7 +92,7 @@ header {
       display: inline-block;
       position: relative;
       margin: 8px 7px;
-      font-size: 16px;
+      font-size: 15px;
     }
     &-active:after {
       content: '';
