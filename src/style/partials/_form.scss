@@ -52,21 +52,64 @@ button:focus, input:focus, select:focus {
   transition: all .3s ease;
 }
 
-/*
-.form-group {
-  min-height: 60px;
-  margin-bottom: 10px;
-  position: relative;
+.form-btn {
+  text-align: right;
+  padding-left: 0;
+  @include to('s') {
+    display: none;
+  }
 }
 
-.form-label {
-  margin-bottom: 10px;
-  font-weight: normal;
-  transition: all .3s ease;
+.form-group {
+  min-height: 35px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  @include to('s') {
+    padding: 0 10px;
+  }
+  .form-label {
+    @include from('m') {
+      line-height: 35px;
+    }
+    @include to('s') {
+      padding-top: 5px;
+      &.as-link {
+        color: inherit;
+        cursor: default;
+      }
+    }
+  }
+  .form-info {
+    padding-top: 10px;
+  }
+  .radio {
+    @include to('xs') {
+      width: 100%;
+      padding-top: 0;
+      display: block;
+    }
+    label {
+      line-height: 1;
+    }
+  }
+  .list-data {
+    margin-bottom: 0;
+    list-style: none;
+    li {
+      @include to('s') {
+        display: inline;
+        &:not(:last-child):after {
+          display: inline;
+          content: ', ';
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .phone-label {
+    min-width: 77px;
+    display: inline-block;
+  }
 }
-textarea.form-control {
-  height: auto;
-  min-height: 130px;
-  resize: none;
-}
-*/

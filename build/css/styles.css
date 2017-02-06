@@ -143,24 +143,85 @@ button:focus, input:focus, select:focus {
   transition: all .3s ease;
 }
 
-/*
-.form-group {
-  min-height: 60px;
-  margin-bottom: 10px;
-  position: relative;
+.form-btn {
+  text-align: right;
+  padding-left: 0;
 }
 
-.form-label {
-  margin-bottom: 10px;
-  font-weight: normal;
-  transition: all .3s ease;
+@media (max-width: 719px) {
+  .form-btn {
+    display: none;
+  }
 }
-textarea.form-control {
-  height: auto;
-  min-height: 130px;
-  resize: none;
+
+.form-group {
+  min-height: 35px;
+  margin-bottom: 5px;
+  overflow: hidden;
 }
-*/
+
+@media (max-width: 719px) {
+  .form-group {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 720px) {
+  .form-group .form-label {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 719px) {
+  .form-group .form-label {
+    padding-top: 5px;
+  }
+  .form-group .form-label.as-link {
+    color: inherit;
+    cursor: default;
+  }
+}
+
+.form-group .form-info {
+  padding-top: 10px;
+}
+
+@media (max-width: 479px) {
+  .form-group .radio {
+    width: 100%;
+    padding-top: 0;
+    display: block;
+  }
+}
+
+.form-group .radio label {
+  line-height: 1;
+}
+
+.form-group .list-data {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (max-width: 719px) {
+  .form-group .list-data li {
+    display: inline;
+  }
+  .form-group .list-data li:not(:last-child):after {
+    display: inline;
+    content: ', ';
+  }
+}
+
+.form-group .list-data li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.form-group .phone-label {
+  min-width: 77px;
+  display: inline-block;
+}
+
 .radio, .checkbox {
   position: relative;
 }
@@ -1831,7 +1892,7 @@ b, strong {
 /* pages */
 .personal-data {
   padding: 35px 0;
-  /* .personal-data-btn */
+  /* .personal-data__map */
   /* .personal-data-active */
 }
 
@@ -1839,19 +1900,19 @@ b, strong {
   .personal-data {
     overflow-x: hidden;
   }
-  .personal-data .personal-data__line:not(.personal-data__map) {
+  .personal-data .form-group:not(.personal-data__map) {
     position: relative;
     padding-right: 75px;
   }
-  .personal-data .label-block {
+  .personal-data .form-label {
     min-width: 300px;
   }
-  .personal-data .info-block {
+  .personal-data .form-info {
     margin-left: 300px;
     float: none;
     padding-right: 40px;
   }
-  .personal-data .personal-data-btn {
+  .personal-data .form-btn {
     position: absolute;
     right: 0;
     top: 0;
@@ -1865,72 +1926,10 @@ b, strong {
   font-size: 20px;
 }
 
-.personal-data__line {
-  min-height: 35px;
-  margin-bottom: 5px;
-  overflow: hidden;
-}
-
-@media (max-width: 719px) {
-  .personal-data__line {
-    padding: 0 10px;
-  }
-}
-
-@media (min-width: 720px) {
-  .personal-data__line .label-block {
-    line-height: 35px;
-  }
-}
-
-@media (max-width: 719px) {
-  .personal-data__line .label-block {
-    padding-top: 5px;
-  }
-  .personal-data__line .label-block.as-link {
-    color: inherit;
-    cursor: default;
-  }
-}
-
-.personal-data__line .info-block {
-  padding-top: 10px;
-}
-
-@media (max-width: 479px) {
-  .personal-data__line .radio {
-    width: 100%;
-    padding-top: 0;
-    display: block;
-  }
-}
-
-.personal-data__line .radio label {
-  line-height: 1;
-}
-
-.personal-data__line .list-data {
-  margin-bottom: 0;
-  list-style: none;
-}
-
-@media (max-width: 719px) {
-  .personal-data__line .list-data li {
-    display: inline;
-  }
-  .personal-data__line .list-data li:not(:last-child):after {
-    display: inline;
-    content: ', ';
-  }
-}
-
-.personal-data__line .list-data li:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.personal-data__line .phone-label {
-  min-width: 77px;
-  display: inline-block;
+.personal-data .form-group:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .personal-data__map {
@@ -1947,17 +1946,6 @@ b, strong {
 
 .personal-data__map .list-data {
   display: block;
-}
-
-.personal-data-btn {
-  text-align: right;
-  padding-left: 0;
-}
-
-@media (max-width: 719px) {
-  .personal-data-btn {
-    display: none;
-  }
 }
 
 .personal-data-active {
@@ -1993,7 +1981,7 @@ b, strong {
   }
 }
 
-.personal-edit .personal-data__group {
+.personal-edit .modal-group {
   margin-bottom: 15px;
 }
 
@@ -2001,7 +1989,7 @@ b, strong {
   padding: 15px 0 1px;
 }
 
-.personal-edit .label-block {
+.personal-edit .form-label {
   margin-bottom: 0;
   cursor: pointer;
 }
@@ -2011,7 +1999,7 @@ b, strong {
 }
 
 @media (max-width: 959px) {
-  .personal-edit .personal-data-btn {
+  .personal-edit .form-btn {
     padding-left: 0;
     padding-right: 0;
   }
@@ -2188,7 +2176,7 @@ footer .clearfix.text-right {
   cursor: pointer;
 }
 
-.modal-reg .form-group {
+.modal-reg .modal-group {
   padding-bottom: 10px;
 }
 

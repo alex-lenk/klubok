@@ -4,13 +4,13 @@
       width: 960px;
     }
   }
-  .personal-data__group {
+  .modal-group {
     margin-bottom: 15px;
   }
   .modal-content {
     padding: 15px 0 1px;
   }
-  .label-block {
+  .form-label {
     margin-bottom: 0;
     cursor: pointer;
   }
@@ -18,7 +18,7 @@
     width: 100%;
   }
   @include to('m') {
-    .personal-data-btn {
+    .form-btn {
       padding-left: 0;
       padding-right: 0;
     }
