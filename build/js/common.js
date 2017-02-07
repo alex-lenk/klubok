@@ -49,11 +49,25 @@ var headerModule = {
     }
 };
 
-$(window).load(function () {
+$(window).on('load', function() {
 
     $('a').on('click', function (e) {
         e.preventDefault();
     });
+
+    $("select").click(
+        function () {
+            var e = $( this );
+            e.addClass("chose-select");
+        }
+    );
+
+    $(".option-hide").click(
+        function () {
+            var e = $( this );
+            e.removeClass("option-hide");
+        }
+    );
 
     $(".loader_inner").fadeOut();
     $(".loader").delay(300).fadeOut("slow");
@@ -74,4 +88,8 @@ $(window).load(function () {
     $(window).on("resize", function () {
         headerModule.resizeHeader();
     });
+});
+
+$("[data-fancybox]").fancybox({
+    // Options will go here
 });

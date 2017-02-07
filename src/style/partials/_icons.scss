@@ -27,17 +27,9 @@
   }
 }
 
-.icon-pencil:before {
-  content: $icon-pencil;
-}
-
-.icon-bin:before {
-  content: $icon-bin;
-}
-
-.icon-bin2 {
+.icon-see {
   &:before {
-    content: $icon-bin2;
+    content: $icon-see;
   }
 }
 
@@ -113,6 +105,12 @@
   }
 }
 
+.icon-pencil {
+  &:before {
+    content: $icon-pencil;
+  }
+}
+
 .icon-camera2 {
   &:before {
     content: $icon-camera2;
@@ -122,6 +120,30 @@
 .icon-location {
   &:before {
     content: $icon-location;
+  }
+}
+
+.icon-bin {
+  &:before {
+    content: $icon-bin;
+  }
+}
+
+.icon-bin2 {
+  &:before {
+    content: $icon-bin2;
+  }
+}
+
+.icon-minus {
+  &:before {
+    content: $icon-minus;
+  }
+}
+
+.icon-cross {
+  &:before {
+    content: $icon-cross;
   }
 }
 

@@ -39,6 +39,7 @@
     font-size: 20px;
     color: #ffffff;
   }
+
   //.btn-ediit
   &-edit {
     background: $color-azure;
@@ -48,6 +49,7 @@
       background-color: #ffffff;
     }
   }
+
   //.btn-uninstall
   &-uninstall {
     background: #ed5901;
@@ -56,5 +58,10 @@
       color: #ed5901;
       background-color: #ffffff;
     }
+  }
+
+  &-auto {
+    width: 100%;
+    display: block;
   }
 }

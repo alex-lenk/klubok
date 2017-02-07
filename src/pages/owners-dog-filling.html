@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- include "templates/head.html" -->
+</head>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <!-- include "templates/header.html" -->
+
+    <form action="#" class="edit-data">
+        <h1 class="text-uppercase">ДАННЫЕ СОБАКИ</h1>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Вы заполняете данные как:</div>
+
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio01"> владелец</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio01"> не моя собака</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Родословная РКФ:</div>
+
+            <ul class="col-double list-unstyled">
+                <li>
+                    <select class="form-control">
+                        <option disabled selected>Введите серию</option>
+                        <option>РКФ (Россия)</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Родословная зарубежная:</div>
+            <ul class="col-double list-unstyled">
+                <li>
+                    <select class="form-control">
+                        <option disabled selected>Введите серию</option>
+                        <option>DKK (Англия)</option>
+                        <option>CMKU (Германия)</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Клеймо:</div>
+            <ul class="col-double list-unstyled">
+                <li>
+                    <input type="text" class="form-control hide-placeholder" placeholder="Введите серию">
+                </li>
+                <li>
+                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input33">ЧИП:</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control hide-placeholder" id="input33" placeholder="Введите данные">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label" for="input34">Стандарт и группа:</label>
+            <div class="col-xs-8">
+                <select class="form-control" id="input34">
+                    <option disabled selected>Выберите стандарт и группу:</option>
+                    <option>FCI - 1 (пастушьи и скотогонные собаки, кроме швейцарских скотогонных собак)</option>
+                    <option>FCI - 2 (пинчеры и шнауцеры, молоссы, горные и швейцарские скотогонные собаки)</option>
+                    <option>FCI - 3 (терьеры)</option>
+                    <option>Другие федерации....</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input35">Порода:</label>
+            <div class="col-xs-8">
+                <select class="form-control" id="input35">
+                    <option disabled selected>Выберите породу</option>
+                    <option>Австралийская овчарка</option>
+                    <option>Австралийский келпи</option>
+                    <option>Австралийский хилерБелая Швейцарская овчарка</option>
+                    <option>Бельгийская овчарка</option>
+                    <option>Бергамская овчарка</option>
+                    <option>Бобтейл</option>
+                    <option>Бордер колли</option>
+                    <option>Бородатый колли</option>
+                    <option>Босерон</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input36">Разновидность породы:</label>
+            <div class="col-xs-8">
+                <select class="form-control" id="input36">
+                    <option disabled selected>Выберите разновидность породы</option>
+                    <option>короткошерстная</option>
+                    <option>длинношерстная</option>
+                    <option>жесткошерстная</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input37">Окрас: <span class="error-text hidden-sm">(не стандарт)</span></label>
+
+            <div class="col-xs-8">
+                <select class="form-control" id="input37">
+                    <option disabled selected>Выберите окрас</option>
+                    <option>Черный</option>
+                    <option>белый</option>
+                    <option>Не стандарт</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Пол:</div>
+
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio02"> Кобель</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio02"> Сука</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Даты жизни:</div>
+            <ul class="col-double list-unstyled">
+                <li>
+                    <select class="form-control">
+                        <option selected>Дата рождения</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="form-control">
+                        <option selected>Дата смерти</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input53">Кличка:</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control hide-placeholder" id="input53" placeholder="Введите кличку">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input54">Питомник / заводская пристака:</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control hide-placeholder" id="input54" placeholder="Введите название">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Уши купрованы:</div>
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio1" checked> Да</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio1"> Нет</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Хвост купрован:</div>
+
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio2" checked> Да</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio2"> Нет</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Пальцы на передних лапах купированы:</div>
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio3" checked> Да</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio3"> Нет</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input38">Генетический тест 1:</label>
+
+            <div class="col-xs-8">
+                <select class="form-control" id="input38">
+                    <option disabled selected>Выберите вариант</option>
+                    <option>Положительный</option>
+                    <option>Отриацательный</option>
+                    <option>Носитель</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input39">Генетический тест 2:</label>
+
+            <div class="col-xs-8">
+                <select class="form-control" id="input39">
+                    <option disabled selected>Выберите вариант</option>
+                    <option>Положительный</option>
+                    <option>Отриацательный</option>
+                    <option>Носитель</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-4 form-label text-bold" for="input40">Описание:</label>
+
+            <div class="col-xs-8">
+                <textarea name="textarea" class="form-control hide-placeholder" id="input40"
+                          placeholder="Введите произвольное описание собаки"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group edit-data-photo">
+            <label class="col-xs-4 form-label text-bold" for="input40">Фотографии:</label>
+
+            <ul class="upload-photo list-unstyled">
+                <li>
+                    <label class="file_upload">
+                        <input type="file">
+                    </label>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u1.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u2.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u3.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u4.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u5.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u6.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+                <li class="option-hide">
+                    <img src="/img/example/u7.jpg" alt="">
+                    <div class="upload-photo-option">
+                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
+                              data-caption="" title="Просмотреть фото"></span>
+                        <span class="icon-cross" title="Удалить фото"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Метрика щенка</div>
+
+            <div class="col-md-7 col-sm-6 col-xs-7 form-info">
+                <span class="as-link text-bold" data-src="/img/example/40d4e63ebeee.jpg" data-fancybox
+                      data-caption="Метрика щенка">посмотреть</span>
+            </div>
+
+            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
+                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addSkan"></button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Родословная РКФ на русском</div>
+
+            <div class="col-md-7 col-sm-6 col-xs-7 form-info">
+                <span class="as-link text-bold" data-src="/img/example/600655591.jpg"
+                      data-fancybox data-caption="Родословная РКФ на русском">посмотреть</span>
+            </div>
+
+            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
+                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addSkan"></button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Родословная РКФ на английском</div>
+
+            <div class="col-md-7 col-sm-6 col-xs-7 form-info">
+                <span class="as-link text-bold" data-src="/img/example/rod-tit.jpg"
+                      data-fancybox data-caption="Родословная РКФ на английском">посмотреть</span>
+            </div>
+
+            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
+                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addSkan"></button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">
+                <span class="as-link" data-toggle="modal" data-target="#addSkan">Добавить новый скан документа</span>
+            </div>
+        </div>
+
+        <div action="#" class="form-group">
+            <div class="col-xs-4 form-label text-bold">Собака / щенок:</div>
+            <ul class="col-double list-unstyled">
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio7"> для разведения</label>
+                </li>
+
+                <li class="form-info radio">
+                    <label><input type="radio" name="radio7"> Для души</label>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="h1">ДАННЫЕ ЗАВОДЧИКА</h2>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">ФИО:</div>
+            <div class="col-md-7 col-sm-6 col-xs-7 form-info">
+                    Петрова Валентина Ивановна
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
+                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addFIO"></button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label text-bold">Домашний адрес:</div>
+            <div class="col-md-7 col-sm-6 col-xs-7 form-info">
+                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
+                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-target="#addOwnersAddress"></button>
+            </div>
+        </div>
+
+        <div class="form-group button-area">
+            <div class="col-md-6 col-sm-4"></div>
+            <div class="col-md-3 col-sm-4">
+                <button type="button" class="btn btn-azure btn-auto">сохранить</button>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <button type="button" class="btn btn-azure btn-auto text-bold" data-dismiss="modal" aria-label="Close">
+                    вернуться назад
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!-- include "templates/footer.html" -->
+
+</body>
+</html>

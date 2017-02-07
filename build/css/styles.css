@@ -84,7 +84,12 @@
   background-color: #ffffff;
 }
 
-button:focus, input:focus, select:focus {
+.btn-auto {
+  width: 100%;
+  display: block;
+}
+
+button:focus, input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
@@ -137,10 +142,14 @@ button:focus, input:focus, select:focus {
   height: 35px;
   padding: 2px 0 2px 10px;
   border: 1px solid #00adbf;
-  color: #8b8b8b;
   font-size: 14px;
+  display: block;
   background-color: #ffffff;
   transition: all .3s ease;
+}
+
+.form-control:not(select) {
+  color: #000000;
 }
 
 .form-btn {
@@ -166,6 +175,10 @@ button:focus, input:focus, select:focus {
   }
 }
 
+.form-group .form-label {
+  margin-bottom: 0;
+}
+
 @media (min-width: 720px) {
   .form-group .form-label {
     line-height: 35px;
@@ -184,6 +197,10 @@ button:focus, input:focus, select:focus {
 
 .form-group .form-info {
   padding-top: 10px;
+}
+
+.form-group label.form-info {
+  margin-bottom: 0;
 }
 
 @media (max-width: 479px) {
@@ -222,6 +239,14 @@ button:focus, input:focus, select:focus {
   display: inline-block;
 }
 
+select {
+  color: #8b8b8b;
+}
+
+.chose-select {
+  color: #000000;
+}
+
 .radio, .checkbox {
   position: relative;
 }
@@ -247,11 +272,6 @@ button:focus, input:focus, select:focus {
   position: absolute;
   margin-top: 4px \9;
   margin-left: -20px;
-}
-
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
 }
 
 .radio-inline,
@@ -1264,7 +1284,7 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .modal-content {
@@ -1675,6 +1695,13 @@ b, strong {
   font-weight: 700;
 }
 
+h1, .h1 {
+  padding: 0 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1813,16 +1840,8 @@ b, strong {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-pencil:before {
-  content: "";
-}
-
-.icon-bin:before {
-  content: "";
-}
-
-.icon-bin2:before {
-  content: "";
+.icon-see:before {
+  content: "";
 }
 
 .icon-friends:before {
@@ -1873,12 +1892,32 @@ b, strong {
   content: "";
 }
 
+.icon-pencil:before {
+  content: "";
+}
+
 .icon-camera2:before {
   content: "";
 }
 
 .icon-location:before {
   content: "";
+}
+
+.icon-bin:before {
+  content: "";
+}
+
+.icon-bin2:before {
+  content: "";
+}
+
+.icon-minus:before {
+  content: "";
+}
+
+.icon-cross:before {
+  content: "";
 }
 
 .icon-enter:before {
@@ -1917,13 +1956,6 @@ b, strong {
     right: 0;
     top: 0;
   }
-}
-
-.personal-data__title {
-  padding: 0 10px;
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 .personal-data .form-group:after {
@@ -3161,6 +3193,221 @@ footer span {
   .col-0-100-100 {
     width: auto;
   }
+}
+
+.edit-data {
+  padding-bottom: 10px;
+}
+
+.edit-data .col-double {
+  width: 66.66666667%;
+  float: left;
+}
+
+@media (max-width: 719px) {
+  .edit-data .col-double {
+    width: 100%;
+    float: left;
+    margin: 0 -10px;
+  }
+}
+
+.edit-data .col-double li {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  float: left;
+  margin-left: 0;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .edit-data {
+    overflow-x: hidden;
+  }
+  .edit-data .col-double {
+    padding-left: 300px;
+    width: 100%;
+    float: none;
+  }
+  .edit-data .col-double:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  .edit-data .form-label {
+    min-width: 300px;
+    width: 300px;
+  }
+  .edit-data .col-xs-8,
+  .edit-data .form-info {
+    margin-left: 300px;
+    float: none;
+    width: auto;
+  }
+  .edit-data .form-info {
+    padding-right: 70px;
+  }
+  .edit-data .form-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.edit-data-photo {
+  margin-bottom: 0;
+  overflow: visible;
+}
+
+.edit-data-photo .form-label {
+  padding-top: 4px;
+  line-height: 1;
+  margin-bottom: 0;
+  min-height: 51px;
+}
+
+.edit-data-photo .upload-photo:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.edit-data-photo .upload-photo li {
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  float: left;
+  position: relative;
+}
+
+.edit-data-photo .upload-photo li:first-child .file_upload {
+  position: relative;
+}
+
+.edit-data-photo .upload-photo li:first-child .file_upload:before {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  content: '+';
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 11px;
+  height: 11px;
+  line-height: .2;
+}
+
+.edit-data-photo .upload-photo-option {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.edit-data-photo .upload-photo-option .icon-cross {
+  cursor: pointer;
+}
+
+.edit-data-photo .upload-photo-option .icon-cross:before {
+  padding: 0 0 4px 4px;
+  position: absolute;
+  right: 4px;
+  top: -4px;
+  color: #da0861;
+  transition: all .3s ease;
+}
+
+.edit-data-photo .upload-photo-option .icon-cross:hover:before {
+  color: #ed5901;
+}
+
+.edit-data-photo .upload-photo-option .icon-see {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #00adbf;
+  transition: all .3s ease;
+}
+
+.edit-data-photo .upload-photo-option .icon-see:hover {
+  color: #6fd2db;
+}
+
+.edit-data-photo .upload-photo .option-hide {
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.edit-data-photo .upload-photo .option-hide .upload-photo-option {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.edit-data .form-group {
+  position: relative;
+}
+
+.edit-data .form-group:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.edit-data textarea.form-control {
+  height: 69px;
+  resize: none;
+  overflow: hidden;
+}
+
+.edit-data textarea.form-control::-webkit-input-placeholder {
+  padding-top: 22px;
+}
+
+.edit-data .button-area {
+  padding-top: 10px;
+}
+
+.file_upload {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 6;
+  cursor: pointer;
+  border: 2px dashed;
+  color: #00adbf;
+  transition: all .3s ease;
+}
+
+.file_upload:hover {
+  color: #6fd2db;
+}
+
+.file_upload input[type=file] {
+  position: absolute;
+  top: 0;
+  opacity: 0;
 }
 
 body {
