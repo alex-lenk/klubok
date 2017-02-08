@@ -1,5 +1,5 @@
 .personal-data {
-  padding: 35px 0;
+  padding: 31px 0 10px;
   @include at('m') {
     overflow-x: hidden;
     .form-group:not(.personal-data__map) {
@@ -19,10 +19,6 @@
       right: 0;
       top: 0;
     }
-  }
-
-  .form-group {
-    @include clearfix;
   }
 
   /* .personal-data__map */
@@ -47,8 +43,6 @@
     clear: left;
     @include to('s') {
       width: 100%;
-      padding-left: 0;
-      padding-right: 0;
       margin-left: 0;
     }
     @include at('m') {

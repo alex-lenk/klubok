@@ -1,38 +1,50 @@
 .edit-data {
-  padding-bottom: 10px;
-
+  padding: 31px 0 10px;
+.h1 {
+  padding-top: 10px;
+}
   .col-double {
-    width: 66.66666667%;
-    float: left;
-    @include to('s') {
-      width: 100%;
+    @include from('m') {
+      width: 66.66666667%;
       float: left;
-      margin: 0 -10px;
+    }
+    @include at('m') {
+      padding-left: 300px;
+      width: 100%;
+      float: none;
+      @include clearfix;
+    }
+    @include to('xs') {
+      width: 100%;
+      float: none;
+      padding: 0 10px;
+      .radio {
+        display: inline-block;
+        margin-right: 15px;
+        width: auto;
+      }
     }
     li {
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 50%;
-      float: left;
       margin-left: 0;
+      margin-bottom: 5px;
+      @include from('s') {
+        width: 50%;
+        margin-bottom: 0;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 
   @include at('m') {
     overflow-x: hidden;
 
-    .col-double {
-      padding-left: 300px;
-      width: 100%;
-      float: none;
-      @include clearfix;
-    }
-
     .form-label {
       min-width: 300px;
       width: 300px;
     }
-    .col-xs-8,
+    .col-sm-8,
     .form-info {
       margin-left: 300px;
       float: none;
@@ -52,7 +64,6 @@
     margin-bottom: 0;
     overflow: visible;
     .form-label {
-      padding-top: 4px;
       line-height: 1;
       margin-bottom: 0;
       min-height: 51px;
@@ -69,10 +80,7 @@
         &:first-child .file_upload {
           position: relative;
           &:before {
-            font-size: 20px;
-            font-weight: 700;
             position: absolute;
-            content: '+';
             z-index: 5;
             top: 0;
             right: 0;
@@ -81,7 +89,8 @@
             margin: auto;
             width: 11px;
             height: 11px;
-            line-height: .2;
+            transform: rotate(45deg);
+            font-size: 11px;
           }
         }
       }
@@ -138,22 +147,29 @@
     }
   }
 
-  .form-group {
-    position: relative;
-    @include clearfix;
-  }
-
   textarea.form-control {
     height: 69px;
     resize: none;
     overflow: hidden;
-    &::-webkit-input-placeholder {
-      padding-top: 22px
+    @include from('m') {
+      &::-webkit-input-placeholder {
+        padding-top: 22px
+      }
+      &:-ms-input-placeholder {
+        padding-top: 22px;
+      }
     }
   }
 
   .button-area {
     padding-top: 10px;
+    @include to('s') {
+      padding-left: 0;
+      padding-right: 0;
+      .btn {
+        margin-bottom: 5px;
+      }
+    }
   }
 }
 
