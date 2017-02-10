@@ -1,6 +1,6 @@
 @echo off
 
-call :start > list.html
+call :start > index.html
 
 :start
 echo ^<ol^>
