@@ -68,28 +68,7 @@ button:focus, input:focus, select:focus, textarea:focus {
   margin-bottom: 5px;
   overflow: hidden;
   @include to('xs') {
-    background-color: #f8f8f8;
     padding-top: 5px;
-  }
-  .form-label {
-    margin-bottom: 0;
-    line-height: 1;
-    @include from('m') {
-      padding-top: 10px;
-    }
-    @include to('s') {
-      padding-top: 5px;
-      margin-bottom: 5px;
-      &.as-link {
-        color: inherit;
-        cursor: default;
-      }
-    }
-    @include at('s') {
-      &:not(.text-line-1) {
-        line-height: 35px;
-      }
-    }
   }
   .form-info {
     &:not(.radio) {
@@ -136,9 +115,35 @@ button:focus, input:focus, select:focus, textarea:focus {
   }
 }
 
+.form-label {
+  margin-bottom: 0;
+  line-height: 1;
+  @include from('m') {
+    padding-top: 10px;
+  }
+  @include to('s') {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    &.as-link {
+      color: inherit;
+      cursor: default;
+    }
+  }
+  @include at('s') {
+    &:not(.text-line-1) {
+      line-height: 35px;
+    }
+  }
+}
+
 .form-edit:not(.button-area) {
   @include to('s') {
     padding-right: 75px;
+  }
+  @include to('xs') {
+    .col-xs-7 {
+      width: 100%;
+    }
   }
 }
 

@@ -1,17 +1,12 @@
 .edit-data {
   padding: 31px 0 10px;
-.h1 {
-  padding-top: 10px;
-}
+  .h1 {
+    padding-top: 1px;
+  }
   .col-double {
     @include from('m') {
-      width: 66.66666667%;
-      float: left;
-    }
-    @include at('m') {
       padding-left: 300px;
       width: 100%;
-      float: none;
       @include clearfix;
     }
     @include to('xs') {
@@ -26,7 +21,6 @@
     }
     li {
       margin-left: 0;
-      margin-bottom: 5px;
       @include from('s') {
         width: 50%;
         margin-bottom: 0;
@@ -34,10 +28,15 @@
         padding-left: 10px;
         padding-right: 10px;
       }
+      @include to('xs') {
+        &:not(:last-child):not(.radio) {
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 
-  @include at('m') {
+  @include from('m') {
     overflow-x: hidden;
 
     .form-label {
@@ -51,7 +50,7 @@
       width: auto;
     }
     .form-info {
-      padding-right: 70px;
+      padding-right: 75px;
     }
     .form-btn {
       position: absolute;
@@ -66,7 +65,13 @@
     .form-label {
       line-height: 1;
       margin-bottom: 0;
-      min-height: 51px;
+      @include from('m') {
+        min-height: 51px;
+      }
+      @include between('xs', 's') {
+        margin-bottom: 5px;
+        padding-top: 0px;
+      }
     }
     .upload-photo {
       @include clearfix;
@@ -163,11 +168,38 @@
 
   .button-area {
     padding-top: 10px;
+    text-align: center;
     @include to('s') {
       padding-left: 0;
       padding-right: 0;
       .btn {
         margin-bottom: 5px;
+      }
+    }
+    @include at('s') {
+      display: flex;
+      justify-content: flex-end;
+      .col-sm-4 {
+        width: 100%;
+        max-width: 238px;
+      }
+      .btn {
+        display: inline-block;
+      }
+      .col-xs-12 {
+        display: none
+      }
+    }
+  }
+
+  .form-group {
+    @include to('xs') {
+      overflow: visible;
+    }
+    .radio {
+      @include between('xs', 's') {
+        padding-top: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -192,5 +224,32 @@
     position: absolute;
     top: 0;
     opacity: 0
+  }
+}
+
+.form-edit {
+  @include at('s') {
+    .form-label {
+      padding-top: 10px;
+    }
+    &.form-group .form-info {
+      padding-top: 0;
+    }
+  }
+  @include at('xs') {
+    .form-label {
+      padding-top: 0;
+    }
+  }
+  @include between('xs', 's') {
+    .form-label {
+      margin-bottom: 0;
+    }
+  }
+  @include to('xs') {
+    &.form-group .form-info {
+      width: 100%;
+      padding-top: 0;
+    }
   }
 }

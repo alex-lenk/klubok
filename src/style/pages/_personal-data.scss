@@ -53,6 +53,8 @@
   }
 
   .radio {
-    white-space: nowrap;
+    @include from('s') {
+      white-space: nowrap;
+    }
   }
 }

@@ -3,3 +3,11 @@
     margin-bottom: 5px;
   }
 }
+
+.modal {
+  @include at('s') {
+    .form-group .form-label {
+      padding-top: 0;
+    }
+  }
+}
