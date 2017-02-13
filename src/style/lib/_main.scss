@@ -6,34 +6,6 @@ body, html {
   min-height: 100vh;
 }
 
-.header-nav {
-  height: 70px;
-}
-
-.header-nav-slider {
-  display: inline-block;
-}
-
-.header-nav-slider > ul {
-  padding: 0 10px;
-}
-
-.header-nav .active-nav {
-  background: #cae3e8;
-  background: -webkit-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
-  background: -o-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
-  background: -moz-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
-  background: linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
-}
-
-.header-nav .active-nav a {
-  color: #000;
-}
-
-.header-nav .menu-item:hover a {
-  color: #000;
-}
-
 .ava-mini {
   margin: 5px 10px;
   border-radius: 50%;

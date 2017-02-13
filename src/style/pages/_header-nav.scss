@@ -3,37 +3,41 @@
   @include from('m') {
     height: 70px;
   }
-  @media (max-width: 810px) {
+  &-wrap {
+    display: inline-block;
+  }
+  &-list {
+    padding: 0 10px;
+    position: relative;
+    display: table;
     width: 100%;
-    background: #ebebeb;
-    clear: both;
-  }
-  .owl-next:after,
-  .owl-prev:after {
-    color: #fff;
-    background: #1497a7
-  }
-  &-slider {
-    display: inline-block;
-    @include to('s') {
-      display: block;
+    li {
+      display: table-cell;
+      text-align: center;
+      white-space: nowrap;
+      &:hover a {
+        color: #000;
+      }
     }
-  }
-  a {
-    font-size: 14px;
-    line-height: 18px;
-    padding: 25px 10px;
-    margin: 1px 0;
-    display: inline-block;
-    color: #1497a7;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-  }
-
-  .owl-next:before,
-  .owl-prev:before {
-    border-top-color: #1497a7;
-    border-right-color: #1497a7
+    .current {
+      background: #cae3e8;
+      background: -webkit-linear-gradient(#b9e9ea,rgba(0,0,0,0));
+      background: -o-linear-gradient(#b9e9ea,rgba(0,0,0,0));
+      background: -moz-linear-gradient(#b9e9ea,rgba(0,0,0,0));
+      background: linear-gradient(#b9e9ea,rgba(0,0,0,0));
+      a {
+        color: #000000;
+      }
+    }
+    a {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      padding: 25px 10px;
+      margin: 1px 0;
+      display: inline-block;
+      color: #1497a7;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 }

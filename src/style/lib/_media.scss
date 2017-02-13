@@ -2,35 +2,6 @@
   .breadcrumbs {
     display: none;
   }
-  .header-nav .header-nav-slider {
-    display: block;
-  }
-  .header-nav-slider > ul {
-    padding: 0 20px;
-  }
-  .header-nav {
-    display: block;
-    height: 50px;
-    float: none;
-    overflow: hidden;
-    width: 100%;
-    background: #ebebeb;
-    a {
-      height: 48px;
-      line-height: 48px;
-      padding: 0 10px;
-      color: #1497a7;
-      font-weight: 700;
-      text-transform: uppercase
-    }
-  }
-  .header-nav .active-nav {
-    background: #f5f3f4;
-    color: #000;
-  }
-  .header-nav .active-nav a {
-    color: #000;
-  }
   .name {
     margin-top: -3px;
     display: block;
@@ -55,29 +26,6 @@
   .breadcrumbs {
     display: none;
   }
-
-  .header-nav .header-nav-slider {
-    display: block;
-  }
-  .header-nav-slider > ul {
-    padding: 0 20px;
-  }
-
-  .header-nav {
-    display: block;
-    height: 50px;
-    float: left;
-    width: 100%;
-    background: #ebebeb;
-  }
-
-  .header-nav .active-nav {
-    background: #f5f3f4;
-    color: #000;
-  }
-  .header-nav .active-nav a {
-    color: #000;
-  }
 }
 
 .col-66-60-45,
@@ -87,11 +35,13 @@
 .col-0-100-100 {
   float: left;
 }
+
 @media only screen and (max-width: 619px) {
   .col-60-45-100 {
     padding-top: 10px;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .col-66-60-45 {
     float: none;

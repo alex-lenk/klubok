@@ -16,7 +16,7 @@
 @import "pages/header-nav";
 @import "pages/modal-reg";
 @import "pages/login";
-@import "pages/header-bottom";
+@import "pages/profile-menu";
 @import "pages/custom-header";
 @import "pages/loader";
 @import "pages/logo";
@@ -57,16 +57,8 @@ body {
   background: #ffffff;
 }
 
-.owl-carousel div.menu-item {
-  display: table-cell;
-  text-align: center;
+.tooltip {
   white-space: nowrap;
-  vertical-align: top;
-}
-
-.owl-carousel {
-  display: table;
-  width: 100%;
 }
 
 .edit-data, .personal-data {
