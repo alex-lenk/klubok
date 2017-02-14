@@ -5,6 +5,7 @@
   }
   &-wrap {
     display: inline-block;
+    position: relative;
   }
   &-list {
     padding: 0 10px;
@@ -21,10 +22,10 @@
     }
     .current {
       background: #cae3e8;
-      background: -webkit-linear-gradient(#b9e9ea,rgba(0,0,0,0));
-      background: -o-linear-gradient(#b9e9ea,rgba(0,0,0,0));
-      background: -moz-linear-gradient(#b9e9ea,rgba(0,0,0,0));
-      background: linear-gradient(#b9e9ea,rgba(0,0,0,0));
+      background: -webkit-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+      background: -o-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+      background: -moz-linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
+      background: linear-gradient(#b9e9ea, rgba(0, 0, 0, 0));
       a {
         color: #000000;
       }
@@ -38,6 +39,24 @@
       color: #1497a7;
       font-weight: 600;
       text-transform: uppercase;
+    }
+  }
+  .nav-arrows li {
+    &:before {
+      bottom: 9px;
+    }
+    &[data-count] {
+      &:not([data-count='']):before {
+        color: #1497a7;
+      }
+      &:after {
+        bottom: 18px;
+        color: #ffffff;
+        background: #1497a7;
+      }
+      &:hover:before {
+        color: #6fd2db;
+      }
     }
   }
 }

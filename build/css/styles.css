@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("/fonts/icomoon.eot?m1k7rv");
-  src: url("/fonts/icomoon.eot?m1k7rv#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?m1k7rv") format("truetype"), url("/fonts/icomoon.woff?m1k7rv") format("woff"), url("/fonts/icomoon.svg?m1k7rv#icomoon") format("svg");
+  src: url("/fonts/icomoon.eot?y5m7y2");
+  src: url("/fonts/icomoon.eot?y5m7y2#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?y5m7y2") format("truetype"), url("/fonts/icomoon.woff?y5m7y2") format("woff"), url("/fonts/icomoon.svg?y5m7y2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1933,6 +1933,30 @@ h1, .h1 {
   content: "";
 }
 
+.icon-place-localizer:before {
+  content: "";
+}
+
+.icon-prev2:before {
+  content: "";
+}
+
+.icon-down:before {
+  content: "";
+}
+
+.icon-prev:before {
+  content: "";
+}
+
+.icon-next:before {
+  content: "";
+}
+
+.icon-top:before {
+  content: "";
+}
+
 /* pages */
 .personal-data {
   padding: 31px 0 10px;
@@ -2154,6 +2178,7 @@ footer .clearfix.text-right {
 
 .header-nav-wrap {
   display: inline-block;
+  position: relative;
 }
 
 .header-nav-list {
@@ -2191,6 +2216,24 @@ footer .clearfix.text-right {
   color: #1497a7;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.header-nav .nav-arrows li:before {
+  bottom: 9px;
+}
+
+.header-nav .nav-arrows li[data-count]:not([data-count='']):before {
+  color: #1497a7;
+}
+
+.header-nav .nav-arrows li[data-count]:after {
+  bottom: 18px;
+  color: #ffffff;
+  background: #1497a7;
+}
+
+.header-nav .nav-arrows li[data-count]:hover:before {
+  color: #6fd2db;
 }
 
 .modal-reg h2 {
@@ -2351,6 +2394,7 @@ header {
   padding-top: 24px;
   color: #fff;
   overflow: hidden;
+  position: relative;
   background: #008290;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwODI5MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDk3YTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: linear-gradient(to bottom, #008290 0%, #0097a7 100%);
@@ -2376,8 +2420,8 @@ header {
 }
 
 .profile-menu-list li span {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 12px;
+  line-height: 15px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 5px;
@@ -2401,6 +2445,28 @@ header {
 .profile-menu-list a {
   color: #ffffff;
   font-size: 20px;
+}
+
+.profile-menu .nav-arrows li:before {
+  bottom: 16px;
+}
+
+.profile-menu .nav-arrows li[data-count] {
+  cursor: pointer;
+}
+
+.profile-menu .nav-arrows li[data-count]:not([data-count='']):before {
+  color: #ffffff;
+}
+
+.profile-menu .nav-arrows li[data-count]:after {
+  bottom: 24px;
+  color: #1497a7;
+  background: #fff;
+}
+
+.profile-menu .nav-arrows li[data-count]:hover:before {
+  color: #6fd2db;
 }
 
 @media only screen and (max-width: 810px) {
@@ -3371,6 +3437,63 @@ footer span {
   .modal .form-group .form-label {
     padding-top: 0;
   }
+}
+
+.nav-arrows li {
+  width: 50px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.nav-arrows li:before {
+  font-size: 30px;
+  position: absolute;
+  color: #6fd2db;
+  transition: all .2s ease-in;
+}
+
+.nav-arrows li[data-count]:not([data-count='']) {
+  cursor: pointer;
+}
+
+.nav-arrows li[data-count]:not([data-count='']):after {
+  content: attr(data-count);
+  position: absolute;
+  width: 15px;
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 3px;
+}
+
+.nav-arrows li[data-count]:hover:before {
+  color: #6fd2db;
+}
+
+.nav-arrows .icon-prev {
+  left: 0;
+}
+
+.nav-arrows .icon-prev:before {
+  left: 0;
+}
+
+.nav-arrows .icon-prev:after {
+  left: 25px;
+}
+
+.nav-arrows .icon-next {
+  right: 0;
+}
+
+.nav-arrows .icon-next:before {
+  right: 0;
+}
+
+.nav-arrows .icon-next:after {
+  right: 25px;
 }
 
 body {

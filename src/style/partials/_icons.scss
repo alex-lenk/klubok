@@ -158,3 +158,39 @@
     content: $icon-exit;
   }
 }
+
+.icon-place-localizer {
+  &:before {
+    content: $icon-place-localizer;
+  }
+}
+
+.icon-prev2 {
+  &:before {
+    content: $icon-prev2;
+  }
+}
+
+.icon-down {
+  &:before {
+    content: $icon-down;
+  }
+}
+
+.icon-prev {
+  &:before {
+    content: $icon-prev;
+  }
+}
+
+.icon-next {
+  &:before {
+    content: $icon-next;
+  }
+}
+
+.icon-top {
+  &:before {
+    content: $icon-top;
+  }
+}

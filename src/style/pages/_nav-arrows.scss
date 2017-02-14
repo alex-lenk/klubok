@@ -1,0 +1,48 @@
+.nav-arrows {
+  li {
+    width: 50px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    &:before {
+      font-size: 30px;
+      position: absolute;
+      color: #6fd2db;
+      transition: all .2s ease-in;
+    }
+    &[data-count]:not([data-count='']) {
+      cursor: pointer;
+      &:after {
+        content: attr(data-count);
+        position: absolute;
+        width: 15px;
+        font-size: 12px;
+        height: 14px;
+        line-height: 14px;
+        border-radius: 3px;
+      }
+    }
+    &[data-count]:hover:before {
+      color: #6fd2db;
+    }
+  }
+  .icon-prev {
+    left: 0;
+    &:before {
+      left: 0;
+    }
+    &:after {
+      left: 25px;
+    }
+  }
+  .icon-next {
+    right: 0;
+    &:before {
+      right: 0;
+    }
+    &:after {
+      right: 25px;
+    }
+  }
+}
