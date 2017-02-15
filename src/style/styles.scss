@@ -6,6 +6,7 @@
 @import "partials/form";
 @import 'partials/radio-checkbox';
 @import "lib/bootstrap";
+@import "lib/bootstrap4";
 @import "partials/common";
 @import "partials/icons";
 /* pages */
@@ -28,7 +29,6 @@
 
 body {
   padding-top: 20px;
-  line-height: 1.42857143;
   &:before {
     content: '';
     position: absolute;

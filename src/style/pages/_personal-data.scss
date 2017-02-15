@@ -21,6 +21,12 @@
     }
   }
 
+  @include to('s') {
+    .form-info {
+      line-height: 1.4;
+    }
+  }
+
   /* .personal-data__map */
   &__map {
     position: relative;

@@ -1,45 +1,46 @@
 <!-- Modal editFIO -->
 <div class="modal fade personal-edit" id="editFIO" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <form action="#" class="container modal-content">
+        <form action="#" class="modal-content">
             <div class="modal-group">
-                <div class="form-group">
-                    <div class="col-md-1 col-sm-2 form-label text-bold">ФИО:</div>
-                    <div class="col-md-6 col-sm-5 form-info">
-                        Генералова Елена <span class="error-text">(отчество не заполнено)</span> (17.11.1997 г. -
-                        н.в.)
+                <div class="form-group form-edit">
+                    <div class="form-text">
+                        <div class="form-label text-bold">ФИО:</div>
+                        <div class="form-info">
+                            Генералова Елена <span class="error-text">(отчество не заполнено)</span> (17.11.1997 г. -
+                            н.в.)
+                        </div>
                     </div>
-                    <div class="col-sm-1 form-btn">
+                    <div class="form-btn text-right">
                         <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-                    <div class="col-sm-1">
                         <button class="btn btn-uninstall icon-bin"></button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-1 col-sm-2 form-label text-bold">ФИО:</div>
-                    <div class="col-md-6 col-sm-5 form-info">
-                        Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)
+
+                <div class="form-group form-edit">
+                    <div class="form-text">
+                        <div class="form-label text-bold">ФИО:</div>
+                        <div class="form-info">
+                            Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)
+                        </div>
                     </div>
-                    <div class="col-sm-1 form-btn">
+                    <div class="form-btn text-right">
                         <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-                    <div class="col-sm-1">
                         <button class="btn btn-uninstall icon-bin"></button>
                     </div>
                 </div>
             </div>
 
             <div class="modal-group">
-                <div class="form-group">
-                    <div class="col-sm-7 form-info">
-                        <span class="text-bold">Пользователи портала упоминают Вас как:</span>
-                        <span class="error-text">Петрова Мария Ивановна</span>
+                <div class="form-group form-edit">
+                    <div class="form-text">
+                        <div class="form-info">
+                            <span class="text-bold">Пользователи портала упоминают Вас как:</span>
+                            <span class="error-text">Петрова Мария Ивановна</span>
+                        </div>
                     </div>
-                    <div class="col-sm-1 form-btn">
+                    <div class="form-btn text-right">
                         <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-                    <div class="col-sm-1">
                         <button class="btn btn-uninstall icon-bin"></button>
                     </div>
                 </div>
@@ -89,13 +90,11 @@
 
             <div class="modal-group modal-footer">
                 <div class="form-group">
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure">добавить еще фото</button>
-                    </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3 col-xs-6">
                         <button class="btn btn-azure">сохранить</button>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-xs-6">
                         <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
                             закрыть окно
                         </button>
@@ -112,18 +111,18 @@
         <form action="#" class="container modal-content">
             <div class="modal-group modal-footer">
                 <div class="form-group">
-                    <div class="col-sm-1 form-label text-bold">Пол</div>
+                    <div class="col-sm-1 form-label text-bold text-line-1">Пол</div>
 
                     <div class="col-sm-2 form-info radio">
                         <label><input type="radio" name="radio"> муж.</label>
                         <label><input type="radio" name="radio"> жен.</label>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-xs-6">
                         <button class="btn btn-azure">сохранить</button>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-xs-6">
                         <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
                             закрыть окно
                         </button>
@@ -137,13 +136,12 @@
 <!-- Modal dateBirth -->
 <div class="modal fade personal-edit" id="dateBirth" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-
-        <form action="#" class="container modal-content">
+        <form action="#" class="modal-content">
             <div class="modal-group">
                 <div class="form-group modal-footer">
-                    <label class="col-md-1 col-sm-2 form-info text-bold" for="input6">Рождение</label>
-                    <div class="col-md-2 col-sm-3">
-                        <select class="form-control" id="input6">
+                    <div class="col-md-3 col-sm-3 form-info text-bold">Рождение</div>
+                    <div class="col-md-3 col-sm-3">
+                        <select class="form-control">
                             <option>выберите дату</option>
                             <option>2</option>
                             <option>3</option>
@@ -151,10 +149,10 @@
                             <option>5</option>
                         </select>
                     </div>
-                    <div class="col-md-3 col-sm-2">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
                         <button class="btn btn-azure">сохранить</button>
                     </div>
-                    <div class="col-md-3 col-sm-2">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
                         <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
                             закрыть окно
                         </button>
@@ -168,32 +166,32 @@
 <!-- Modal addAddress -->
 <div class="modal fade personal-edit" id="addAddress" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-
         <form action="#" class="container modal-content">
             <div class="modal-group">
-                <div class="form-group">
-                    <div class="col-md-1 col-sm-2 form-label text-bold">Адрес:</div>
-                    <div class="col-md-6 col-sm-5 form-info">
-                        125004, Россия, г. Москва, Столешников переулок, 6с1, кв 19
-                        (12.12.1997 г. - 09.09.20016 г.)
+                <div class="form-group form-edit">
+                    <div class="form-text">
+                        <div class="form-label text-bold">Адрес:</div>
+                        <div class="form-info">
+                            125004, Россия, г. Москва, Столешников переулок, 6с1, кв 19
+                            (12.12.1997 г. - 09.09.20016 г.)
+                        </div>
                     </div>
-                    <div class="col-sm-1 form-btn">
+                    <div class="form-btn text-right">
                         <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-                    <div class="col-sm-1">
                         <button class="btn btn-uninstall icon-bin"></button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-1 col-sm-2 form-label text-bold">Адрес:</div>
-                    <div class="col-md-6 col-sm-5 form-info">
-                        663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
-                        кв. 196 (01.01.1990 г. - 31.12.1996 г.)
+
+                <div class="form-group form-edit">
+                    <div class="form-text">
+                        <div class="form-label text-bold">Адрес:</div>
+                        <div class="form-info">
+                            663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
+                            кв. 196 (01.01.1990 г. - 31.12.1996 г.)
+                        </div>
                     </div>
-                    <div class="col-sm-1 form-btn">
+                    <div class="form-btn text-right">
                         <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-                    <div class="col-sm-1">
                         <button class="btn btn-uninstall icon-bin"></button>
                     </div>
                 </div>

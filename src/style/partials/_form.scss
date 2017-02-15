@@ -67,8 +67,8 @@ button:focus, input:focus, select:focus, textarea:focus {
   min-height: 35px;
   margin-bottom: 5px;
   overflow: hidden;
-  outline: 1px solid red;
-  outline-offset: -1px;
+  //outline: 1px solid red;
+  //outline-offset: -1px;
   @include to('xs') {
     padding-top: 5px;
   }
@@ -126,10 +126,6 @@ button:focus, input:focus, select:focus, textarea:focus {
   @include to('s') {
     padding-top: 5px;
     margin-bottom: 5px;
-    &.as-link {
-      color: inherit;
-      cursor: default;
-    }
   }
   @include at('s') {
     &:not(.text-line-1) {
