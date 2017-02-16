@@ -25,4 +25,4 @@ var s=this,i=s.canvasWidth,a=s.canvasHeight;return n>i?(t=t>0?0:t,t=t<i-n?i-n:t)
 
 // = lib/jquery.ba-throttle-debounce.min.js
 
-// = lib/menu.js
+// = lib/menu.jquery.js

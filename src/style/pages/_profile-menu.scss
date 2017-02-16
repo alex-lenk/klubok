@@ -16,7 +16,7 @@
     height: 90px;
     display: table;
     position: relative;
-    padding: 0 10px;
+    padding: 0 50px;
     li {
       display: table-cell;
       text-align: center;
@@ -98,4 +98,8 @@
       color: #000;
     }
   }
+}
+
+.nav-arrows .icon-prev.disabled:hover, .nav-arrows .icon-next.disabled:hover {
+  cursor: not-allowed;
 }

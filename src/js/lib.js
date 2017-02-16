@@ -4,4 +4,4 @@
 
 // = lib/jquery.ba-throttle-debounce.min.js
 
-// = lib/menu.js
+// = lib/menu.jquery.js

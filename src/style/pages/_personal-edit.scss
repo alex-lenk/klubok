@@ -1,9 +1,4 @@
 .personal-edit {
-  /*  .container {
-      @include from('m') {
-        width: 960px;
-      }
-    }*/
   .modal-group {
     margin-bottom: 15px;
     @include clearfix;
@@ -11,20 +6,9 @@
   .modal-content {
     padding: 15px 0 1px;
   }
-  /*  .form-label {
-      margin-bottom: 0;
-      cursor: pointer;
-    }*/
   .btn-azure {
     width: 100%;
   }
-  /*  @include at('m') {
-      .form-btn {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }*/
-
   .form-edit {
     padding-right: 10px;
     padding-left: 10px;
