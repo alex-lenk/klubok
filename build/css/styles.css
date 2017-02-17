@@ -3105,8 +3105,15 @@ h1, .h1 {
 /* pages */
 .personal-data {
   padding: 31px 0 10px;
+  line-height: 1.4;
   /* .personal-data__map */
   /* .personal-data-active */
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .personal-data .form-label {
+    width: 300px;
+  }
 }
 
 @media (min-width: 720px) and (max-width: 959px) {
@@ -3116,9 +3123,6 @@ h1, .h1 {
   .personal-data .form-group:not(.personal-data__map) {
     position: relative;
     padding-right: 75px;
-  }
-  .personal-data .form-label {
-    min-width: 300px;
   }
   .personal-data .form-info {
     margin-left: 300px;
@@ -3158,13 +3162,10 @@ h1, .h1 {
   padding-top: 5px;
   padding-left: 10px;
   clear: left;
-}
-
-@media (max-width: 719px) {
-  .personal-data-active {
-    width: 100%;
-    margin-left: 0;
-  }
+  /*    @include to('s') {
+          width: 100%;
+          margin-left: 0;
+        }*/
 }
 
 @media (min-width: 720px) and (max-width: 959px) {
@@ -3178,6 +3179,21 @@ h1, .h1 {
 @media (min-width: 480px) {
   .personal-data .radio {
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data {
+    /*    .form-label {
+      margin-bottom: 0;
+    }*/
+  }
+  .personal-data .form-group .radio {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .personal-data .form-group .form-info:not(.radio) {
+    padding-top: 0;
   }
 }
 
@@ -3399,6 +3415,12 @@ footer .clearfix.text-right {
 .header-nav-wrap {
   display: inline-block;
   position: relative;
+}
+
+@media (min-width: 720px) {
+  .header-nav-wrap {
+    width: auto !important;
+  }
 }
 
 .header-nav-list {

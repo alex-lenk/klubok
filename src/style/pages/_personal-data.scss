@@ -1,14 +1,18 @@
 .personal-data {
   padding: 31px 0 10px;
+  line-height: 1.4;
+  @include between('s', 'm') {
+    .form-label {
+      width: 300px;
+    }
+  }
   @include at('m') {
     overflow-x: hidden;
     .form-group:not(.personal-data__map) {
       position: relative;
       padding-right: 75px;
     }
-    .form-label {
-      min-width: 300px;
-    }
+
     .form-info {
       margin-left: 300px;
       float: none;
@@ -47,10 +51,10 @@
     padding-top: 5px;
     padding-left: 10px;
     clear: left;
-    @include to('s') {
-      width: 100%;
-      margin-left: 0;
-    }
+    /*    @include to('s') {
+          width: 100%;
+          margin-left: 0;
+        }*/
     @include at('m') {
       margin-left: 300px;
       padding-right: 80px;
@@ -61,6 +65,19 @@
   .radio {
     @include from('s') {
       white-space: nowrap;
+    }
+  }
+
+  @include to('s') {
+    .form-group .radio {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+/*    .form-label {
+      margin-bottom: 0;
+    }*/
+    .form-group .form-info:not(.radio) {
+      padding-top: 0;
     }
   }
 }

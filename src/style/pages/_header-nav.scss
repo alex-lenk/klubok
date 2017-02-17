@@ -6,6 +6,9 @@
   &-wrap {
     display: inline-block;
     position: relative;
+    @include from('m') {
+      width: auto !important;
+    }
   }
   &-list {
     padding: 0 10px;

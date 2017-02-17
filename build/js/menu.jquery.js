@@ -286,6 +286,6 @@
 })(jQuery);
 
 (function(){
-    $('.header-nav').clubokMenu();
+    $('.header-nav-wrap').clubokMenu();
     $('.profile-menu').clubokMenu();
 })(jQuery);
