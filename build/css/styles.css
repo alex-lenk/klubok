@@ -3482,8 +3482,12 @@ h1, .h1 {
   display: inline-block;
 }
 
+.personal-edit .modal-content {
+  padding: 15px 0;
+}
+
 .personal-edit .line {
-  margin: 0 0 5px;
+  margin-bottom: 5px;
   padding: 0;
   overflow: hidden;
   list-style: none;
@@ -3494,7 +3498,7 @@ h1, .h1 {
 }
 
 @media (max-width: 719px) {
-  .personal-edit .line li {
+  .personal-edit .line li:not(:last-of-type) {
     margin-bottom: 5px;
   }
 }
@@ -3511,11 +3515,6 @@ h1, .h1 {
   padding-right: 10px;
 }
 
-.personal-edit .col-3 {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 .personal-edit .col-4 {
   padding-left: 10px;
 }
@@ -3528,7 +3527,7 @@ h1, .h1 {
   padding-right: 10px;
 }
 
-.personal-edit .col-7 {
+.personal-edit .col-3, .personal-edit .col-7, .personal-edit .col-10, .personal-edit .col-11, .personal-edit .col-12, .personal-edit .col-13, .personal-edit .col-14 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -3550,26 +3549,34 @@ h1, .h1 {
   .personal-edit .col-6 {
     padding-left: 10px;
   }
+  .personal-edit .col-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .personal-edit .col-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 720px) {
+  .personal-edit .label {
+    padding-top: 10px;
+  }
   .personal-edit [class^="col-"] {
     float: left;
   }
   .personal-edit .col-1 {
     width: 90px;
-    padding-top: 10px;
   }
   .personal-edit .col-2 {
     width: 470px;
-    padding-top: 10px;
   }
   .personal-edit .col-3 {
     width: 160px;
   }
   .personal-edit .col-4 {
     width: 560px;
-    padding-top: 10px;
   }
   .personal-edit .col-5 {
     width: 150px;
@@ -3579,15 +3586,127 @@ h1, .h1 {
   }
   .personal-edit .col-7 {
     width: 480px;
-    padding-top: 10px;
   }
-  .personal-edit .radio {
-    padding-top: 10px;
+  .personal-edit .col-8 {
+    width: 160px;
+    padding-right: 20px;
+  }
+  .personal-edit .col-9 {
+    width: 150px;
+    padding-right: 10px;
+  }
+  .personal-edit .col-10 {
+    width: 240px;
+  }
+  .personal-edit .col-11 {
+    width: 480px;
+  }
+  .personal-edit .col-12 {
+    width: 80px;
+  }
+  .personal-edit .col-13 {
+    width: 320px;
+  }
+  .personal-edit .col-14 {
+    width: 400px;
   }
 }
 
 .personal-edit .btn-azure {
   width: 100%;
+}
+
+#edit-fio .modal-content {
+  padding-bottom: 15px;
+}
+
+#edit-fio .line:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+#edit-fio .line:nth-of-type(2n+3) {
+  margin-bottom: 15px;
+}
+
+#choose-gender .line, #date-birth .line {
+  margin-bottom: 0;
+}
+
+@media (max-width: 719px) {
+  #choose-gender .col-sm-4, #date-birth .col-sm-4 {
+    margin-bottom: 0 !important;
+  }
+  #choose-gender .col-5, #date-birth .col-5 {
+    margin-bottom: 15px;
+  }
+}
+
+#add-address .modal-content {
+  padding-bottom: 15px;
+}
+
+#add-address .line:first-of-type {
+  margin-bottom: 15px;
+}
+
+#add-address .line:nth-of-type(4n+2) {
+  margin-bottom: 15px;
+}
+
+#add-phone .line {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 719px) {
+  #add-phone .text-right {
+    text-align: left;
+  }
+}
+
+#add-email .line {
+  margin-bottom: 15px;
+}
+
+#edit-password .line {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 719px) {
+  #date-receipt .line .col-8 {
+    margin-bottom: 5px;
+  }
+  #date-receipt .line .col-10 {
+    margin-bottom: 10px;
+  }
+}
+
+#date-receipt .line:last-of-type {
+  margin-bottom: 15px;
+}
+
+#date-receipt .col-8 {
+  padding-left: 10px;
+}
+
+#add-passport .col-8, #add-passport .col-4 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 719px) {
+  #add-passport .line .col-8 {
+    margin-bottom: 10px;
+  }
+  #add-passport .line:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  #add-passport .line .text-right {
+    text-align: left;
+  }
+}
+
+#add-passport .line:last-of-type {
+  margin-bottom: 15px;
 }
 
 footer {
