@@ -1,67 +1,101 @@
 .personal-edit {
-  .modal-group {
-    margin-bottom: 15px;
-    @include clearfix;
-  }
-  .modal-content {
-    padding: 15px 0 1px;
-  }
-  .btn-azure {
-    width: 100%;
-  }
-  .form-edit {
-    padding-right: 10px;
-    padding-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    .form-info:not(.radio) {
+  .line {
+    margin: 0 0 5px;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    &:not(:last-of-type) {
+    }
+    li {
+      //outline: 1px solid green;
+      outline-offset: -1px;
       @include to('s') {
-        padding-top: 0;
-        line-height: 1.4;
+          margin-bottom: 5px;
       }
     }
-    .form-label {
-      width: 80px;
-      @include to('s') {
-        &:not(.text-line-1) {
-          line-height: 1;
-        }
-      }
-    }
-    .form-text {
-      display: flex;
-      @include to('s') {
-        flex-direction: column;
-      }
-    }
-    .form-btn {
-      width: 140px;
-      padding: 0;
-      display: flex;
-      @include to('xs') {
-        flex-direction: column;
-        align-items: flex-end;
-      }
-      .btn {
-        width: 60px;
-        margin-left: 10px;
-        @include to('xs') {
-          &:not(:last-of-type) {
-            margin-bottom: 5px;
-          }
-        }
-      }
+    .btn-edit {
+      margin-right: 20px;
     }
   }
 
+  .col-1 {
+    padding-left: 10px;
+  }
+  .col-2 {
+    padding-right: 10px;
+  }
+  .col-3 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .col-4 {
+    padding-left: 10px;
+  }
+  .col-5 {
+    padding-right: 10px;
+  }
+  .col-6 {
+    padding-right: 10px;
+  }
+  .col-7 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   @include to('s') {
-    .modal-footer {
-      .form-info {
-        margin-bottom: 5px;
-        & ~ div:not(:last-of-type) {
-          margin-bottom: 5px;
-        }
-      }
+    .col-2, .col-4 {
+      padding-bottom: 2px;
+      line-height: 1.2;
     }
+    .col-2 {
+      padding-left: 10px;
+    }
+    .col-5 {
+      padding-left: 10px;
+    }
+    .col-4 {
+      padding-right: 10px;
+    }
+    .col-6 {
+      padding-left: 10px;
+    }
+  }
+
+  @include from('m') {
+    [class^="col-"] {
+      float: left;
+    }
+    .col-1 {
+      width: 90px;
+      padding-top: 10px;
+    }
+    .col-2 {
+      width: 470px;
+      padding-top: 10px;
+    }
+    .col-3 {
+      width: 160px;
+    }
+    .col-4 {
+      width: 560px;
+      padding-top: 10px;
+    }
+    .col-5 {
+      width: 150px;
+    }
+    .col-6 {
+      width: 630px;
+    }
+    .col-7 {
+      width: 480px;
+      padding-top: 10px;
+    }
+    .radio {
+      padding-top: 10px;
+    }
+  }
+
+  .btn-azure {
+    width: 100%;
   }
 }

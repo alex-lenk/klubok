@@ -663,105 +663,96 @@
 <div class="modal fade personal-edit" id="editFIO" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="modal-content">
-            <div class="modal-group">
-                <div class="form-group form-edit">
-                    <div class="form-text">
-                        <div class="form-label text-bold">ФИО:</div>
-                        <div class="form-info">
-                            Генералова Елена <span class="error-text">(отчество не заполнено)</span> (17.11.1997 г. -
-                            н.в.)
-                        </div>
-                    </div>
-                    <div class="form-btn text-right">
-                        <button class="btn btn-edit icon-pencil"></button>
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
+            <div class="indent-15"></div>
+            <ul class="line">
+                <li class="col-1 text-bold">ФИО:</li>
+                <li class="col-2">
+                    Генералова Елена <span class="error-text">(отчество не заполнено)</span> (17.11.1997 г. - н.в.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
 
-                <div class="form-group form-edit">
-                    <div class="form-text">
-                        <div class="form-label text-bold">ФИО:</div>
-                        <div class="form-info">
-                            Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)
-                        </div>
-                    </div>
-                    <div class="form-btn text-right">
-                        <button class="btn btn-edit icon-pencil"></button>
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
+            <ul class="line">
+                <li class="col-1 text-bold">ФИО:</li>
+                <li class="col-2">
+                    Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="indent-10"></div>
+
+            <ul class="line">
+                <li class="col-4">
+                    <span class="text-bold">Пользователи портала упоминают Вас как:</span>
+                    <span class="error-text">Петрова Мария Ивановна</span>
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="indent-10"></div>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Фамилия</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 text-bold">Имя</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 text-bold">Отчество</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 text-bold">с</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-1 text-bold">по</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="indent-10"></div>
+
+
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 col-xs-6">
+                <button class="btn btn-azure">сохранить</button>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                    закрыть окно
+                </button>
             </div>
 
-            <div class="modal-group">
-                <div class="form-group form-edit">
-                    <div class="form-text">
-                        <div class="form-info">
-                            <span class="text-bold">Пользователи портала упоминают Вас как:</span>
-                            <span class="error-text">Петрова Мария Ивановна</span>
-                        </div>
-                    </div>
-                    <div class="form-btn text-right">
-                        <button class="btn btn-edit icon-pencil"></button>
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-group">
-                <div class="form-group">
-                    <label for="input1" class="col-sm-1 form-label">Фамилия</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input1"
-                               placeholder="введите">
-                    </div>
-                    <label for="input2" class="col-sm-1 form-label">Имя</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input2"
-                               placeholder="введите">
-                    </div>
-                    <label for="input3" class="col-sm-1 form-label">Отчество</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input3"
-                               placeholder="введите">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="input4" class="col-sm-1 form-label text-bold">с</label>
-                    <div class="col-sm-2">
-                        <select class="form-control" id="input4">
-                            <option>выберите дату</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <label for="input5" class="col-sm-1 form-label text-bold">по</label>
-                    <div class="col-sm-2">
-                        <select class="form-control" id="input5">
-                            <option>выберите дату</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3 col-xs-6">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div class="indent-15"></div>
         </form>
     </div>
 </div>
@@ -770,26 +761,21 @@
 <div class="modal fade personal-edit" id="chooseGender" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="container modal-content">
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-1 form-label text-bold text-line-1">Пол</div>
-
-                    <div class="col-sm-2 form-info radio">
-                        <label><input type="radio" name="radio"> муж.</label>
-                        <label><input type="radio" name="radio"> жен.</label>
-                    </div>
-
-                    <div class="col-sm-3 col-xs-6">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-
-                    <div class="col-sm-3 col-xs-6">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div class="indent-15"></div>
+            <ul class="line">
+                <li class="col-1 text-bold">Пол:</li>
+                <li class="col-5 radio">
+                    <label><input type="radio" name="radio"> муж.</label>
+                    <label><input type="radio" name="radio"> жен.</label>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">закрыть окно</button>
+                </li>
+            </ul>
+            <div class="indent-10"></div>
         </form>
     </div>
 </div>
@@ -798,28 +784,27 @@
 <div class="modal fade personal-edit" id="dateBirth" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="modal-content">
-            <div class="modal-group">
-                <div class="form-group modal-footer">
-                    <div class="col-md-3 col-sm-3 form-info text-bold">Рождение</div>
-                    <div class="col-md-3 col-sm-3">
-                        <select class="form-control">
-                            <option>выберите дату</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div class="indent-10"></div>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Рождение:</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">закрыть окно</button>
+                </li>
+            </ul>
+            <div class="indent-10"></div>
         </form>
     </div>
 </div>
@@ -828,111 +813,103 @@
 <div class="modal fade personal-edit" id="addAddress" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="container modal-content">
-            <div class="modal-group">
-                <div class="form-group form-edit">
-                    <div class="form-text">
-                        <div class="form-label text-bold">Адрес:</div>
-                        <div class="form-info">
-                            125004, Россия, г. Москва, Столешников переулок, 6с1, кв 19
-                            (12.12.1997 г. - 09.09.20016 г.)
-                        </div>
-                    </div>
-                    <div class="form-btn text-right">
-                        <button class="btn btn-edit icon-pencil"></button>
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
+            <div class="indent-10"></div>
 
-                <div class="form-group form-edit">
-                    <div class="form-text">
-                        <div class="form-label text-bold">Адрес:</div>
-                        <div class="form-info">
-                            663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
-                            кв. 196 (01.01.1990 г. - 31.12.1996 г.)
-                        </div>
-                    </div>
-                    <div class="form-btn text-right">
-                        <button class="btn btn-edit icon-pencil"></button>
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
+            <ul class="line">
+                <li class="col-1 text-bold">Адрес:</li>
+                <li class="col-2">
+                    125004, Россия, г. Москва, Столешников переулок, 6с1, кв 19 (12.12.1997 г. - 09.09.20016 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="indent-5"></div>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Адрес:</li>
+                <li class="col-2">
+                    663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26, кв. 196 (01.01.1990 г. -
+                    31.12.1996 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="indent-10"></div>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 text-bold">Квартира</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 text-bold">с</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-1 text-bold">по</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="indent-10"></div>
+
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 col-xs-6">
+                <button class="btn btn-azure">сохранить</button>
             </div>
-
-            <div class="modal-group">
-                <div class="form-group">
-                    <label class="col-md-1 col-sm-2 form-info" for="input7">Адрес</label>
-                    <div class="col-md-8 col-sm-7">
-                        <input type="text" class="form-control hide-placeholder" id="input7"
-                               placeholder="введите адрес в произвольном виде">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-sm-1 form-info text-bold" for="input8">Индекс</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input8"
-                               placeholder="125009">
-                    </div>
-                    <div class="col-sm-6 form-info">
-                        Россия, Брянская область, Красногорский район, деревня Любовшо
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="input9" class="col-sm-1 form-info text-bold">Улица</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input9"
-                               placeholder="переулок">
-                    </div>
-                    <label for="input10" class="col-sm-1 form-info text-bold">Дом</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input10" placeholder="5">
-                    </div>
-                    <label for="input11" class="col-sm-1 form-info text-bold">Квартира</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input11" placeholder="23">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="input12" class="col-sm-1 form-info text-bold">с</label>
-                    <div class="col-sm-2">
-                        <select class="form-control" id="input12">
-                            <option>выберите дату</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <label for="input13" class="col-sm-1 form-info text-bold">по</label>
-                    <div class="col-sm-2">
-                        <select class="form-control" id="input13">
-                            <option>выберите дату</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="col-sm-4 col-xs-6">
+                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                    закрыть окно
+                </button>
             </div>
-
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure">добавить еще фото</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div class="indent-15"></div>
         </form>
     </div>
 </div>

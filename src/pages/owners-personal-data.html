@@ -14,431 +14,478 @@
     <div class="personal-data">
         <h1 class="text-uppercase">Личные данные</h1>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">ФИО:</div>
-            <div class="col-xs-7 form-info">
-                Генералова Елена <span class="error-text hidden-sm">(отчество не заполнено)</span>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#editFIO"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена <span class="error-text">(отчество не заполнено)</span></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editFIO"></button>
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#chooseGender">
-                Выбрать пол
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#chooseGender">
+                Выбрать пол:
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#dateBirth">
-                Добавить дату рождения
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#dateBirth">
+                Добавить дату рождения:
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#addAddress">
-                Добавить домашний адрес
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#addAddress">
+                Добавить домашний адрес:
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#addPhone">
-                Добавить телефон
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#addPhone">
+                Добавить телефон:
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">E-mail:</div>
-            <div class="col-xs-7 form-info"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#addEmail"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addEmail"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пароль:</div>
-            <div class="col-xs-7 form-info">* * * * * *</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#editPassword"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editPassword"></button>
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#dateReceipt">
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#dateReceipt">
                 Добавить заводскую проиставку
-            </div>
-        </div>
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Мои контактные данные видны:</div>
-            <form action="#" class="col-xs-8 form-info radio">
-                <label><input type="radio" name="radio"> только мне</label>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> только мне</label>
 
-                <label><input type="radio" name="radio" checked> только друзьям</label>
+                    <label><input type="radio" name="radio" checked> только друзьям</label>
 
-                <label><input type="radio" name="radio"> всем</label>
-            </form>
-        </div>
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold as-link" data-toggle="modal" data-backdrop="static" data-target="#addPassport">
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static" data-target="#addPassport">
                 Добавить паспортные данные
-            </div>
-            <div class="col-sm-7 col-xs-12 form-info">(будут отображаться толко в договорах купли продажи собак и щенков)</div>
-        </div>
+            </li>
+            <li class="text">*(будут отображаться толко в договорах купли продажи собак и щенков)</li>
+        </ul>
     </div>
 
     <div class="personal-data">
-        <h1 class="personal-data__title text-uppercase">Личные данные</h1>
+        <h1 class="text-uppercase">Личные данные</h1>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">ФИО:</div>
-            <div class="col-xs-7 form-info">
-                Генералова Елена Николаевна
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editFIO"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пол:</div>
-            <div class="col-xs-7 form-info">женский</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#chooseGender"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Дата рождения:</div>
-            <div class="col-xs-7 form-info">04.11.1976 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateBirth"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-sm-4 col-xs-10 text-line-1 text-nowrap form-label text-bold">Домашний адрес:</div>
-            <div class="col-sm-7 col-xs-12 form-info">
-                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addAddress"></button>
+            </li>
+        </ul>
 
-        <div class="form-group personal-data__map">
-            <img src="/img/example/map.gif" alt="">
-            <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Телефон:</div>
-            <ul class="col-xs-7 form-info list-data">
-                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-            </ul>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">E-mail:</div>
-            <div class="col-xs-7 form-info">
-                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пароль:</div>
-            <div class="col-xs-7 form-info">* * * * * *</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold text-line-1">Зводская проиставка:</div>
-            <div class="col-sm-7 col-xs-12 form-info">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Мои контактные данные видны:</div>
-
-            <form action="#" class="col-xs-8 form-info radio">
-                <label><input type="radio" name="radio"> только мне</label>
-                <label><input type="radio" name="radio" checked> только друзьям</label>
-                <label><input type="radio" name="radio"> всем</label>
-            </form>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Паспортные данные:</div>
-            <div class="col-sm-7 col-xs-12 form-info">
-                <div>серия и номер паспорта - 4413 788256</div>
-                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
-                <div>код подразделения - 770-106</div>
-                <div>дата выдачи - 11.09.2001 г.</div>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="personal-data">
-        <h1 class="personal-data__title text-uppercase">Личные данные</h1>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">ФИО:</div>
-            <div class="col-xs-7 form-info">Генералова Елена Николаевна</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-
-            <div class="col-sm-offset-4 col-xs-offset-0 col-sm-7 col-xs-12 personal-data-active">
-                <div>
-                    <span class="text-bold as-link">Показать ФИО, которые были внесены ранее (2)</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пол:</div>
-            <div class="col-xs-7 form-info">женский</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Дата рождения:</div>
-            <div class="col-xs-7 form-info">04.11.1976 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-sm-4 col-xs-10 text-line-1 text-nowrap form-label text-bold">Домашний адрес:</div>
-            <div class="col-sm-7 col-xs-12 form-info">
-                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group personal-data__map">
-            <div>
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
                 <img src="/img/example/map.gif" alt="">
                 <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-            </div>
+            </li>
+        </ul>
 
-            <ul class="col-sm-offset-4 col-xs-offset-0 col-sm-7 col-xs-10 personal-data-active list-data">
-                <li>
-                    <span class="text-bold as-link">Показать домашние адреса, которые были внесены ранее (2)</span>
-                </li>
-            </ul>
-        </div>
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPhone"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Телефон:</div>
-            <ul class="col-xs-7 form-info list-data">
-                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-            </ul>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addEmail"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">E-mail:</div>
-            <div class="col-xs-7 form-info">
-                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editPassword"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пароль:</div>
-            <div class="col-xs-7 form-info">* * * * * *</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская проиставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateReceipt"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold text-line-1">Зводская проиставка:</div>
-            <div class="col-sm-7 col-xs-12 form-info">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> только мне</label>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Мои контактные данные видны:</div>
+                    <label><input type="radio" name="radio" checked> только друзьям</label>
 
-            <form action="#" class="col-xs-8 form-info radio">
-                <label><input type="radio" name="radio"> только мне</label>
-                <label><input type="radio" name="radio" checked> только друзьям</label>
-                <label><input type="radio" name="radio"> всем</label>
-            </form>
-        </div>
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Паспортные данные:</div>
-            <div class="col-sm-7 col-xs-12 form-info">
-                <div>серия и номер паспорта - 4413 788256</div>
-                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
-                <div>код подразделения - 770-106</div>
-                <div>дата выдачи - 11.09.2001 г.</div>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPassport"></button>
+            </li>
+        </ul>
     </div>
 
     <div class="personal-data">
-        <h1 class="personal-data__title text-uppercase">Личные данные:</h1>
+        <h1 class="text-uppercase">Личные данные</h1>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">ФИО:</div>
-            <ul class="col-sm-7 col-xs-12 form-info list-data">
-                <li>Генералова Елена Николаевна</li>
-                <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
-                <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
-            </ul>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editFIO"></button>
+            </li>
+            <li class="show-more-full-name">
+                <ul class="list-data">
+                    <li class="text-bold as-link">Показать ФИО, которые были внесены ранее (2)</li>
+                </ul>
+            </li>
+        </ul>
 
-            <div class="col-sm-offset-4 col-xs-offset-0 col-sm-7 col-xs-12 personal-data-active">
-                <div>
-                    <span class="text-bold as-link">Скрыть ФИО, которые были внесены ранее (2)</span>
-                </div>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#chooseGender"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пол:</div>
-            <div class="col-xs-7 form-info">женский</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateBirth"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Дата рождения:</div>
-            <div class="col-xs-7 form-info">04.11.1976 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addAddress"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-sm-4 col-xs-10 text-line-1 text-nowrap form-label text-bold">Домашний адрес:</div>
-            <ul class="col-sm-7 col-xs-12 form-info list-data">
-                <li>606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
-            </ul>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
-
-        <div class="form-group personal-data__map">
-            <div>
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
                 <img src="/img/example/map.gif" alt="">
                 <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-            </div>
+            </li>
+            <li class="show-address">
+                <ul class="list-data">
+                    <li class="text-bold as-link">
+                        Показать домашние адреса, которые были внесены ранее (2)
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-            <ul class="col-sm-offset-4 col-xs-offset-0 col-sm-7 col-xs-10 personal-data-active list-data">
-                <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
-                    кв. 196 (01.01.1996 г. - 16.11.1997 г.)
-                </li>
-                <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
-                    кв. 196 (01.01.1990 г. - 31.12.1996 г.)
-                </li>
-                <li>
-                    <span class="text-bold as-link">Скрыть домашние адреса, которые были внесены ранее (2)</span>
-                </li>
-            </ul>
-        </div>
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPhone"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Телефон:</div>
-            <ul class="col-xs-7 form-info list-data">
-                <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-            </ul>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addEmail"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">E-mail:</div>
-            <div class="col-xs-7 form-info">
-                <a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editPassword"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Пароль:</div>
-            <div class="col-xs-7 form-info">* * * * * *</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская проиставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateReceipt"></button>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold text-line-1">Зводская проиставка:</div>
-            <div class="col-sm-7 col-xs-12 form-info">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> только мне</label>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Мои контактные данные видны:</div>
+                    <label><input type="radio" name="radio" checked> только друзьям</label>
 
-            <form action="#" class="col-xs-8 form-info radio">
-                <label><input type="radio" name="radio"> только мне</label>
-                <label><input type="radio" name="radio" checked> только друзьям:</label>
-                <label><input type="radio" name="radio"> всем</label>
-            </form>
-        </div>
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-10 text-line-1 form-label text-bold">Паспортные данные:</div>
-            <div class="col-sm-7 col-xs-12 form-info">
-                <div>серия и номер паспорта - 4413 788256</div>
-                <div>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</div>
-                <div>код подразделения - 770-106</div>
-                <div>дата выдачи - 11.09.2001 г.</div>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 form-btn">
-                <button class="btn btn-edit icon-pencil"></button>
-            </div>
-        </div>
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPassport"></button>
+            </li>
+        </ul>
     </div>
 
+    <div class="personal-data">
+        <h1 class="text-uppercase">Личные данные</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editFIO"></button>
+            </li>
+            <li class="hidden-full-name">
+                <ul class="list-data">
+                    <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
+                    <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
+                    <li class="text-bold as-link">Скрыть ФИО, которые были внесены ранее (2)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#chooseGender"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateBirth"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addAddress"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
+                <img src="/img/example/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </li>
+            <li class="hidden-address">
+                <ul class="list-data">
+                    <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
+                        кв. 196 (01.01.1996 г. - 16.11.1997 г.)
+                    </li>
+                    <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
+                        кв. 196 (01.01.1990 г. - 31.12.1996 г.)
+                    </li>
+                    <li class="text-bold as-link">
+                        Скрыть домашние адреса, которые были внесены ранее (2)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPhone"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addEmail"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#editPassword"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская проиставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#dateReceipt"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> только мне</label>
+
+                    <label><input type="radio" name="radio" checked> только друзьям</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#addPassport"></button>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <!-- include "templates/footer.html" -->

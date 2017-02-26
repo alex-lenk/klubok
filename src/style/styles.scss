@@ -61,21 +61,3 @@ body {
 .tooltip {
   white-space: nowrap;
 }
-
-.edit-data, .personal-data {
-  .btn-edit {
-    @include to('s') {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      width: 60px;
-    }
-    @include to('xs') {
-      top: 5px;
-    }
-  }
-  .form-group {
-    position: relative;
-    @include clearfix;
-  }
-}

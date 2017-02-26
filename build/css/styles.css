@@ -54,8 +54,7 @@
 }
 
 .btn-edit, .btn-uninstall {
-  width: 100%;
-  max-width: 60px;
+  width: 60px;
   height: 35px;
   line-height: 38px;
   background-size: 28px;
@@ -2971,6 +2970,54 @@ h1, .h1 {
   color: #ed5901;
 }
 
+[class^="indent-"] {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+
+.indent-5 {
+  height: 5px;
+}
+
+.indent-10 {
+  height: 10px;
+}
+
+.indent-15 {
+  height: 15px;
+}
+
+.size-0 {
+  font-size: 0;
+}
+
+@media (max-width: 479px) {
+  .edit-data .btn-edit {
+    top: 5px;
+  }
+}
+
+@media (max-width: 719px) {
+  .edit-data .btn-edit {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 60px;
+  }
+}
+
+.edit-data .form-group, .personal-data .form-group {
+  position: relative;
+}
+
+.edit-data .form-group:after, .personal-data .form-group:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -3105,14 +3152,14 @@ h1, .h1 {
 /* pages */
 .personal-data {
   padding: 31px 0 10px;
-  line-height: 1.4;
+  overflow-x: hidden;
+  line-height: 1.2;
   /* .personal-data__map */
-  /* .personal-data-active */
 }
 
-@media (min-width: 480px) and (max-width: 959px) {
-  .personal-data .form-label {
-    width: 300px;
+@media (min-width: 720px) {
+  .personal-data {
+    line-height: 1.4;
   }
 }
 
@@ -3120,26 +3167,301 @@ h1, .h1 {
   .personal-data {
     overflow-x: hidden;
   }
-  .personal-data .form-group:not(.personal-data__map) {
-    position: relative;
-    padding-right: 75px;
+  .personal-data .not-filled + .text {
+    padding-right: 70px;
   }
-  .personal-data .form-info {
-    margin-left: 300px;
-    float: none;
-    padding-right: 40px;
+}
+
+@media (max-width: 479px) {
+  .personal-data .btn-edit {
+    top: 2px;
   }
-  .personal-data .form-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
+}
+
+.personal-data-line {
+  margin-bottom: 5px;
+  padding: 0 10px;
+  list-style: none;
+  font-size: 0;
+  position: relative;
+  outline: 1px solid green;
+  outline-offset: -1px;
+}
+
+.personal-data-line:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.personal-data-line > li {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: 720px) {
+  .personal-data-line > li {
+    min-height: 35px;
+  }
+}
+
+.personal-data-line .label {
+  width: 300px;
+  padding-top: 8px;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .label {
+    -webkit-flex-basis: 300px;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
   }
 }
 
 @media (max-width: 719px) {
-  .personal-data .form-info {
-    line-height: 1.4;
+  .personal-data-line .label {
+    width: 100%;
+    padding-right: 70px;
   }
+}
+
+.personal-data-line .text {
+  padding-right: 10px;
+}
+
+@media (min-width: 960px) {
+  .personal-data-line .text {
+    width: 553px;
+  }
+}
+
+@media (min-width: 720px) {
+  .personal-data-line .text {
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .text {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 44%;
+    -ms-flex-preferred-size: 44%;
+    flex-basis: 44%;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .text {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding-right: 70px;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+.personal-data-line .button {
+  width: 70px;
+  padding-left: 10px;
+}
+
+@media (min-width: 960px) {
+  .personal-data-line .button {
+    float: right;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .button {
+    -webkit-flex-basis: 70px;
+    -ms-flex-preferred-size: 70px;
+    flex-basis: 70px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .button {
+    padding-left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+}
+
+.personal-data-line .radio-block {
+  padding-top: 8px;
+  padding-right: 10px;
+}
+
+@media (min-width: 960px) {
+  .personal-data-line .radio-block {
+    width: 553px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .radio-block {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 47%;
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%;
+  }
+}
+
+.personal-data-line label {
+  line-height: 1;
+}
+
+.personal-data-line .personal-data__map {
+  margin: 0 -10px;
+}
+
+.personal-data-line .list-data {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.personal-data-line .list-data li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.personal-data-line .show-more-full-name {
+  padding: 4px 0 0 300px;
+  min-height: inherit;
+  color: #8b8b8b;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .show-more-full-name {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .show-more-full-name {
+    padding: 0 70px 0 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+.personal-data-line .hidden-full-name {
+  padding-left: 300px;
+  min-height: inherit;
+  color: #8b8b8b;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .hidden-full-name {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .hidden-full-name {
+    padding: 0 70px 0 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+.personal-data-line .hidden-full-name .list-data li:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.personal-data-line .show-address {
+  padding: 12px 0 0 300px;
+  min-height: inherit;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .show-address {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .show-address {
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+.personal-data-line .hidden-address {
+  padding-top: 15px;
+  padding-left: 300px;
+  line-height: 1.2;
+  min-height: inherit;
+  color: #8b8b8b;
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .hidden-address {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .hidden-address {
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+@media (max-width: 719px) {
+  .personal-data-line .not-filled {
+    padding-top: 0;
+    line-height: 35px;
+  }
+}
+
+.personal-data .phone {
+  line-height: 1;
+}
+
+.personal-data .phone .label {
+  margin-bottom: 5px;
+}
+
+.personal-data .passport .label {
+  margin-bottom: 5px;
+}
+
+.personal-data .address .label {
+  margin-bottom: 5px;
 }
 
 .personal-data__map {
@@ -3158,142 +3480,112 @@ h1, .h1 {
   display: block;
 }
 
-.personal-data-active {
-  padding-top: 5px;
-  padding-left: 10px;
-  clear: left;
-  /*    @include to('s') {
-          width: 100%;
-          margin-left: 0;
-        }*/
+.personal-edit .line {
+  margin: 0 0 5px;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
 }
 
-@media (min-width: 720px) and (max-width: 959px) {
-  .personal-data-active {
-    margin-left: 300px;
-    padding-right: 80px;
-    width: auto;
-  }
-}
-
-@media (min-width: 480px) {
-  .personal-data .radio {
-    white-space: nowrap;
-  }
+.personal-edit .line li {
+  outline-offset: -1px;
 }
 
 @media (max-width: 719px) {
-  .personal-data {
-    /*    .form-label {
-      margin-bottom: 0;
-    }*/
-  }
-  .personal-data .form-group .radio {
-    padding-top: 0;
-    margin-bottom: 0;
-  }
-  .personal-data .form-group .form-info:not(.radio) {
-    padding-top: 0;
+  .personal-edit .line li {
+    margin-bottom: 5px;
   }
 }
 
-.personal-edit .modal-group {
-  margin-bottom: 15px;
+.personal-edit .line .btn-edit {
+  margin-right: 20px;
 }
 
-.personal-edit .modal-group:after {
-  display: table;
-  clear: both;
-  content: "";
+.personal-edit .col-1 {
+  padding-left: 10px;
 }
 
-.personal-edit .modal-content {
-  padding: 15px 0 1px;
+.personal-edit .col-2 {
+  padding-right: 10px;
+}
+
+.personal-edit .col-3 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.personal-edit .col-4 {
+  padding-left: 10px;
+}
+
+.personal-edit .col-5 {
+  padding-right: 10px;
+}
+
+.personal-edit .col-6 {
+  padding-right: 10px;
+}
+
+.personal-edit .col-7 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 719px) {
+  .personal-edit .col-2, .personal-edit .col-4 {
+    padding-bottom: 2px;
+    line-height: 1.2;
+  }
+  .personal-edit .col-2 {
+    padding-left: 10px;
+  }
+  .personal-edit .col-5 {
+    padding-left: 10px;
+  }
+  .personal-edit .col-4 {
+    padding-right: 10px;
+  }
+  .personal-edit .col-6 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 720px) {
+  .personal-edit [class^="col-"] {
+    float: left;
+  }
+  .personal-edit .col-1 {
+    width: 90px;
+    padding-top: 10px;
+  }
+  .personal-edit .col-2 {
+    width: 470px;
+    padding-top: 10px;
+  }
+  .personal-edit .col-3 {
+    width: 160px;
+  }
+  .personal-edit .col-4 {
+    width: 560px;
+    padding-top: 10px;
+  }
+  .personal-edit .col-5 {
+    width: 150px;
+  }
+  .personal-edit .col-6 {
+    width: 630px;
+  }
+  .personal-edit .col-7 {
+    width: 480px;
+    padding-top: 10px;
+  }
+  .personal-edit .radio {
+    padding-top: 10px;
+  }
 }
 
 .personal-edit .btn-azure {
   width: 100%;
-}
-
-.personal-edit .form-edit {
-  padding-right: 10px;
-  padding-left: 10px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-@media (max-width: 719px) {
-  .personal-edit .form-edit .form-info:not(.radio) {
-    padding-top: 0;
-    line-height: 1.4;
-  }
-}
-
-.personal-edit .form-edit .form-label {
-  width: 80px;
-}
-
-@media (max-width: 719px) {
-  .personal-edit .form-edit .form-label:not(.text-line-1) {
-    line-height: 1;
-  }
-}
-
-.personal-edit .form-edit .form-text {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 719px) {
-  .personal-edit .form-edit .form-text {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-.personal-edit .form-edit .form-btn {
-  width: 140px;
-  padding: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 479px) {
-  .personal-edit .form-edit .form-btn {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-  }
-}
-
-.personal-edit .form-edit .form-btn .btn {
-  width: 60px;
-  margin-left: 10px;
-}
-
-@media (max-width: 479px) {
-  .personal-edit .form-edit .form-btn .btn:not(:last-of-type) {
-    margin-bottom: 5px;
-  }
-}
-
-@media (max-width: 719px) {
-  .personal-edit .modal-footer .form-info {
-    margin-bottom: 5px;
-  }
-  .personal-edit .modal-footer .form-info ~ div:not(:last-of-type) {
-    margin-bottom: 5px;
-  }
 }
 
 footer {
@@ -4779,31 +5071,6 @@ body:before {
 
 .tooltip {
   white-space: nowrap;
-}
-
-@media (max-width: 719px) {
-  .edit-data .btn-edit, .personal-data .btn-edit {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    width: 60px;
-  }
-}
-
-@media (max-width: 479px) {
-  .edit-data .btn-edit, .personal-data .btn-edit {
-    top: 5px;
-  }
-}
-
-.edit-data .form-group, .personal-data .form-group {
-  position: relative;
-}
-
-.edit-data .form-group:after, .personal-data .form-group:after {
-  display: table;
-  clear: both;
-  content: "";
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */
