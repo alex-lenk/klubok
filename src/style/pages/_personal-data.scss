@@ -7,7 +7,7 @@
   }
   @include at('m') {
     .not-filled + .text {
-      padding-right: 70px;
+      padding-right: 80px;
     }
     overflow-x: hidden;
   }
@@ -23,10 +23,9 @@
     list-style: none;
     font-size: 0;
     position: relative;
-    @include clearfix;
-
-/*    outline: 1px solid green;
-    outline-offset: -1px;*/
+    @include from('l') {
+      @include clearfix;
+    }
     @include at('m') {
       display: flex;
       flex-wrap: wrap;
@@ -41,43 +40,46 @@
       }
     }
     .label {
-      width: 300px;
+      width: 320px;
+      padding-right: 20px;
       padding-top: 8px;
       @include at('m') {
-        flex-basis: 300px;
+        flex-basis: 320px;
         flex-shrink: 0;
       }
       @include to('s') {
         width: 100%;
-        padding-right: 70px;
+        margin-bottom: 5px;
+        padding-right: 80px;
       }
     }
     .text {
       padding-right: 10px;
       @include from('l') {
-        width: 553px;
+        width: 550px;
       }
       @include from('m') {
         padding-top: 8px;
       }
       @include at('m') {
         flex-grow: 1;
-        flex-basis: 44%;
+        flex-basis: 41.3%;
       }
       @include to('s') {
         flex-basis: 100%;
-        padding-right: 70px;
+        padding-right: 80px;
         order: 3;
       }
     }
     .button {
       width: 70px;
       padding-left: 10px;
+      text-align: right;
       @include from('l') {
         float: right;
       }
       @include at('m') {
-        flex-basis: 70px;
+        flex-basis: 80px;
         flex-shrink: 0;
       }
       @include to('s') {
@@ -88,7 +90,6 @@
       }
     }
     .radio-block {
-      padding-top: 8px;
       padding-right: 10px;
       @include from('l') {
         width: 553px;
@@ -96,6 +97,9 @@
       @include at('m') {
         flex-grow: 1;
         flex-basis: 47%;
+      }
+      @include from('m') {
+        padding-top: 8px;
       }
     }
     label {
@@ -113,55 +117,55 @@
       }
     }
     .show-more-full-name {
-      padding: 4px 0 0 300px;
+      padding: 4px 0 0 320px;
       min-height: inherit;
       color: #8b8b8b;
       @include at('m') {
-        padding-right: 70px;
+        padding-right: 80px;
       }
       @include to('s') {
-        padding: 0 70px 0 0;
+        padding: 5px 80px 0 0;
         order: 4;
       }
     }
     .hidden-full-name {
-      padding-left: 300px;
+      padding-left: 320px;
       min-height: inherit;
       color: #8b8b8b;
       @include at('m') {
-        padding-right: 70px;
+        padding-right: 80px;
       }
       @include to('s') {
-        padding: 0 70px 0 0;
+        padding: 0 80px 0 0;
         order: 4;
       }
       .list-data li:not(:last-of-type) {
-        margin-bottom: 0;
+        margin-top: 5px;
       }
     }
     .show-address {
-      padding: 12px 0 0 300px;
+      padding: 12px 0 0 320px;
       min-height: inherit;
       @include at('m') {
-        padding-right: 70px;
+        padding-right: 80px;
       }
       @include to('s') {
-        padding-right: 0;
+        padding-right: 80px;
         padding-left: 0;
         order: 4;
       }
     }
     .hidden-address {
       padding-top: 15px;
-      padding-left: 300px;
+      padding-left: 320px;
       line-height: 1.2;
       min-height: inherit;
       color: #8b8b8b;
       @include at('m') {
-        padding-right: 70px;
+        padding-right: 80px;
       }
       @include to('s') {
-        padding-right: 0;
+        padding-right: 80px;
         padding-left: 0;
         order: 4;
       }
