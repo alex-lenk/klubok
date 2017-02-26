@@ -130,13 +130,11 @@
     }
     .hidden-full-name {
       padding-left: 320px;
+      padding-right: 80px;
       min-height: inherit;
       color: #8b8b8b;
-      @include at('m') {
-        padding-right: 80px;
-      }
       @include to('s') {
-        padding: 0 80px 0 0;
+        padding-left: 0;
         order: 4;
       }
       .list-data li:not(:last-of-type) {
@@ -158,14 +156,11 @@
     .hidden-address {
       padding-top: 15px;
       padding-left: 320px;
+      padding-right: 80px;
       line-height: 1.2;
       min-height: inherit;
       color: #8b8b8b;
-      @include at('m') {
-        padding-right: 80px;
-      }
       @include to('s') {
-        padding-right: 80px;
         padding-left: 0;
         order: 4;
       }
@@ -209,5 +204,9 @@
     .list-data {
       display: block;
     }
+  }
+  .phone-label {
+    min-width: 77px;
+    display: inline-block;
   }
 }

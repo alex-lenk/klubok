@@ -3381,19 +3381,14 @@ h1, .h1 {
 
 .personal-data-line .hidden-full-name {
   padding-left: 320px;
+  padding-right: 80px;
   min-height: inherit;
   color: #8b8b8b;
 }
 
-@media (min-width: 720px) and (max-width: 959px) {
-  .personal-data-line .hidden-full-name {
-    padding-right: 80px;
-  }
-}
-
 @media (max-width: 719px) {
   .personal-data-line .hidden-full-name {
-    padding: 0 80px 0 0;
+    padding-left: 0;
     -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
@@ -3428,20 +3423,14 @@ h1, .h1 {
 .personal-data-line .hidden-address {
   padding-top: 15px;
   padding-left: 320px;
+  padding-right: 80px;
   line-height: 1.2;
   min-height: inherit;
   color: #8b8b8b;
 }
 
-@media (min-width: 720px) and (max-width: 959px) {
-  .personal-data-line .hidden-address {
-    padding-right: 80px;
-  }
-}
-
 @media (max-width: 719px) {
   .personal-data-line .hidden-address {
-    padding-right: 80px;
     padding-left: 0;
     -webkit-order: 4;
     -ms-flex-order: 4;
@@ -3486,6 +3475,11 @@ h1, .h1 {
 
 .personal-data__map .list-data {
   display: block;
+}
+
+.personal-data .phone-label {
+  min-width: 77px;
+  display: inline-block;
 }
 
 .personal-edit .line {
