@@ -49,22 +49,17 @@ var headerModule = {
     }
 };
 
-$(window).on('load', function() {
-
-    $('a').on('click', function (e) {
-        e.preventDefault();
-    });
-
+$(window).on('load', function () {
     $("select").click(
         function () {
-            var e = $( this );
+            var e = $(this);
             e.addClass("chose-select");
         }
     );
 
     $(".option-hide").click(
         function () {
-            var e = $( this );
+            var e = $(this);
             e.removeClass("option-hide");
         }
     );
@@ -92,4 +87,24 @@ $(window).on('load', function() {
 
 $("[data-fancybox]").fancybox({
     // Options will go here
+});
+
+$(function () {
+    var $image = $('#image');
+    var cropBoxData;
+    var canvasData;
+
+    $('#addPhotoProfile').on('shown.bs.modal', function () {
+        $image.cropper({
+            autoCropArea: 0.5,
+            ready: function () {
+                $image.cropper('setCanvasData', canvasData);
+                $image.cropper('setCropBoxData', cropBoxData);
+            }
+        });
+    }).on('hidden.bs.modal', function () {
+        cropBoxData = $image.cropper('getCropBoxData');
+        canvasData = $image.cropper('getCanvasData');
+        $image.cropper('destroy');
+    });
 });

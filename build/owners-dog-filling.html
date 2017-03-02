@@ -100,15 +100,17 @@
 
 
     <div class="header-middle" style="background-image: url(/img/example/bg.jpg);">
-            <span class="custom-header__upload icon-camera2" data-toggle="tooltip"
-                  data-placement="bottom" title="Заменить портрет"></span>
+            <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
+                <span class="custom-header__upload icon-camera2" data-toggle="tooltip"
+                  data-placement="bottom" title="Заменить портрет"></span></span>
 
     <div class="header-media">
         <div class="header-media-img">
             <div class="media-img">
                 <img class="profile-img" src="/img/example/avatar.jpg" alt="">
+                <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
                 <span class="custom-header__upload upload-profile-img icon-camera2" data-toggle="tooltip"
-                      data-placement="bottom" title="Заменить портрет"></span>
+                      data-placement="bottom" title="Заменить портрет"></span></span>
             </div>
         </div>
         <div class="header-media-content media-bottom">
@@ -746,6 +748,40 @@
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Modal addPhotoProfile -->
+<div class="modal fade personal-edit" id="addPhotoProfile" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="cropper-top">
+                <div class="cropper-title text-bold">Загрузка фото</div>
+                <div class="cropper-loading">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cropper-wrap">
+                <img id="image" src="img/example/32_doberman_pinscher.jpg" alt="Picture">
+            </div>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

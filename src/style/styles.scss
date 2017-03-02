@@ -9,6 +9,7 @@
 @import "lib/bootstrap4";
 @import "partials/common";
 @import "partials/icons";
+@import "partials/progress";
 /* pages */
 @import "pages/personal-data";
 @import "pages/personal-edit";
@@ -60,4 +61,28 @@ body {
 
 .tooltip {
   white-space: nowrap;
+}
+
+.cropper-wrap {
+  padding: 15px 10px;
+}
+
+.cropper-top {
+  @include clearfix
+}
+
+.cropper-title {
+  width: 240px;
+  padding: 0 10px;
+  float: left;
+}
+
+.cropper-loading {
+  width: 480px;
+  float: left;
+  padding: 0 10px;
+  @include to('s') {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
