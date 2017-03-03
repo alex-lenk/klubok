@@ -5,9 +5,8 @@
   .line {
     margin-bottom: 5px;
     padding: 0;
-    overflow: hidden;
     list-style: none;
-
+    @include clearfix;
     li {
       //outline: 1px solid green;
       outline-offset: -1px;
@@ -22,22 +21,13 @@
     }
   }
 
-  .col-1 {
+  .col-1, .col-4 {
     padding-left: 10px;
   }
-  .col-2 {
+  .col-2, .col-5, .col-6 {
     padding-right: 10px;
   }
-  .col-4 {
-    padding-left: 10px;
-  }
-  .col-5 {
-    padding-right: 10px;
-  }
-  .col-6 {
-    padding-right: 10px;
-  }
-  .col-3, .col-7, .col-10, .col-11, .col-12, .col-13, .col-14 {
+  .col-3, .col-7, .col-10, .col-11, .col-12, .col-13, .col-14, .col-16, .col-15 {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -59,11 +49,7 @@
     .col-6 {
       padding-left: 10px;
     }
-    .col-8 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .col-9 {
+    .col-8, .col-9 {
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -119,6 +105,12 @@
     }
     .col-14 {
       width: 400px;
+    }
+    .col-15 {
+      width: 275px;
+    }
+    .col-16 {
+      width: 640px;
     }
   }
   .btn-azure {
@@ -229,6 +221,37 @@
     }
     &:last-of-type {
       margin-bottom: 15px;
+    }
+  }
+}
+
+#addskan {
+  .line {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .format {
+    padding-top: 5px;
+    @include from('m') {
+      position: absolute;
+      bottom: -30px;
+      left: 90px;
+    }
+  }
+}
+
+#add-full-name .line {
+  margin-bottom: 15px;
+}
+
+#add-owners-address .line {
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+  @include to('s') {
+    margin-bottom: 10px;
+    li:not(:last-of-type):not(.label) {
+      margin-bottom: 10px;
     }
   }
 }

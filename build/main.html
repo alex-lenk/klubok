@@ -862,42 +862,30 @@
 <div class="modal fade personal-edit" id="add-full-name" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="container modal-content">
-            <div class="modal-group">
-                <div class="form-group">
-                    <label for="input41" class="col-sm-1 form-label text-bold">Фамилия</label>
+            <ul class="line">
+                <li class="col-1 label text-bold">Фамилия</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Имя</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Отчество</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+            </ul>
 
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input41"
-                               placeholder="введите">
-                    </div>
-
-                    <label for="input42" class="col-sm-1 form-label text-bold">Имя</label>
-
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input42"
-                               placeholder="введите">
-                    </div>
-
-                    <label for="input43" class="col-sm-1 form-label text-bold">Отчество</label>
-
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input43"
-                               placeholder="введите">
-                    </div>
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
                 </div>
-            </div>
-
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
                 </div>
             </div>
         </form>
@@ -908,71 +896,47 @@
 <div class="modal fade personal-edit" id="add-owners-address" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="container modal-content">
-            <div class="modal-group">
-                <div class="form-group">
-                    <label class="col-md-1 col-sm-2 form-info text-bold" for="input44">Адрес</label>
-                    <div class="col-md-8 col-sm-7">
-                        <input type="text" class="form-control hide-placeholder" id="input44"
-                               placeholder="введите адрес в произвольном виде">
-                    </div>
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7 label">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 label text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 label text-bold">Квартира</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
                 </div>
-
-                <div class="form-group">
-                    <label for="input45" class="col-sm-1 form-info text-bold">Страна</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control hide-placeholder" id="input45" placeholder="Россия">
-                    </div>
-
-                    <label for="input46" class="col-sm-1 form-info text-bold">Регион</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control hide-placeholder" id="input46"
-                               placeholder="Камчатский край">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="input47" class="col-sm-1 form-info text-bold">Город</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control hide-placeholder" id="input47"
-                               placeholder="Петропавловск-Камчатский">
-                    </div>
-
-                    <label for="input48" class="col-sm-1 form-info text-bold">Улица</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control hide-placeholder" id="input48"
-                               placeholder="переулок Столешников">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="input49" class="col-sm-1 form-info text-bold">Дом</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input49" placeholder="6с1">
-                    </div>
-
-                    <label for="input50" class="col-sm-1 form-info text-bold">Квартира</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input50" placeholder="6с1">
-                    </div>
-
-                    <label for="input51" class="col-sm-1 form-info text-bold">Индекс</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control hide-placeholder" id="input51" placeholder="125009">
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure">сохранить</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
                 </div>
             </div>
         </form>
@@ -983,48 +947,34 @@
 <div class="modal fade personal-edit" id="addskan" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <form action="#" class="container modal-content">
-            <div class="modal-group">
-                <div class="form-group">
-                    <label for="input52" class="col-sm-1 col-xs-12 form-label text-bold">Скан:</label>
+            <ul class="line">
+                <li class="col-12 label text-bold">Скан:</li>
+                <li class="col-13">
+                    <select class="form-control" id="input52">
+                        <option>Выберите документ</option>
+                        <option>Метрика щенка</option>
+                        <option>Родословная РКФ на русском</option>
+                        <option>Родословная РКФ на английском</option>
+                        <option>Родословная зарубежная</option>
+                    </select>
+                    <div class="format">Форматы: jpg, gif, pdf, tif. Размер не более 4мб.</div>
+                </li>
+                <li class="col-3 label">
+                    <span class="as-link text-bold" data-src="/img/example/rod-tit.jpg" data-fancybox=""
+                          data-caption="Родословная РКФ на английском">посмотреть</span>
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
 
-                    <div class="col-sm-4 col-xs-6">
-                        <select class="form-control" id="input52">
-                            <option>Выберите документ</option>
-                            <option>Метрика щенка</option>
-                            <option>Родословная РКФ на русском</option>
-                            <option>Родословная РКФ на английском</option>
-                            <option>Родословная зарубежная</option>
-                        </select>
-                    </div>
-
-                    <div class="col-sm-2 col-xs-2 form-label">
-                        <span class="as-link text-bold" data-src="/img/example/rod-tit.jpg" data-fancybox=""
-                              data-caption="Родословная РКФ на английском">посмотреть</span>
-                    </div>
-
-                    <div class="col-sm-1 col-xs-2 form-btn">
-                        <button class="btn btn-edit icon-pencil"></button>
-                    </div>
-
-                    <div class="col-sm-1 col-xs-2">
-                        <button class="btn btn-uninstall icon-bin"></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-group modal-footer">
-                <div class="form-group">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5 col-xs-12 form-info">
-                        Форматы: jpg, gif, pdf, tif. Размер не более 4мб.
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-sm-3 col-xs-12">
-                        <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
-                            закрыть окно
-                        </button>
-                    </div>
+            <div class="clearfix">
+                <div class="col-sm-4 label col-11"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
                 </div>
             </div>
         </form>

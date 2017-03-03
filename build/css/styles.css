@@ -3571,8 +3571,13 @@ h1, .h1 {
 .personal-edit .line {
   margin-bottom: 5px;
   padding: 0;
-  overflow: hidden;
   list-style: none;
+}
+
+.personal-edit .line:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .personal-edit .line li {
@@ -3589,27 +3594,15 @@ h1, .h1 {
   margin-right: 20px;
 }
 
-.personal-edit .col-1 {
+.personal-edit .col-1, .personal-edit .col-4 {
   padding-left: 10px;
 }
 
-.personal-edit .col-2 {
+.personal-edit .col-2, .personal-edit .col-5, .personal-edit .col-6 {
   padding-right: 10px;
 }
 
-.personal-edit .col-4 {
-  padding-left: 10px;
-}
-
-.personal-edit .col-5 {
-  padding-right: 10px;
-}
-
-.personal-edit .col-6 {
-  padding-right: 10px;
-}
-
-.personal-edit .col-3, .personal-edit .col-7, .personal-edit .col-10, .personal-edit .col-11, .personal-edit .col-12, .personal-edit .col-13, .personal-edit .col-14 {
+.personal-edit .col-3, .personal-edit .col-7, .personal-edit .col-10, .personal-edit .col-11, .personal-edit .col-12, .personal-edit .col-13, .personal-edit .col-14, .personal-edit .col-16, .personal-edit .col-15 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -3631,11 +3624,7 @@ h1, .h1 {
   .personal-edit .col-6 {
     padding-left: 10px;
   }
-  .personal-edit .col-8 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .personal-edit .col-9 {
+  .personal-edit .col-8, .personal-edit .col-9 {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -3691,6 +3680,12 @@ h1, .h1 {
   }
   .personal-edit .col-14 {
     width: 400px;
+  }
+  .personal-edit .col-15 {
+    width: 275px;
+  }
+  .personal-edit .col-16 {
+    width: 640px;
   }
 }
 
@@ -3789,6 +3784,40 @@ h1, .h1 {
 
 #add-passport .line:last-of-type {
   margin-bottom: 15px;
+}
+
+#addskan .line {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#addskan .format {
+  padding-top: 5px;
+}
+
+@media (min-width: 720px) {
+  #addskan .format {
+    position: absolute;
+    bottom: -30px;
+    left: 90px;
+  }
+}
+
+#add-full-name .line {
+  margin-bottom: 15px;
+}
+
+#add-owners-address .line:last-of-type {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 719px) {
+  #add-owners-address .line {
+    margin-bottom: 10px;
+  }
+  #add-owners-address .line li:not(:last-of-type):not(.label) {
+    margin-bottom: 10px;
+  }
 }
 
 footer {
@@ -4933,6 +4962,9 @@ footer span {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .edit-data .form-group .radio {
+    padding-top: 10px;
   }
 }
 
