@@ -86,3 +86,12 @@ body {
     margin-top: 5px;
   }
 }
+
+.mating-form {
+  legend {
+    margin-bottom: 15px;
+  }
+  fieldset:first-of-type legend {
+    margin-bottom: 22px;
+  }
+}

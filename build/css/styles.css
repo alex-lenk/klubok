@@ -2837,7 +2837,7 @@ b, strong {
 
 h1, .h1 {
   padding: 0 10px;
-  margin: 0 0 12px;
+  margin: 0 0 22px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -4896,9 +4896,57 @@ footer span {
   padding-top: 1px;
 }
 
+.edit-data fieldset {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 720px) {
+  .edit-data .col-three {
+    padding-left: 320px;
+    width: 100%;
+  }
+  .edit-data .col-three:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+@media (max-width: 479px) {
+  .edit-data .col-three {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .edit-data .col-three .radio {
+    display: inline-block;
+    margin-right: 15px;
+    width: auto;
+  }
+}
+
+.edit-data .col-three li {
+  margin-left: 0;
+}
+
+@media (min-width: 480px) {
+  .edit-data .col-three li {
+    width: calc(100% / 3);
+    margin-bottom: 0;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .edit-data .col-three li:not(:last-child):not(.radio) {
+    margin-bottom: 5px;
+  }
+}
+
 @media (min-width: 720px) {
   .edit-data .col-double {
-    padding-left: 300px;
+    padding-left: 320px;
     width: 100%;
   }
   .edit-data .col-double:after {
@@ -4946,17 +4994,20 @@ footer span {
     overflow-x: hidden;
   }
   .edit-data .form-label {
-    min-width: 300px;
-    width: 300px;
+    width: 320px;
   }
+  .edit-data .text-info,
   .edit-data .col-sm-8,
   .edit-data .form-info {
-    margin-left: 300px;
+    margin-left: 320px;
     float: none;
     width: auto;
   }
   .edit-data .form-info {
     padding-right: 75px;
+  }
+  .edit-data .text-info {
+    padding-top: 10px;
   }
   .edit-data .form-btn {
     position: absolute;
@@ -5335,6 +5386,14 @@ body:before {
     width: 100%;
     margin-top: 5px;
   }
+}
+
+.mating-form legend {
+  margin-bottom: 15px;
+}
+
+.mating-form fieldset:first-of-type legend {
+  margin-bottom: 22px;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */
