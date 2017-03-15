@@ -69,7 +69,7 @@ $(window).on('load', function () {
 
 
     $('[data-toggle="tooltip"]').tooltip({
-        'delay': {show: 500, hide: 100}
+        //'delay': {show: 500, hide: 100}
     });
 
     $(".login-options__item").click(function () {
@@ -85,9 +85,7 @@ $(window).on('load', function () {
     });
 });
 
-$("[data-fancybox]").fancybox({
-    // Options will go here
-});
+$("[data-fancybox]").fancybox({});
 
 $(function () {
     var $image = $('#image');
@@ -107,4 +105,37 @@ $(function () {
         canvasData = $image.cropper('getCanvasData');
         $image.cropper('destroy');
     });
+});
+
+$(document).ready(function () {
+
+    $(".post-edit").click(
+        function () {
+            var e = $(this).parent().find('.post-edit-nav');
+            var b = $(this).parent().find('.post-edit');
+            e.toggleClass("post-edit-close");
+            b.toggleClass("post-edit-top");
+        }
+    );
+
+    $(".post-meta-open-form").click(
+        function () {
+            var e = $(this).parent().parent().find('.comment-form');
+            e.toggleClass("close-form-comment");
+        }
+    );
+
+    $(".post-reply-third").click(
+        function () {
+            var e = $(this).parent('.post-comment-reply');
+            e.toggleClass("post-comment-reply__open");
+        }
+    );
+
+
+/*    $('textarea').keyup(function () {
+        $(this).height(0);
+        $(this).height(this.scrollHeight);
+        if ($(this).val().length <= 0) $(this).height(0);
+    });*/
 });

@@ -1,5 +1,5 @@
 .personal-data {
-  padding: 31px 0 10px;
+  padding-bottom: 10px;
   overflow-x: hidden;
   line-height: 1.2;
   @include from('m') {
@@ -15,6 +15,11 @@
     .btn-edit {
       top: 2px;
     }
+  }
+
+  h1, .h1 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &-line {

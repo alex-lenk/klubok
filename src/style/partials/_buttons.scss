@@ -19,7 +19,7 @@
     @include to('l') {
       padding-left: 5px;
       padding-right: 5px;
-      font-size: 12px;
+      font-weight: 700;
     }
     &:hover {
       border-color: $color-azure;

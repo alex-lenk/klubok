@@ -194,3 +194,45 @@
     content: $icon-top;
   }
 }
+
+.icon-upload {
+  &:before {
+    content: $icon-upload;
+  }
+}
+
+.icon-clock {
+  &:before {
+    content: $icon-clock;
+  }
+}
+
+.icon-like {
+  &:before {
+    content: $icon-like;
+  }
+}
+
+.icon-dislike {
+  &:before {
+    content: $icon-dislike;
+  }
+}
+
+.icon-neutral {
+  &:before {
+    content: $icon-neutral;
+  }
+}
+
+.icon-share {
+  &:before {
+    content: $icon-share;
+  }
+}
+
+.icon-from {
+  &:before {
+    content: $icon-from;
+  }
+}

@@ -1,19 +1,10 @@
-//@todo delete!
-header {
+.panel {
+  margin-bottom: 31px;
   @include from('l') {
     height: 410px;
     overflow: hidden;
   }
   position: relative;
-/*  &:before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: red;
-  }*/
 }
 
 .login {

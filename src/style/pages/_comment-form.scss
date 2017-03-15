@@ -1,0 +1,175 @@
+.comment-form {
+  margin-bottom: 35px;
+  padding: 15px 20px;
+  border: 1px solid #bab8b9;
+  border-radius: 5px;
+  display: flex;
+  &-avatar {
+    max-width: 50px;
+    padding-right: 10px;
+    flex: 1 0 50px;
+    img {
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &-group {
+    padding-left: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    textarea {
+      padding: 11px 10px 0;
+      height: 40px;
+      min-height: 40px;
+      margin: 0 0 15px;
+      resize: none;
+      overflow: hidden;
+      width: 100%;
+      border: 1px solid #00adbf;
+      font-size: 14px;
+      background-color: #ffffff;
+      display: block;
+      word-wrap: break-word;
+    }
+  }
+
+  &-bottom {
+    @include from('m') {
+      @include clearfix;
+    }
+  }
+
+  &-control {
+    font-size: 0;
+    float: left;
+    padding-top: 7px;
+    @include to('s') {
+      margin-bottom: 15px;
+    }
+    li {
+      display: inline-block;
+      vertical-align: top;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      color: #1bbed2;
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+      &:hover {
+        color: #1497a7;
+      }
+    }
+    .collapsed {
+      color: #1497a7;
+      &:hover {
+        color: #1bbed2;
+      }
+    }
+    .icon-camera2 {
+      font-size: 20px;
+    }
+    .icon-upload {
+      font-size: 17px;
+    }
+    .icon-clock {
+      font-size: 20px;
+    }
+  }
+
+  &-action {
+    @include from('m') {
+      float: right;
+      width: 480px;
+      @include clearfix;
+      .form-control {
+        width: 220px;
+        float: left;
+        margin: 0 20px;
+      }
+    }
+    @include at('s') {
+      width: 100%;
+      overflow: hidden;
+    }
+    .form-control {
+      @include to('s') {
+        margin-bottom: 5px;
+      }
+      @include at('s') {
+        width: 48%;
+        float: left;
+      }
+      @include to('xs') {
+        font-size: 13px;
+      }
+    }
+    .btn {
+      width: 100%;
+      @include from('m') {
+        max-width: 220px;
+      }
+      @include at('s') {
+        width: 48%;
+        max-width: none;
+        float: right;
+      }
+    }
+  }
+
+  .upload-photo {
+    @include from('m') {
+      margin: 0 -10px 5px;
+    }
+    @include to('s') {
+      margin: 0 -5px 5px;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 63px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    img {
+      outline-offset: -1px;
+      transition: all 0.3s ease;
+      outline: 0 solid #00adbf;
+      &:hover {
+        outline-width: 1px;
+      }
+    }
+  }
+}
+
+.clock-line {
+  margin-bottom: 15px;
+  @include to('s') {
+    li:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+  @include from('m') {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &-label {
+      max-width: 130px;
+      flex: 1 0 130px;
+    }
+    &-now {
+      padding-right: 10px;
+      padding-left: 10px;
+      max-width: 240px;
+      flex: 1 0 240px;
+    }
+    &-select {
+      padding-left: 10px;
+      max-width: 230px;
+      flex: 1 0 230px;
+    }
+  }
+}

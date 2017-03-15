@@ -192,425 +192,244 @@
 </header>
 
 
-    <form action="#" class="edit-data">
-        <h1 class="text-uppercase">ДАННЫЕ СОБАКИ</h1>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-line-1 text-bold">Вы заполняете данные как:</div>
-
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio01"> владелец</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio01"> не моя собака</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-line-1 text-bold">Родословная РКФ:</div>
-
-            <ul class="col-double list-unstyled">
-                <li>
+    <form action="#" class="mating-form edit-data">
+        <fieldset>
+            <legend class="h1 text-uppercase">ДАННЫЕ КЛУБА</legend>
+            <div class="form-group">
+                <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Кинологический клуб:</label>
+                <div class="col-sm-8 col-xs-12">
                     <select class="form-control">
-                        <option disabled selected>Введите серию</option>
-                        <option>РКФ (Россия)</option>
+                        <option disabled="" selected="">Выберите клуб</option>
+                        <option>FCI - 1</option>
+                        <option>FCI - 2</option>
+                        <option>FCI - 3</option>
+                        <option>Другие ...</option>
                     </select>
-                </li>
-                <li>
-                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
-                </li>
-            </ul>
-        </div>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Родословная зарубежная:</div>
-            <ul class="col-double list-unstyled">
-                <li>
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Федерация:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">РФСС, учетный номер в федерации 9912</div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Адрес, телефон:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">
+                    123456, Россия, г. Москва, ул Тверская 10, кв. 16, т. +7 (499) 743-76-05
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h1 text-uppercase">ДАННЫЕ ХОЗЯИНА И КОБЕЛЯ</legend>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Родословная:</div>
+                <ul class="col-double list-unstyled">
+                    <li>
+                        <select class="form-control">
+                            <option disabled>Введите серию</option>
+                            <option selected>РКФ (Россия)</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Клеймо, чип:</div>
+                <ul class="col-double list-unstyled">
+                    <li class="text-info">
+                        TML 46789
+                    </li>
+                    <li class="text-info">
+                        6789999999
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Кличка:</label>
+                <div class="text-info col-sm-8 col-xs-12">
+                    ЧАРТЛИВУС ПОМ КЕЙ МАГИС
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Хозяин:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">Соловьева Л.В.</div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Адрес, телефон:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">
+                    129642, Россия, г. Москва, проезд дежнева, д. 19, корпус 2, кв. 237, т. +7 (456) 678-23-14
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h1 text-uppercase">ДАННЫЕ СУКИ И ХОЗЯИНА</legend>
+
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Родословная:</div>
+                <ul class="col-double list-unstyled">
+                    <li>
+                        <select class="form-control">
+                            <option disabled>Введите серию</option>
+                            <option selected>РКФ (Россия)</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Клеймо, чип:</div>
+                <ul class="col-double list-unstyled">
+                    <li class="text-info">
+                        TML 46789
+                    </li>
+                    <li class="text-info">
+                        6789999999
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Кличка:</label>
+                <div class="text-info col-sm-8 col-xs-12">
+                    МИЛАНА ЛИ ЛАЙТ ЛИЛ ЛИНДА
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Хозяин:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">Горбачева Л.А.</div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Адрес, телефон:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">
+                    129616, Россия, г. Москва, ул. Тверская, д. 14, кв. 18, т.м.+7 (584) 456-98-12
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h1 text-uppercase">ДАННЫЕ ИНСТРУКТОРА ВЯЗКИ</legend>
+
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Инструктор вязки:</div>
+                <div class="col-sm-8 col-xs-12">
                     <select class="form-control">
-                        <option disabled selected>Введите серию</option>
-                        <option>DKK (Англия)</option>
-                        <option>CMKU (Германия)</option>
+                        <option>ФИО 1 инструктора клуба</option>
+                        <option>ФИО 2 инструктора клуба</option>
+                        <option>ФИО хозяина суки</option>
+                        <option>ФИО хозяина кобеля</option>
                     </select>
-                </li>
-                <li>
-                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Клеймо:</div>
-            <ul class="col-double list-unstyled">
-                <li>
-                    <input type="text" class="form-control hide-placeholder" placeholder="Введите серию">
-                </li>
-                <li>
-                    <input type="text" class="form-control hide-placeholder" placeholder="Введите номер">
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input33">ЧИП:</label>
-            <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control hide-placeholder" id="input33" placeholder="Введите данные">
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input34">Стандарт и группа:</label>
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input34">
-                    <option disabled selected>Выберите стандарт и группу:</option>
-                    <option>FCI - 1 (пастушьи и скотогонные собаки, кроме швейцарских скотогонных собак)</option>
-                    <option>FCI - 2 (пинчеры и шнауцеры, молоссы, горные и швейцарские скотогонные собаки)</option>
-                    <option>FCI - 3 (терьеры)</option>
-                    <option>Другие федерации....</option>
-                </select>
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12">Адрес, телефон:</div>
+
+                <div class="text-info col-sm-8 col-xs-12">
+                    129616, Россия, г. Москва, ул. Тверская, д. 14, кв. 18, т.м.+7 (584) 456-98-12
+                </div>
             </div>
-        </div>
+        </fieldset>
 
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input35">Порода:</label>
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input35">
-                    <option disabled selected>Выберите породу</option>
-                    <option>Австралийская овчарка</option>
-                    <option>Австралийский келпи</option>
-                    <option>Австралийский хилерБелая Швейцарская овчарка</option>
-                    <option>Бельгийская овчарка</option>
-                    <option>Бергамская овчарка</option>
-                    <option>Бобтейл</option>
-                    <option>Бордер колли</option>
-                    <option>Бородатый колли</option>
-                    <option>Босерон</option>
-                </select>
-            </div>
-        </div>
+        <fieldset>
+            <legend class="h1 text-uppercase">ПЕРВОНАЧАЛЬНАЯ ВЯЗКА</legend>
 
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input36">Разновидность породы:</label>
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input36">
-                    <option disabled selected>Выберите разновидность породы</option>
-                    <option>короткошерстная</option>
-                    <option>длинношерстная</option>
-                    <option>жесткошерстная</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input37">Окрас: <span class="error-text hidden-sm">(не стандарт)</span></label>
-
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input37">
-                    <option disabled selected>Выберите окрас</option>
-                    <option>Черный</option>
-                    <option>белый</option>
-                    <option>Не стандарт</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Пол:</div>
-
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio02"> Кобель</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio02"> Сука</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Даты жизни:</div>
-            <ul class="col-double list-unstyled">
-                <li>
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Дата вязки:</div>
+                <div class="col-sm-4 col-xs-12">
                     <select class="form-control">
-                        <option selected>Дата рождения</option>
+                        <option>Выберите дату</option>
                     </select>
-                </li>
-                <li>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Адрес вязки:</div>
+
+                <ul class="col-three list-unstyled">
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> кобеля</label>
+                    </li>
+
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> суки</label>
+                    </li>
+
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> инструктора</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12"></div>
+
+                <div class="text-info col-sm-8 col-xs-12">
+                    129616, Россия, г. Москва, ул. Тверская, д. 14, кв. 18, т.м.+7 (584) 456-98-12
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h1 text-uppercase">КОНТРОЛЬНАЯ ВЯЗКА</legend>
+
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Дата вязки:</div>
+                <div class="col-sm-4 col-xs-12">
                     <select class="form-control">
-                        <option selected>Дата смерти</option>
+                        <option>Выберите дату</option>
                     </select>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input53">Кличка:</label>
-            <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control hide-placeholder" id="input53" placeholder="Введите кличку">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input54">Питомник / заводская пристака:</label>
-            <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control hide-placeholder" id="input54" placeholder="Введите название">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Уши купрованы:</div>
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio1" checked> Да</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio1"> Нет</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Хвост купрован:</div>
-
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio2" checked> Да</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio2"> Нет</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Пальцы на передних лапах купированы:</div>
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio3" checked> Да</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio3"> Нет</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input38">Генетический тест 1:</label>
-
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input38">
-                    <option disabled selected>Выберите вариант</option>
-                    <option>Положительный</option>
-                    <option>Отриацательный</option>
-                    <option>Носитель</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input39">Генетический тест 2:</label>
-
-            <div class="col-sm-8 col-xs-12">
-                <select class="form-control" id="input39">
-                    <option disabled selected>Выберите вариант</option>
-                    <option>Положительный</option>
-                    <option>Отриацательный</option>
-                    <option>Носитель</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-sm-4 col-xs-12 form-label text-bold text-line-1" for="input40">Описание:</label>
-
-            <div class="col-sm-8 col-xs-12">
-                <textarea name="textarea" class="form-control hide-placeholder" id="input40"
-                          placeholder="Введите произвольное описание собаки"></textarea>
-            </div>
-        </div>
-
-        <div class="form-group edit-data-photo">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Фотографии:</div>
-
-            <ul class="upload-photo list-unstyled">
-                <li>
-                    <label class="file_upload icon-cross">
-                        <input type="file">
-                    </label>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u1.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u2.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u3.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u4.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u5.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u6.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u7.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u3.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-                <li class="option-hide">
-                    <img src="/img/example/u6.jpg" alt="">
-                    <div class="upload-photo-option">
-                        <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox
-                              data-caption="" title="Просмотреть фото"></span>
-                        <span class="icon-cross" title="Удалить фото"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Метрика щенка</div>
-
-            <div class="col-md-7 col-sm-6 col-xs-12 form-info">
-                <span class="as-link text-bold" data-src="/img/example/40d4e63ebeee.jpg" data-fancybox
-                      data-caption="Метрика щенка">посмотреть</span>
+                </div>
             </div>
 
-            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
-                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#addskan"></button>
-            </div>
-        </div>
+            <div class="form-group">
+                <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Адрес вязки:</div>
 
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Родословная РКФ на русском</div>
+                <ul class="col-three list-unstyled">
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> кобеля</label>
+                    </li>
 
-            <div class="col-md-7 col-sm-6 col-xs-12 form-info">
-                <span class="as-link text-bold" data-src="/img/example/600655591.jpg"
-                      data-fancybox data-caption="Родословная РКФ на русском">посмотреть</span>
-            </div>
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> суки</label>
+                    </li>
 
-            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
-                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#addskan"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Родословная РКФ на английском</div>
-
-            <div class="col-md-7 col-sm-6 col-xs-12 form-info">
-                <span class="as-link text-bold" data-src="/img/example/rod-tit.jpg"
-                      data-fancybox data-caption="Родословная РКФ на английском">посмотреть</span>
+                    <li class="text-info radio">
+                        <label><input type="radio" name="radio02"> инструктора</label>
+                    </li>
+                </ul>
             </div>
 
-            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
-                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#addskan"></button>
-            </div>
-        </div>
+            <div class="form-group">
+                <div class="form-label text-line-1 text-bold col-sm-4 col-xs-12"></div>
 
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold">
-                <span class="as-link" data-toggle="modal" data-backdrop="static" data-target="#addskan">Добавить новый скан документа</span>
+                <div class="text-info col-sm-8 col-xs-12">
+                    129616, Россия, г. Москва, ул. Тверская, д. 14, кв. 18, т.м.+7 (584) 456-98-12
+                </div>
             </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Собака / щенок:</div>
-            <ul class="col-double list-unstyled">
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio7"> для разведения</label>
-                </li>
-
-                <li class="form-info radio">
-                    <label><input type="radio" name="radio7"> Для души</label>
-                </li>
-            </ul>
-        </div>
-
-        <h2 class="h1">ДАННЫЕ ЗАВОДЧИКА</h2>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">ФИО:</div>
-            <div class="col-md-7 col-sm-6 col-xs-12 form-info">
-                    Петрова Валентина Ивановна
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
-                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#add-full-name"></button>
-            </div>
-        </div>
-
-        <div class="form-group form-edit">
-            <div class="col-sm-4 col-xs-12 form-label text-bold text-line-1">Домашний адрес:</div>
-            <div class="col-md-7 col-sm-6 col-xs-12 form-info">
-                606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-1 form-btn">
-                <button type="button" class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static" data-target="#add-owners-address"></button>
-            </div>
-        </div>
-
-        <div class="form-group button-area">
-            <div class="col-md-6 col-sm-4 col-xs-12"></div>
-            <div class="col-md-3 col-sm-4">
-                <button type="button" class="btn btn-azure btn-auto">сохранить</button>
-            </div>
-            <div class="col-md-3 col-sm-4">
-                <button type="button" class="btn btn-azure btn-auto" data-dismiss="modal" aria-label="Close">
-                    вернуться назад
-                </button>
-            </div>
-        </div>
-
+        </fieldset>
     </form>
 </div>
 

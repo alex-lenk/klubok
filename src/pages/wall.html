@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- include "templates/head.html" -->
+</head>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <!-- include "templates/header.html" -->
+
+    <div class="clearfix">
+        <aside class="col-md-3">
+            <div class="sidebar text-center">
+                <br>
+                <br>
+                left
+                <br>
+                <br>
+            </div>
+        </aside>
+
+        <section class="my-content col-md-9">
+            <h1 class="text-uppercase">Мои публикации</h1>
+
+            <form action="#" class="comment-form">
+                <div class="comment-form-avatar"><img src="img/example/1450026431170359110.jpg" alt=""></div>
+
+                <div class="comment-form-group">
+                    <div><textarea placeholder="Начните писать..."></textarea></div>
+                    <div class="collapse" id="uploadPhoto">
+                        <ul class="upload-photo list-unstyled">
+                            <li>
+                                <label class="file_upload icon-cross">
+                                    <input type="file">
+                                </label>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u1.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u2.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u3.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u4.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u5.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u6.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u7.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u3.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                            <li class="option-hide">
+                                <img src="/img/example/u6.jpg" alt="">
+                                <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                    <span class="icon-cross" title="Удалить фото"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="collapse" id="collapseClock">
+                        <ul class="clock-line list-unstyled">
+                            <li class="clock-line-label text-bold">Опубликовать</li>
+                            <li class="clock-line-now">
+                                <select class="form-control">
+                                    <option>Сейчас</option>
+                                </select>
+                            </li>
+                            <li class="clock-line-select">
+                                <select class="form-control">
+                                    <option>Время</option>
+                                    <option>00:00</option>
+                                    <option>00:30</option>
+                                    <option>01:00</option>
+                                    <option>01:30</option>
+                                    <option>02:00</option>
+                                    <option>-------</option>
+                                    <option>23:00</option>
+                                    <option>23:30</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comment-form-bottom">
+                        <ul class="comment-form-control list-unstyled">
+                            <li class="icon-camera2 collapsed" data-toggle="collapse" data-target="#uploadPhoto"
+                                aria-expanded="false"></li>
+                            <li class="icon-clock collapsed" data-toggle="collapse" data-target="#collapseClock"
+                                aria-expanded="false"></li>
+                        </ul>
+
+                        <div class="comment-form-action">
+                            <select class="form-control">
+                                <option>Кто это увидит</option>
+                                <option>Все</option>
+                                <option>Только друзья</option>
+                                <option>Только я</option>
+                            </select>
+
+                            <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                опубликовать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="post">
+                <div class="post-user">
+                    <img src="img/example/9uxj5c.jpg" alt="" class="post-user-pick">
+
+                    <div class="post-info">
+                        <div class="post-title"><a href="#">ГЕНЕРАЛОВА ЕЛЕНА НИКОЛАЕВНА</a></div>
+                        <div class="post-date">12.01.2016 17:00</div>
+                    </div>
+
+                    <div class="post-edit"></div>
+
+                    <ul class="post-edit-nav post-edit-close list-unstyled">
+                        <li><a href="#">Сохранить публикацию (в избранное к себе на страницу)</a></li>
+                        <li><a href="#">Редактировать публикацию</a></li>
+                        <li><a href="#">Изменить дату публикации</a></li>
+                        <li><a href="#">Скрыть из Хроники</a></li>
+                        <li><a href="#">Редактировать доступность (доступно только друзьям)</a></li>
+                        <li><a href="#">Выключить уведомления о новых комментариях</a></li>
+                        <li><a href="#">Код для репоста на других ресурсах</a></li>
+                        <li><a href="#">Удалить публикация</a></li>
+                    </ul>
+                </div>
+
+                <div class="post-text"><p>С большим нетерпением ждал я нового охотничьего сезона. Но начался он как-то
+                    неудачно. В полях птицы
+                    было кот наплакал. Пришлось немного переключиться на утку. Но и здесь многих подстерегала коварная
+                    неудача. Знакомые добычливые водоёмы выгорели и на их месте оставалась лишь выжженная земля с
+                    остатками обгоревших кустов. Не было и того раздолья с перепелами и куропатками, что так радовало
+                    душу в прошедшем сезоне. Мы с Мушкетом загрустили,ожидая Знакомые добычливые водоёмы выгорели и на
+                    их месте оставалась лишь выжженная земля... <span class="as-link">Подробнее</span></p></div>
+
+                <ul class="post-media list-unstyled">
+                    <li data-src="/img/example/img.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/img.jpg" alt="">
+                    </li>
+                    <li data-src="/img/example/img-2.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/img-2.jpg" alt="">
+                    </li>
+                    <li data-src="/img/example/img-3.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/img-3.jpg" alt="">
+                    </li>
+                    <li data-src="/img/example/img-4.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/img-4.jpg" alt="">
+                    </li>
+                </ul>
+
+                <ul class="post-count-like list-unstyled">
+                    <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Всеволод"></li>
+                    <li class="icon-dislike" data-toggle="tooltip" data-placement="top" title="Александр"></li>
+                    <li class="icon-neutral" data-toggle="tooltip" data-placement="top" title="Илья"></li>
+                    <li data-toggle="tooltip" data-placement="top" title="Всеволод, Александр, Илья"><a href="#">Всего
+                        22</a></li>
+                </ul>
+
+                <ul class="post-meta list-unstyled">
+                    <li class="icon-like">Нравится
+                        <ul class="post-meta-people">
+                            <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Нравится"></li>
+                            <li class="icon-dislike" data-toggle="tooltip" data-placement="top"
+                                title="Не нравится"></li>
+                            <li class="icon-neutral" data-toggle="tooltip" data-placement="top"
+                                title="Мне всеравно"></li>
+                        </ul>
+                    </li>
+
+                    <li class="icon-message-load post-meta-open-form">Комментарий</li>
+
+                    <li class="icon-share">Поделиться</li>
+                </ul>
+
+                <form action="#" class="comment-form close-form-comment">
+                    <div class="comment-form-avatar"><img src="img/example/2.jpg" alt=""></div>
+
+                    <div class="comment-form-group">
+                        <div><textarea placeholder="Начните писать..."></textarea></div>
+
+                        <div class="collapse" id="uploadPhoto4">
+                            <ul class="upload-photo list-unstyled">
+                                <li>
+                                    <label class="file_upload icon-cross">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u1.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u2.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u4.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u5.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u7.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="comment-form-bottom">
+                            <ul class="comment-form-control list-unstyled">
+                                <li class="icon-camera2 collapsed" data-toggle="collapse" data-target="#uploadPhoto4"
+                                    aria-expanded="false"></li>
+                            </ul>
+
+                            <div class="comment-form-action">
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    ОЧИСТИТ И ЗАКРЫТЬ
+                                </button>
+
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    опубликовать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="post">
+                <div class="post-user">
+                    <img src="img/example/topoboi.com-20904.jpg" alt="" class="post-user-pick">
+
+                    <div class="post-info">
+                        <div class="post-title"><a href="#">РОХЕЛИ ИОСИФ ДАВЫДОВИЧ</a></div>
+                        <div class="post-date">12.01.2016 17:00</div>
+                    </div>
+
+                    <div class="post-edit"></div>
+
+                    <ul class="post-edit-nav post-edit-close list-unstyled">
+                        <li><a href="#">Сохранить публикацию (в избранное к себе на страницу)</a></li>
+                        <li><a href="#">Редактировать публикацию</a></li>
+                        <li><a href="#">Изменить дату публикации</a></li>
+                        <li><a href="#">Скрыть из Хроники</a></li>
+                        <li><a href="#">Редактировать доступность (доступно только друзьям)</a></li>
+                        <li><a href="#">Выключить уведомления о новых комментариях</a></li>
+                        <li><a href="#">Код для репоста на других ресурсах</a></li>
+                        <li><a href="#">Удалить публикация</a></li>
+                    </ul>
+                </div>
+
+                <div class="post-text">
+                    <p>Ровный золотистый свет луны заливал высокий дом, стоящий на сваях, как на
+                        ходулях, освещал ребятишек и взрослых, сидящих на высоком помосте — открытом крыльце — вокруг
+                        старого Тхыонга, деда-сказочника. Невдалеке сквозь тропическую ночь скорее угадывались, чем
+                        виднелись силуэты невысоких, сгорбленных, как черепахи, вьетнамских гор. Размеренно и напевно
+                        лилась речь — дед рассказывал сказки.</p>
+
+                    <p>В них, как и в сказках всех народов мира, жила дерзновенная мечта человека о счастье, о чудесных
+                        предметах и чудесах: ковре-самолете и тысячемильных туфлях, о дворцах, возникающих по
+                        волшебству, и о необыкновенных, огромных рисовых зернах.</p>
+
+                    <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру
+                        в свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно
+                        невозможным...
+                        Наутро я прощался с дедом Тхыонгом, и еще долго слышались мне мелодичные и величавые звуки
+                        гонга, доносившиеся из его дома, где собрались люди по случаю отъезда советско-вьетнамской
+                        экспедиции фольклористов <span class="as-link">свернуть</span></p>
+                </div>
+
+                <ul class="post-count-like list-unstyled">
+                    <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Всеволод"></li>
+                    <li class="icon-dislike" data-toggle="tooltip" data-placement="top" title="Александр"></li>
+                    <li class="icon-neutral" data-toggle="tooltip" data-placement="top" title="Илья"></li>
+                    <li data-toggle="tooltip" data-placement="top" title="Всеволод, Александр, Илья"><a href="#">Всего
+                        22</a></li>
+                </ul>
+
+                <ul class="post-meta list-unstyled">
+                    <li class="icon-like">Нравится
+                        <ul class="post-meta-people">
+                            <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Нравится"></li>
+                            <li class="icon-dislike" data-toggle="tooltip" data-placement="top"
+                                title="Не нравится"></li>
+                            <li class="icon-neutral" data-toggle="tooltip" data-placement="top"
+                                title="Мне всеравно"></li>
+                        </ul>
+                    </li>
+                    <li class="icon-message-load post-meta-open-form">Комментарий</li>
+                    <li class="icon-share">Поделиться</li>
+                </ul>
+
+                <form action="#" class="comment-form close-form-comment">
+                    <div class="comment-form-avatar"><img src="img/example/2.jpg" alt=""></div>
+
+                    <div class="comment-form-group">
+                        <div><textarea placeholder="Начните писать..."></textarea></div>
+
+                        <div class="collapse" id="uploadPhoto2">
+                            <ul class="upload-photo list-unstyled">
+                                <li>
+                                    <label class="file_upload icon-cross">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u1.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u2.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u4.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u5.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u7.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="comment-form-bottom">
+                            <ul class="comment-form-control list-unstyled">
+                                <li class="icon-camera2 collapsed" data-toggle="collapse" data-target="#uploadPhoto2"
+                                    aria-expanded="false"></li>
+                            </ul>
+
+                            <div class="comment-form-action">
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    ОЧИСТИТ И ЗАКРЫТЬ
+                                </button>
+
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    опубликовать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="post">
+                <div class="post-user">
+                    <img src="img/example/446667.jpg" alt="" class="post-user-pick">
+
+                    <div class="post-info">
+                        <div class="post-title"><a href="#">ГЕССЕР САРА АБРАМОВНА</a></div>
+                        <div class="post-date">12.01.2016 17:00</div>
+                    </div>
+
+                    <div class="post-edit"></div>
+
+                    <ul class="post-edit-nav post-edit-close list-unstyled">
+                        <li><a href="#">Сохранить публикацию (в избранное к себе на страницу)</a></li>
+                        <li><a href="#">Редактировать публикацию</a></li>
+                        <li><a href="#">Изменить дату публикации</a></li>
+                        <li><a href="#">Скрыть из Хроники</a></li>
+                        <li><a href="#">Редактировать доступность (доступно только друзьям)</a></li>
+                        <li><a href="#">Выключить уведомления о новых комментариях</a></li>
+                        <li><a href="#">Код для репоста на других ресурсах</a></li>
+                        <li><a href="#">Удалить публикация</a></li>
+                    </ul>
+                </div>
+
+                <div class="post-text">
+                    <p>Ровный золотистый свет луны заливал высокий дом, стоящий на сваях, как на
+                        ходулях, освещал ребятишек и взрослых, сидящих на высоком помосте — открытом крыльце — вокруг
+                        старого Тхыонга, деда-сказочника. Невдалеке сквозь тропическую ночь скорее угадывались, чем
+                        виднелись силуэты невысоких, сгорбленных, как черепахи, вьетнамских гор. Размеренно и напевно
+                        лилась речь — дед рассказывал сказки.</p>
+
+                    <p>В них, как и в сказках всех народов мира, жила дерзновенная мечта человека о счастье, о чудесных
+                        предметах и чудесах: ковре-самолете и тысячемильных туфлях, о дворцах, возникающих по
+                        волшебству, и о необыкновенных, огромных рисовых зернах.</p>
+
+                    <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру
+                        в свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно
+                        невозможным...
+                        Наутро я прощался с дедом Тхыонгом, и еще долго слышались мне мелодичные и величавые звуки
+                        гонга, доносившиеся из его дома, где собрались люди по случаю отъезда советско-вьетнамской
+                        экспедиции фольклористов <span class="as-link">свернуть</span></p>
+                </div>
+
+                <ul class="post-count-like list-unstyled">
+                    <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Всеволод"></li>
+                    <li class="icon-dislike" data-toggle="tooltip" data-placement="top" title="Александр"></li>
+                    <li class="icon-neutral" data-toggle="tooltip" data-placement="top" title="Илья"></li>
+                    <li data-toggle="tooltip" data-placement="top" title="Всеволод, Александр, Илья"><a href="#">Всего
+                        22</a></li>
+                </ul>
+
+                <ul class="post-meta list-unstyled">
+                    <li class="icon-like">Нравится
+                        <ul class="post-meta-people">
+                            <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Нравится"></li>
+                            <li class="icon-dislike" data-toggle="tooltip" data-placement="top"
+                                title="Не нравится"></li>
+                            <li class="icon-neutral" data-toggle="tooltip" data-placement="top"
+                                title="Мне всеравно"></li>
+                        </ul>
+                    </li>
+                    <li class="icon-message-load post-meta-open-form">Комментарий</li>
+                    <li class="icon-share">Поделиться</li>
+                </ul>
+
+                <form action="#" class="comment-form close-form-comment">
+                    <div class="comment-form-avatar"><img src="img/example/2.jpg" alt=""></div>
+
+                    <div class="comment-form-group">
+                        <div><textarea placeholder="Начните писать..."></textarea></div>
+
+                        <div class="collapse" id="uploadPhoto3">
+                            <ul class="upload-photo list-unstyled">
+                                <li>
+                                    <label class="file_upload icon-cross">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u1.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u2.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u4.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/red-dobermann-wallpaper-1.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u5.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u7.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u3.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/32_doberman_pinscher.jpg"
+                                          data-fancybox="" data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                                <li class="option-hide">
+                                    <img src="/img/example/u6.jpg" alt="">
+                                    <div class="upload-photo-option">
+                                    <span class="icon-see" data-src="/img/example/doberman.jpg" data-fancybox=""
+                                          data-caption="" title="Просмотреть фото"></span>
+                                        <span class="icon-cross" title="Удалить фото"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="comment-form-bottom">
+                            <ul class="comment-form-control list-unstyled">
+                                <li class="icon-camera2 collapsed" data-toggle="collapse" data-target="#uploadPhoto3"
+                                    aria-expanded="false"></li>
+                            </ul>
+
+                            <div class="comment-form-action">
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    ОЧИСТИТ И ЗАКРЫТЬ
+                                </button>
+
+                                <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                    опубликовать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="post-comment list-unstyled">
+                    <li class="post">
+                        <div class="post-user">
+                            <img src="img/example/9uxj5c.jpg" alt="" class="post-user-pick">
+
+                            <div class="post-info">
+                                <div class="post-title"><a href="#">РАБИНОВИЧ МАТИЛЬДА ИЗОЛЬДОВНА</a></div>
+                                <div class="post-date">12.01.2016 17:00</div>
+                            </div>
+
+                            <div class="post-edit"></div>
+
+                            <ul class="post-edit-nav post-edit-close list-unstyled">
+                                <li><a href="#">Редактировать комментарий</a></li>
+                                <li><a href="#">Удалить комментарий</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post-text">
+                            <p>Разведение породистых животных — такое же творчество, как написание романов, сочинение
+                                музыки или ваяние скульптур. Оно идет по определенным законам и является формой
+                                выражения общечеловеческой культуры. Высокопородные животные — свидетельство высоты
+                                нации.</p>
+                        </div>
+
+                        <ul class="post-media list-unstyled">
+                            <li data-src="/img/example/img-3.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                <img src="/img/example/img-3.jpg" alt="">
+                            </li>
+                            <li data-src="/img/example/img-4.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                <img src="/img/example/img-4.jpg" alt="">
+                            </li>
+                            <li data-src="/img/example/img-2.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                <img src="/img/example/img-2.jpg" alt="">
+                            </li>
+                            <li data-src="/img/example/img.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                <img src="/img/example/img.jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <div class="post-reply as-link">ответить</div>
+                    </li>
+
+                    <li class="post">
+                        <div class="post-user">
+                            <img src="img/example/topoboi.com-20904.jpg" alt="" class="post-user-pick">
+
+                            <div class="post-info">
+                                <div class="post-title"><a href="#">ИВАНОВ СЕРГЕЙ АНДРЕЕВИЧ</a></div>
+                                <div class="post-date">12.01.2016 17:00</div>
+                            </div>
+
+                            <div class="post-edit"></div>
+
+                            <ul class="post-edit-nav post-edit-close list-unstyled">
+                                <li><a href="#">Редактировать комментарий</a></li>
+                                <li><a href="#">Удалить комментарий</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post-text">
+                            <p>Разведение породистых животных — такое же творчество, как написание романов, сочинение
+                                музыки или ваяние скульптур. Оно идет по определенным законам и является формой
+                                выражения общечеловеческой культуры. Высокопородные животные — свидетельство высоты
+                                нации.</p>
+                        </div>
+
+                        <div class="post-reply as-link">ответить</div>
+
+                        <ul class="post-comment-reply list-unstyled">
+                            <li class="post-reply-third">
+                                <span class="as-link"><span class="icon-from"></span> 2 ответа</span> 19.02.1996 20:34
+                            </li>
+
+                            <li class="post">
+                                <div class="post-user">
+                                    <img src="img/example/1450026431170359110.jpg" alt="" class="post-user-pick">
+
+                                    <div class="post-info">
+                                        <div class="post-title"><a href="#">ШВАРЦ МАРИЯ ФЕДОРОВНА</a></div>
+                                        <div class="post-date">12.01.2016 17:00</div>
+                                    </div>
+
+                                    <div class="post-edit"></div>
+
+                                    <ul class="post-edit-nav post-edit-close list-unstyled">
+                                        <li><a href="#">Редактировать комментарий</a></li>
+                                        <li><a href="#">Удалить комментарий</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="post-text">
+                                    <p>Разведение породистых животных — такое же творчество, как написание романов, сочинение
+                                        музыки или ваяние скульптур. Оно идет по определенным законам и является формой
+                                        выражения общечеловеческой культуры. Высокопородные животные — свидетельство высоты
+                                        нации.</p>
+                                </div>
+                            </li>
+
+                            <li class="post">
+                                <div class="post-user">
+                                    <img src="img/example/446667.jpg" alt="" class="post-user-pick">
+
+                                    <div class="post-info">
+                                        <div class="post-title"><a href="#">ИВАНОВ СЕРГЕЙ АНДРЕЕВИЧ</a></div>
+                                        <div class="post-date">12.01.2016 17:00</div>
+                                    </div>
+
+                                    <div class="post-edit"></div>
+
+                                    <ul class="post-edit-nav post-edit-close list-unstyled">
+                                        <li><a href="#">Редактировать комментарий</a></li>
+                                        <li><a href="#">Удалить комментарий</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="post-text">
+                                    <p>Разведение породистых животных — такое же творчество, как написание романов, сочинение
+                                        музыки или ваяние скульптур. Оно идет по определенным законам и является формой
+                                        выражения общечеловеческой культуры. Высокопородные животные — свидетельство высоты
+                                        нации.</p>
+                                </div>
+
+                                <ul class="post-media list-unstyled">
+                                    <li data-src="/img/example/img-2.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                        <img src="/img/example/img-2.jpg" alt="">
+                                    </li>
+                                    <li data-src="/img/example/img-3.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                        <img src="/img/example/img-3.jpg" alt="">
+                                    </li>
+                                    <li data-src="/img/example/img-4.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                        <img src="/img/example/img-4.jpg" alt="">
+                                    </li>
+                                    <li data-src="/img/example/img.jpg" data-fancybox="" data-caption="" title="Просмотреть фото">
+                                        <img src="/img/example/img.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- include "templates/footer.html" -->
+
+</body>
+</html>
