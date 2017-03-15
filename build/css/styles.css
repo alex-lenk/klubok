@@ -4520,7 +4520,6 @@ footer .clearfix.text-right {
 
 .logo,
 .login {
-  overflow: hidden;
   position: relative;
   z-index: 2;
 }
@@ -5904,6 +5903,96 @@ footer span {
   margin-right: 20px;
   display: inline-block;
   text-align: center;
+}
+
+.owners-wall-left, .owners-wall-right {
+  width: 48%;
+  float: left;
+}
+
+.owners-wall-left {
+  margin-right: 20px;
+}
+
+.owners-wall-rates {
+  margin-left: -1px;
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translateY(0.1em);
+  -ms-transform: translateY(0.1em);
+  transform: translateY(0.1em);
+  background: url(../img/stars-min.png) no-repeat 1px bottom;
+  font-size: 14px;
+  width: 85px;
+  height: 14px;
+}
+
+.owners-wall-rates:before {
+  content: '';
+  background: url(../img/stars-min.png) no-repeat 1px top;
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+.owners-wall-rates.size-10:before {
+  width: 100%;
+}
+
+.owners-wall-rates.size-9:before {
+  width: 90%;
+}
+
+.owners-wall-rates.size-8:before {
+  width: 80%;
+}
+
+.owners-wall-rates.size-7:before {
+  width: 70%;
+}
+
+.owners-wall-rates.size-6:before {
+  width: 60%;
+}
+
+.owners-wall-rates.size-5:before {
+  width: 50%;
+}
+
+.owners-wall-rates.size-4:before {
+  width: 40%;
+}
+
+.owners-wall-rates.size-3:before {
+  width: 30%;
+}
+
+.owners-wall-rates.size-2:before {
+  width: 20%;
+}
+
+.owners-wall-rates.size-1:before {
+  width: 10%;
+}
+
+.owners-wall-rates.size-0:before {
+  width: 0;
+}
+
+.owners-wall-champion {
+  margin-top: 5px;
+  color: #EF4B22;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.owners-wall-right {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.owners-wall-right li:not(:first-of-type) {
+  color: #EF4B22;
 }
 
 body {
