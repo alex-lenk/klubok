@@ -1,8 +1,31 @@
 .sidebar {
+  margin-top: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #F5F3F4;
   @include to('m') {
     display: none;
   }
+}
+
+.sidebar-sale {
+  padding: 15px;
+  border: 1px solid #FF6633;
+  border-radius: 5px;
+}
+
+.sidebar-sale-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #FF6633;
+  line-height: 1.2;
+}
+
+.sidebar-sale-contact {
+  margin: 17px 0 16px;
+  line-height: 1.2;
+}
+
+.sidebar-sale-booking {
+  margin-bottom: 15px;
 }

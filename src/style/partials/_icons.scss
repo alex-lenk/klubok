@@ -165,12 +165,6 @@
   }
 }
 
-.icon-prev2 {
-  &:before {
-    content: $icon-prev2;
-  }
-}
-
 .icon-down {
   &:before {
     content: $icon-down;
@@ -219,12 +213,6 @@
   }
 }
 
-.icon-neutral {
-  &:before {
-    content: $icon-neutral;
-  }
-}
-
 .icon-share {
   &:before {
     content: $icon-share;
@@ -235,4 +223,26 @@
   &:before {
     content: $icon-from;
   }
+}
+
+.icon-smiling {
+  &:before {
+    content: $icon-smiling;
+  }
+}
+
+.icon-doubt {
+  &:before {
+    content: $icon-doubt;
+  }
+}
+
+.icon-sad {
+  &:before {
+    content: $icon-sad;
+  }
+}
+
+.icon-point:before {
+  content: $icon-point;
 }
