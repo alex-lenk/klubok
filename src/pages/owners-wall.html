@@ -11,26 +11,22 @@
 <div class="wrapper container">
     <!-- include "templates/header.html" -->
 
-    <div class="owners-wall clearfix">
+    <div class="owners-wall-page clearfix">
         <section class="col-md-9">
-            <h1 class="text-uppercase">ЭШТРЕЛЬСКАЯ ОВЧАРКА ГЛАДКОШЕРСТНАЯ
+            <h1 class="text-uppercase">ЭШТРЕЛЬСКАЯ ОВЧАРКА ГЛАДКОШЕРСТНАЯ <br>
                 КЛИЧКА: ADAM RACY STYLE BERENIS</h1>
             <!--owners-wall-->
 
             <div class="owners-wall-wrap">
-                <div class="owners-wall-left">
-                    <div class="owners-wall-rates scale size-8"></div>
 
-                    <ul class="owners-wall-data owners-wall-champion">
-                        <li>Чемпион России,</li>
-                        <li>Чемпион Европы</li>
-                        <li>Чемпион Союза Национальных клубов</li>
-                    </ul>
-                </div>
-
-                <ul class="owners-wall-right owners-wall-data list-unstyled">
-                    <li>Интернациональный Чемпион Красоты</li>
-                    <li>Юный Чемпион Клуба Венгрии</li>
+                <ul class="owners-wall-data owners-wall-champion">
+                    <li class="point-rates"><div class="owners-wall-rates scale size-8"></div></li>
+                    <li class="puppy-soul">Щенок для души</li>
+                    <li><span class="orange">Чемпион России</span></li>
+                    <li><span class="orange">Интернациональный Чемпион Красоты</span></li>
+                    <li><span class="orange">Чемпион Союза Национальных клубов</span></li>
+                    <li><span class="orange">Чемпион Европы</span></li>
+                    <li><span class="orange">Юный Чемпион Клуба Венгрии</span></li>
                 </ul>
             </div>
 
@@ -144,6 +140,15 @@
             <div class="owners-wall-bottom">
                 <div class="owners-wall-social">
                     Социальные сети
+                    <button type="button" data-toggle="modal" data-backdrop="static" data-target="#owners-sale">
+                        Выставить на продажу
+                    </button>
+                    <button type="button" data-toggle="modal" data-backdrop="static" data-target="#owners-dogs">
+                        Предложить для вязки
+                    </button>
+                    <button type="button" data-toggle="modal" data-backdrop="static" data-target="#transfer-user">
+                        Передать новому хозяину
+                    </button>
                 </div>
                 <select class="form-control">
                     <option value="Выберите действие">Выберите действие</option>
@@ -154,23 +159,45 @@
                     <option value="Удалить">Удалить</option>
                 </select>
             </div>
+        </section>
 
+        <aside class="col-md-3">
+            <div class="sidebar-sale text-center  text-bold">
+                <div class="sidebar-sale-title">Продажа: <br> цена 128 000 руб.</div>
 
-            <!-- Nav tabs -->
-            <ul class="nav-tabs" role="tablist">
-                <li role="presentation" class="active">
-                    <a href="#wall" aria-controls="wall" role="tab" data-toggle="tab">Стена</a></li>
-                <li role="presentation">
-                    <a href="#ancestors" aria-controls="profile" role="tab" data-toggle="tab">Предки</a></li>
-                <li role="presentation">
-                    <a href="#descendants" aria-controls="descendants" role="tab" data-toggle="tab">Потомки</a></li>
-                <li role="presentation">
-                    <a href="#career" aria-controls="career" role="tab" data-toggle="tab">Карьера</a></li>
-            </ul>
+                <a href="#">Россия, г. Мценск.</a>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="wall">
+                <div class="sidebar-sale-contact">
+                    Генералова Елена Николаевна
+                    <br>
+                    т.м. 985-993-87-79
+                </div>
+
+                <div class="sidebar-sale-booking text-transform"><a href="#">ЗАБРОНИРОВАТЬ ЩЕНКА</a></div>
+                <div class="text-transform"><a href="#">НАПИСАТЬ СООБЩЕНИЕ</a></div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="owners-wall clearfix">
+        <!-- Nav tabs -->
+        <ul class="nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#wall" aria-controls="wall" role="tab" data-toggle="tab">Стена</a></li>
+            <li role="presentation">
+                <a href="#ancestors" aria-controls="profile" role="tab" data-toggle="tab">Предки</a></li>
+            <li role="presentation">
+                <a href="#descendants" aria-controls="descendants" role="tab" data-toggle="tab">Потомки</a></li>
+            <li role="presentation">
+                <a href="#career" aria-controls="career" role="tab" data-toggle="tab">Карьера</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="wall">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-9">
                     <form action="#" class="comment-form">
                         <div class="comment-form-avatar"><img src="img/example/1450026431170359110.jpg" alt=""></div>
 
@@ -387,12 +414,9 @@
                         </ul>
 
                         <ul class="post-count-like list-unstyled">
-                            <li class="icon-like" data-toggle="tooltip" data-placement="top" title="Всеволод"></li>
-                            <li class="icon-dislike" data-toggle="tooltip" data-placement="top" title="Александр"></li>
-                            <li class="icon-neutral" data-toggle="tooltip" data-placement="top" title="Илья"></li>
-                            <li data-toggle="tooltip" data-placement="top" title="Всеволод, Александр, Илья"><a
-                                    href="#">Всего
-                                22</a></li>
+                            <li class="icon-pane" data-toggle="tooltip" data-placement="top" title="Всеволод"></li>
+                            <li class="icon-pane post-count-dislike" data-toggle="tooltip" data-placement="top" title="Александр"></li>
+                            <li data-toggle="tooltip" data-placement="top" title="Всеволод, Александр, Илья"><a href="#">Всего 22</a></li>
                         </ul>
 
                         <ul class="post-meta list-unstyled">
@@ -1115,29 +1139,15 @@
                         </ul>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="ancestors">.2..</div>
-                <div role="tabpanel" class="tab-pane" id="descendants">..3.</div>
-                <div role="tabpanel" class="tab-pane" id="career">.4..</div>
             </div>
 
-        </section>
+            <div role="tabpanel" class="tab-pane" id="ancestors">.2..</div>
 
-        <aside class="col-md-3">
-            <div class="sidebar-sale text-center  text-bold">
-                <div class="sidebar-sale-title">Продажа: <br> цена 128 000 руб.</div>
+            <div role="tabpanel" class="tab-pane" id="descendants">..3.</div>
 
-                <a href="#">Россия, г. Мценск.</a>
+            <div role="tabpanel" class="tab-pane" id="career">.4..</div>
+        </div>
 
-                <div class="sidebar-sale-contact">
-                    Генералова Елена Николаевна
-                    <br>
-                    т.м. 985-993-87-79
-                </div>
-
-                <div class="sidebar-sale-booking text-transform"><a href="#">ЗАБРОНИРОВАТЬ ЩЕНКА</a></div>
-                <div class="text-transform"><a href="#">НАПИСАТЬ СООБЩЕНИЕ</a></div>
-            </div>
-        </aside>
     </div>
 </div>
 

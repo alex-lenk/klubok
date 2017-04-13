@@ -12,6 +12,9 @@
   padding: 15px;
   border: 1px solid #FF6633;
   border-radius: 5px;
+  @include to('m') {
+    margin-bottom: 35px;
+  }
 }
 
 .sidebar-sale-title {

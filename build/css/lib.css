@@ -1700,7 +1700,7 @@ li.fancybox-thumbs-loading {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./../img/ajax-loader.gif") center no-repeat;
+  background: #fff slick-image-url("../img/ajax-loader.gif") center no-repeat;
 }
 
 /* Arrows */
@@ -1794,66 +1794,54 @@ li.fancybox-thumbs-loading {
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   list-style: none;
-  display: block;
   text-align: center;
-  padding: 0;
+  padding: 0 5px;
   margin: 0;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slick-dots li {
   position: relative;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 5px;
-  padding: 0;
+  padding: 10px 0;
   cursor: pointer;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .slick-dots li button {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  height: 3px;
+  padding: 0;
   border: 0;
-  background: transparent;
   display: block;
-  height: 20px;
-  width: 20px;
   outline: none;
   line-height: 0;
   font-size: 0;
   color: transparent;
-  padding: 5px;
   cursor: pointer;
+  position: static;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
 
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
-  opacity: 1;
+.slick-dots li:not(.slick-active):hover button {
+  background-color: #1bbed2;
 }
 
-.slick-dots li button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-size: 6px;
-  line-height: 20px;
-  text-align: center;
-  color: black;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-dots li.slick-active button:before {
-  color: black;
-  opacity: 0.75;
+.slick-dots .slick-active button {
+  background-color: #1497a7;
 }
 
 /*# sourceMappingURL=../maps/lib.css.map */

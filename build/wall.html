@@ -1729,7 +1729,8 @@
             <ul class="line">
                 <li class="col-1 label text-bold">Адрес</li>
                 <li class="col-6">
-                    <input type="text" class="form-control hide-placeholder" placeholder="введите адрес в произвольном виде">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите адрес в произвольном виде">
                 </li>
             </ul>
 
@@ -1794,13 +1795,134 @@
                           data-caption="Родословная РКФ на английском">посмотреть</span>
                 </li>
                 <li class="col-3 size-0">
-                    <button class="btn btn-edit icon-pencil"></button>
+                    <label type="button" class="file-uploads btn btn-edit icon-upload">
+                        <input type="file">
+                    </label>
                     <button class="btn btn-uninstall icon-bin"></button>
                 </li>
             </ul>
 
             <div class="clearfix">
                 <div class="col-sm-4 label col-11"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal owners-sale -->
+<div class="modal fade personal-edit" id="owners-sale" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Продажа</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите сумму">
+                </li>
+                <li class="col-12 label text-bold">Валюта</li>
+                <li class="col-10">
+                    <select class="form-control">
+                        <option>Рубль</option>
+                        <option>Доллар США</option>
+                        <option>ЕВРО</option>
+                        <option>Фунт Стерлинга</option>
+                        <option>Золото</option>
+                        <option>Просто так</option>
+                    </select>
+                </li>
+                <li class="col-12">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal owners-dogs -->
+<div class="modal fade personal-edit" id="owners-dogs" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Вязка</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите сумму">
+                </li>
+                <li class="col-12 label text-bold">Валюта</li>
+                <li class="col-10">
+                    <select class="form-control">
+                        <option>Рубль</option>
+                        <option>Доллар США</option>
+                        <option>ЕВРО</option>
+                        <option>Фунт Стерлинга</option>
+                        <option>Золото</option>
+                        <option>Просто так</option>
+                    </select>
+                </li>
+                <li class="col-12">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal transfer-user -->
+<div class="modal fade personal-edit" id="transfer-user" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-md-6 label text-bold">Передать пользователю из списка друзей</li>
+                <li class="col-md-6">
+                    <select class="form-control">
+                        <option value="Выберите действие">Начните печатать ФИО</option>
+                        <option value="Редактировать данные по собаке">Редактировать данные по собаке</option>
+                        <option value="Выставить на продажу">Выставить на продажу</option>
+                        <option value="Предложить для вязки">Предложить для вязки</option>
+                        <option value="Передать новому хозяину">Передать новому хозяину</option>
+                        <option value="Удалить">Удалить</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="line">
+                <li class="col-md-6 label text-bold">Передать пользователю не с нашего сайта и выслать приглашение</li>
+                <li class="col-md-6">
+                    <input type="email" class="form-control hide-placeholder" placeholder="введите e-mail">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">Передать</button>
+                </div>
                 <div class="col-sm-4 col-xs-6">
                     <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
                         закрыть окно

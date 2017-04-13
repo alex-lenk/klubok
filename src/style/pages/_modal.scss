@@ -11,3 +11,24 @@
     }
   }
 }
+
+.file-uploads {
+  width: 60px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 6;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-appearance: none !important;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0)
+  }
+}
+
+#owners-sale .line, #owners-dogs .line, #transfer-user .line {
+  margin-bottom: 15px;
+}

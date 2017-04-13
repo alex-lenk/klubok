@@ -133,6 +133,8 @@ $(document).ready(function () {
     );
 
     $('.single-item').slick({
+        dots: true,
+        arrows: false,
         prevArrow: '<button type="button" data-role="none" class="icon-prev" aria-label="Previous" tabindex="0" role="button"></button>',
         nextArrow: '<button type="button" data-role="none" class="icon-next" aria-label="Next" tabindex="0" role="button"></button>'
     });
