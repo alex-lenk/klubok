@@ -5672,10 +5672,10 @@ footer span {
     justify-content: flex-end;
   }
   .clock-line-label {
-    max-width: 130px;
-    -webkit-flex: 1 0 130px;
-    -ms-flex: 1 0 130px;
-    flex: 1 0 130px;
+    max-width: 117px;
+    -webkit-flex: 1 0 117px;
+    -ms-flex: 1 0 117px;
+    flex: 1 0 117px;
   }
   .clock-line-now {
     padding-right: 10px;
@@ -5694,8 +5694,55 @@ footer span {
   }
 }
 
+.post-count-pane, .post-count-dislike {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 6px;
+}
+
+.post-count-pane {
+  margin-right: 3px;
+  background-color: #28a0ff;
+}
+
+.post-count-dislike {
+  background-color: #d11663;
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg);
+}
+
 .post {
   margin-bottom: 35px;
+}
+
+.post .comment-form {
+  margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+  .post .comment-form-action .btn:first-of-type {
+    margin: 0 18px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .post .comment-form-action .btn:first-of-type {
+    float: left;
+    margin: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .post .comment-form-action .btn:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+.post .close-form-comment {
+  display: none;
 }
 
 .post:last-of-type {
@@ -5847,9 +5894,17 @@ footer span {
 }
 
 .post-count-like li:not(:last-of-type) {
-  margin-right: -4px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  background-color: #d11663;
+  color: #fff;
+  padding-top: 6px;
+}
+
+.post-count-like li:first-child {
+  margin-right: 3px;
+  background-color: #28a0ff;
 }
 
 .post-count-like li:last-of-type {
@@ -5877,10 +5932,58 @@ footer span {
   background-color: #ffffff;
 }
 
-.post-count-dislike {
-  -webkit-transform: rotateZ(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotateZ(180deg);
+.post-meta-people {
+  width: 169px;
+  padding: 4px 0 17px 6px;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  font-size: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post-meta-people:before {
+  width: 100%;
+  height: calc(100% - 13px);
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  content: '';
+  z-index: -1;
+  box-shadow: 0 4px 5px rgba(1, 0, 0, 0.2);
+}
+
+.post-meta-people:after {
+  content: '';
+  border: 10px solid transparent;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+  position: absolute;
+  bottom: 3px;
+  left: 22px;
+}
+
+.post-meta-people li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post-meta-people li:last-of-type {
+  font-size: 11px;
+  margin-left: 12px;
+}
+
+.post-meta-people .icon-pane {
+  width: 34px;
+  height: 34px;
+  padding-top: 6px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 21px;
 }
 
 .post-meta {
@@ -5932,89 +6035,13 @@ footer span {
 }
 
 .post-meta > .icon-like:hover .post-meta-people {
-  display: block;
   opacity: 1;
+  z-index: 55;
 }
 
 .post-meta .icon-message-load:before {
   position: relative;
   top: -1px;
-}
-
-.post-meta-people {
-  width: 145px;
-  padding: 5px;
-  border-radius: 20px;
-  border: 1px solid #bab8b9;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  background-color: #fff;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.post-meta-people li {
-  padding-top: 2px;
-  font-size: 22px;
-  display: inline-block;
-  vertical-align: top;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.post-meta-people li:not(:last-of-type) {
-  margin-right: 10px;
-}
-
-.post-meta-people .icon-like {
-  padding-top: 2px;
-  background-color: #5890ff;
-  color: #fff;
-  font-size: 22px;
-}
-
-.post-meta-people .icon-dislike {
-  padding-top: 5px;
-  background-color: #99320d;
-  color: #fff;
-}
-
-.post-meta-people .icon-neutral {
-  padding-top: 2px;
-  background-color: #ebebeb;
-  color: #333;
-  font-size: 28px;
-}
-
-.post .comment-form {
-  margin-top: 10px;
-}
-
-@media (min-width: 720px) {
-  .post .comment-form-action .btn:first-of-type {
-    margin: 0 18px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 719px) {
-  .post .comment-form-action .btn:first-of-type {
-    float: left;
-    margin: 0;
-  }
-}
-
-@media (max-width: 479px) {
-  .post .comment-form-action .btn:first-of-type {
-    margin-bottom: 5px;
-  }
-}
-
-.post .close-form-comment {
-  display: none;
 }
 
 .post-comment {
