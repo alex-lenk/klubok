@@ -117,18 +117,20 @@
 
 .owners-wall-right {
   font-size: 14px;
+  line-height: 1.4;
   @include from('l') {
     max-width: 340px;
     margin-left: 20px;
   }
   @include from('m') {
     width: 50%;
-    margin-left: 10px;
+    margin-left: 20px;
     display: inline-block;
     vertical-align: top;
   }
   > li {
     line-height: 1.2;
+    color: #EF4B22;
     @include from('m') {
       &:first-of-type {
         margin-bottom: 4px;
@@ -233,6 +235,7 @@
     @include from('l') {
       &:nth-child(even) {
         max-width: 340px;
+        padding-left: 10px;
       }
     }
     @include from('m') {
@@ -249,14 +252,6 @@
 
 .puppy-soul {
   padding-bottom: 5px;
-}
-
-.owners-wall-right {
-  font-size: 14px;
-  line-height: 1.4;
-  li {
-    color: #EF4B22;
-  }
 }
 
 .single-item {
@@ -316,6 +311,9 @@
     @include from('m') {
       width: 50%;
       float: left;
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -325,7 +323,8 @@
   @include clearfix;
   .form-control {
     @include from('m') {
-      width: 50%;
+      width: calc(50% - 10px);
+      margin-left: 10px;
       float: left;
     }
   }

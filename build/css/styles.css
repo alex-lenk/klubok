@@ -3161,6 +3161,10 @@ h1, .h1 {
   content: "";
 }
 
+.icon-search:before {
+  content: "";
+}
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -6235,6 +6239,7 @@ footer span {
 
 .owners-wall-right {
   font-size: 14px;
+  line-height: 1.4;
 }
 
 @media (min-width: 960px) {
@@ -6247,7 +6252,7 @@ footer span {
 @media (min-width: 720px) {
   .owners-wall-right {
     width: 50%;
-    margin-left: 10px;
+    margin-left: 20px;
     display: inline-block;
     vertical-align: top;
   }
@@ -6255,6 +6260,7 @@ footer span {
 
 .owners-wall-right > li {
   line-height: 1.2;
+  color: #EF4B22;
 }
 
 @media (min-width: 720px) {
@@ -6383,6 +6389,7 @@ footer span {
 @media (min-width: 960px) {
   .owners-wall-champion li:nth-child(even) {
     max-width: 340px;
+    padding-left: 10px;
   }
 }
 
@@ -6400,15 +6407,6 @@ footer span {
 
 .puppy-soul {
   padding-bottom: 5px;
-}
-
-.owners-wall-right {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.owners-wall-right li {
-  color: #EF4B22;
 }
 
 .single-item {
@@ -6490,6 +6488,9 @@ footer span {
     width: 50%;
     float: left;
   }
+  .owners-wall-doc li:nth-child(2) {
+    padding-left: 10px;
+  }
 }
 
 .owners-wall-bottom {
@@ -6504,7 +6505,8 @@ footer span {
 
 @media (min-width: 720px) {
   .owners-wall-bottom .form-control {
-    width: 50%;
+    width: calc(50% - 10px);
+    margin-left: 10px;
     float: left;
   }
 }
