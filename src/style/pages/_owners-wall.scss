@@ -1,8 +1,6 @@
-.owners-wall-page {
-  .col-md-9 {
-    @include from('l') {
-      float: right;
-    }
+@include from('l') {
+  .owners-wall-page .col-md-9 {
+    float: right;
   }
 }
 
@@ -19,7 +17,6 @@
   }
 
   .nav-tabs {
-    //border-bottom: 1px solid #ddd;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -88,8 +85,8 @@
   }
 }
 
-.owners-wall-second {
-  @include to('s') {
+@include to('s') {
+  .owners-wall-second {
     display: flex;
     flex-direction: column;
     .owners-wall-left {
@@ -109,7 +106,7 @@
 .owners-wall-left {
   font-size: 14px;
   @include from('m') {
-    width: calc(50% - 10px);
+    width: 50%;
     display: inline-block;
     vertical-align: top;
   }
@@ -118,13 +115,9 @@
 .owners-wall-right {
   font-size: 14px;
   line-height: 1.4;
-  @include from('l') {
-    max-width: 340px;
-    margin-left: 20px;
-  }
   @include from('m') {
     width: 50%;
-    margin-left: 20px;
+    padding-left: 10px;
     display: inline-block;
     vertical-align: top;
   }
@@ -207,11 +200,14 @@
 
 .owners-wall-data-label {
   font-weight: bold;
-  @include from('s') {
-    width: 135px;
+  @include from('m') {
+    width: 150px;
     float: left;
   }
-  @include to('xs') {
+  @include from('l') {
+    width: 160px;
+  }
+  @include to('s') {
     margin-bottom: 3px;
   }
 }
@@ -232,9 +228,8 @@
   li {
     line-height: 1.2;
     font-size: 14px;
-    @include from('l') {
+    @include from('m') {
       &:nth-child(even) {
-        max-width: 340px;
         padding-left: 10px;
       }
     }

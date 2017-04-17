@@ -3165,6 +3165,14 @@ h1, .h1 {
   content: "";
 }
 
+.icon-bitch:before {
+  content: "";
+}
+
+.icon-male:before {
+  content: "";
+}
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -6231,7 +6239,7 @@ footer span {
 
 @media (min-width: 720px) {
   .owners-wall-left {
-    width: calc(50% - 10px);
+    width: 50%;
     display: inline-block;
     vertical-align: top;
   }
@@ -6242,17 +6250,10 @@ footer span {
   line-height: 1.4;
 }
 
-@media (min-width: 960px) {
-  .owners-wall-right {
-    max-width: 340px;
-    margin-left: 20px;
-  }
-}
-
 @media (min-width: 720px) {
   .owners-wall-right {
     width: 50%;
-    margin-left: 20px;
+    padding-left: 10px;
     display: inline-block;
     vertical-align: top;
   }
@@ -6353,14 +6354,20 @@ footer span {
   font-weight: bold;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 720px) {
   .owners-wall-data-label {
-    width: 135px;
+    width: 150px;
     float: left;
   }
 }
 
-@media (max-width: 479px) {
+@media (min-width: 960px) {
+  .owners-wall-data-label {
+    width: 160px;
+  }
+}
+
+@media (max-width: 719px) {
   .owners-wall-data-label {
     margin-bottom: 3px;
   }
@@ -6386,9 +6393,8 @@ footer span {
   font-size: 14px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   .owners-wall-champion li:nth-child(even) {
-    max-width: 340px;
     padding-left: 10px;
   }
 }
@@ -6542,6 +6548,17 @@ footer span {
   display: block;
 }
 
+.ancestors {
+  padding-top: 20px;
+  height: 1000px;
+}
+
+.ancestors-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 body {
   padding-top: 20px;
   overflow-x: hidden;
@@ -6575,6 +6592,12 @@ body:before {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   background: #ffffff;
+}
+
+@media (max-width: 719px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
 }
 
 .tooltip {
