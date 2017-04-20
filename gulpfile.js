@@ -39,7 +39,10 @@ var path = {
         watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
             html: './src/pages/**/*.html',
             js: './src/js/**/*.js',
-            style: './src/style/**/*.scss',
+            style: './src/style/*.scss',
+            style_lib: './src/style/lib/*.scss',
+            style_pages: './src/style/pages/*.scss',
+            style_partials: './src/style/partials/*.scss',
             img: './src/img/**/*.*',
             fonts: './src/fonts/**/*.*'
         },
@@ -122,6 +125,15 @@ gulp.task('watch', function () {
         gulp.start('html:build');
     });
     watch([path.watch.style], function (event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.style_lib], function (event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.style_pages], function (event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.style_partials], function (event, cb) {
         gulp.start('style:build');
     });
     watch([path.watch.js], function (event, cb) {
