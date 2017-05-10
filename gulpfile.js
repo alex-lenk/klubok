@@ -30,19 +30,19 @@ var path = {
             fonts: './build/fonts/'
         },
         src: { //Пути откуда брать исходники
-            html: './src/pages/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+            html: './src/html/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
             js: './src/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
-            style: './src/style/*.scss',
+            styles: './src/styles/*.scss',
             img: './src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
             fonts: './src/fonts/**/*.*'
         },
         watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-            html: './src/pages/**/*.html',
+            html: './src/html/**/*.html',
             js: './src/js/**/*.js',
-            style: './src/style/*.scss',
-            style_lib: './src/style/lib/*.scss',
-            style_pages: './src/style/pages/*.scss',
-            style_partials: './src/style/partials/*.scss',
+            styles: './src/styles/*.scss',
+            style_lib: './src/styles/lib/*.scss',
+            style_pages: './src/styles/pages/*.scss',
+            style_partials: './src/styles/partials/*.scss',
             img: './src/img/**/*.*',
             fonts: './src/fonts/**/*.*'
         },
@@ -89,8 +89,8 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
-gulp.task('style:build', function () {
-    gulp.src(path.src.style) //Выберем наш main.scss
+gulp.task('styles:build', function () {
+    gulp.src(path.src.styles) //Выберем нашу папку styles
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'expanded'
@@ -115,7 +115,7 @@ gulp.task('fonts:build', function () {
 gulp.task('build', [
     'html:build',
     'js:build',
-    'style:build',
+    'styles:build',
     'fonts:build',
     'img:build'
 ]);
@@ -124,17 +124,17 @@ gulp.task('watch', function () {
     watch([path.watch.html], function (event, cb) {
         gulp.start('html:build');
     });
-    watch([path.watch.style], function (event, cb) {
-        gulp.start('style:build');
+    watch([path.watch.styles], function (event, cb) {
+        gulp.start('styles:build');
     });
     watch([path.watch.style_lib], function (event, cb) {
-        gulp.start('style:build');
+        gulp.start('styles:build');Л
     });
     watch([path.watch.style_pages], function (event, cb) {
-        gulp.start('style:build');
+        gulp.start('styles:build');
     });
     watch([path.watch.style_partials], function (event, cb) {
-        gulp.start('style:build');
+        gulp.start('styles:build');
     });
     watch([path.watch.js], function (event, cb) {
         gulp.start('js:build');

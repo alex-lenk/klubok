@@ -139,10 +139,12 @@ $(document).ready(function () {
         nextArrow: '<button type="button" data-role="none" class="icon-next" aria-label="Next" tabindex="0" role="button"></button>'
     });
 
-
-/*    $('textarea').keyup(function () {
-        $(this).height(0);
-        $(this).height(this.scrollHeight);
-        if ($(this).val().length <= 0) $(this).height(0);
-    });*/
+    $(".generation-father").click(
+        function () {
+            $('.father-ancestors').removeClass('hidden');
+            $('.ancestors-current-dog .btn-azure').removeClass('hidden');
+            $('.mother-branch').addClass('hidden');
+            $('.ancestors').addClass('ancestors-level-2');
+        }
+    );
 });
