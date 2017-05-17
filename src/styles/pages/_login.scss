@@ -2,7 +2,6 @@
   margin-bottom: 31px;
   @include from('l') {
     height: 410px;
-    overflow: hidden;
   }
   position: relative;
 }

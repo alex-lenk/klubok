@@ -139,12 +139,53 @@ $(document).ready(function () {
         nextArrow: '<button type="button" data-role="none" class="icon-next" aria-label="Next" tabindex="0" role="button"></button>'
     });
 
-    $(".generation-father").click(
+    /* ========================================== */
+
+    var generationFather = $(".generation-father"),
+        fatherAncestors = $('.father-ancestors'),
+        ancestorsCurrentDogBtn = $(".ancestors-current-dog .btn-azure"),
+        motherBranch = $(".mother-branch"),
+        ancestors = $(".ancestors"),
+        generationCurrent = $(".generation-current"),
+        generationGrandfather = $(".generation-grandfather"),
+        grandmotherBranch = $(".grandmother-branch"),
+        ancestors4 = $(".ancestors-4"),
+        ancestorsList = $(".ancestors-list");
+
+    generationFather.click(
         function () {
-            $('.father-ancestors').removeClass('hidden');
-            $('.ancestors-current-dog .btn-azure').removeClass('hidden');
-            $('.mother-branch').addClass('hidden');
-            $('.ancestors').addClass('ancestors-level-2');
+            fatherAncestors.removeClass('hidden');
+            ancestorsCurrentDogBtn.removeClass('hidden');
+            motherBranch.addClass('hidden');
+            ancestors.addClass('ancestors-level-2');
+            generationFather.addClass('hidden');
+            ancestors4.addClass('hidden');
+            grandmotherBranch.removeClass('hidden');
+        }
+    );
+
+    generationCurrent.click(
+        function () {
+            generationCurrent.addClass('hidden');
+            ancestors.removeClass('ancestors-level-2');
+            motherBranch.removeClass('hidden');
+            fatherAncestors.addClass('hidden');
+            ancestorsCurrentDogBtn.addClass('hidden');
+            generationFather.removeClass('hidden');
+            ancestors4.addClass('hidden');
+            grandmotherBranch.removeClass('hidden');
+            generationGrandfather.removeClass('hidden');
+            ancestorsList.removeClass('grand-list');
+        }
+    );
+
+    generationGrandfather.click(
+        function () {
+            generationGrandfather.addClass('hidden');
+            grandmotherBranch.addClass('hidden');
+            ancestors4.removeClass('hidden');
+            generationFather.removeClass('hidden');
+            ancestorsList.addClass('grand-list');
         }
     );
 });

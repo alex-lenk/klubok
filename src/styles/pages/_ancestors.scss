@@ -1,24 +1,5 @@
 .ancestors {
   padding: 20px 10px;
-  .icon-bitch, .icon-male {
-    display: inline-block;
-  }
-  .icon-bitch {
-    img {
-      border: 3px solid #DA0861;
-    }
-    &:before {
-      color: #b51ea9;
-    }
-  }
-  .icon-male {
-    img {
-      border: 3px solid #03a2fe;
-    }
-    &:before {
-      color: #0a6eac;
-    }
-  }
 
   .father, .mother {
     font-size: 14px;
@@ -48,30 +29,66 @@
 }
 
 .ancestors-img {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  &:before {
+  a {
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .icon-male, .icon-bitch {
+    width: 25px;
+    height: 25px;
     position: absolute;
-    bottom: 10px;
-    right: -6px;
+    bottom: 0;
+    right: 1px;
     z-index: 28;
     border-radius: 50%;
     background-color: #ffffff;
-    font-size: 26px;
+    font-size: 32px;
+    &:before {
+      position: absolute;
+      top: -4px;
+      left: -3px;
+    }
+  }
+  .icon-male {
+    color: #0a6eac;
+  }
+  .icon-bitch {
+    color: #b51ea9;
   }
   img {
-    margin: 0 auto 5px;
     border-radius: 50%;
+    height: 100%;
+  }
+
+  &.bitch {
+    a {
+      border: 3px solid #DA0861;
+    }
+  }
+  &.male {
+    a {
+      border: 3px solid #03a2fe;
+    }
   }
 }
 
 .ancestors-current-dog {
   .ancestors-img {
-    flex-basis: 120px;
-  }
-  img {
     width: 120px;
-    height: 120px;
+    a {
+      width: 120px;
+      height: 120px;
+    }
   }
+}
+
+.about-dog {
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
 }
 
 .ancestors-info {
@@ -98,7 +115,7 @@
 
 .ancestors-list {
   font-size: 0;
-  img {
+  .ancestors-img a {
     width: 100px;
     height: 100px;
   }
@@ -126,28 +143,97 @@
   }
   &:after {
     right: 49px;
-    height: 110px;
+    height: 120px;
+  }
+
+  .ancestors-grandmother {
+    padding-right: 10px;
+  }
+  .ancestors-4 .ancestors-img {
+    margin-right: 0;
+  }
+}
+
+.mother-ancestors {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  &:before, &:after {
+    width: 2px;
+    background-color: #b8b8b8;
+    position: absolute;
+    top: 30px;
+    content: '';
+  }
+  &:before {
+    left: 50px;
+    height: 30px;
+  }
+  &:after {
+    right: 39px;
+    height: 120px;
+  }
+  .grandfather-branch .ancestors-4 .ancestors-img {
+    margin-left: 0;
+  }
+  .grandmother-branch .ancestors-4 .ancestors-img {
+    margin-right: 0;
+  }
+  .ancestors-4 {
+    &:before {
+      left: 50px;
+    }
+    .gender {
+      margin-left: 10px;
+    }
   }
 }
 
 .ancestors-grandfather,
 .ancestors-grandmother {
-  img {
+  .ancestors-img a {
     width: 80px;
     height: 80px;
-  }
-  .ancestors-info {
-    width: 330px;
-    left: 90px;
-    top: 15px;
   }
   .about-dog {
     position: relative;
   }
 }
 
+.ancestors-grandmother {
+  width: 100%;
+  .about-dog {
+    @include clearfix;
+  }
+  .ancestors-img {
+    float: right;
+  }
+  .ancestors-info {
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: right;
+    padding-right: 90px;
+    padding-left: 60px;
+  }
+}
+
+.ancestors-grandfather {
+  .ancestors-info {
+    width: 100%;
+    left: 0;
+    padding-left: 90px;
+    padding-right: 60px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .ancestors-4 {
-  padding-top: 305px;
   padding-left: 0;
   margin-bottom: 0;
   position: relative;
@@ -164,7 +250,7 @@
   li:not(:last-child) {
     margin-bottom: 35px;
   }
-  img {
+  .ancestors-img a {
     width: 60px;
     height: 60px;
   }
@@ -190,20 +276,24 @@
   }
 
   .ancestors-info {
-    width: 290px;
-    left: 130px;
+    width: 100%;
+    left: 0;
     top: 5px;
+    padding-left: 70px;
+    padding-right: 5px;
+  }
+  .ancestors-img {
+    width: 60px;
   }
 }
 
+.grandfather-branch .ancestors-4 .ancestors-img {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .grandmother-branch {
-  .ancestors-info {
-    width: 270px;
-    right: 90px;
-    top: 10px;
-    left: auto;
-    text-align: right;
-  }
+  width: 100%;
   .ancestors-4 {
     padding-top: 24px;
     padding-left: 0;
@@ -212,12 +302,14 @@
       right: 49px;
     }
     .about-dog {
-      left: -49px;
+      width: 100%;
+      padding-right: 65px;
       position: relative;
     }
     .ancestors-info {
-      top: 5px;
-      right: 70px;
+      top: 0;
+      padding-right: 135px;
+      padding-left: 45px;
     }
     .gender {
       position: absolute;
@@ -245,258 +337,38 @@
   }
 }
 
-@include from('m') {
-  .ancestors-wrap {
-    .father, .mother {
-      display: inline-block;
-    }
-  }
-
-  .ancestors-current-dog {
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .ancestors-info {
-      width: 330px;
-      top: 35px;
-      left: 100%;
-      margin-left: -20px;
-    }
-  }
-
-  .ancestors-info {
-    position: absolute;
-  }
-
-  .ancestors-list {
-    > li {
-      width: 50%;
-      display: inline-block;
-      vertical-align: top;
-      .father, .mother {
-        height: 30px;
-        line-height: 33px;
-      }
-    }
-  }
-
-  .father-branch {
-    .ancestors-dad {
-      padding-left: 40px;
-      .gender {
-        text-align: right;
-      }
-      .father, .mother {
-        padding-right: 58px;
-        &:before {
-          top: 100%;
-          left: 0;
-          content: '';
-        }
-        &:after {
-          top: 0;
-          right: -1px;
-        }
-      }
-
-      .about-dog {
-        padding-right: 50px;
-        text-align: right;
-        margin-right: -10px;
-      }
-      .ancestors-info {
-        right: 150px;
-      }
-    }
-
-    .ancestors-grandmother {
-      .mother {
-        position: relative;
-        &:before {
-          content: '';
-          height: 30px;
-          width: 2px;
-          background-color: #b8b8b8;
-          position: absolute;
-          top: 0;
-          left: -8px;
-        }
-      }
-    }
-  }
-
-  .mother-branch {
-    .ancestors-dad {
-      .father, .mother {
-        padding-left: 58px;
-
-        &:after {
-          top: 28px;
-          right: -1px;
-        }
-      }
-      .about-dog {
-        padding-left: 40px;
-      }
-      .ancestors-info {
-        left: 150px;
-      }
-    }
-
-    .ancestors-grandfather .father {
-      position: relative;
-      &:after {
-        content: '';
-        height: 30px;
-        width: 2px;
-        background-color: #b8b8b8;
-        position: absolute;
-        top: 0;
-        right: -8px;
-      }
-    }
-  }
-
-  .ancestors-dad {
-    .gender {
-      padding-bottom: 35px;
-    }
-    .father, .mother {
-      border-bottom: 2px solid #b8b8b8;
-      position: relative;
-      &:before, &:after {
-        height: 30px;
-        width: 2px;
-        background-color: #b8b8b8;
-        position: absolute;
-      }
-      &:after {
-        content: '';
-      }
-    }
-  }
-
-  .ancestors-grandmother {
-    padding-right: 10px;
-    .gender {
-      padding-right: 40px;
-      text-align: right;
-      margin-bottom: 115px;
-    }
-
-    .about-dog {
-      margin-left: -10px;
-    }
-    + .father-ancestors {
-      margin-left: 10px;
-      &:after {
-        right: 40px;
-      }
-    }
-  }
-
-  .btn-azure {
-    display: none;
-  }
-
-  .ancestors-grandfather .gender {
-    padding: 0 50px 0 42px;
-    margin-bottom: 34px;
-    position: relative;
-    &:after {
-      width: 100%;
-      height: 2px;
-      background-color: #b8b8b8;
-      content: '';
-      display: block;
-    }
-  }
-  .grandmother-branch {
-    position: absolute;
-    top: 0;
-    right: 0;
-    .about-dog {
-      text-align: right;
-    }
-  }
-}
-
-@include to('s') {
-  .hidden {
-    display: none;
-  }
-
-  .ancestors-list {
-    position: relative;
-    &:before {
-      width: 2px;
-      height: calc(100% + 16px);
-      top: -104px;
-      left: 0;
-      position: absolute;
-      border-left: 2px solid #b8b8b8;
-      content: '';
-    }
-  }
-
+.ancestors-dad {
   .about-dog {
-    display: flex;
-    align-items: center;
+    @include clearfix;
   }
-
-  .ancestors-info {
-    padding-left: 10px;
-    flex-grow: 1;
+  .ancestors-img {
+    width: 100px;
+    margin-left: 0;
   }
-
-  .ancestors-dad .gender {
-    top: 0;
-    left: 7px;
-    position: absolute;
+  .icon-male,
+  .icon-bitch {
+    bottom: 0;
+    right: 1px;
   }
-
-  .ancestors-current-dog {
-    margin-bottom: 40px;
-    .about-dog {
-      &:before {
-        width: 15px;
-        height: 2px;
-        margin-right: 5px;
-        position: relative;
-        background-color: #b8b8b8;
-        content: '';
-      }
-    }
-    .gender {
-      height: 160px;
-      top: 165px;
-      left: 8px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-  .ancestors-list {
-    & > li {
-      &:not(:last-child) {
-        margin-bottom: 5px;
-      }
-    }
-  }
-
-  .ancestors-dad,
-  .ancestors-grandmother {
-    .about-dog:before {
-      width: 26px;
-      height: 2px;
-      margin-right: 5px;
-      position: relative;
-      background-color: #b8b8b8;
-      content: '';
-    }
+  .male {
+    float: right;
   }
 }
 
-
-
+.ancestors-grandfather, .ancestors-grandmother {
+  .ancestors-img {
+    width: 80px;
+    margin-left: 0;
+  }
+  .icon-male,
+  .icon-bitch {
+    bottom: -7px;
+    right: 0;
+  }
+  .ancestors-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
