@@ -3910,12 +3910,6 @@ footer .clearfix.text-right {
   list-style: none;
 }
 
-@media (max-width: 719px) {
-  .breadcrumbs {
-    display: none;
-  }
-}
-
 .breadcrumbs a {
   color: #ffffff;
 }
@@ -3953,6 +3947,12 @@ footer .clearfix.text-right {
   right: -5px;
   border-left-color: #69a288;
   z-index: 10;
+}
+
+@media (max-width: 719px) {
+  .breadcrumbs {
+    display: none;
+  }
 }
 
 .header-nav {
@@ -5470,6 +5470,20 @@ footer span {
   display: flex;
 }
 
+.comment-form .upload-photo li {
+  margin-bottom: 10px;
+}
+
+.comment-form .upload-photo img {
+  outline-offset: -1px;
+  transition: all 0.3s ease;
+  outline: 0 solid #00adbf;
+}
+
+.comment-form .upload-photo img:hover {
+  outline-width: 1px;
+}
+
 .comment-form-avatar {
   max-width: 50px;
   padding-right: 10px;
@@ -5506,24 +5520,10 @@ footer span {
   word-wrap: break-word;
 }
 
-@media (min-width: 720px) {
-  .comment-form-bottom:after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-}
-
 .comment-form-control {
   font-size: 0;
   float: left;
   padding-top: 7px;
-}
-
-@media (max-width: 719px) {
-  .comment-form-control {
-    margin-bottom: 15px;
-  }
 }
 
 .comment-form-control li {
@@ -5562,7 +5562,34 @@ footer span {
   font-size: 20px;
 }
 
+.comment-form-action .btn {
+  width: 100%;
+}
+
+.clock-line {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .comment-form-action .btn {
+    width: 48%;
+    max-width: none;
+    float: right;
+  }
+  .comment-form-action .form-control {
+    width: 48%;
+    float: left;
+  }
+  .comment-form-action {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 720px) {
+  .comment-form-action .btn {
+    max-width: 220px;
+  }
   .comment-form-action {
     float: right;
     width: 480px;
@@ -5577,100 +5604,14 @@ footer span {
     float: left;
     margin: 0 20px;
   }
-}
-
-@media (min-width: 480px) and (max-width: 719px) {
-  .comment-form-action {
-    width: 100%;
-    overflow: hidden;
+  .comment-form-bottom:after {
+    display: table;
+    clear: both;
+    content: "";
   }
-}
-
-@media (max-width: 719px) {
-  .comment-form-action .form-control {
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 719px) {
-  .comment-form-action .form-control {
-    width: 48%;
-    float: left;
-  }
-}
-
-@media (max-width: 479px) {
-  .comment-form-action .form-control {
-    font-size: 13px;
-  }
-}
-
-.comment-form-action .btn {
-  width: 100%;
-}
-
-@media (min-width: 720px) {
-  .comment-form-action .btn {
-    max-width: 220px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 719px) {
-  .comment-form-action .btn {
-    width: 48%;
-    max-width: none;
-    float: right;
-  }
-}
-
-@media (min-width: 720px) {
   .comment-form .upload-photo {
     margin: 0 -10px 5px;
   }
-}
-
-@media (max-width: 719px) {
-  .comment-form .upload-photo {
-    margin: 0 -5px 5px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .comment-form .upload-photo li {
-    width: 63px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-
-.comment-form .upload-photo li {
-  margin-bottom: 10px;
-}
-
-.comment-form .upload-photo img {
-  outline-offset: -1px;
-  transition: all 0.3s ease;
-  outline: 0 solid #00adbf;
-}
-
-.comment-form .upload-photo img:hover {
-  outline-width: 1px;
-}
-
-.clock-line {
-  margin-bottom: 15px;
-}
-
-@media (max-width: 719px) {
-  .clock-line li:not(:last-of-type) {
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width: 720px) {
   .clock-line {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5702,6 +5643,38 @@ footer span {
     -webkit-flex: 1 0 230px;
     -ms-flex: 1 0 230px;
     flex: 1 0 230px;
+  }
+}
+
+@media (max-width: 719px) {
+  .comment-form-action .form-control {
+    margin-bottom: 5px;
+  }
+  .comment-form-control {
+    margin-bottom: 15px;
+  }
+  .comment-form .upload-photo {
+    margin: 0 -5px 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .comment-form .upload-photo li {
+    width: 63px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .clock-line li:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .comment-form-action .form-control {
+    font-size: 13px;
   }
 }
 
