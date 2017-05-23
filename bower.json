@@ -17,10 +17,8 @@
   ],
   "dependencies": {
     "jquery": "^3.*",
-    "normalize-css": "^5.*",
+    "normalize-css": "^7.*",
     "bootstrap": "^3.*",
-    "font-awesome": "^4.*",
-    "isotope": "^3.0.1",
     "slick-carousel": "^1.*"
   }
 }
