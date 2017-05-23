@@ -1,10 +1,10 @@
 #career {
-  padding: 15px 0 0;
+  padding: 25px 0 0;
 }
 
 .career-header {
   padding: 0 10px;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
   display: flex;
   h1 {
     margin-bottom: 0;
@@ -80,10 +80,6 @@
   text-transform: uppercase;
 }
 
-.career-modal .modal-dialog {
-  overflow: visible;
-}
-
 @include from('m') {
   .career-header {
     justify-content: space-between;
@@ -134,8 +130,4 @@
 
 .career-record {
   padding: 15px 0 10px;
-}
-
-.modal-bottom {
-  padding-top: 10px;
 }

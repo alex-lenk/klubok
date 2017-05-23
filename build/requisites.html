@@ -195,7 +195,7 @@
 </header>
 
 
-    <div class="requisites personal-data" style="display: none">
+    <div class="requisites personal-data">
         <h1 class="text-uppercase">РЕКВИЗИТЫ КОМПАНИИ</h1>
 
         <ul class="personal-data-line">
@@ -222,7 +222,7 @@
             <li class="label text-bold">Банковские реквизиты видны:</li>
             <li class="radio-block">
                 <form action="#" class="radio">
-                    <label><input type="radio" name="radio"> сотрудникм </label>
+                    <label><input type="radio" name="radio"> сотрудникам </label>
 
                     <label><input type="radio" name="radio" checked> членам клуба</label>
 
@@ -233,7 +233,7 @@
 
         <ul class="personal-data-line">
             <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
-                data-target="#add-address">
+                data-target="#add-legal-address">
                 ﻿Добавить юридический адрес
             </li>
         </ul>
@@ -247,7 +247,7 @@
 
         <ul class="personal-data-line">
             <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
-                data-target="#add-postal-address">
+                data-target="#add-legal-address">
                 ﻿Добавить почтовый адрес
             </li>
         </ul>
@@ -261,7 +261,7 @@
 
         <ul class="personal-data-line">
             <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
-                data-target="#add-e-mail">
+                data-target="#add-email">
                 ﻿﻿Добавить e-mail
             </li>
         </ul>
@@ -281,7 +281,7 @@
 
         <ul class="personal-data-line">
             <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
-                data-target="#add-employee">
+                data-target="#edit-employee">
                 ﻿﻿﻿Добавить сотрудника
             </li>
         </ul>
@@ -391,7 +391,7 @@
             <li class="label text-bold">Банковские реквизиты видны:</li>
             <li class="radio-block">
                 <form action="#" class="radio">
-                    <label><input type="radio" name="radio"> сотрудникм </label>
+                    <label><input type="radio" name="radio"> сотрудникам </label>
 
                     <label><input type="radio" name="radio" checked> членам клуба</label>
 
@@ -422,7 +422,7 @@
 
             <li class="button">
                 <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-postal-address"></button>
+                        data-target="#add-legal-address"></button>
             </li>
         </ul>
 
@@ -435,7 +435,7 @@
 
             <li class="button">
                 <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-actual-address"></button>
+                        data-target="#add-legal-address"></button>
             </li>
         </ul>
 
@@ -497,7 +497,7 @@
 
         <ul class="personal-data-line">
             <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
-                data-target="#add-employee">
+                data-target="#edit-employee">
                 ﻿﻿﻿Добавить сотрудника
             </li>
         </ul>
@@ -537,405 +537,6 @@
             </li>
 
             <li class="text">TML</li>
-        </ul>
-    </div>
-
-
-
-
-
-    <div class="personal-data" style="display: none">
-        <h1 class="text-uppercase">Личные данные</h1>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">ФИО:</li>
-            <li class="text">Генералова Елена Николаевна</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-fio"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пол:</li>
-            <li class="text">женский</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#choose-gender"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Дата рождения:</li>
-            <li class="text">04.11.1976 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-birth"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line address">
-            <li class="label text-bold">Домашний адрес:</li>
-            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-address"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="personal-data__map">
-                <img src="/img/example/map.gif" alt="">
-                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line phone">
-            <li class="label text-bold">
-                Телефон:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-phone"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">E-mail:</li>
-            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-email"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пароль:</li>
-            <li class="text">* * * * * *</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-password"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Зводская приставка:</li>
-            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-receipt"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Мои контактные данные видны:</li>
-            <li class="radio-block">
-                <form action="#" class="radio">
-                    <label><input type="radio" name="radio"> мне</label>
-
-                    <label><input type="radio" name="radio" checked> друзьям</label>
-
-                    <label><input type="radio" name="radio"> всем</label>
-                </form>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line passport">
-            <li class="label text-bold">
-                Паспортные данные:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li>серия и номер паспорта - 4413 788256</li>
-                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
-                    <li>код подразделения - 770-106</li>
-                    <li>дата выдачи - 11.09.2001 г.</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-passport"></button>
-            </li>
-        </ul>
-    </div>
-
-    <div class="personal-data" style="display: none">
-        <h1 class="text-uppercase">Личные данные</h1>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">ФИО:</li>
-            <li class="text">Генералова Елена Николаевна</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-fio"></button>
-            </li>
-            <li class="show-more-full-name">
-                <ul class="list-data">
-                    <li class="text-bold as-link">Показать ФИО, которые были внесены ранее (2)</li>
-                </ul>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пол:</li>
-            <li class="text">женский</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#choose-gender"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Дата рождения:</li>
-            <li class="text">04.11.1976 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-birth"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line address">
-            <li class="label text-bold">Домашний адрес:</li>
-            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-address"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="personal-data__map">
-                <img src="/img/example/map.gif" alt="">
-                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-            </li>
-            <li class="show-address">
-                <ul class="list-data">
-                    <li class="text-bold as-link">
-                        Показать домашние адреса, которые были внесены ранее (2)
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line phone">
-            <li class="label text-bold">
-                Телефон:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-phone"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">E-mail:</li>
-            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-email"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пароль:</li>
-            <li class="text">* * * * * *</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-password"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Зводская приставка:</li>
-            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-receipt"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Мои контактные данные видны:</li>
-            <li class="radio-block">
-                <form action="#" class="radio">
-                    <label><input type="radio" name="radio"> мне</label>
-
-                    <label><input type="radio" name="radio" checked> друзьям</label>
-
-                    <label><input type="radio" name="radio"> всем</label>
-                </form>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line passport">
-            <li class="label text-bold">
-                Паспортные данные:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li>серия и номер паспорта - 4413 788256</li>
-                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
-                    <li>код подразделения - 770-106</li>
-                    <li>дата выдачи - 11.09.2001 г.</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-passport"></button>
-            </li>
-        </ul>
-    </div>
-
-    <div class="personal-data" style="display: none">
-        <h1 class="text-uppercase">Личные данные</h1>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">ФИО:</li>
-            <li class="text">Генералова Елена Николаевна</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-fio"></button>
-            </li>
-            <li class="hidden-full-name">
-                <ul class="list-data">
-                    <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
-                    <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
-                    <li class="text-bold as-link">Скрыть ФИО, которые были внесены ранее (2)</li>
-                </ul>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пол:</li>
-            <li class="text">женский</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#choose-gender"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Дата рождения:</li>
-            <li class="text">04.11.1976 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-birth"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line address">
-            <li class="label text-bold">Домашний адрес:</li>
-            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-address"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="personal-data__map">
-                <img src="/img/example/map.gif" alt="">
-                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
-            </li>
-            <li class="hidden-address">
-                <ul class="list-data">
-                    <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
-                        кв. 196 (01.01.1996 г. - 16.11.1997 г.)
-                    </li>
-                    <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
-                        кв. 196 (01.01.1990 г. - 31.12.1996 г.)
-                    </li>
-                    <li class="text-bold as-link">
-                        Скрыть домашние адреса, которые были внесены ранее (2)
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line phone">
-            <li class="label text-bold">
-                Телефон:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
-                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-phone"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">E-mail:</li>
-            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-email"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Пароль:</li>
-            <li class="text">* * * * * *</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#edit-password"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Зводская приставка:</li>
-            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#date-receipt"></button>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line">
-            <li class="label text-bold">Мои контактные данные видны:</li>
-            <li class="radio-block">
-                <form action="#" class="radio">
-                    <label><input type="radio" name="radio"> мне</label>
-
-                    <label><input type="radio" name="radio" checked> друзьям</label>
-
-                    <label><input type="radio" name="radio"> всем</label>
-                </form>
-            </li>
-        </ul>
-
-        <ul class="personal-data-line passport">
-            <li class="label text-bold">
-                Паспортные данные:
-            </li>
-            <li class="text">
-                <ul class="list-data">
-                    <li>серия и номер паспорта - 4413 788256</li>
-                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
-                    <li>код подразделения - 770-106</li>
-                    <li>дата выдачи - 11.09.2001 г.</li>
-                </ul>
-            </li>
-            <li class="button">
-                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
-                        data-target="#add-passport"></button>
-            </li>
         </ul>
     </div>
 </div>
@@ -1922,6 +1523,293 @@
             </ul>
 
             <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-type-name-company -->
+<div class="modal fade personal-edit career-modal" id="add-type-name-company" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Тип компании</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите тип компании</option>
+                        <option>Кинологический клуб</option>
+                        <option>Салон по стрижке</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Название компании</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите название компании">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-requisites-company -->
+<div class="modal fade personal-edit career-modal" id="add-requisites-company" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Форма собственности компании</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите форму собственности</option>
+                        <option>Общество с ограниченной ответственностью</option>
+                        <option>Индивидуальное предприятие</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Юридическое название</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите юридическое название компании">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">ИИН</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код ИНН">
+                </li>
+                <li class="col-12 label text-bold">КПП</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код КПП">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">ОГРН</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+                <li class="col-12 label text-bold">ОКПО</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-bank-details -->
+<div class="modal fade personal-edit career-modal" id="add-bank-details" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Расчетный счет</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите номер расчетного счета">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Банк</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите банк</option>
+                        <option>ОАО ВТБ</option>
+                        <option>ОАО Банк Москвы</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Корресподентский счет</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+                <li class="col-12 label text-bold">БИК</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-legal-address -->
+<div class="modal fade personal-edit career-modal" id="add-legal-address" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7 label">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 label text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 label text-bold">Кв./Офис</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal edit-employee -->
+<div class="modal fade personal-edit career-modal" id="edit-employee" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Член клуба:</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите члена клуба</option>
+                        <option>Хам Ван Гог</option>
+                        <option>Петров Петр Петрович</option>
+                        <option>Константинов Константин Константинович</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Должность:</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите должность</option>
+                        <option>инструктор вязки</option>
+                        <option>ответственный за клеймение</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"><button class="btn btn-uninstall icon-bin"></button></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-data-federation -->
+<div class="modal fade personal-edit career-modal" id="add-data-federation" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-3 label text-bold">Федерация</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>выбор федерации</option>
+                        <option>РКФ</option>
+                        <option>РФСС</option>
+                    </select>
+                </li>
+                <li class="col-3 label text-bold">Учетный номер</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="учетный номер">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-3 label text-bold">Номер папки</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="номер паки">
+                </li>
+
+                <li class="col-3 label text-bold">Код клейма, нач. №</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="код клейма">
+                </li>
+
+                <li class="col-12 text-right">
+                    <input type="text" class="form-control hide-placeholder" placeholder="нач. №">
+                </li>
+            </ul>
+
+            <div class="clearfix modal-bottom">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4 col-xs-6">
                     <button class="btn btn-azure">сохранить</button>
