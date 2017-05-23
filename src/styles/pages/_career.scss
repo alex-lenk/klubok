@@ -1,10 +1,10 @@
 #career {
-  padding: 35px 0;
+  padding: 15px 0 0;
 }
 
 .career-header {
   padding: 0 10px;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
   display: flex;
   h1 {
     margin-bottom: 0;
@@ -17,8 +17,7 @@
 }
 
 .career-head {
-  padding: 15px 10px;
-  margin-bottom: 20px;
+  padding: 15px 10px 17px;
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
@@ -30,6 +29,7 @@
 
 .career-head-right {
   max-width: 220px;
+  flex-basis: 220px;
 }
 
 .career-table {
@@ -41,7 +41,7 @@
 
 .career-row {
   margin-bottom: 0;
-  padding: 20px 0;
+  padding: 15px 0;
   list-style: none;
   display: flex;
 }
@@ -49,6 +49,7 @@
 .career-td {
   padding-right: 10px;
   padding-left: 10px;
+  line-height: 1.2;
   &:not(.career-td-first) {
     flex-shrink: 0;
     flex-grow: 1;
@@ -69,6 +70,11 @@
   }
 }
 
+.career-td-third {
+  flex-basis: 80px;
+  max-width: 80px;
+}
+
 .career-td-second-dignity {
   color: #EF4B22;
   text-transform: uppercase;
@@ -85,13 +91,8 @@
   }
 
   .career-td-second {
-    flex-basis: 170px;
-    max-width: 170px;
-  }
-
-  .career-td-third {
-    flex-basis: 80px;
-    max-width: 80px;
+    flex-basis: 160px;
+    max-width: 160px;
   }
 }
 
@@ -101,13 +102,16 @@
   }
 }
 
-@include to('m') {
+@include to('s') {
   .career-row {
     flex-wrap: wrap;
     .career-td:first-of-type {
       width: 100%;
       margin-bottom: 5px;
     }
+  }
+  .career-head {
+    display: none;
   }
 }
 
@@ -118,14 +122,6 @@
       margin-bottom: 10px;
     }
   }
-
-  .career-row {
-    flex-direction: column;
-  }
-  .career-td-third {
-    padding-top: 5px;
-  }
-
   .career-modal {
     .text-right {
       text-align: left;

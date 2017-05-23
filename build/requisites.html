@@ -1,3 +1,997 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+<title>Klubok</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel='stylesheet' href='/css/lib.css'>
+<link rel='stylesheet' href='/css/styles.css'>
+<link rel='stylesheet' href='/css/media.css'>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/img/favicon/manifest.json">
+<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {
+        filter: none;
+    }
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <header class="panel content-container">
+    <div class="header-top clearfix text-center">
+        <div class="logo pull-left">
+            <a href="#">
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="login pull-right">
+                <a href="#" class="login-avatar pull-left">
+        <img src="/img/example/ava-mini.png" alt="">
+        <span class="icon-user"></span>
+    </a>
+
+    <div class="login-actions pull-left">
+        <ul class="login-lang list-unstyled">
+            <li>Рус</li>
+            <li><a href="#">Eng</a></li>
+        </ul>
+
+        <ul class="login-options pull-left list-unstyled">
+            <li class="login-options__item">
+                <a href="#" class="icon-my-friends" data-toggle="tooltip" data-placement="bottom"
+                   title="Запрос на добавления в друзья"></a>
+            </li>
+            <li class="login-options__item login-options-active">
+                <a href="#" class="icon-messages" data-toggle="tooltip" data-placement="bottom"
+                   title="Сообщения"></a>
+            </li>
+            <li class="login-options__item">
+                <a href="#" class="icon-message-load" data-toggle="tooltip" data-placement="bottom"
+                   title="Уведомления"></a>
+            </li>
+            <li class="login-options__item login-options-active">
+                <a href="#" class="icon-exit" data-toggle="tooltip" data-placement="bottom"
+                   title="Выход"></a>
+            </li>
+        </ul>
+    </div>
+
+        </div>
+
+        <div class="header-nav text-center">
+    <nav class="clubok-menu header-nav-wrap">
+        <ul class="menu-list header-nav-list list-unstyled">
+            <li><a href="#">Собаки</a></li>
+            <li class="current"><a href="#">Щенки</a></li>
+            <li><a href="#">Сообщество</a></li>
+            <li><a href="#">Организации</a></li>
+        </ul>
+
+        <ul class="nav-arrows list-unstyled">
+            <li class="icon-prev"></li>
+            <li class="icon-next" data-count="1"></li>
+        </ul>
+    </nav>
+</div>
+
+    </div>
+
+    <ul class="breadcrumbs">
+    <li><a href="#">Начало</a></li>
+    <li><a href="#">Владельцам собак</a></li>
+    <li><span>Генералова Елена Николаевна</span></li>
+</ul>
+
+
+    <div class="header-middle" style="background-image: url(/img/example/bg.jpg);">
+            <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
+                <span class="custom-header__upload icon-camera2" data-toggle="tooltip"
+                  data-placement="left" title="Заменить портрет"></span></span>
+
+    <div class="header-media">
+        <div class="header-media-img">
+            <div class="media-img">
+                <img class="profile-img" src="/img/example/avatar.jpg" alt="">
+                <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
+                <span class="custom-header__upload upload-profile-img icon-camera2" data-toggle="tooltip"
+                      data-placement="bottom" title="Заменить портрет"></span></span>
+            </div>
+        </div>
+        <div class="header-media-content media-bottom">
+            <div class="profile clearfix">
+                <div class="profile-info pull-left">
+                    <span class="name">ГЕНЕРАЛОВА ЕЛЕНА НИКОЛАЕВНА</span>
+                    <span class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</span>
+                </div>
+                <div class="profile-actions pull-right">
+                    <ul class="text-right list-unstyled">
+                        <li>
+                            <a href="">Добавить в друзья</a>
+                        </li>
+                        <li>
+                            <a href="">Отслеживать публикации</a>
+                        </li>
+                        <li>
+                            <a href="">Написать сообщение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <nav class="clubok-menu profile-menu text-center">
+    <ul class="menu-list profile-menu-list list-unstyled">
+        <li>
+            <a href="#" class="icon-chronicle">
+                <span>Хроника</span>
+            </a>
+        </li>
+        <li class="current">
+            <a href="#" class="icon-dog">
+                <span>Мои собаки</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-paw">
+                <span>Мои щенки</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-graduates">
+                <span>Мои выпускники</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-friends">
+                <span>Друзья</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-messages">
+                <span>Общение</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-nursery">
+                <span>Мои клубы</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-user">
+                <span>Личные данные</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-arrows list-unstyled">
+        <li class="icon-prev"></li>
+        <li class="icon-next" data-count="1"></li>
+    </ul>
+</nav>
+
+</header>
+
+
+    <div class="requisites personal-data" style="display: none">
+        <h1 class="text-uppercase">РЕКВИЗИТЫ КОМПАНИИ</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-type-name-company">Добавить тип компании и название
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-requisites-company">
+                ﻿Добавить реквизиты компании
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-bank-details">
+                ﻿Добавить банковские реквизиты
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Банковские реквизиты видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> сотрудникм </label>
+
+                    <label><input type="radio" name="radio" checked> членам клуба</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-address">
+                ﻿Добавить юридический адрес
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-legal-address">
+                ﻿Добавить фактический адрес
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-postal-address">
+                ﻿Добавить почтовый адрес
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-phone">
+                ﻿﻿Добавить телефон
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-e-mail">
+                ﻿﻿Добавить e-mail
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Сотрудники:
+            </li>
+
+            <li class="text">Гениральный директор Иванов Иван Иванович</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-employee"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-employee">
+                ﻿﻿﻿Добавить сотрудника
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-data-federation">
+                ﻿Добавить данные по федерации
+            </li>
+        </ul>
+    </div>
+
+    <div class="requisites personal-data">
+        <h1 class="text-uppercase">РЕКВИЗИТЫ КОМПАНИИ</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Кинологический клуб</li>
+
+            <li class="text">"Долгий северное путь"</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-type-name-company"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ﻿Юридическое название компании:
+            </li>
+
+            <li class="text">ООО "Норильский клуб собаководов"</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-requisites-company"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ﻿ИИН:
+            </li>
+
+            <li class="text">7725790937</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-requisites-company"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                КПП:
+            </li>
+
+            <li class="text">﻿772501001</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ОГРН:
+            </li>
+
+            <li class="text">17528917</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ﻿Расчетный счет:
+            </li>
+
+            <li class="text">40702810500110002863</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-bank-details"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Банк:
+            </li>
+
+            <li class="text">ОАО «БАНК МОСКВЫ» г. Москва</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                БИК:
+            </li>
+
+            <li class="text">044525219</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ﻿Кор. счет:
+            </li>
+
+            <li class="text">30101810500000000219</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Банковские реквизиты видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> сотрудникм </label>
+
+                    <label><input type="radio" name="radio" checked> членам клуба</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Юридический адрес:
+            </li>
+
+            <li class="text">115114, Россия, Москва, ул. Дербеневская, д. 20, стр. 12, 2 этаж</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-legal-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Почтовый адрес:
+            </li>
+
+            <li class="text">115114, Россия, Москва, а/я 69</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-postal-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Фактический адрес:
+            </li>
+
+            <li class="text">115114, Россия, Москва, ул. Дербеневская, д. 20, стр. 12, 2 этаж </li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-actual-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
+                <img src="/img/example/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-phone"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-email"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Сотрудники:
+            </li>
+
+            <li class="text">Константинопольский Константин Константинович (генеральный директор)</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-employee"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold"></li>
+
+            <li class="text">Федоров Федр Федорович (инструктор по вязке, ответственный за клеймение)</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-employee"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold as-link not-filled" data-toggle="modal" data-backdrop="static"
+                data-target="#add-employee">
+                ﻿﻿﻿Добавить сотрудника
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Федирация:
+            </li>
+
+            <li class="text">РФСС</li>
+
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-data-federation"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold" data-toggle="modal">
+                Учетный номер:
+            </li>
+
+            <li class="text">9222</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                ﻿Номер паки:
+            </li>
+
+            <li class="text">34567</li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">
+                Код клейма:
+            </li>
+
+            <li class="text">TML</li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="personal-data" style="display: none">
+        <h1 class="text-uppercase">Личные данные</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-fio"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#choose-gender"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-birth"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
+                <img src="/img/example/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-phone"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-email"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-password"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская приставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-receipt"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> мне</label>
+
+                    <label><input type="radio" name="radio" checked> друзьям</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-passport"></button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="personal-data" style="display: none">
+        <h1 class="text-uppercase">Личные данные</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-fio"></button>
+            </li>
+            <li class="show-more-full-name">
+                <ul class="list-data">
+                    <li class="text-bold as-link">Показать ФИО, которые были внесены ранее (2)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#choose-gender"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-birth"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
+                <img src="/img/example/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </li>
+            <li class="show-address">
+                <ul class="list-data">
+                    <li class="text-bold as-link">
+                        Показать домашние адреса, которые были внесены ранее (2)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-phone"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-email"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-password"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская приставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-receipt"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> мне</label>
+
+                    <label><input type="radio" name="radio" checked> друзьям</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-passport"></button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="personal-data" style="display: none">
+        <h1 class="text-uppercase">Личные данные</h1>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">ФИО:</li>
+            <li class="text">Генералова Елена Николаевна</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-fio"></button>
+            </li>
+            <li class="hidden-full-name">
+                <ul class="list-data">
+                    <li class="color-grey">Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)</li>
+                    <li class="color-grey">Генералова Елена Николаевана (19.11.2990 г. - 31.12.1994 г.)</li>
+                    <li class="text-bold as-link">Скрыть ФИО, которые были внесены ранее (2)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пол:</li>
+            <li class="text">женский</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#choose-gender"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Дата рождения:</li>
+            <li class="text">04.11.1976 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-birth"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line address">
+            <li class="label text-bold">Домашний адрес:</li>
+            <li class="text">606480, Россия, Орловская область, г. Мценск, ул. Полярная, д. 10, кв. 45</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-address"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="personal-data__map">
+                <img src="/img/example/map.gif" alt="">
+                <button class="btn btn-azure hidden-sm">ПЕРЕНЕСТИ МЕТКУ</button>
+            </li>
+            <li class="hidden-address">
+                <ul class="list-data">
+                    <li class="color-grey">606480, Россия, Орловская область, г. Мценск, ул. Северная, д. 1,
+                        кв. 196 (01.01.1996 г. - 16.11.1997 г.)
+                    </li>
+                    <li class="color-grey">663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26,
+                        кв. 196 (01.01.1990 г. - 31.12.1996 г.)
+                    </li>
+                    <li class="text-bold as-link">
+                        Скрыть домашние адреса, которые были внесены ранее (2)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line phone">
+            <li class="label text-bold">
+                Телефон:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li><span class="phone-label">мобильный</span> +7 (976) 456-23-98</li>
+                    <li><span class="phone-label">домашний</span> +7 (495) 412-22-11</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-phone"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">E-mail:</li>
+            <li class="text"><a href="mailto:elenaprekrasnaya@mail.ru">elenaprekrasnaya@mail.ru</a></li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-email"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Пароль:</li>
+            <li class="text">* * * * * *</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#edit-password"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Зводская приставка:</li>
+            <li class="text">Северный рубин / Severniy rubin (после клички) от 12.12.2006 г.</li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#date-receipt"></button>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line">
+            <li class="label text-bold">Мои контактные данные видны:</li>
+            <li class="radio-block">
+                <form action="#" class="radio">
+                    <label><input type="radio" name="radio"> мне</label>
+
+                    <label><input type="radio" name="radio" checked> друзьям</label>
+
+                    <label><input type="radio" name="radio"> всем</label>
+                </form>
+            </li>
+        </ul>
+
+        <ul class="personal-data-line passport">
+            <li class="label text-bold">
+                Паспортные данные:
+            </li>
+            <li class="text">
+                <ul class="list-data">
+                    <li>серия и номер паспорта - 4413 788256</li>
+                    <li>выдан - отделением по району Марьино ОУФМС России по гор. Москве в ЮВАО</li>
+                    <li>код подразделения - 770-106</li>
+                    <li>дата выдачи - 11.09.2001 г.</li>
+                </ul>
+            </li>
+            <li class="button">
+                <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                        data-target="#add-passport"></button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="container clearfix">
+        <div class="pre-footer">
+            <!-- тут можно написать любое сообщение
+                        <p class="text-center text-uppercase" style="color: red;">Внимание!</p>
+                        <p>Все предложения о вязке собак, цены размещенные на портале, носят справочный характер и не являются
+                            публичной офертой.<br>
+                            Обновление информации о вязске собак производится владельцами самостоятельно в онлайн режиме.</p>-->
+        </div>
+
+        <div class="clearfix text-right">
+            <div class="col-66-60-45">
+                <div class="clearfix">
+                    <div class="copyrights col-40-55-100 text-left">
+                        <span>Сервер открыт 1 июня 2017 г.</span>
+                        <br>
+                        <span>@ ООО клубок.ру 2016—2017</span>
+                    </div>
+                    <div class="links col-60-45-100 text-left">
+                        <div class="clearfix">
+                            <div class="links-one col-60-100-100">
+                                <a href="#">Для заводчиков и клубов</a>
+                                <br>
+                                <a href="#">О портале</a>
+                            </div>
+                            <div class="links-two col-0-100-100">
+                                <a href="#">Наша команда</a>
+                                <br>
+                                <a href="#">Реклама на портал</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-couners">
+                <img src="/img/example/yandex.png">
+                <img src="/img/example/mail.gif">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src='/js/jquery.js'></script>
+<script src='/js/bootstrap.min.js'></script>
+<script src='/js/jquery.fancybox.min.js'></script>
+<script src='/js/slick.js'></script>
+<script src='/js/cropper.min.js'></script>
+<script src='/js/jquery.ba-throttle-debounce.min.js'></script>
+<script src='/js/menu.jquery.js'></script>
+<script src='/js/common.js'></script>
+<script src='/js/dog-pedigree-control.jquery.js'></script>
+
 <!-- Modal editFIO -->
 <div class="modal fade personal-edit" id="edit-fio" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -941,3 +1935,8 @@
         </form>
     </div>
 </div>
+
+
+
+</body>
+</html>

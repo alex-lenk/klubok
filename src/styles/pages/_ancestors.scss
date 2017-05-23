@@ -63,25 +63,19 @@
     height: 100%;
   }
 
-  &.bitch {
-    a {
+  &.bitch a {
       border: 3px solid #DA0861;
-    }
   }
-  &.male {
-    a {
+  &.male a {
       border: 3px solid #03a2fe;
-    }
   }
 }
 
-.ancestors-current-dog {
-  .ancestors-img {
+.ancestors-current-dog .ancestors-img {
+  width: 120px;
+  a {
     width: 120px;
-    a {
-      width: 120px;
-      height: 120px;
-    }
+    height: 120px;
   }
 }
 
