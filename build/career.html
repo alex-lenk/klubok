@@ -367,19 +367,19 @@
     <div class="owners-wall clearfix">
         <!-- Nav tabs -->
         <ul class="nav-tabs" role="tablist">
-            <li role="presentation" class="active">
+            <li role="presentation">
                 <a href="#wall" aria-controls="wall" role="tab" data-toggle="tab">Стена</a></li>
             <li role="presentation">
                 <a href="#ancestors" aria-controls="profile" role="tab" data-toggle="tab">Предки</a></li>
             <li role="presentation">
                 <a href="#descendants" aria-controls="descendants" role="tab" data-toggle="tab">Потомки</a></li>
-            <li role="presentation">
+            <li role="presentation" class="active">
                 <a href="#career" aria-controls="career" role="tab" data-toggle="tab">Карьера</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="wall">
+            <div role="tabpanel" class="tab-pane" id="wall">
                 <div class="col-md-3"></div>
 
                 <div class="col-md-9">
@@ -1717,10 +1717,162 @@
 
             <div role="tabpanel" class="tab-pane" id="descendants">..3.</div>
 
-            <div role="tabpanel" class="tab-pane" id="career">.4..</div>
-        </div>
+            <div role="tabpanel" class="tab-pane active" id="career">
+                <div class="career-header">
+                    <h1>КАРЬЕРА: ОЦЕНКИ И ТИТУЛЫ</h1>
+                    <button type="button" class="btn btn-azure" data-toggle="modal" data-backdrop="static"
+                            data-target="#add-career">ДОБАВИТЬ ОЦЕНКУ / ТИТУЛ</button>
+                </div>
 
+                <div class="career-head">
+                    <div>ВЫСТАВКИ / СОБЫТИЯ</div>
+                    <div class="career-head-right">ОЦЕНКИ / ТИТУЛЫ</div>
+                </div>
+
+                <div class="career-table">
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. Москва</div>
+                            <div>Выставка собак всех пород ранга САС ЧРКФ</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">﻿ОТЛ, CAC, CW, ЛК</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. ﻿Заречье</div>
+                            <div>Специализированная выставка собак ранга ПК (АМЕРИКАНСКИЙ СТАФФОРДШИРСКИЙ ТЕРЬЕР)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ОТЛ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 Германия, г. Берлин</div>
+                            <div>Специализированная выставка собак ранга ПК (ФРАНЦУЗСКИЙ БУЛЬДОГ)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ЛК, ВОВ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. Москва</div>
+                            <div>Выставка собак всех пород ранга САС ЧРКФ</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">﻿ОТЛ, CAC, CW, ЛК</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. ﻿Заречье</div>
+                            <div>Специализированная выставка собак ранга ПК (АМЕРИКАНСКИЙ СТАФФОРДШИРСКИЙ ТЕРЬЕР)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ОТЛ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 Германия, г. Берлин</div>
+                            <div>Специализированная выставка собак ранга ПК (ФРАНЦУЗСКИЙ БУЛЬДОГ)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ЛК, ВОВ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. Москва</div>
+                            <div>Выставка собак всех пород ранга САС ЧРКФ</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">﻿ОТЛ, CAC, CW, ЛК</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 г. Россия, г. ﻿Заречье</div>
+                            <div>Специализированная выставка собак ранга ПК (АМЕРИКАНСКИЙ СТАФФОРДШИРСКИЙ ТЕРЬЕР)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ОТЛ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+
+                        <li class="career-td career-td-third">
+                            <button class="btn btn-edit icon-pencil" data-toggle="modal" data-backdrop="static"
+                                    data-target="#add-career"></button>
+                        </li>
+                    </ul>
+
+                    <ul class="career-row">
+                        <li class="career-td career-td-first">
+                            <div class="text-bold">﻿13.06.2015 Германия, г. Берлин</div>
+                            <div>Специализированная выставка собак ранга ПК (ФРАНЦУЗСКИЙ БУЛЬДОГ)</div>
+                        </li>
+
+                        <li class="career-td career-td-second">
+                            <div class="career-td-second-dignity">ЛК, ВОВ</div>
+                            <a href="#" class="text-bold">Скан диплома</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+
+</div>
 </div>
 
 <footer>

@@ -1,0 +1,145 @@
+#career {
+  padding: 35px 0;
+}
+
+.career-header {
+  padding: 0 10px;
+  margin-bottom: 22px;
+  display: flex;
+  h1 {
+    margin-bottom: 0;
+  }
+  .btn {
+    width: 220px;
+    padding: 0 5px;
+    font-size: 14px;
+  }
+}
+
+.career-head {
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #7B7B7B;
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-head-right {
+  max-width: 220px;
+}
+
+.career-table {
+  font-size: 14px;
+  > ul:nth-of-type(even) {
+    background-color: #F9F9F9;
+  }
+}
+
+.career-row {
+  margin-bottom: 0;
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+}
+
+.career-td {
+  padding-right: 10px;
+  padding-left: 10px;
+  &:not(.career-td-first) {
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+  &:not(.career-td-third) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.career-td-first {
+  flex: 1 1 auto;
+}
+
+.career-td-second {
+  a {
+    align-self: flex-start;
+  }
+}
+
+.career-td-second-dignity {
+  color: #EF4B22;
+  text-transform: uppercase;
+}
+
+.career-modal .modal-dialog {
+  overflow: visible;
+}
+
+@include from('m') {
+  .career-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .career-td-second {
+    flex-basis: 170px;
+    max-width: 170px;
+  }
+
+  .career-td-third {
+    flex-basis: 80px;
+    max-width: 80px;
+  }
+}
+
+@include from('l') {
+  .career-td:not(.career-td-third) {
+    justify-content: space-between;
+  }
+}
+
+@include to('m') {
+  .career-row {
+    flex-wrap: wrap;
+    .career-td:first-of-type {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@include to('s') {
+  .career-header {
+    flex-direction: column;
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .career-row {
+    flex-direction: column;
+  }
+  .career-td-third {
+    padding-top: 5px;
+  }
+
+  .career-modal {
+    .text-right {
+      text-align: left;
+    }
+    .modal-bottom .btn:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.career-record {
+  padding: 15px 0 10px;
+}
+
+.modal-bottom {
+  padding-top: 10px;
+}
