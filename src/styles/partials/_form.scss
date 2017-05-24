@@ -60,7 +60,9 @@ button:focus, input:focus, select:focus, textarea:focus {
 
 select.form-control {
   outline: 1px solid #00adbf;
-  outline-offset: -1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 33px;
   border: 0;
 }
 
