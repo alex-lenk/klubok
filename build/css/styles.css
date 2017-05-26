@@ -4078,6 +4078,7 @@ footer .clearfix.text-right {
 
 .panel {
   margin-bottom: 31px;
+  overflow: hidden;
   position: relative;
 }
 

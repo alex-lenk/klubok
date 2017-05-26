@@ -189,3 +189,8 @@ $(document).ready(function () {
         }
     );
 });
+
+$('.south-west').powerTip({
+    placement: 'sw',
+    smartPlacement: true
+});

@@ -1,5 +1,6 @@
 .panel {
   margin-bottom: 31px;
+  overflow: hidden;
   @include from('l') {
     height: 410px;
   }
