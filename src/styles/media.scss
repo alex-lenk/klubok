@@ -213,6 +213,10 @@
   .ancestors-4 {
     padding-top: 305px;
   }
+
+  .pagination {
+    text-align: center;
+  }
 }
 
 @include to('s') {
@@ -406,5 +410,11 @@
     .ancestors-grandfather .about-dog {
       margin-bottom: 15px;
     }
+  }
+}
+
+@include to('xs') {
+  .pagination-show {
+    display: none;
   }
 }

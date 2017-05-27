@@ -34,6 +34,8 @@
 @import "pages/ancestors";
 @import "pages/career";
 @import "pages/requisites";
+@import "pages/friends";
+@import "pages/pagination";
 
 body {
   padding-top: 20px;
@@ -79,7 +81,7 @@ body {
 }
 
 .cropper-top {
-  @include clearfix
+  @include clearfix;
 }
 
 .cropper-title {
