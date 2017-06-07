@@ -1,0 +1,30 @@
+.filters {
+  padding: 0 10px;
+}
+
+.filters-group {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  border-bottom: 1px solid #bab8b9;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters-group-point {
+  margin-bottom: 5px;
+  max-width: calc(100% / 4 - 15px);
+  flex-basis: calc(100% / 4 - 15px);
+}
+
+.filters-group-text {
+  display: inline-block;
+}
+
+.form-number-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,43 @@
+.dogs-list {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .single-item {
+    width: 140px;
+    margin-right: 20px;
+    float: left;
+  }
+  .owners-wall-rates {
+    margin-bottom: 6px;
+  }
+}
+
+.dogs-item {
+  margin-bottom: 20px;
+  max-width: calc(100% / 2 - 20px);
+  flex-basis: calc(100% / 2 - 20px);
+  @include clearfix;
+}
+
+.dogs-item-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.dogs-item-link {
+  margin-bottom: 3px;
+}
+
+.dogs-item-indent {
+  margin-right: 30px;
+}
+
+.dogs-item-address {
+  margin-top: 3px;
+}
+
+.dogs-item-last-string {
+  margin-top: 8px;
+}
