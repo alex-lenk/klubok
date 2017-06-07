@@ -46,12 +46,27 @@
   margin-top: -29px;
   display: flex;
   align-items: center;
-  flex-basis: 300px;
   .text-bold {
   }
 
   .form-control {
     max-width: 130px;
     margin-left: 15px;
+  }
+}
+
+@include to('m') {
+  .pagination-top {
+    .pagination {
+      display: none;
+    }
+    .pagination-sort-by, .pagination-show {
+      margin-top: 0;
+    }
+  }
+  .pagination-bottom {
+    .pagination-sort-by, .pagination-show {
+      display: none;
+    }
   }
 }

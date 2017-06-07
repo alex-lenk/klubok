@@ -8,15 +8,14 @@
   padding-left: 0;
   border-bottom: 1px solid #bab8b9;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.filters-checkbox {
+  padding-top: 10px;
 }
 
 .filters-group-point {
   margin-bottom: 5px;
-  max-width: calc(100% / 4 - 15px);
-  flex-basis: calc(100% / 4 - 15px);
 }
 
 .filters-group-text {
@@ -25,6 +24,48 @@
 
 .form-number-group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+@include from('m') {
+  .filters-group-point {
+    max-width: calc(100% / 4 - 15px);
+    flex-basis: calc(100% / 4 - 15px);
+  }
+  .form-number-group {
+    justify-content: space-between;
+  }
+}
+
+@include from('s') {
+  .filters-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@include at('s') {
+  .filters-group-point:not(.filters-checkbox) {
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
+  }
+}
+
+@include to('s') {
+  .form-number {
+    margin: 0 10px;
+  }
+}
+
+@include to('xs') {
+  .filters-checkbox {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .pagination-sort-by {
+    justify-content: space-between;
+    width: 100%;
+  }
 }

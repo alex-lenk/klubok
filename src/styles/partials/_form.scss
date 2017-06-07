@@ -130,29 +130,6 @@ select.form-control {
 .form-label {
   margin-bottom: 0;
   line-height: 1;
-  @include from('m') {
-    padding-top: 10px;
-  }
-  @include to('s') {
-    padding-top: 5px;
-    margin-bottom: 5px;
-  }
-  @include at('s') {
-    &:not(.text-line-1) {
-      line-height: 35px;
-    }
-  }
-}
-
-.form-edit:not(.button-area) {
-  @include to('s') {
-    padding-right: 75px;
-  }
-  @include to('xs') {
-    .col-xs-7 {
-      width: 100%;
-    }
-  }
 }
 
 select {
@@ -161,4 +138,39 @@ select {
 
 .chose-select {
   color: #000000;
+}
+
+@include from('m') {
+  .form-label {
+    padding-top: 10px;
+  }
+}
+
+@include at('s') {
+  .form-label:not(.text-line-1) {
+    line-height: 35px;
+  }
+}
+
+@include at('m') {
+  .form-number {
+    max-width: 60px;
+    padding-right: 2px;
+  }
+}
+
+@include to('s') {
+  .form-label {
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+  .form-edit:not(.button-area) {
+    padding-right: 75px;
+  }
+}
+
+@include to('xs') {
+  .form-edit:not(.button-area) .col-xs-7 {
+    width: 100%;
+  }
 }

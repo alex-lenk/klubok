@@ -247,7 +247,7 @@ h1, .h1 {
 }
 
 .dogs-content {
-  padding: 0 10px;
+  padding: 0 10px 35px;
 }
 
 @include to('s') {
@@ -262,6 +262,10 @@ h1, .h1 {
   .cropper-loading {
     width: 100%;
     margin-top: 5px;
+  }
+
+  .dogs-content .pagination-area {
+    text-align: center;
   }
 }
 

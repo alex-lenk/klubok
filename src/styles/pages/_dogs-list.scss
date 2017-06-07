@@ -1,24 +1,8 @@
 .dogs-list {
   margin-top: 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  .single-item {
-    width: 140px;
-    margin-right: 20px;
-    float: left;
-  }
   .owners-wall-rates {
     margin-bottom: 6px;
   }
-}
-
-.dogs-item {
-  margin-bottom: 20px;
-  max-width: calc(100% / 2 - 20px);
-  flex-basis: calc(100% / 2 - 20px);
-  @include clearfix;
 }
 
 .dogs-item-title {
@@ -40,4 +24,53 @@
 
 .dogs-item-last-string {
   margin-top: 8px;
+}
+
+@include from('l') {
+  .dogs-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .dogs-item {
+    margin-bottom: 20px;
+    max-width: calc(100% / 2 - 20px);
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@include from('s') {
+  .dogs-item {
+    display: flex;
+  }
+
+  .dogs-list {
+    .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
+    .single-item {
+      margin-right: 20px;
+      max-width: 140px;
+      flex-basis: 140px;
+      align-self: flex-start;
+    }
+  }
+}
+
+@include to('m') {
+  .dogs-item {
+    margin-bottom: 25px;
+  }
+}
+
+@include to('s') {
+  .result-nav-tabs, .result-tab-content {
+    display: none;
+  }
+}
+
+@include to('xs') {
+  .dogs-list .slick-dotted.slick-slider {
+    margin-bottom: 20px;
+  }
 }

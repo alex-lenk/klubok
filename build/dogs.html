@@ -198,8 +198,7 @@
 
     <form action="#" class="filters">
         <div class="form-group">
-            <input type="text" class="form-control hide-placeholder"
-                   placeholder="Для поиска введите номер родословной или кличку">
+            <input type="text" class="form-control hide-placeholder" placeholder="Для поиска введите номер родословной или кличку">
         </div>
 
         <ul class="filters-group">
@@ -277,19 +276,19 @@
                 </select>
             </li>
 
-            <li class="filters-group-point">
+            <li class="filters-group-point filters-checkbox">
                 <label><input type="checkbox"> с родословной</label>
             </li>
 
-            <li class="filters-group-point">
+            <li class="filters-group-point filters-checkbox">
                 <label><input type="checkbox"> без родословной</label>
             </li>
 
-            <li class="filters-group-point">
+            <li class="filters-group-point filters-checkbox">
                 <label><input type="checkbox"> продажа</label>
             </li>
 
-            <li class="filters-group-point">
+            <li class="filters-group-point filters-checkbox">
                 <label><input type="checkbox"> для вязки</label>
             </li>
         </ul>
@@ -511,44 +510,43 @@
     <div class="dogs-content">
         <h1>ПЛЕМЕННЫЕ СОБАКИ</h1>
 
-        <nav class="pagination-area">
-    <ul class="pagination">
-        <li><span>&lt;&lt;</span></li>
-        <li><span>1</span></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#"> ... </a></li>
-        <li><a href="#">25</a></li>
-        <li><a href="#">&gt;&gt;</a></li>
-    </ul>
+        <nav class="pagination-area pagination-top">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
 
-    <div class="pagination-sort-by">
-        <div class="text-bold">Сортировать по:</div>
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
 
-        <select class="form-control" title="Сортировать по">
-            <option>Дате рождения</option>
-            <option>Рейтингу</option>
-            <option>Цене</option>
-        </select>
-    </div>
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
 
-    <div class="pagination-show">
-        <div class="pagination-show-by text-bold">выводить по:</div>
-        <select name="выводить по" class="form-control">
-            <option>10</option>
-            <option>20</option>
-            <option>50</option>
-            <option>100</option>
-        </select>
-    </div>
-</nav>
-
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <select name="выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
 
         <div class="dogs-list">
             <!-- dogs-item -->
@@ -701,12 +699,15 @@
 
                     <div class="owners-wall-rates scale size-8"></div>
 
-                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС уля ля ля</a>
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС уля
+                        ля ля</a>
                     </div>
 
                     <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
 
-                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский в Себире на Анадыре</div>
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский в Себире на
+                        Анадыре
+                    </div>
 
                     <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
                     </div>
@@ -874,46 +875,44 @@
             <!-- END dogs-item -->
         </div>
 
-        <nav class="pagination-area">
-    <ul class="pagination">
-        <li><span>&lt;&lt;</span></li>
-        <li><span>1</span></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#"> ... </a></li>
-        <li><a href="#">25</a></li>
-        <li><a href="#">&gt;&gt;</a></li>
-    </ul>
+        <nav class="pagination-area pagination-bottom">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
 
-    <div class="pagination-sort-by">
-        <div class="text-bold">Сортировать по:</div>
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
 
-        <select class="form-control" title="Сортировать по">
-            <option>Дате рождения</option>
-            <option>Рейтингу</option>
-            <option>Цене</option>
-        </select>
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <select name="выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
     </div>
-
-    <div class="pagination-show">
-        <div class="pagination-show-by text-bold">выводить по:</div>
-        <select name="выводить по" class="form-control">
-            <option>10</option>
-            <option>20</option>
-            <option>50</option>
-            <option>100</option>
-        </select>
-    </div>
-</nav>
-
-    </div>
-
 </div>
 
 <footer>

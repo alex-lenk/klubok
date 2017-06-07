@@ -36,8 +36,6 @@
   justify-content: space-between;
   li {
     margin-bottom: 15px;
-    max-width: calc(100% / 3 - 15px);
-    flex-basis: calc(100% / 3 - 15px);
   }
 }
 
@@ -56,4 +54,18 @@
   position: relative;
   top: -2px;
   flex-grow: 1;
+}
+
+@include at('m') {
+  .result-list li {
+    max-width: calc(100% / 2 - 15px);
+    flex-basis: calc(100% / 2 - 15px);
+  }
+}
+
+@include from('l') {
+  .result-list li {
+    max-width: calc(100% / 3 - 15px);
+    flex-basis: calc(100% / 3 - 15px);
+  }
 }
