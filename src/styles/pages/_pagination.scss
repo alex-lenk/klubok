@@ -2,9 +2,14 @@
   padding: 14px 0 11px;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .pagination {
+  width: 100%;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -35,4 +40,18 @@
 .pagination-show-by {
   margin-right: 20px;
   margin-bottom: 2px;
+}
+
+.pagination-sort-by {
+  margin-top: -29px;
+  display: flex;
+  align-items: center;
+  flex-basis: 300px;
+  .text-bold {
+  }
+
+  .form-control {
+    max-width: 130px;
+    margin-left: 15px;
+  }
 }
