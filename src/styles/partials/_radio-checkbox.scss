@@ -21,7 +21,7 @@
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-top: 4px \9;
+  margin-top: 4px\9;
   margin-left: -20px;
 }
 
@@ -69,5 +69,69 @@ fieldset[disabled] .checkbox label {
   margin-right: 15px;
   @include from('l') {
     margin-right: 20px;
+  }
+}
+
+/*
+<label class="label-block">
+    <input type="checkbox" name="" class="checkbox-custom">
+    <span class="checkbox-custom-view label">Fabfoxx</span>
+</label>
+*/
+
+.label-checkbox {
+}
+
+.checkbox-custom {
+  display: none;
+  &:checked + .checkbox-custom-view {
+    &:before {
+      border-color: $color-azure-link;
+    }
+    &:after {
+      visibility: visible;
+    }
+  }
+  &-view {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    line-height: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    &:before {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #ffffff;
+      content: '';
+      border: 1px solid $color-azure-link;
+      transition: all 0.3s ease;
+    }
+    &:after {
+      width: 10px;
+      height: 5px;
+      top: 4px;
+      left: 3px;
+      position: absolute;
+      border-bottom: 2px solid $color-azure-link;
+      border-left: 2px solid $color-azure-link;
+      content: '';
+      visibility: hidden;
+      transform: rotate(-45deg);
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    a, span {
+      padding-left: 5px;
+    }
   }
 }

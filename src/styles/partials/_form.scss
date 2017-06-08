@@ -59,9 +59,11 @@ button:focus, input:focus, select:focus, textarea:focus {
 }
 
 select.form-control {
+  width: calc(100% - 2px);
   outline: 1px solid #00adbf;
   margin-top: 1px;
   margin-bottom: 1px;
+  margin-left: 1px;
   height: 33px;
   border: 0;
 }

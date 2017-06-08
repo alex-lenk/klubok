@@ -1,5 +1,5 @@
 .pagination-area {
-  padding: 14px 0 11px;
+  padding: 15px 0 10px;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
   display: flex;
@@ -33,7 +33,7 @@
   justify-content: flex-end;
   align-items: center;
   .form-control {
-    width: 50px;
+    width: 60px;
   }
 }
 
@@ -46,12 +46,9 @@
   margin-top: -29px;
   display: flex;
   align-items: center;
-  .text-bold {
-  }
-
   .form-control {
     max-width: 130px;
-    margin-left: 15px;
+    margin-left: 20px;
   }
 }
 

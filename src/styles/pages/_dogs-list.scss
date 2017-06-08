@@ -34,8 +34,8 @@
   }
   .dogs-item {
     margin-bottom: 20px;
-    max-width: calc(100% / 2 - 20px);
-    flex-basis: calc(100% / 2 - 20px);
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
 }
 
@@ -43,7 +43,6 @@
   .dogs-item {
     display: flex;
   }
-
   .dogs-list {
     .slick-dotted.slick-slider {
       margin-bottom: 0;

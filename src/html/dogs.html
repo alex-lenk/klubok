@@ -11,9 +11,6 @@
 <div class="wrapper container">
     <!-- include "templates/header.html" -->
 
-    <br>
-    <br>
-
     <form action="#" class="filters">
         <div class="form-group">
             <input type="text" class="form-control hide-placeholder" placeholder="Для поиска введите номер родословной или кличку">
@@ -95,19 +92,31 @@
             </li>
 
             <li class="filters-group-point filters-checkbox">
-                <label><input type="checkbox"> с родословной</label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">с родословной</span>
+                </label>
             </li>
 
             <li class="filters-group-point filters-checkbox">
-                <label><input type="checkbox"> без родословной</label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">без родословной</span>
+                </label>
             </li>
 
             <li class="filters-group-point filters-checkbox">
-                <label><input type="checkbox"> продажа</label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">продажа</span>
+                </label>
             </li>
 
             <li class="filters-group-point filters-checkbox">
-                <label><input type="checkbox"> для вязки</label>
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">для вязки</span>
+                </label>
             </li>
         </ul>
     </form>
@@ -120,7 +129,7 @@
 
         <li role="presentation">
                 <span data-target="#all-dogs" aria-controls="all-dogs" role="tab" data-toggle="tab"
-                      class="result-nav-tabs-text">ВСЕ ПОРОДЫ СОБАК</span>
+                      class="result-nav-tabs-text text-bold">ВСЕ ПОРОДЫ СОБАК</span>
         </li>
 
         <li><span class="text-bold">НАЙДЕНО</span> 1965 СОБАК</li>
@@ -187,6 +196,16 @@
 
                 <li>
                     <a href="#" class="result-link">
+                        <span class="result-text">Финско-шведская оленегонная собака</span>
+                        <span class="result-decor"></span>
+                        <span class="result-text">234</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="result-list list-unstyled">
+                <li>
+                    <a href="#" class="result-link">
                         <span class="result-text">Английский той-терьер</span>
                         <span class="result-decor"></span>
                         <span class="result-text">229</span>
@@ -248,15 +267,9 @@
                         <span class="result-text">4596</span>
                     </a>
                 </li>
+            </ul>
 
-                <li>
-                    <a href="#" class="result-link">
-                        <span class="result-text">Финско-шведская оленегонная собака</span>
-                        <span class="result-decor"></span>
-                        <span class="result-text">234</span>
-                    </a>
-                </li>
-
+            <ul class="result-list list-unstyled">
                 <li>
                     <a href="#" class="result-link">
                         <span class="result-text">Малая голубая гасконская гончая</span>
@@ -356,7 +369,7 @@
             </div>
 
             <div class="pagination-show">
-                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
                 <select name="выводить по" class="form-control">
                     <option>10</option>
                     <option>20</option>

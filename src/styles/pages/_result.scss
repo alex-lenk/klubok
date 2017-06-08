@@ -1,4 +1,5 @@
 .result-nav-tabs {
+  margin-left: 10px;
   text-transform: uppercase;
   display: flex;
   li {
@@ -13,9 +14,13 @@
     }
   }
   .active .result-nav-tabs-text {
-    border-radius: 5px 5px 0 0;
-    font-weight: 700;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+    cursor: default;
     background-color: #f5f3f4;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
   }
 }
 
@@ -25,18 +30,18 @@
 }
 
 .result-tab-content {
-  padding: 20px 10px 0;
+  margin-bottom: 35px;
+  padding: 20px 10px 5px;
   background-color: #f5f3f4;
+  .tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.result-list {
-  margin-bottom: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  li {
-    margin-bottom: 15px;
-  }
+.result-list li {
+  margin-bottom: 15px;
 }
 
 .result-link {
@@ -57,14 +62,14 @@
 }
 
 @include at('m') {
-  .result-list li {
-    max-width: calc(100% / 2 - 15px);
-    flex-basis: calc(100% / 2 - 15px);
+  .result-list {
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
 }
 
 @include from('l') {
-  .result-list li {
+  .result-list {
     max-width: calc(100% / 3 - 15px);
     flex-basis: calc(100% / 3 - 15px);
   }
