@@ -1,0 +1,34 @@
+.friends {
+  padding: 0 10px;
+
+  .pagination-area {
+    margin-bottom: 35px;
+  }
+}
+
+.friends-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    flex-basis: calc(100% / 2 - 15px);
+  }
+}
+
+.friends-media {
+  img {
+  }
+}
+
+.friends-content {
+}
+
+.friends-name {
+}
+
+.friends-friendship {
+}

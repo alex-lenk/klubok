@@ -73,9 +73,9 @@ fieldset[disabled] .checkbox label {
 }
 
 /*
-<label class="label-block">
-    <input type="checkbox" name="" class="checkbox-custom">
-    <span class="checkbox-custom-view label">Fabfoxx</span>
+<label class="label-checkbox">
+    <input type="checkbox" class="checkbox-custom">
+    <span class="checkbox-custom-view">для вязки</span>
 </label>
 */
 
@@ -93,7 +93,7 @@ fieldset[disabled] .checkbox label {
     }
   }
   &-view {
-    padding-left: 30px;
+    padding-left: 20px;
     cursor: pointer;
     position: relative;
     display: inline-flex;

@@ -1,12 +1,12 @@
 .filters {
-  padding: 0 10px;
+  margin-bottom: 15px;
+  padding: 0 10px 15px;
+  border-bottom: 1px solid #bab8b9;
 }
 
 .filters-group {
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding-left: 0;
-  border-bottom: 1px solid #bab8b9;
   list-style: none;
 }
 
@@ -17,7 +17,7 @@
   }
 }
 
-.filters-group-point {
+.filters-group-point:not(.filters-checkbox) {
   margin-bottom: 5px;
 }
 
@@ -62,10 +62,18 @@
 }
 
 @include to('xs') {
+  .wrap-filters-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .checkbox-custom-view {
+      white-space: nowrap;
+    }
+  }
   .filters-checkbox {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
   .pagination-sort-by {
     justify-content: space-between;

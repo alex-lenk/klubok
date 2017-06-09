@@ -1,6 +1,5 @@
 .result-nav-tabs {
   margin-left: 10px;
-  text-transform: uppercase;
   display: flex;
   li {
     &:not(.active):not(:last-child) {
@@ -25,7 +24,8 @@
 }
 
 .result-nav-tabs-text {
-  padding: 10px;
+  padding: 10px 15px;
+  line-height: 1.42857143;
   display: inline-block;
 }
 
@@ -33,11 +33,12 @@
   margin-bottom: 35px;
   padding: 20px 10px 5px;
   background-color: #f5f3f4;
-  .tab-pane {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+}
+
+.wrap-result-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .result-list li {

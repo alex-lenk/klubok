@@ -365,9 +365,9 @@ fieldset[disabled] .checkbox label {
 }
 
 /*
-<label class="label-block">
-    <input type="checkbox" name="" class="checkbox-custom">
-    <span class="checkbox-custom-view label">Fabfoxx</span>
+<label class="label-checkbox">
+    <input type="checkbox" class="checkbox-custom">
+    <span class="checkbox-custom-view">для вязки</span>
 </label>
 */
 .checkbox-custom {
@@ -383,7 +383,7 @@ fieldset[disabled] .checkbox label {
 }
 
 .checkbox-custom-view {
-  padding-left: 30px;
+  padding-left: 20px;
   cursor: pointer;
   position: relative;
   display: -webkit-inline-flex;
@@ -5105,10 +5105,6 @@ footer span {
   }
 }
 
-.edit-data {
-  padding-bottom: 10px;
-}
-
 .edit-data .h1 {
   padding-top: 1px;
 }
@@ -5118,7 +5114,7 @@ footer span {
   padding-right: 10px;
 }
 
-.edit-data fieldset {
+.edit-data fieldset:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
@@ -7463,14 +7459,14 @@ footer span {
 }
 
 .filters {
-  padding: 0 10px;
+  margin-bottom: 15px;
+  padding: 0 10px 15px;
+  border-bottom: 1px solid #bab8b9;
 }
 
 .filters-group {
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding-left: 0;
-  border-bottom: 1px solid #bab8b9;
   list-style: none;
 }
 
@@ -7482,7 +7478,7 @@ footer span {
   margin-bottom: 0;
 }
 
-.filters-group-point {
+.filters-group-point:not(.filters-checkbox) {
   margin-bottom: 5px;
 }
 
@@ -7543,10 +7539,28 @@ footer span {
 }
 
 @media (max-width: 479px) {
+  .wrap-filters-checkbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .wrap-filters-checkbox .checkbox-custom-view {
+    white-space: nowrap;
+  }
   .filters-checkbox {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+    max-width: calc(100% / 2 - 10px);
+    -webkit-flex-basis: calc(100% / 2 - 10px);
+    -ms-flex-preferred-size: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
   .pagination-sort-by {
     -webkit-justify-content: space-between;
@@ -7558,7 +7572,6 @@ footer span {
 
 .result-nav-tabs {
   margin-left: 10px;
-  text-transform: uppercase;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7588,7 +7601,8 @@ footer span {
 }
 
 .result-nav-tabs-text {
-  padding: 10px;
+  padding: 10px 15px;
+  line-height: 1.42857143;
   display: inline-block;
 }
 
@@ -7598,7 +7612,7 @@ footer span {
   background-color: #f5f3f4;
 }
 
-.result-tab-content .tab-pane {
+.wrap-result-list {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
