@@ -1,3 +1,17 @@
+.dogs-content {
+  padding: 0 10px 15px;
+}
+
+.add-my-dog {
+  padding: 10px 0;
+  border-top: 1px solid #bab8b9;
+  border-bottom: 1px solid #bab8b9;
+  .btn-azure {
+    width: 220px;
+    height: 35px;
+  }
+}
+
 .dogs-list {
   margin-top: 35px;
   .owners-wall-rates {
@@ -40,6 +54,14 @@
 }
 
 @include from('s') {
+  .add-my-dog-radio {
+    margin-right: 10px;
+  }
+  .add-my-dog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .dogs-item {
     display: flex;
   }
@@ -71,5 +93,11 @@
 @include to('xs') {
   .dogs-list .slick-dotted.slick-slider {
     margin-bottom: 20px;
+  }
+  .add-my-dog .btn-azure {
+    display: inline-block;
+  }
+  .add-my-dog-radio {
+    margin-bottom: 5px;
   }
 }

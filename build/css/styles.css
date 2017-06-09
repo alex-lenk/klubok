@@ -3137,8 +3137,12 @@ h1, .h1 {
   padding-top: 15px;
 }
 
-.dogs-content {
-  padding: 0 10px 15px;
+.add-my-dog-radio input {
+  margin-right: 5px;
+}
+
+.add-my-dog-radio label:first-of-type {
+  margin-right: 50px;
 }
 
 @media (max-width: 719px) {
@@ -7669,6 +7673,21 @@ footer span {
   }
 }
 
+.dogs-content {
+  padding: 0 10px 15px;
+}
+
+.add-my-dog {
+  padding: 10px 0;
+  border-top: 1px solid #bab8b9;
+  border-bottom: 1px solid #bab8b9;
+}
+
+.add-my-dog .btn-azure {
+  width: 220px;
+  height: 35px;
+}
+
 .dogs-list {
   margin-top: 35px;
 }
@@ -7720,6 +7739,20 @@ footer span {
 }
 
 @media (min-width: 480px) {
+  .add-my-dog-radio {
+    margin-right: 10px;
+  }
+  .add-my-dog {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
   .dogs-item {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7755,6 +7788,12 @@ footer span {
 @media (max-width: 479px) {
   .dogs-list .slick-dotted.slick-slider {
     margin-bottom: 20px;
+  }
+  .add-my-dog .btn-azure {
+    display: inline-block;
+  }
+  .add-my-dog-radio {
+    margin-bottom: 5px;
   }
 }
 

@@ -246,9 +246,15 @@ h1, .h1 {
   padding-top: 15px;
 }
 
-.dogs-content {
-  padding: 0 10px 15px;
+.add-my-dog-radio {
+  input {
+    margin-right: 5px;
+  }
+  label:first-of-type {
+    margin-right: 50px;
+  }
 }
+
 
 @include to('s') {
   .hidden-sm {
