@@ -52,6 +52,13 @@
   }
 }
 
+.wrap-sort-by {
+  padding-top: 10px;
+  .pagination-sort-by {
+    margin-top: 0;
+  }
+}
+
 @include to('m') {
   .pagination-top {
     .pagination {

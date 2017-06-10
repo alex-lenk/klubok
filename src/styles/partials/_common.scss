@@ -292,3 +292,19 @@ h1, .h1 {
     width: 60px;
   }
 }
+
+.do-not-show-header {
+  .panel {
+    height: auto;
+  }
+  .header-middle {
+    display: none;
+  }
+  .profile-menu {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+  }
+}

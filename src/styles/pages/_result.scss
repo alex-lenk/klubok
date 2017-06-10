@@ -7,11 +7,12 @@
       color: $color-azure-link;
     }
     &:last-child {
-      padding: 10px;
+      padding: 14px 10px 10px;
       text-align: right;
       flex-grow: 1;
     }
   }
+
   .active .result-nav-tabs-text {
     border-radius: 4px 4px 0 0;
     color: #000;
@@ -35,10 +36,8 @@
   background-color: #f5f3f4;
 }
 
-.wrap-result-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.result-list {
+  column-gap: 20px;
 }
 
 .result-list li {
@@ -64,14 +63,12 @@
 
 @include at('m') {
   .result-list {
-    max-width: calc(100% / 2 - 10px);
-    flex-basis: calc(100% / 2 - 10px);
+    column-count: 2;
   }
 }
 
 @include from('l') {
   .result-list {
-    max-width: calc(100% / 3 - 15px);
-    flex-basis: calc(100% / 3 - 15px);
+    column-count: 3;
   }
 }
