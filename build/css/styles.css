@@ -287,73 +287,6 @@ select {
   }
 }
 
-.radio, .checkbox {
-  position: relative;
-}
-
-.radio input[type="radio"] {
-  width: 14px;
-  height: 14px;
-}
-
-.radio label,
-.checkbox label {
-  min-height: 20px;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-top: 4px\9;
-  margin-left: -20px;
-}
-
-.radio-inline,
-.checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: normal;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-input[type="radio"].disabled,
-input[type="checkbox"].disabled,
-fieldset[disabled] input[type="radio"],
-fieldset[disabled] input[type="checkbox"] {
-  cursor: not-allowed;
-}
-
-.radio-inline.disabled,
-.checkbox-inline.disabled,
-fieldset[disabled] .radio-inline,
-fieldset[disabled] .checkbox-inline {
-  cursor: not-allowed;
-}
-
-.radio.disabled label,
-.checkbox.disabled label,
-fieldset[disabled] .radio label,
-fieldset[disabled] .checkbox label {
-  cursor: not-allowed;
-}
-
 .radio label:not(:last-child) {
   margin-right: 15px;
 }
@@ -435,6 +368,78 @@ fieldset[disabled] .checkbox label {
 }
 
 .checkbox-custom-view a, .checkbox-custom-view span {
+  padding-left: 5px;
+}
+
+/*
+<label class="label-custom">
+    <input type="radio" name="radio01" class="radio-custom">
+    <span class="radio-custom-view">владелец</span>
+</label>
+*/
+.radio-custom {
+  display: none;
+}
+
+.radio-custom:checked + .radio-custom-view:before {
+  border-color: #1497a7;
+}
+
+.radio-custom:checked + .radio-custom-view:after {
+  visibility: visible;
+}
+
+.radio-custom-view {
+  padding-left: 20px;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.radio-custom-view:before {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #ffffff;
+  content: '';
+  border: 1px solid #1497a7;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.radio-custom-view:after {
+  width: 7px;
+  height: 7px;
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  background-color: #1497a7;
+  visibility: hidden;
+}
+
+.radio-custom-view a {
+  text-decoration: underline;
+}
+
+.radio-custom-view a:hover {
+  text-decoration: none;
+}
+
+.radio-custom-view a, .radio-custom-view span {
   padding-left: 5px;
 }
 
@@ -5123,6 +5128,10 @@ footer span {
   .col-0-100-100 {
     width: auto;
   }
+}
+
+.edit-data {
+  padding-bottom: 10px;
 }
 
 .edit-data .h1 {
