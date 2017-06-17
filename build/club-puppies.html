@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Klubok</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel='stylesheet' href='/css/lib.css'>
+<link rel='stylesheet' href='/css/styles.css'>
+<link rel='stylesheet' href='/css/media.css'>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/img/favicon/manifest.json">
+<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {
+        filter: none;
+    }
+</style>
+<![endif]-->
+
+</head>
+<body class="do-not-show-header">
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <header class="panel content-container">
+    <div class="header-top clearfix text-center">
+        <div class="logo pull-left">
+            <a href="#">
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="login pull-right">
+                <a href="#" class="login-avatar pull-left">
+        <img src="/img/example/ava-mini.png" alt="">
+        <span class="icon-user"></span>
+    </a>
+
+    <div class="login-actions pull-left">
+        <ul class="login-lang list-unstyled">
+            <li>Рус</li>
+            <li><a href="#">Eng</a></li>
+        </ul>
+
+        <ul class="login-options pull-left list-unstyled">
+            <li class="login-options__item">
+                <a href="#" class="icon-my-friends south-west" title="Запрос на добавления в друзья"></a>
+            </li>
+            <li class="login-options__item login-options-active">
+                <a href="#" class="icon-messages south-west" title="Сообщения"></a>
+            </li>
+            <li class="login-options__item">
+                <a href="#" class="icon-message-load south-west" title="Уведомления"></a>
+            </li>
+            <li class="login-options__item login-options-active">
+                <a href="#" class="icon-exit south-west" title="Выход"></a>
+            </li>
+        </ul>
+    </div>
+
+        </div>
+
+        <div class="header-nav text-center">
+    <nav class="clubok-menu header-nav-wrap">
+        <ul class="menu-list header-nav-list list-unstyled">
+            <li><a href="#">Собаки</a></li>
+            <li class="current"><a href="#">Щенки</a></li>
+            <li><a href="#">Сообщество</a></li>
+            <li><a href="#">Организации</a></li>
+        </ul>
+
+        <ul class="nav-arrows list-unstyled">
+            <li class="icon-prev"></li>
+            <li class="icon-next" data-count="1"></li>
+        </ul>
+    </nav>
+</div>
+
+    </div>
+
+    <ul class="breadcrumbs">
+    <li><a href="#">Начало</a></li>
+    <li><a href="#">Владельцам собак</a></li>
+    <li><span>Генералова Елена Николаевна</span></li>
+</ul>
+
+
+    <div class="header-middle" style="background-image: url(/img/example/bg.jpg);">
+            <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
+                <span class="custom-header__upload icon-camera2" data-toggle="tooltip"
+                  data-placement="left" title="Заменить портрет"></span></span>
+
+    <div class="header-media">
+        <div class="header-media-img">
+            <div class="media-img">
+                <img class="profile-img" src="/img/example/avatar.jpg" alt="">
+                <span  data-toggle="modal" data-backdrop="static" data-target="#addPhotoProfile">
+                <span class="custom-header__upload upload-profile-img icon-camera2" data-toggle="tooltip"
+                      data-placement="bottom" title="Заменить портрет"></span></span>
+            </div>
+        </div>
+        <div class="header-media-content media-bottom">
+            <div class="profile clearfix">
+                <div class="profile-info pull-left">
+                    <span class="name">ГЕНЕРАЛОВА ЕЛЕНА НИКОЛАЕВНА</span>
+                    <span class="location">Россия, Камчатский край, г. Петропавловск-Камчатский</span>
+                </div>
+                <div class="profile-actions pull-right">
+                    <ul class="text-right list-unstyled">
+                        <li>
+                            <a href="">Добавить в друзья</a>
+                        </li>
+                        <li>
+                            <a href="">Отслеживать публикации</a>
+                        </li>
+                        <li>
+                            <a href="">Написать сообщение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <nav class="clubok-menu profile-menu text-center">
+    <ul class="menu-list profile-menu-list list-unstyled">
+        <li>
+            <a href="#" class="icon-chronicle">
+                <span>Хроника</span>
+            </a>
+        </li>
+        <li class="current">
+            <a href="#" class="icon-dog">
+                <span>Мои собаки</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-paw">
+                <span>Мои щенки</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-graduates">
+                <span>Мои выпускники</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-friends">
+                <span>Друзья</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-messages">
+                <span>Общение</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-nursery">
+                <span>Мои клубы</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="icon-user">
+                <span>Личные данные</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-arrows list-unstyled">
+        <li class="icon-prev"></li>
+        <li class="icon-next" data-count="1"></li>
+    </ul>
+</nav>
+
+</header>
+
+
+    <form action="#" class="filters">
+        <div class="form-group">
+            <input type="text" class="form-control hide-placeholder"
+                   placeholder="Для поиска введите номер родословной или кличку">
+        </div>
+
+        <ul class="filters-group">
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите группу по FCI">
+                    <option disabled selected>Выберите группу по FCI</option>
+                    <option>F</option>
+                    <option>C</option>
+                    <option>I</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите породу">
+                    <option disabled selected>Выберите породу</option>
+                    <option>Тибетский мастиф</option>
+                    <option>Леонбергер</option>
+                    <option>Норвежский лундехунд</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите разновидность">
+                    <option disabled selected>Выберите разновидность</option>
+                    <option>Тибетский мастиф</option>
+                    <option>Леонбергер</option>
+                    <option>Норвежский лундехунд</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите пол">
+                    <option disabled selected>Выберите пол</option>
+                    <option>Сука</option>
+                    <option>Кобель</option>
+                </select>
+            </li>
+        </ul>
+
+        <div class="filters-half">
+            <div class="filters-half-point">
+                <span class="filters-half-text">Щенки до</span>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">3</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">6</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">9</span>
+                </label>
+
+                <span>месяцев</span>
+            </div>
+
+            <div class="filters-half-point">
+                <span class="filters-half-text">Для</span>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">разведения</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">души</span>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <ul class="result-nav-tabs list-unstyled" role="tablist">
+        <li role="presentation" class="active">
+                <span data-target="#popular-dogs" aria-controls="popular-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Популярные породы собак</span>
+        </li>
+
+        <li role="presentation">
+                <span data-target="#all-dogs" aria-controls="all-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Все породы собак</span>
+        </li>
+
+        <li class="text-uppercase"><span class="text-bold">НАЙДЕНО</span> 1965 щенков</li>
+    </ul>
+
+    <div class="result-tab-content tab-content">
+        <div role="tabpanel" class="tab-pane active" id="popular-dogs">
+            <div class="wrap-result-list">
+                <ul class="result-list list-unstyled">
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="all-dogs">ВСЕ ПОРОДЫ СОБАК</div>
+    </div>
+
+    <div class="dogs-content">
+        <h1>ПРОДАЖА ЩЕНКОВ</h1>
+
+        <nav class="pagination-area pagination-top">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
+
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
+                <select title="Выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
+
+        <div class="dogs-list">
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Мальчик - хулиганьчик.Породная голова, красивое лицо, выразительные глаза, короткий курносый носик,
+                    широкая мордашка. Зубы 6*6, 00 на месте. Анатомически правильно ...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Красивая, умная, от прекрасных родителей. Активные, веселые, но не надоедливые! Любят детей, не
+                    обижают, позволяют тискать себя. Знают кошек, других собак, мирно с ними дружат...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Девочка миниатюрного пуделя, красного окраса. Очаровательный золотой барашек, будет отличным другом
+                    в Вашей семье!...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Необыкновенная куколка, тип мишки. Толстые лапки, набивная шерсть, короткая мордочка. Хорошая
+                    наследственность. Характер игривый, ласковый. Социализирована. Приучается ...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС уля
+                        ля ля</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский в Себире на
+                        Анадыре
+                    </div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Щенок здоровый и активный, крепкий, веселый и игривый, контактный. Отличная шерсть. Породные
+                    движения щенка свободные и скоординированные, красивая линия...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+                </div>
+
+                <div class="dogs-list-text">
+                    У щенков отличная наследственность, известные во всем мире собаки. Отец является интерчемпионом по
+                    красоте.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Мальчик с удлиненной шерстью, щенок не для выставок, но вырастет не менее красивой собакой, чем его
+                    братья и сестры. Мордочка у мальчика пока темненькая, но с каждым...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Шоколадный мальчик Лабрадора Ретривера! От Юного Чемпиона России! Документы РКФ, клеймо, прививки по
+                    возрасту.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Миниатюрный черно-подпалый мальчик.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Шикарная девочка, очень красивая, породная, миниатюрная. Ласковая, игривая, активная. Целовашка.
+                    Приучена к чистоте. Пакет документов. Консультации и помощь в любое время...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+        </div>
+
+        <nav class="pagination-area pagination-bottom">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
+
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <select name="выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<footer>
+    <div class="container clearfix">
+        <div class="pre-footer">
+            <!-- тут можно написать любое сообщение
+                        <p class="text-center text-uppercase" style="color: red;">Внимание!</p>
+                        <p>Все предложения о вязке собак, цены размещенные на портале, носят справочный характер и не являются
+                            публичной офертой.<br>
+                            Обновление информации о вязске собак производится владельцами самостоятельно в онлайн режиме.</p>-->
+        </div>
+
+        <div class="clearfix text-right">
+            <div class="col-66-60-45">
+                <div class="clearfix">
+                    <div class="copyrights col-40-55-100 text-left">
+                        <span>Сервер открыт 1 июня 2017 г.</span>
+                        <br>
+                        <span>@ ООО клубок.ру 2016—2017</span>
+                    </div>
+                    <div class="links col-60-45-100 text-left">
+                        <div class="clearfix">
+                            <div class="links-one col-60-100-100">
+                                <a href="#">Для заводчиков и клубов</a>
+                                <br>
+                                <a href="#">О портале</a>
+                            </div>
+                            <div class="links-two col-0-100-100">
+                                <a href="#">Наша команда</a>
+                                <br>
+                                <a href="#">Реклама на портал</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-couners">
+                <img src="/img/example/yandex.png">
+                <img src="/img/example/mail.gif">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src='/js/jquery.js'></script>
+<script src='/js/bootstrap.min.js'></script>
+<script src='/js/jquery.fancybox.min.js'></script>
+<script src='/js/slick.js'></script>
+<script src='/js/cropper.min.js'></script>
+<script src='/js/jquery.ba-throttle-debounce.min.js'></script>
+<script src='/js/menu.jquery.js'></script>
+<script src='/js/jquery.powertip.min.js'></script>
+<script src='/js/common.js'></script>
+<script src='/js/dog-pedigree-control.jquery.js'></script>
+
+<!-- Modal editFIO -->
+<div class="modal fade personal-edit" id="edit-fio" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">ФИО:</li>
+                <li class="col-2 label">
+                    Генералова Елена <span class="error-text">(отчество не заполнено)</span> (17.11.1997 г. - н.в.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">ФИО:</li>
+                <li class="col-2 label">
+                    Меркулова Елена Николаевана (01.01. 1995 г. - 16.11.1997 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line mention">
+                <li class="col-4 label">
+                    <span class="text-bold">Пользователи портала упоминают Вас как:</span>
+                    <span class="error-text">Петрова Мария Ивановна</span>
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line beginning-form">
+                <li class="col-1 label text-bold">Фамилия</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Имя</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Отчество</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">с</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-1 label text-bold">по</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="clearfix modal-bottom">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addPhotoProfile -->
+<div class="modal fade personal-edit" id="addPhotoProfile" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="cropper-top">
+                <div class="cropper-title text-bold">Загрузка фото</div>
+                <div class="cropper-loading">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cropper-wrap">
+                <img id="image" src="/img/example/32_doberman_pinscher.jpg" alt="Picture">
+            </div>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal chooseGender -->
+<div class="modal fade personal-edit" id="choose-gender" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Пол:</li>
+                <li class="col-5 label radio">
+                    <label class="label-custom">
+                        <input type="radio" name="radio06" class="radio-custom">
+                        <span class="radio-custom-view">муж.</span>
+                    </label>
+
+                    <label class="label-custom">
+                        <input type="radio" name="radio06" class="radio-custom">
+                        <span class="radio-custom-view">жен.</span>
+                    </label>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">закрыть окно</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<!-- Modal dateBirth -->
+<div class="modal fade personal-edit" id="date-birth" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Рождение:</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </li>
+                <li class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">закрыть окно</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addAddress -->
+<div class="modal fade personal-edit" id="add-address" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес:</li>
+                <li class="col-2 label">
+                    125004, Россия, г. Москва, Столешников переулок, 6с1, кв 19 (12.12.1997 г. - 09.09.20016 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес:</li>
+                <li class="col-2 label">
+                    663318, Россия, Красноярский край, г. Норильск, ул. Нансена, д. 26, кв. 196 (01.01.1990 г. -
+                    31.12.1996 г.)
+                </li>
+                <li class="col-3 size-0">
+                    <button class="btn btn-edit icon-pencil"></button>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7 label">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 label text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 label text-bold">Квартира</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">с</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-1 label text-bold">по</li>
+                <li class="col-5">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addPhone -->
+<div class="modal fade personal-edit" id="add-phone" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Телефон</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>Домашний</option>
+                        <option>Рабочий</option>
+                    </select>
+                </li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>Россия (+7)</option>
+                        <option>Другое</option>
+                    </select>
+                </li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" value="(495) 999-99-99">
+                </li>
+                <li class="col-9 size-0 text-right">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Телефон</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>Домашний</option>
+                        <option>Рабочий</option>
+                    </select>
+                </li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>страна</option>
+                        <option>Россия (+7)</option>
+                    </select>
+                </li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addEmail -->
+<div class="modal fade personal-edit" id="add-email" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">E-mail</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите e-mail">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal edit-password -->
+<div class="modal fade personal-edit" id="edit-password" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Пароль</li>
+                <li class="col-13">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите новый пароль">
+                </li>
+                <li class="col-13">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите пароль еще раз">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal date-receipt -->
+<div class="modal fade personal-edit" id="date-receipt" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-14 label text-bold">Дата получения заводскаой приставки</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>введите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-12 label text-bold">Русское</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите на звание">
+                </li>
+                <li class="col-12 label text-bold">English</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите на звание">
+                </li>
+                <li class="col-12">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-passport -->
+<div class="modal fade personal-edit" id="add-passport" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-3 label text-bold">Серия паспорта</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="_ _ _ _">
+                </li>
+                <li class="col-3 label text-bold">Номер паспорта</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="_ _ _ _ _ _">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-3 label text-bold">Паспорт выдан</li>
+                <li class="col-4">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите данные о выдаче">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-3 label text-bold">Код подразделения</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="_ _ _ - _ _ _">
+                </li>
+                <li class="col-3 label text-bold">Дата выдачи</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>введите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-12 text-right">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal register -->
+<div class="modal fade modal-reg" id="register" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h2 class="text-uppercase">Регистрация</h2>
+
+            <form action="#">
+                <div class="modal-group">
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input25">
+                            Фамилия
+                        </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control hide-placeholder" id="input25"
+                                   placeholder="введите фамилию">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input26">
+                            Имя
+                        </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control hide-placeholder" id="input26"
+                                   placeholder="введите имя">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input27">
+                            Отчество
+                        </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control hide-placeholder" id="input27"
+                                   placeholder="введите отчество">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-group">
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input28">
+                            E-mail
+                        </label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control hide-placeholder" id="input28"
+                                   placeholder="введите e-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input29">
+                            Пароль
+                        </label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control hide-placeholder" id="input29"
+                                   placeholder="введите пароль">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-group">
+                    <div class="form-group">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <button class="btn btn-azure">
+                                регистрация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-group">
+                    <div class="form-group">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                закрыть окно
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal loginTo -->
+<div class="modal fade modal-reg" id="loginTo" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h2 class="text-uppercase">Вход</h2>
+
+            <form action="#">
+                <div class="modal-group">
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input30">
+                            E-mail
+                        </label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control hide-placeholder" id="input30"
+                                   placeholder="введите e-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label col-md-3 text-bold" for="input31">
+                            Пароль
+                        </label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control hide-placeholder" id="input31"
+                                   placeholder="введите пароль">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-group">
+                    <div class="form-group">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <button class="btn btn-azure">
+                                Войти
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-group">
+                    <div class="form-group">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                                закрыть окно
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal addFIO -->
+<div class="modal fade personal-edit" id="add-full-name" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Фамилия</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Имя</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+                <li class="col-1 label text-bold">Отчество</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addOwnersAddress -->
+<div class="modal fade personal-edit" id="add-owners-address" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7 label">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 label text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 label text-bold">Квартира</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal addSkan -->
+<div class="modal fade personal-edit" id="addskan" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Скан:</li>
+                <li class="col-13">
+                    <select class="form-control" id="input52">
+                        <option>Выберите документ</option>
+                        <option>Метрика щенка</option>
+                        <option>Родословная РКФ на русском</option>
+                        <option>Родословная РКФ на английском</option>
+                        <option>Родословная зарубежная</option>
+                    </select>
+                    <div class="format">Форматы: jpg, gif, pdf, tif. Размер не более 4мб.</div>
+                </li>
+                <li class="col-3 label">
+                    <span class="as-link text-bold" data-src="/img/example/rod-tit.jpg" data-fancybox=""
+                          data-caption="Родословная РКФ на английском">посмотреть</span>
+                </li>
+                <li class="col-3 size-0">
+                    <label type="button" class="file-uploads btn btn-edit icon-upload">
+                        <input type="file">
+                    </label>
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4 label col-11"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal owners-sale -->
+<div class="modal fade personal-edit" id="owners-sale" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Продажа</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите сумму">
+                </li>
+                <li class="col-12 label text-bold">Валюта</li>
+                <li class="col-10">
+                    <select class="form-control">
+                        <option>Рубль</option>
+                        <option>Доллар США</option>
+                        <option>ЕВРО</option>
+                        <option>Фунт Стерлинга</option>
+                        <option>Золото</option>
+                        <option>Просто так</option>
+                    </select>
+                </li>
+                <li class="col-12">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal owners-dogs -->
+<div class="modal fade personal-edit" id="owners-dogs" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Вязка</li>
+                <li class="col-10">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите сумму">
+                </li>
+                <li class="col-12 label text-bold">Валюта</li>
+                <li class="col-10">
+                    <select class="form-control">
+                        <option>Рубль</option>
+                        <option>Доллар США</option>
+                        <option>ЕВРО</option>
+                        <option>Фунт Стерлинга</option>
+                        <option>Золото</option>
+                        <option>Просто так</option>
+                    </select>
+                </li>
+                <li class="col-12">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal transfer-user -->
+<div class="modal fade personal-edit" id="transfer-user" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-md-6 label text-bold">Передать пользователю из списка друзей</li>
+                <li class="col-md-6">
+                    <select class="form-control">
+                        <option value="Выберите действие">Начните печатать ФИО</option>
+                        <option value="Редактировать данные по собаке">Редактировать данные по собаке</option>
+                        <option value="Выставить на продажу">Выставить на продажу</option>
+                        <option value="Предложить для вязки">Предложить для вязки</option>
+                        <option value="Передать новому хозяину">Передать новому хозяину</option>
+                        <option value="Удалить">Удалить</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="line">
+                <li class="col-md-6 label text-bold">Передать пользователю не с нашего сайта и выслать приглашение</li>
+                <li class="col-md-6">
+                    <input type="email" class="form-control hide-placeholder" placeholder="введите e-mail">
+                </li>
+            </ul>
+
+            <div class="clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">Передать</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-career -->
+<div class="modal fade personal-edit career-modal" id="add-career" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-12 label text-bold">Адрес</li>
+                <li class="col-16">
+                    <input type="text" class="form-control hide-placeholder" placeholder="﻿введите страну и населенный пункт">
+                    <div class="career-record">Россия, Брянская область, Красногорский район, деревня Любовшо</div>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-12 label text-bold">Выставка</li>
+                <li class="col-16">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите название выставки">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-12 label text-bold">Дата</li>
+                <li class="col-3">
+                    <select class="form-control">
+                        <option>выберите дату</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+                <li class="col-12 label text-bold">Оценка</li>
+                <li class="col-3">
+                    <select class="form-control">
+                        <option>выберите оценку</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-12 label text-bold">Титул</li>
+                <li class="col-16">
+                    <select class="form-control">
+                        <option>выберите титул</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-type-name-company -->
+<div class="modal fade personal-edit career-modal" id="add-type-name-company" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Тип компании</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите тип компании</option>
+                        <option>Кинологический клуб</option>
+                        <option>Салон по стрижке</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Название компании</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите название компании">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-requisites-company -->
+<div class="modal fade personal-edit career-modal" id="add-requisites-company" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Форма собственности компании</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите форму собственности</option>
+                        <option>Общество с ограниченной ответственностью</option>
+                        <option>Индивидуальное предприятие</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Юридическое название</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите юридическое название компании">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">ИИН</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код ИНН">
+                </li>
+                <li class="col-12 label text-bold">КПП</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код КПП">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">ОГРН</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+                <li class="col-12 label text-bold">ОКПО</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-bank-details -->
+<div class="modal fade personal-edit career-modal" id="add-bank-details" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Расчетный счет</li>
+                <li class="col-11">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите номер расчетного счета">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Банк</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите банк</option>
+                        <option>ОАО ВТБ</option>
+                        <option>ОАО Банк Москвы</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Корресподентский счет</li>
+                <li class="col-10 col-10-80">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+                <li class="col-12 label text-bold">БИК</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-legal-address -->
+<div class="modal fade personal-edit career-modal" id="add-legal-address" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-1 label text-bold">Адрес</li>
+                <li class="col-6">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите адрес в произвольном виде">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Индекс</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="125009">
+                </li>
+                <li class="col-7 label">
+                    Россия, Брянская область, Красногорский район, деревня Любовшо
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-1 label text-bold">Улица</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="переулок">
+                </li>
+                <li class="col-1 label text-bold">Дом</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="5">
+                </li>
+                <li class="col-1 label text-bold">Кв./Офис</li>
+                <li class="col-5">
+                    <input type="text" class="form-control hide-placeholder" placeholder="23">
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal edit-employee -->
+<div class="modal fade personal-edit career-modal" id="edit-employee" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-10 label text-bold">Член клуба:</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите члена клуба</option>
+                        <option>Хам Ван Гог</option>
+                        <option>Петров Петр Петрович</option>
+                        <option>Константинов Константин Константинович</option>
+                    </select>
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-10 label text-bold">Должность:</li>
+                <li class="col-11">
+                    <select class="form-control">
+                        <option>выберите должность</option>
+                        <option>инструктор вязки</option>
+                        <option>ответственный за клеймение</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="modal-bottom clearfix">
+                <div class="col-sm-4"><button class="btn btn-uninstall icon-bin"></button></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal add-data-federation -->
+<div class="modal fade personal-edit career-modal" id="add-data-federation" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form action="#" class="container modal-content">
+            <ul class="line">
+                <li class="col-3 label text-bold">Федерация</li>
+                <li class="col-8">
+                    <select class="form-control">
+                        <option>выберите федерацию</option>
+                        <option>РКФ</option>
+                        <option>РФСС</option>
+                    </select>
+                </li>
+                <li class="col-3 label text-bold">Учетный номер</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите учетный номер">
+                </li>
+            </ul>
+
+            <ul class="line">
+                <li class="col-3 label text-bold">Номер папки</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите номер папки">
+                </li>
+
+                <li class="col-3 label text-bold">Код клейма, нач. №</li>
+                <li class="col-8">
+                    <input type="text" class="form-control hide-placeholder" placeholder="введите код клейма">
+                </li>
+
+                <li class="col-12 text-right">
+                    <input type="text" class="form-control hide-placeholder" placeholder="нач. №">
+                </li>
+            </ul>
+
+            <div class="clearfix modal-bottom">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure">сохранить</button>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- include "templates/head.html" -->
+</head>
+<body class="do-not-show-header">
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <!-- include "templates/header.html" -->
+
+    <form action="#" class="filters">
+        <div class="form-group">
+            <input type="text" class="form-control hide-placeholder"
+                   placeholder="Для поиска введите номер родословной или кличку">
+        </div>
+
+        <ul class="filters-group">
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите группу по FCI">
+                    <option disabled selected>Выберите группу по FCI</option>
+                    <option>F</option>
+                    <option>C</option>
+                    <option>I</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите породу">
+                    <option disabled selected>Выберите породу</option>
+                    <option>Тибетский мастиф</option>
+                    <option>Леонбергер</option>
+                    <option>Норвежский лундехунд</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите разновидность">
+                    <option disabled selected>Выберите разновидность</option>
+                    <option>Тибетский мастиф</option>
+                    <option>Леонбергер</option>
+                    <option>Норвежский лундехунд</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите пол">
+                    <option disabled selected>Выберите пол</option>
+                    <option>Сука</option>
+                    <option>Кобель</option>
+                </select>
+            </li>
+        </ul>
+
+        <div class="filters-half">
+            <div class="filters-half-point">
+                <span class="filters-half-text">Щенки до</span>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">3</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">6</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">9</span>
+                </label>
+
+                <span>месяцев</span>
+            </div>
+
+            <div class="filters-half-point">
+                <span class="filters-half-text">Для</span>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">разведения</span>
+                </label>
+
+                <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox-custom">
+                    <span class="checkbox-custom-view">души</span>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <ul class="result-nav-tabs list-unstyled" role="tablist">
+        <li role="presentation" class="active">
+                <span data-target="#popular-dogs" aria-controls="popular-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Популярные породы собак</span>
+        </li>
+
+        <li role="presentation">
+                <span data-target="#all-dogs" aria-controls="all-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Все породы собак</span>
+        </li>
+
+        <li class="text-uppercase"><span class="text-bold">НАЙДЕНО</span> 1965 щенков</li>
+    </ul>
+
+    <div class="result-tab-content tab-content">
+        <div role="tabpanel" class="tab-pane active" id="popular-dogs">
+            <div class="wrap-result-list">
+                <ul class="result-list list-unstyled">
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="all-dogs">ВСЕ ПОРОДЫ СОБАК</div>
+    </div>
+
+    <div class="dogs-content">
+        <h1>ПРОДАЖА ЩЕНКОВ</h1>
+
+        <nav class="pagination-area pagination-top">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
+
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
+                <select title="Выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
+
+        <div class="dogs-list">
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Мальчик - хулиганьчик.Породная голова, красивое лицо, выразительные глаза, короткий курносый носик,
+                    широкая мордашка. Зубы 6*6, 00 на месте. Анатомически правильно ...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Красивая, умная, от прекрасных родителей. Активные, веселые, но не надоедливые! Любят детей, не
+                    обижают, позволяют тискать себя. Знают кошек, других собак, мирно с ними дружат...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Девочка миниатюрного пуделя, красного окраса. Очаровательный золотой барашек, будет отличным другом
+                    в Вашей семье!...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Необыкновенная куколка, тип мишки. Толстые лапки, набивная шерсть, короткая мордочка. Хорошая
+                    наследственность. Характер игривый, ласковый. Социализирована. Приучается ...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС уля
+                        ля ля</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский в Себире на
+                        Анадыре
+                    </div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Щенок здоровый и активный, крепкий, веселый и игривый, контактный. Отличная шерсть. Породные
+                    движения щенка свободные и скоординированные, красивая линия...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+                </div>
+
+                <div class="dogs-list-text">
+                    У щенков отличная наследственность, известные во всем мире собаки. Отец является интерчемпионом по
+                    красоте.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Мальчик с удлиненной шерстью, щенок не для выставок, но вырастет не менее красивой собакой, чем его
+                    братья и сестры. Мордочка у мальчика пока темненькая, но с каждым...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Мопс</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">ВАЖНАЯ ПЕРСОНА УНО ДЕ ЛОС МЕДЖОРС</a>
+                    </div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Цена <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Шоколадный мальчик Лабрадора Ретривера! От Юного Чемпиона России! Документы РКФ, клеймо, прививки по
+                    возрасту.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Русский черный терьер</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Московская обл., г. Королев</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Миниатюрный черно-подпалый мальчик.
+                </div>
+            </div>
+            <!-- END dogs-item -->
+
+            <!-- dogs-item -->
+            <div class="dogs-item">
+                <div class="single-item">
+                    <div data-src="/img/example/img-3.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/img-3.jpg" alt=""></div>
+                    <div data-src="/img/example/32_doberman_pinscher.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/32_doberman_pinscher.jpg" alt="">
+                    </div>
+                    <div data-src="/img/example/doberman.jpg" data-fancybox="" data-caption=""
+                         title="Просмотреть фото"><img src="/img/example/doberman.jpg" alt=""></div>
+                    <div data-src="/img/example/red-dobermann-wallpaper-1.jpg" data-fancybox=""
+                         data-caption="" title="Просмотреть фото">
+                        <img src="/img/example/red-dobermann-wallpaper-1.jpg" alt=""></div>
+                </div>
+
+                <div class="dogs-info">
+                    <div class="dogs-item-title">Итальянская короткошерстная легавая</div>
+
+                    <div class="owners-wall-rates scale size-8"></div>
+
+                    <div class="dogs-item-link"><a href="#" class="text-uppercase">A-LEL YASNOE SOLNYSHKO</a></div>
+
+                    <div><span class="dogs-item-indent">кобель</span> д.р. 19.09.2010 г.</div>
+
+                    <div class="dogs-item-address">Россия, Камчатский край, Петропавловск-Камчатский</div>
+
+                    <div class="dogs-item-last-string text-bold">Вязка <span class="color-orange">5 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="dogs-list-text">
+                    Шикарная девочка, очень красивая, породная, миниатюрная. Ласковая, игривая, активная. Целовашка.
+                    Приучена к чистоте. Пакет документов. Консультации и помощь в любое время...
+                </div>
+            </div>
+            <!-- END dogs-item -->
+        </div>
+
+        <nav class="pagination-area pagination-bottom">
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
+
+                <select class="form-control" title="Сортировать по">
+                    <option>Дате рождения</option>
+                    <option>Рейтингу</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <select name="выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- include "templates/footer.html" -->
+
+</body>
+</html>
