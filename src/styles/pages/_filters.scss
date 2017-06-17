@@ -30,6 +30,21 @@
   align-items: center;
 }
 
+.filters-half {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters-half-point .label-checkbox {
+  margin-right: 10px;
+}
+
+.filters-half-text {
+  margin-right: 15px;
+}
+
 @include from('m') {
   .filters-group-point {
     max-width: calc(100% / 4 - 15px);
@@ -37,6 +52,10 @@
   }
   .form-number-group {
     justify-content: space-between;
+  }
+  .filters-half-point {
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
 }
 
@@ -52,6 +71,10 @@
   .filters-group-point:not(.filters-checkbox) {
     max-width: calc(100% / 2 - 10px);
     flex-basis: calc(100% / 2 - 10px);
+  }
+
+  .filters-half-text, .filters-half-point .label-checkbox {
+    margin-right: 5px;
   }
 }
 
@@ -78,5 +101,12 @@
   .pagination-sort-by {
     justify-content: space-between;
     width: 100%;
+  }
+
+  .filters-half-point {
+    width: 100%;
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
   }
 }

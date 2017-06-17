@@ -40,6 +40,11 @@
   margin-top: 8px;
 }
 
+.dogs-list-text {
+  padding-top: 10px;
+  flex-basis: 100%;
+}
+
 @include from('l') {
   .dogs-list {
     display: flex;
@@ -64,6 +69,7 @@
   }
   .dogs-item {
     display: flex;
+    flex-wrap: wrap;
   }
   .dogs-list {
     .slick-dotted.slick-slider {
@@ -75,6 +81,10 @@
       flex-basis: 140px;
       align-self: flex-start;
     }
+  }
+
+  .dogs-info {
+    flex-basis: calc(100% - 160px);
   }
 }
 

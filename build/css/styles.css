@@ -7532,6 +7532,27 @@ footer span {
   align-items: center;
 }
 
+.filters-half {
+  padding-top: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.filters-half-point .label-checkbox {
+  margin-right: 10px;
+}
+
+.filters-half-text {
+  margin-right: 15px;
+}
+
 @media (min-width: 720px) {
   .filters-group-point {
     max-width: calc(100% / 4 - 15px);
@@ -7543,6 +7564,12 @@ footer span {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+  .filters-half-point {
+    max-width: calc(100% / 2 - 10px);
+    -webkit-flex-basis: calc(100% / 2 - 10px);
+    -ms-flex-preferred-size: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
   }
 }
 
@@ -7566,6 +7593,9 @@ footer span {
     -webkit-flex-basis: calc(100% / 2 - 10px);
     -ms-flex-preferred-size: calc(100% / 2 - 10px);
     flex-basis: calc(100% / 2 - 10px);
+  }
+  .filters-half-text, .filters-half-point .label-checkbox {
+    margin-right: 5px;
   }
 }
 
@@ -7604,6 +7634,12 @@ footer span {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
+  }
+  .filters-half-point {
+    width: 100%;
+  }
+  .filters-half-point:first-of-type {
+    margin-bottom: 15px;
   }
 }
 
@@ -7742,6 +7778,13 @@ footer span {
   margin-top: 8px;
 }
 
+.dogs-list-text {
+  padding-top: 10px;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
 @media (min-width: 960px) {
   .dogs-list {
     display: -webkit-flex;
@@ -7782,6 +7825,9 @@ footer span {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .dogs-list .slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -7795,6 +7841,11 @@ footer span {
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
+  }
+  .dogs-info {
+    -webkit-flex-basis: calc(100% - 160px);
+    -ms-flex-preferred-size: calc(100% - 160px);
+    flex-basis: calc(100% - 160px);
   }
 }
 
