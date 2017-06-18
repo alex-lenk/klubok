@@ -7402,6 +7402,7 @@ footer span {
   padding: 15px 0 10px;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7481,6 +7482,18 @@ footer span {
 
 .wrap-sort-by .pagination-sort-by {
   margin-top: 0;
+}
+
+.pagination-add {
+  width: 220px;
+}
+
+@media (min-width: 960px) {
+  .pagination-add {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
 }
 
 @media (max-width: 959px) {
@@ -7886,6 +7899,10 @@ footer span {
   line-height: 1;
 }
 
+.people-info {
+  position: relative;
+}
+
 .people-info li:not(:first-child) {
   margin-top: 5px;
 }
@@ -7896,6 +7913,29 @@ footer span {
 
 .people-post + .people-post {
   padding-top: 0;
+}
+
+.people-panel {
+  width: 100%;
+  padding-top: 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.people-panel .btn-azure {
+  margin-right: 20px;
+  max-width: 100px;
+  -webkit-flex-basis: 100px;
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+}
+
+.people-panel .btn-uninstall {
+  max-width: 60px;
+  -webkit-flex-basis: 60px;
+  -ms-flex-preferred-size: 60px;
+  flex-basis: 60px;
 }
 
 @media (min-width: 960px) {
@@ -7920,6 +7960,8 @@ footer span {
 
 @media (min-width: 480px) {
   .people-item {
+    height: 140px;
+    overflow: hidden;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -7941,6 +7983,34 @@ footer span {
     -webkit-flex-basis: calc(100% - 160px);
     -ms-flex-preferred-size: calc(100% - 160px);
     flex-basis: calc(100% - 160px);
+  }
+  .people-panel {
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 959px) {
+  .members-club .pagination-top {
+    padding-top: 10px;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .members-club .pagination-top .pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  .members-club .pagination-bottom {
+    text-align: center;
+  }
+  .members-club .pagination-bottom .pagination-show {
+    display: none;
   }
 }
 
