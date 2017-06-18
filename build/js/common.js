@@ -139,7 +139,9 @@ $(document).ready(function () {
         nextArrow: '<button type="button" data-role="none" class="icon-next" aria-label="Next" tabindex="0" role="button"></button>'
     });
 
-    /* ===================== ancestors scripts ===================== */
+    /*
+    ===================== ancestors scripts =====================
+    */
 
     var generationFather = $(".generation-father"),
         fatherAncestors = $('.father-ancestors'),
