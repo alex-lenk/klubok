@@ -1,0 +1,58 @@
+.people-content {
+  padding: 0 10px 15px;
+}
+
+.people-list {
+  margin-top: 35px;
+}
+
+.people-item {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.people-info li:not(:first-child) {
+  margin-top: 5px;
+}
+
+.people-post {
+  padding-top: 5px;
+  + .people-post {
+    padding-top: 0;
+  }
+}
+
+@include from('l') {
+  .people-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .people-item {
+    max-width: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
+  }
+}
+
+@include from('s') {
+  .people-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .people-media {
+    margin-right: 20px;
+    max-width: 140px;
+    flex-basis: 140px;
+    align-self: flex-start;
+  }
+
+  .people-info {
+    flex-basis: calc(100% - 160px);
+  }
+}
+
+@include to('xs') {
+  .people-media {
+    display: none;
+  }
+}
