@@ -72,18 +72,14 @@
   }
 }
 
-@include to('m') {
-  .pagination-top {
-    .pagination {
-      display: none;
-    }
-    .pagination-sort-by, .pagination-show {
-      margin-top: 0;
-    }
+@include to('s') {
+  .pagination-bottom .pagination {
+    text-align: center;
   }
-  .pagination-bottom {
-    .pagination-sort-by, .pagination-show {
-      display: none;
-    }
+}
+
+@include to('xs') {
+  .pagination-top {
+    justify-content: flex-end;
   }
 }

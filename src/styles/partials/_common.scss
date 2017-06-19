@@ -260,6 +260,9 @@ h1, .h1 {
   .hidden-sm {
     display: none !important;
   }
+  .hidden-vs-sm {
+    visibility: hidden;
+  }
 
   .wrapper {
     overflow-x: hidden;
