@@ -55,7 +55,6 @@
 @include from('s') {
   .people-item {
     height: 140px;
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
   }
@@ -70,9 +69,9 @@
     flex-basis: calc(100% - 160px);
   }
   .people-panel {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
     background-color: #fff;
   }
