@@ -1,16 +1,12 @@
 .pagination-area {
-  padding: 15px 0 10px;
+  padding: 10px 0;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .pagination {
-  width: 100%;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -29,7 +25,7 @@
 }
 
 .pagination-show {
-  margin-top: -29px;
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -44,7 +40,6 @@
 }
 
 .pagination-sort-by {
-  margin-top: -29px;
   display: flex;
   align-items: center;
   .form-control {
@@ -70,16 +65,27 @@
     right: 10px;
     top: 7px;
   }
+  .pagination-sort-by {
+    margin-right: 75px;
+  }
 }
 
-@include to('s') {
-  .pagination-bottom .pagination {
-    text-align: center;
+@include to('m') {
+  .pagination-top .pagination {
+    display: none;
+  }
+  .pagination-bottom {
+    .pagination-sort-by, .pagination-show {
+      display: none;
+    }
+    .pagination {
+      width: 100%;
+    }
   }
 }
 
 @include to('xs') {
-  .pagination-top {
-    justify-content: flex-end;
+  .pagination-show {
+    display: none;
   }
 }

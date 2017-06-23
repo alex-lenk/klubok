@@ -7402,26 +7402,18 @@ footer span {
 }
 
 .pagination-area {
-  padding: 15px 0 10px;
+  padding: 10px 0;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
-  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .pagination {
-  width: 100%;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -7443,7 +7435,7 @@ footer span {
 }
 
 .pagination-show {
-  margin-top: -29px;
+  margin-left: auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7465,7 +7457,6 @@ footer span {
 }
 
 .pagination-sort-by {
-  margin-top: -29px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7497,19 +7488,26 @@ footer span {
     right: 10px;
     top: 7px;
   }
+  .pagination-sort-by {
+    margin-right: 75px;
+  }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 959px) {
+  .pagination-top .pagination {
+    display: none;
+  }
+  .pagination-bottom .pagination-sort-by, .pagination-bottom .pagination-show {
+    display: none;
+  }
   .pagination-bottom .pagination {
-    text-align: center;
+    width: 100%;
   }
 }
 
 @media (max-width: 479px) {
-  .pagination-top {
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  .pagination-show {
+    display: none;
   }
 }
 
@@ -7646,12 +7644,6 @@ footer span {
     -webkit-flex-basis: calc(100% / 2 - 10px);
     -ms-flex-preferred-size: calc(100% / 2 - 10px);
     flex-basis: calc(100% / 2 - 10px);
-  }
-  .pagination-sort-by {
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
   }
   .filters-half-point {
     width: 100%;
