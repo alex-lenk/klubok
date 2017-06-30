@@ -3187,6 +3187,10 @@ h1, .h1 {
   }
 }
 
+.do-not-show-header:before {
+  height: 120px;
+}
+
 .do-not-show-header .panel {
   height: auto;
 }
@@ -7409,6 +7413,7 @@ footer span {
   padding: 10px 0;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7482,16 +7487,7 @@ footer span {
   margin-top: 0;
 }
 
-.pagination-add {
-  width: 220px;
-}
-
 @media (min-width: 960px) {
-  .pagination-add {
-    position: absolute;
-    right: 10px;
-    top: 7px;
-  }
   .pagination-sort-by {
     margin-right: 75px;
   }
@@ -7670,6 +7666,7 @@ footer span {
 }
 
 .result-nav-tabs li:last-child {
+  margin-top: -1px;
   padding: 14px 10px 10px;
   text-align: right;
   -webkit-flex-grow: 1;
@@ -7753,14 +7750,9 @@ footer span {
 }
 
 .add-my-dog {
-  padding: 10px 0;
-  border-top: 1px solid #bab8b9;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #bab8b9;
-}
-
-.add-my-dog .btn-azure {
-  width: 220px;
-  height: 35px;
 }
 
 .dogs-list {
@@ -7824,17 +7816,6 @@ footer span {
   .add-my-dog-radio {
     margin-right: 10px;
   }
-  .add-my-dog {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
   .dogs-item {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7857,6 +7838,7 @@ footer span {
     align-self: flex-start;
   }
   .dogs-info {
+    padding-top: 5px;
     -webkit-flex-basis: calc(100% - 160px);
     -ms-flex-preferred-size: calc(100% - 160px);
     flex-basis: calc(100% - 160px);
@@ -7879,9 +7861,6 @@ footer span {
   .dogs-list .slick-dotted.slick-slider {
     margin-bottom: 20px;
   }
-  .add-my-dog .btn-azure {
-    display: inline-block;
-  }
   .add-my-dog-radio {
     margin-bottom: 5px;
   }
@@ -7900,11 +7879,16 @@ footer span {
   line-height: 1;
 }
 
+.people-media img {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+  border: 5px solid #fff;
+}
+
 .people-info {
   position: relative;
 }
 
-.people-info li:not(:first-child) {
+.people-info .line:not(:first-of-type) {
   margin-top: 5px;
 }
 
@@ -7918,6 +7902,7 @@ footer span {
 
 .people-panel {
   width: 100%;
+  margin-top: auto;
   padding-top: 5px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7937,6 +7922,14 @@ footer span {
   -webkit-flex-basis: 60px;
   -ms-flex-preferred-size: 60px;
   flex-basis: 60px;
+}
+
+.title-add-button {
+  position: relative;
+}
+
+.title-add-button .add {
+  width: 220px;
 }
 
 @media (min-width: 960px) {
@@ -7960,8 +7953,12 @@ footer span {
 }
 
 @media (min-width: 480px) {
+  .title-add-button .add {
+    position: absolute;
+    right: 10px;
+    top: -8px;
+  }
   .people-item {
-    height: 140px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -7980,37 +7977,15 @@ footer span {
     align-self: flex-start;
   }
   .people-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-flex-basis: calc(100% - 160px);
     -ms-flex-preferred-size: calc(100% - 160px);
     flex-basis: calc(100% - 160px);
-  }
-  .people-panel {
-    padding-bottom: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 959px) {
-  .members-club .pagination-top {
-    padding-top: 10px;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-  .members-club .pagination-top .pagination {
-    display: none;
-  }
-}
-
-@media (max-width: 719px) {
-  .members-club .pagination-bottom {
-    text-align: center;
-  }
-  .members-club .pagination-bottom .pagination-show {
-    display: none;
   }
 }
 
@@ -8022,6 +7997,13 @@ footer span {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+  .title-add-button h1 {
+    margin-bottom: 15px;
+  }
+  .title-add-button .add {
+    margin-bottom: 15px;
+    display: block;
   }
 }
 

@@ -3,13 +3,9 @@
 }
 
 .add-my-dog {
-  padding: 10px 0;
-  border-top: 1px solid #bab8b9;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #bab8b9;
-  .btn-azure {
-    width: 220px;
-    height: 35px;
-  }
 }
 
 .dogs-list {
@@ -62,11 +58,6 @@
   .add-my-dog-radio {
     margin-right: 10px;
   }
-  .add-my-dog {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .dogs-item {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +75,7 @@
   }
 
   .dogs-info {
+    padding-top: 5px;
     flex-basis: calc(100% - 160px);
   }
 }
@@ -103,9 +95,6 @@
 @include to('xs') {
   .dogs-list .slick-dotted.slick-slider {
     margin-bottom: 20px;
-  }
-  .add-my-dog .btn-azure {
-    display: inline-block;
   }
   .add-my-dog-radio {
     margin-bottom: 5px;

@@ -451,27 +451,50 @@
     </div>
 
     <div class="people-content members-club">
-        <h1>ЧЛЕНЫ КЛУБА</h1>
+        <div class="title-add-button">
+            <h1>ЧЛЕНЫ КЛУБА</h1>
+
+            <a href="#" class="add btn btn-azure">добавить члена клуба</a>
+        </div>
 
         <nav class="pagination-area pagination-top">
-            <ul class="pagination">
-                <li><span>&lt;&lt;</span></li>
-                <li><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#"> ... </a></li>
-                <li><a href="#">25</a></li>
-                <li><a href="#">&gt;&gt;</a></li>
-            </ul>
+    <div class="pagination-sort-by">
+        <div class="text-bold text-nowrap">Сортировать по:</div>
 
-            <a href="#" class="pagination-add btn btn-azure">добавить члена клуба</a>
-        </nav>
+        <select class="form-control" title="Сортировать по">
+            <option>ФИО</option>
+            <option>Месту проживания</option>
+            <option>Дате рождения</option>
+        </select>
+    </div>
+
+    <ul class="pagination">
+        <li><span>&lt;&lt;</span></li>
+        <li><span>1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#"> ... </a></li>
+        <li><a href="#">25</a></li>
+        <li><a href="#">&gt;&gt;</a></li>
+    </ul>
+
+    <div class="pagination-show">
+        <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
+        <select title="Выводить по" class="form-control">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+            <option>100</option>
+        </select>
+    </div>
+</nav>
+
 
         <div class="people-list">
             <!-- people-item -->
@@ -480,17 +503,19 @@
                     <img src="img/example/u54.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li class="color-orange text-bold">Просит принять в клуб</li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                        <div class="line color-orange text-bold">Просит принять в клуб</div>
+                        <div class="line ">Россия, Иркутская область, г. Черемхово</div>
+                        <div class="line people-post text-bold">Руководитель клуба</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-azure">Принять</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -500,20 +525,19 @@
                     <img src="img/example/u50.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li class="color-orange text-bold">Просит принять в клуб</li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold">Заводчик (15 собак):</li>
-                    <li>Немецкая овчарка</li>
-                    <li>Американская акита</li>
-                    <li>Той-терьер</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                        <div class="line color-orange text-bold">Просит принять в клуб</div>
+                        <div class="line">Россия, Московская обл., г. Королев</div>
+                        <div class="line people-post text-bold">Заводчик (15 собак)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-azure">Принять</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -523,17 +547,19 @@
                     <img src="img/example/u52.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Бойко Федр Петрович</a></li>
-                    <li class="color-orange text-bold">Просит принять в клуб</li>
-                    <li>Россия, г. Москва</li>
-                    <li class="people-post text-bold">Грумер</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Бойко Федр Петрович</a></div>
+                        <div class="line color-orange text-bold">Просит принять в клуб</div>
+                        <div class="line">Россия, г. Москва</div>
+                        <div class="line people-post text-bold">Грумер</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-azure">Принять</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -543,20 +569,19 @@
                     <img src="img/example/u48.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Тарасова Ирина Михайловна</a></li>
-                    <li class="color-orange text-bold">Просит принять в клуб</li>
-                    <li>Россия, Красноярский край, г. Норильск</li>
-                    <li class="people-post text-bold">Заводчик (3 собаки):</li>
-                    <li>Вест-хайленд-уайт-терьер</li>
-                    <li>Эрдельтерьер</li>
-                    <li>Ирландский терьер</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Тарасова Ирина Михайловна</a></div>
+                        <div class="line color-orange text-bold">Просит принять в клуб</div>
+                        <div class="line">Россия, Красноярский край, г. Норильск</div>
+                        <div class="line people-post text-bold">Заводчик (3 собаки)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-azure">Принять</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -566,17 +591,18 @@
                     <img src="img/example/u46.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold color-orange">Руководитель клуба</li>
-                    <li class="people-post text-bold">Заводчик (1 собаки):</li>
-                    <li>Немецкая овчарка</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                        <div class="line">Россия, Московская обл., г. Королев</div>
+                        <div class="line people-post text-bold">Руководитель клуба</div>
+                        <div class="line people-post text-bold">Заводчик (1 собаки)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -586,18 +612,19 @@
                     <img src="img/example/u44.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold color-orange">Ответственный за клеймение</li>
-                    <li class="people-post text-bold color-orange">Инструктор взяки</li>
-                    <li class="people-post text-bold">Заводчик (2 собаки):</li>
-                    <li>Малый пудель...</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                        <div class="line">Россия, Иркутская область, г. Черемхово</div>
+                        <div class="line people-post text-bold">Ответственный за клеймение</div>
+                        <div class="line people-post text-bold">Инструктор взяки</div>
+                        <div class="line people-post text-bold">Заводчик (2 собаки)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -607,19 +634,20 @@
                     <img src="img/example/u42.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Махно Нестр Петрович</a></li>
-                    <li>Россия, г. Москва</li>
-                    <li class="people-post text-bold color-orange">Инструктор взяки</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                    <li class="people-post text-bold">Хэндлер</li>
-                    <li class="people-post text-bold">Заводчик (22 собаки):</li>
-                    <li>Ши-тцу</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Махно Нестр Петрович</a></div>
+                        <div class="line">Россия, г. Москва</div>
+                        <div class="line people-post text-bold">Инструктор взяки</div>
+                        <div class="line people-post text-bold">Руководитель клуба</div>
+                        <div class="line people-post text-bold">Хэндлер</div>
+                        <div class="line people-post text-bold">Заводчик (22 собаки)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -629,19 +657,18 @@
                     <img src="img/example/u40.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Вяземская Людмила Сергеевна</a></li>
-                    <li>Россия, Красноярский край, г. Норильск</li>
-                    <li class="people-post text-bold color-orange">Ответственный за клеймение</li>
-                    <li class="people-post text-bold">Заводчик (3 собаки):</li>
-                    <li>Вест-хайленд-уайт-терьер</li>
-                    <li>Эрдельтерьер</li>
-                    <li>Ирландский терьер</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Вяземская Людмила Сергеевна</a></div>
+                        <div class="line">Россия, Красноярский край, г. Норильск</div>
+                        <div class="line people-post text-bold">Ответственный за клеймение</div>
+                        <div class="line people-post text-bold">Заводчик (3 собаки)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -651,18 +678,17 @@
                     <img src="img/example/u50.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold">Заводчик (15 собак):</li>
-                    <li>Немецкая овчарка</li>
-                    <li>Американская акита</li>
-                    <li>Той-терьер</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                        <div class="line">Россия, Московская обл., г. Королев</div>
+                        <div class="line people-post text-bold">Заводчик (15 собак)</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -672,48 +698,59 @@
                     <img src="img/example/u54.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                    <li class="people-panel">
+                <div class="people-info">
+                    <div>
+                        <div class="line text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                        <div class="line">Россия, Иркутская область, г. Черемхово</div>
+                        <div class="line people-post text-bold">Руководитель клуба</div>
+                    </div>
+                    <div class="people-panel">
                         <button class="btn btn-azure">Написать</button>
                         <button class="btn btn-uninstall icon-bin"></button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <!-- END people-item -->
         </div>
 
         <nav class="pagination-area pagination-bottom">
-            <ul class="pagination">
-                <li><span>&lt;&lt;</span></li>
-                <li><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#"> ... </a></li>
-                <li><a href="#">25</a></li>
-                <li><a href="#">&gt;&gt;</a></li>
-            </ul>
+    <div class="pagination-sort-by">
+        <div class="text-bold text-nowrap">Сортировать по:</div>
 
-            <div class="pagination-sort-by">&nbsp;</div>
+        <select class="form-control" title="Сортировать по">
+            <option>ФИО</option>
+            <option>Месту проживания</option>
+            <option>Дате рождения</option>
+        </select>
+    </div>
 
-            <div class="pagination-show">
-                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
-                <select title="Выводить по" class="form-control">
-                    <option>10</option>
-                    <option>20</option>
-                    <option>50</option>
-                    <option>100</option>
-                </select>
-            </div>
-        </nav>
+    <ul class="pagination">
+        <li><span>&lt;&lt;</span></li>
+        <li><span>1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#"> ... </a></li>
+        <li><a href="#">25</a></li>
+        <li><a href="#">&gt;&gt;</a></li>
+    </ul>
+
+    <div class="pagination-show">
+        <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+        <select name="выводить по" class="form-control">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+            <option>100</option>
+        </select>
+    </div>
+</nav>
+
     </div>
 </div>
 

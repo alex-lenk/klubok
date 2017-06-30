@@ -311,35 +311,7 @@
     <div class="people-content">
         <h1>ПОЛЬЗОВАТЕЛИ</h1>
 
-        <nav class="pagination-area pagination-top">
-            <ul class="pagination hidden-vs-sm">
-                <li><span>&lt;&lt;</span></li>
-                <li><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#"> ... </a></li>
-                <li><a href="#">25</a></li>
-                <li><a href="#">&gt;&gt;</a></li>
-            </ul>
-
-            <div class="pagination-sort-by">&nbsp;</div>
-
-            <div class="pagination-show visible-xs">
-                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
-                <select title="Выводить по" class="form-control">
-                    <option>10</option>
-                    <option>20</option>
-                    <option>50</option>
-                    <option>100</option>
-                </select>
-            </div>
-        </nav>
+        <!-- include "templates/pagination-top-people.html" -->
 
         <div class="people-list">
             <!-- people-item -->
@@ -348,14 +320,11 @@
                     <img src="img/example/u50.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold">Заводчик (15 собак):</li>
-                    <li>Немецкая овчарка</li>
-                    <li>Американская акита</li>
-                    <li>Той-терьер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                    <div class="line">Россия, Московская обл., г. Королев</div>
+                    <div class="line people-post text-bold">Заводчик (15 собак)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -365,11 +334,11 @@
                     <img src="img/example/u54.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                </ul>
+                <div class="people-info">
+                    <div class="text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                    <div class="line">Россия, Иркутская область, г. Черемхово</div>
+                    <div class="line people-post text-bold">Руководитель клуба</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -379,11 +348,11 @@
                     <img src="img/example/u52.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Бойко Федр Петрович</a></li>
-                    <li>Россия, г. Москва</li>
-                    <li class="people-post text-bold">Грумер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="text-bold"><a href="#">Бойко Федр Петрович</a></div>
+                    <div class="line">Россия, г. Москва</div>
+                    <div class="line people-post text-bold">Грумер</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -393,14 +362,11 @@
                     <img src="img/example/u48.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Тарасова Ирина Михайловна</a></li>
-                    <li>Россия, Красноярский край, г. Норильск</li>
-                    <li class="people-post text-bold">Заводчик (3 собаки):</li>
-                    <li>Вест-хайленд-уайт-терьер</li>
-                    <li>Эрдельтерьер</li>
-                    <li>Ирландский терьер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="text-bold"><a href="#">Тарасова Ирина Михайловна</a></div>
+                    <div class="line">Россия, Красноярский край, г. Норильск</div>
+                    <div class="line people-post text-bold">Заводчик (3 собаки)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -410,14 +376,11 @@
                     <img src="img/example/u46.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold">Заводчик (15 собак):</li>
-                    <li>Немецкая овчарка</li>
-                    <li>Американская акита</li>
-                    <li>Той-терьер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                    <div class="line">Россия, Московская обл., г. Королев</div>
+                    <div class="line people-post text-bold">Заводчик (15 собак)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -427,11 +390,11 @@
                     <img src="img/example/u44.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                    <div class="line">Россия, Иркутская область, г. Черемхово</div>
+                    <div class="line people-post text-bold">Руководитель клуба</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -441,15 +404,13 @@
                     <img src="img/example/u42.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Махно Нестр Петрович</a></li>
-                    <li>Россия, г. Москва</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                    <li class="people-post text-bold">Хэндлер</li>
-                    <li class="people-post text-bold">Заводчик (22 собаки):</li>
-                    <li>Ши-тцу</li>
-                    <li>Голая китайская хохлатая собака...</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Махно Нестр Петрович</a></div>
+                    <div class="line">Россия, г. Москва</div>
+                    <div class="line people-post text-bold">Руководитель клуба</div>
+                    <div class="line people-post text-bold">Хэндлер</div>
+                    <div class="line people-post text-bold">Заводчик (22 собаки)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -459,14 +420,11 @@
                     <img src="img/example/u40.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Вяземская Людмила Сергеевна</a></li>
-                    <li>Россия, Красноярский край, г. Норильск</li>
-                    <li class="people-post text-bold">Заводчик (3 собаки):</li>
-                    <li>Вест-хайленд-уайт-терьер</li>
-                    <li>Эрдельтерьер</li>
-                    <li>Ирландский терьер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Вяземская Людмила Сергеевна</a></div>
+                    <div class="line">Россия, Красноярский край, г. Норильск</div>
+                    <div class="line people-post text-bold">Заводчик (3 собаки)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -476,14 +434,11 @@
                     <img src="img/example/u50.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Светлова Татяна Александровна</a></li>
-                    <li>Россия, Московская обл., г. Королев</li>
-                    <li class="people-post text-bold">Заводчик (15 собак):</li>
-                    <li>Немецкая овчарка</li>
-                    <li>Американская акита</li>
-                    <li>Той-терьер</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Светлова Татяна Александровна</a></div>
+                    <div class="line">Россия, Московская обл., г. Королев</div>
+                    <div class="line people-post text-bold">Заводчик (15 собак)</div>
+                </div>
             </div>
             <!-- END people-item -->
 
@@ -493,44 +448,16 @@
                     <img src="img/example/u54.jpg" alt="">
                 </div>
 
-                <ul class="people-info list-unstyled">
-                    <li class="text-bold"><a href="#">Романова Мария Федоровна</a></li>
-                    <li>Россия, Иркутская область, г. Черемхово</li>
-                    <li class="people-post text-bold">Руководитель клуба</li>
-                </ul>
+                <div class="people-info">
+                    <div class="line text-bold"><a href="#">Романова Мария Федоровна</a></div>
+                    <div class="line">Россия, Иркутская область, г. Черемхово</div>
+                    <div class="line people-post text-bold">Руководитель клуба</div>
+                </div>
             </div>
             <!-- END people-item -->
         </div>
 
-        <nav class="pagination-area pagination-bottom">
-            <ul class="pagination">
-                <li><span>&lt;&lt;</span></li>
-                <li><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#"> ... </a></li>
-                <li><a href="#">25</a></li>
-                <li><a href="#">&gt;&gt;</a></li>
-            </ul>
-
-            <div class="pagination-sort-by hidden-sm">&nbsp;</div>
-
-            <div class="pagination-show hidden-sm">
-                <div class="pagination-show-by text-bold text-nowrap">Выводить по:</div>
-                <select title="Выводить по" class="form-control">
-                    <option>10</option>
-                    <option>20</option>
-                    <option>50</option>
-                    <option>100</option>
-                </select>
-            </div>
-        </nav>
+        <!-- include "templates/pagination-bottom-people.html" -->
     </div>
 </div>
 

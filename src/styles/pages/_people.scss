@@ -11,9 +11,14 @@
   line-height: 1;
 }
 
+.people-media img {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+  border: 5px solid #fff;
+}
+
 .people-info {
   position: relative;
-  li:not(:first-child) {
+  .line:not(:first-of-type) {
     margin-top: 5px;
   }
 }
@@ -27,6 +32,7 @@
 
 .people-panel {
   width: 100%;
+  margin-top: auto;
   padding-top: 5px;
   display: flex;
   .btn-azure {
@@ -37,6 +43,13 @@
   .btn-uninstall {
     max-width: 60px;
     flex-basis: 60px;
+  }
+}
+
+.title-add-button {
+  position: relative;
+  .add {
+    width: 220px;
   }
 }
 
@@ -53,8 +66,13 @@
 }
 
 @include from('s') {
+  .title-add-button .add {
+    position: absolute;
+    right: 10px;
+    top: -8px;
+  }
+
   .people-item {
-    height: 140px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -66,33 +84,9 @@
   }
 
   .people-info {
+    display: flex;
+    flex-direction: column;
     flex-basis: calc(100% - 160px);
-  }
-  .people-panel {
-    padding-bottom: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-  }
-}
-
-@include to('m') {
-  .members-club .pagination-top {
-    padding-top: 10px;
-    justify-content: flex-end;
-    .pagination {
-      display: none;
-    }
-  }
-}
-
-@include to('s') {
-  .members-club .pagination-bottom {
-    text-align: center;
-    .pagination-show {
-      display: none;
-    }
   }
 }
 
@@ -102,5 +96,14 @@
   }
   .people-content .visible-xs {
     display: flex !important;
+  }
+  .title-add-button {
+    h1 {
+      margin-bottom: 15px;
+    }
+    .add {
+      margin-bottom: 15px;
+      display: block;
+    }
   }
 }

@@ -2,6 +2,7 @@
   padding: 10px 0;
   border-top: 1px solid #bab8b9;
   border-bottom: 1px solid #bab8b9;
+  position: relative;
   display: flex;
   align-items: baseline;
 }
@@ -55,16 +56,7 @@
   }
 }
 
-.pagination-add {
-  width: 220px;
-}
-
 @include from('l') {
-  .pagination-add {
-    position: absolute;
-    right: 10px;
-    top: 7px;
-  }
   .pagination-sort-by {
     margin-right: 75px;
   }

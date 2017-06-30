@@ -255,7 +255,6 @@ h1, .h1 {
   }
 }
 
-
 @include to('s') {
   .hidden-sm {
     display: none !important;
@@ -297,6 +296,9 @@ h1, .h1 {
 }
 
 .do-not-show-header {
+  &:before {
+    height: 120px;
+  }
   .panel {
     height: auto;
   }
