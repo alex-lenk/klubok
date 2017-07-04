@@ -202,6 +202,93 @@
   }
 }
 
+@media (min-width: 720px) {
+  .personal-data {
+    line-height: 1.4;
+  }
+  .personal-data-line > li {
+    min-height: 35px;
+  }
+  .personal-data-line .text {
+    padding-top: 8px;
+  }
+  .personal-data-line .radio-block {
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 960px) {
+  .personal-data-line:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  .personal-data-line .text {
+    width: 550px;
+  }
+  .personal-data-line .button {
+    float: right;
+  }
+  .personal-data-line .radio-block {
+    width: 553px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .personal-data-line .text {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 41.3%;
+    -ms-flex-preferred-size: 41.3%;
+    flex-basis: 41.3%;
+  }
+  .personal-data-line .label {
+    -webkit-flex-basis: 320px;
+    -ms-flex-preferred-size: 320px;
+    flex-basis: 320px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .personal-data-line {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .personal-data {
+    overflow-x: hidden;
+  }
+  .personal-data .not-filled + .text {
+    padding-right: 80px;
+  }
+  .personal-data-line .button {
+    -webkit-flex-basis: 80px;
+    -ms-flex-preferred-size: 80px;
+    flex-basis: 80px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .personal-data-line .radio-block {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 47%;
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%;
+  }
+  .personal-data-line .show-more-full-name {
+    padding-right: 80px;
+  }
+  .personal-data-line .show-address {
+    padding-right: 80px;
+  }
+}
+
 @media (max-width: 719px) {
   .hidden {
     display: none;
@@ -378,7 +465,62 @@
   }
 }
 
+@media (max-width: 719px) {
+  .personal-data-line .label {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-right: 80px;
+  }
+  .personal-data-line .button {
+    padding-left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+  .personal-data-line .text {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding-right: 80px;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .personal-data-line .show-more-full-name {
+    padding: 5px 80px 0 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .personal-data-line .hidden-full-name {
+    padding-left: 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .personal-data-line .show-address {
+    padding-right: 80px;
+    padding-left: 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .personal-data-line .hidden-address {
+    padding-left: 0;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .personal-data-line .not-filled {
+    padding-top: 0;
+    line-height: 35px;
+  }
+}
+
 @media (max-width: 479px) {
+  .personal-data .btn-edit {
+    top: 2px;
+  }
   .pagination-show {
     display: none;
   }

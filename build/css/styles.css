@@ -2218,6 +2218,7 @@ h1, .h1 {
 
 .personal-data__map {
   position: relative;
+  border: 1px solid #00adbf;
 }
 
 .personal-data__map .btn-azure {
@@ -6043,6 +6044,13 @@ footer span {
   }
 }
 
+@media (min-width: 480px) {
+  .filters-last .filters-group .filters-group-point:last-of-type {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 719px) {
   .form-number {
     margin: 0 10px;
@@ -6450,6 +6458,7 @@ footer span {
 
 .map-club {
   margin-bottom: 15px;
+  border: 1px solid #00adbf;
 }
 
 .club-list {

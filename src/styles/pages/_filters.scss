@@ -78,6 +78,13 @@
   }
 }
 
+@include from('s') {
+  .filters-last .filters-group .filters-group-point:last-of-type {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+}
+
 @include to('s') {
   .form-number {
     margin: 0 10px;
