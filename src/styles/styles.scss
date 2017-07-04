@@ -1,16 +1,20 @@
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
-@import "partials/fonts";
+@import "lib/bootstrap";
+/*
+ partials
+ */
 @import "partials/mixin";
+@import "partials/fonts";
 @import "partials/buttons";
 @import "partials/form";
 @import 'partials/radio-checkbox';
-@import "lib/bootstrap";
-@import "lib/bootstrap4";
 @import "partials/common";
 @import "partials/icons";
 @import "partials/progress";
-/* pages */
+/*
+ pages
+ */
 @import "pages/personal-data";
 @import "pages/personal-edit";
 @import "pages/footer";
@@ -22,8 +26,14 @@
 @import "pages/custom-header";
 @import "pages/loader";
 @import "pages/logo";
+/*
+ old CSS
+ */
 @import "lib/main";
 @import "lib/media";
+/*
+ END old CSS
+ */
 @import "pages/edit-data";
 @import "pages/modal";
 @import "pages/nav-arrows";

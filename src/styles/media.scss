@@ -215,6 +215,84 @@
   }
 }
 
+@include from('m') {
+  .personal-data {
+    line-height: 1.4;
+  }
+
+  .personal-data-line > li {
+    min-height: 35px;
+  }
+
+  .personal-data-line .text {
+    padding-top: 8px;
+  }
+
+  .personal-data-line .radio-block {
+    padding-top: 8px;
+  }
+}
+
+@include from('l') {
+  .personal-data-line {
+    @include clearfix;
+  }
+
+  .personal-data-line .text {
+    width: 550px;
+  }
+
+  .personal-data-line .button {
+    float: right;
+  }
+
+  .personal-data-line .radio-block {
+    width: 553px;
+  }
+}
+
+@include at('m') {
+  .personal-data-line .text {
+    flex-grow: 1;
+    flex-basis: 41.3%;
+  }
+
+  .personal-data-line .label {
+    flex-basis: 320px;
+    flex-shrink: 0;
+  }
+
+  .personal-data-line {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .personal-data {
+    .not-filled + .text {
+      padding-right: 80px;
+    }
+    overflow-x: hidden;
+  }
+
+  .personal-data-line .button {
+    flex-basis: 80px;
+    flex-shrink: 0;
+  }
+
+  .personal-data-line .radio-block {
+    flex-grow: 1;
+    flex-basis: 47%;
+  }
+
+  .personal-data-line .show-more-full-name {
+    padding-right: 80px;
+  }
+
+  .personal-data-line .show-address {
+    padding-right: 80px;
+  }
+}
+
 @include to('s') {
   .hidden {
     display: none;
@@ -409,7 +487,58 @@
   }
 }
 
+@include to('s') {
+  .personal-data-line .label {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-right: 80px;
+  }
+
+  .personal-data-line .button {
+    padding-left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+  .personal-data-line .text {
+    flex-basis: 100%;
+    padding-right: 80px;
+    order: 3;
+  }
+
+  .personal-data-line .show-more-full-name {
+    padding: 5px 80px 0 0;
+    order: 4;
+  }
+
+  .personal-data-line .hidden-full-name {
+    padding-left: 0;
+    order: 4;
+  }
+
+  .personal-data-line .show-address {
+    padding-right: 80px;
+    padding-left: 0;
+    order: 4;
+  }
+
+  .personal-data-line .hidden-address {
+    padding-left: 0;
+    order: 4;
+  }
+
+  .personal-data-line .not-filled {
+    padding-top: 0;
+    line-height: 35px;
+  }
+}
+
 @include to('xs') {
+  .personal-data .btn-edit {
+    top: 2px;
+  }
+
   .pagination-show {
     display: none;
   }

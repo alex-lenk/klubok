@@ -2,181 +2,10 @@
   padding-bottom: 10px;
   overflow-x: hidden;
   line-height: 1.2;
-  @include from('m') {
-    line-height: 1.4;
-  }
-  @include at('m') {
-    .not-filled + .text {
-      padding-right: 80px;
-    }
-    overflow-x: hidden;
-  }
-  @include to('xs') {
-    .btn-edit {
-      top: 2px;
-    }
-  }
 
   h1, .h1 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  &-line {
-    margin-bottom: 5px;
-    padding: 0 10px;
-    list-style: none;
-    font-size: 0;
-    position: relative;
-    @include from('l') {
-      @include clearfix;
-    }
-    @include at('m') {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    & > li {
-      font-size: 14px;
-      display: inline-block;
-      vertical-align: top;
-      @include from('m') {
-        min-height: 35px;
-      }
-    }
-    .label {
-      width: 320px;
-      padding-right: 20px;
-      padding-top: 8px;
-      @include at('m') {
-        flex-basis: 320px;
-        flex-shrink: 0;
-      }
-      @include to('s') {
-        width: 100%;
-        margin-bottom: 5px;
-        padding-right: 80px;
-      }
-    }
-    .text {
-      padding-right: 10px;
-      @include from('l') {
-        width: 550px;
-      }
-      @include from('m') {
-        padding-top: 8px;
-      }
-      @include at('m') {
-        flex-grow: 1;
-        flex-basis: 41.3%;
-      }
-      @include to('s') {
-        flex-basis: 100%;
-        padding-right: 80px;
-        order: 3;
-      }
-    }
-    .button {
-      width: 70px;
-      padding-left: 10px;
-      text-align: right;
-      @include from('l') {
-        float: right;
-      }
-      @include at('m') {
-        flex-basis: 80px;
-        flex-shrink: 0;
-      }
-      @include to('s') {
-        padding-left: 10px;
-        position: absolute;
-        right: 10px;
-        top: 0;
-      }
-    }
-    .radio-block {
-      padding-right: 10px;
-      @include from('l') {
-        width: 553px;
-      }
-      @include at('m') {
-        flex-grow: 1;
-        flex-basis: 47%;
-      }
-      @include from('m') {
-        padding-top: 8px;
-      }
-    }
-    label {
-      line-height: 1;
-    }
-    .personal-data__map {
-      margin: 0 -10px;
-    }
-    .list-data {
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-      li:not(:last-of-type) {
-        margin-bottom: 5px;
-      }
-    }
-    .show-more-full-name {
-      padding: 4px 0 0 320px;
-      min-height: inherit;
-      color: #8b8b8b;
-      @include at('m') {
-        padding-right: 80px;
-      }
-      @include to('s') {
-        padding: 5px 80px 0 0;
-        order: 4;
-      }
-    }
-    .hidden-full-name {
-      padding-left: 320px;
-      padding-right: 80px;
-      min-height: inherit;
-      color: #8b8b8b;
-      @include to('s') {
-        padding-left: 0;
-        order: 4;
-      }
-      .list-data li:not(:last-of-type) {
-        margin-top: 5px;
-      }
-    }
-    .show-address {
-      padding: 12px 0 0 320px;
-      min-height: inherit;
-      @include at('m') {
-        padding-right: 80px;
-      }
-      @include to('s') {
-        padding-right: 80px;
-        padding-left: 0;
-        order: 4;
-      }
-    }
-    .hidden-address {
-      padding-top: 15px;
-      padding-left: 320px;
-      padding-right: 80px;
-      line-height: 1.2;
-      min-height: inherit;
-      color: #8b8b8b;
-      @include to('s') {
-        padding-left: 0;
-        order: 4;
-      }
-    }
-
-    @include to('s') {
-      .not-filled {
-        padding-top: 0;
-        line-height: 35px;
-      }
-    }
   }
 
   .phone {
@@ -185,33 +14,100 @@
       margin-bottom: 5px;
     }
   }
-  .passport {
-    .label {
-      margin-bottom: 5px;
-    }
-  }
-  .address {
-    .label {
-      margin-bottom: 5px;
-    }
+
+  .passport .label {
+    margin-bottom: 5px;
   }
 
-  /* .personal-data__map */
-  &__map {
-    position: relative;
-    .btn-azure {
-      width: 220px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-weight: 700;
-    }
-    .list-data {
-      display: block;
-    }
+  .address .label {
+    margin-bottom: 5px;
   }
+
   .phone-label {
     min-width: 77px;
     display: inline-block;
+  }
+}
+
+.personal-data-line {
+  margin-bottom: 5px;
+  padding: 0 10px;
+  list-style: none;
+  font-size: 0;
+  position: relative;
+  & > li {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .label {
+    width: 320px;
+    padding-right: 20px;
+    padding-top: 8px;
+  }
+  .text {
+    padding-right: 10px;
+  }
+  .button {
+    width: 70px;
+    padding-left: 10px;
+    text-align: right;
+  }
+  .radio-block {
+    padding-right: 10px;
+  }
+  label {
+    line-height: 1;
+  }
+  .personal-data__map {
+    margin: 0 -10px;
+  }
+  .list-data {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    li:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+  .show-more-full-name {
+    padding: 4px 0 0 320px;
+    min-height: inherit;
+    color: #8b8b8b;
+  }
+  .hidden-full-name {
+    padding-left: 320px;
+    padding-right: 80px;
+    min-height: inherit;
+    color: #8b8b8b;
+    .list-data li:not(:last-of-type) {
+      margin-top: 5px;
+    }
+  }
+  .show-address {
+    padding: 12px 0 0 320px;
+    min-height: inherit;
+  }
+  .hidden-address {
+    padding-top: 15px;
+    padding-left: 320px;
+    padding-right: 80px;
+    line-height: 1.2;
+    min-height: inherit;
+    color: #8b8b8b;
+  }
+}
+
+.personal-data__map {
+  position: relative;
+  .btn-azure {
+    width: 220px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 700;
+  }
+  .list-data {
+    display: block;
   }
 }
