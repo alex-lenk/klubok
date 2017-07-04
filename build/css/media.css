@@ -200,9 +200,6 @@
   .ancestors-4 {
     padding-top: 305px;
   }
-  .pagination {
-    text-align: center;
-  }
 }
 
 @media (max-width: 719px) {

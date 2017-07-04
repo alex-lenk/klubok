@@ -33,7 +33,7 @@
 .people-panel {
   width: 100%;
   margin-top: auto;
-  padding-top: 5px;
+  padding-top: 10px;
   display: flex;
   .btn-azure {
     margin-right: 20px;
@@ -68,11 +68,12 @@
 @include from('s') {
   .title-add-button .add {
     position: absolute;
-    right: 10px;
-    top: -8px;
+    right: 0;
+    top: -7px;
   }
 
   .people-item {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -84,6 +85,7 @@
   }
 
   .people-info {
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     flex-basis: calc(100% - 160px);

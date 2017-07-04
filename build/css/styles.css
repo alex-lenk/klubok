@@ -6669,7 +6669,6 @@ footer span {
 .single-item .slick-list {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
   border: 5px solid #fff;
-  border-bottom-width: 2px;
 }
 
 .owners-wall-content {
@@ -7427,6 +7426,7 @@ footer span {
   margin-bottom: 0;
   list-style: none;
   font-size: 0;
+  text-align: center;
 }
 
 .pagination li {
@@ -7763,6 +7763,10 @@ footer span {
   margin-bottom: 6px;
 }
 
+.dogs-item .slick-dots {
+  bottom: -10px;
+}
+
 .dogs-item-title {
   margin-bottom: 6px;
   font-weight: 700;
@@ -7785,7 +7789,7 @@ footer span {
 }
 
 .dogs-list-text {
-  padding-top: 10px;
+  padding-top: 5px;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -7817,6 +7821,7 @@ footer span {
     margin-right: 10px;
   }
   .dogs-item {
+    height: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -7825,7 +7830,7 @@ footer span {
     flex-wrap: wrap;
   }
   .dogs-list .slick-dotted.slick-slider {
-    margin-bottom: 0;
+    margin-bottom: 3px;
   }
   .dogs-list .single-item {
     margin-right: 20px;
@@ -7863,6 +7868,12 @@ footer span {
   }
   .add-my-dog-radio {
     margin-bottom: 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .add-my-dog-radio label:first-of-type {
+    margin-right: auto;
   }
 }
 
@@ -7903,7 +7914,7 @@ footer span {
 .people-panel {
   width: 100%;
   margin-top: auto;
-  padding-top: 5px;
+  padding-top: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7955,10 +7966,11 @@ footer span {
 @media (min-width: 480px) {
   .title-add-button .add {
     position: absolute;
-    right: 10px;
-    top: -8px;
+    right: 0;
+    top: -7px;
   }
   .people-item {
+    height: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -7977,6 +7989,7 @@ footer span {
     align-self: flex-start;
   }
   .people-info {
+    padding-top: 5px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

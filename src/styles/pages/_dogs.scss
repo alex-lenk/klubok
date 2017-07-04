@@ -15,6 +15,10 @@
   }
 }
 
+.dogs-item .slick-dots {
+  bottom: -10px;
+}
+
 .dogs-item-title {
   margin-bottom: 6px;
   font-weight: 700;
@@ -37,7 +41,7 @@
 }
 
 .dogs-list-text {
-  padding-top: 10px;
+  padding-top: 5px;
   flex-basis: 100%;
 }
 
@@ -59,12 +63,13 @@
     margin-right: 10px;
   }
   .dogs-item {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
   }
   .dogs-list {
     .slick-dotted.slick-slider {
-      margin-bottom: 0;
+      margin-bottom: 3px;
     }
     .single-item {
       margin-right: 20px;
@@ -98,5 +103,9 @@
   }
   .add-my-dog-radio {
     margin-bottom: 5px;
+    display: flex;
+  }
+  .add-my-dog-radio label:first-of-type {
+    margin-right: auto;
   }
 }
