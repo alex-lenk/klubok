@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- include "templates/head.html" -->
+</head>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+
+<div class="wrapper container">
+    <!-- include "templates/header.html" -->
+
+    <form action="#" class="filters">
+        <div class="form-group">
+            <input type="text" class="form-control hide-placeholder" placeholder="Для поиска введите название организации">
+        </div>
+
+        <ul class="filters-group">
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите странцу">
+                    <option disabled selected>Выберите страну</option>
+                    <option>Россия</option>
+                    <option>USA</option>
+                    <option>UA</option>
+                    <option>MD</option>
+                    <option>KZ</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите регион">
+                    <option disabled selected>Выберите регион</option>
+                    <option>МО</option>
+                    <option>Калужская область</option>
+                    <option>Ивановская</option>
+                    <option>Краснодарский район</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите город">
+                    <option disabled selected>Выберите город</option>
+                    <option>Москва</option>
+                    <option>Нижний Новгород</option>
+                    <option>Волгоград</option>
+                    <option>Магадан</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите тип организации">
+                    <option disabled selected>Выберите тип организации</option>
+                    <option>ООО</option>
+                    <option>АО</option>
+                    <option>ИП</option>
+                    <option>МУП</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите группу по FCI">
+                    <option disabled selected>Выберите группу по FCI</option>
+                    <option>F</option>
+                    <option>C</option>
+                    <option>I</option>
+                </select>
+            </li>
+
+            <li class="filters-group-point">
+                <select class="form-control" title="Выберите породу">
+                    <option disabled selected>Выберите породу</option>
+                    <option>Тибетский мастиф</option>
+                    <option>Леонбергер</option>
+                    <option>Норвежский лундехунд</option>
+                </select>
+            </li>
+        </ul>
+    </form>
+
+    <ul class="result-nav-tabs list-unstyled" role="tablist">
+        <li role="presentation" class="active">
+                <span data-target="#popular-dogs" aria-controls="popular-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Популярные породы собак</span>
+        </li>
+
+        <li role="presentation">
+                <span data-target="#all-dogs" aria-controls="all-dogs" role="tab" data-toggle="tab"
+                      class="result-nav-tabs-text">Все породы собак</span>
+        </li>
+
+        <li><span class="text-bold">НАЙДЕНО</span> 105 организаций</li>
+    </ul>
+
+    <div class="result-tab-content tab-content">
+        <div role="tabpanel" class="tab-pane active" id="popular-dogs">
+            <div class="wrap-result-list">
+                <ul class="result-list list-unstyled">
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Немецкая овчарка</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">19</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Английский той-терьер</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">229</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Карельская медвежья собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">4596</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Финско-шведская оленегонная собака</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">234</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Малая голубая гасконская гончая</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">45000</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="result-link">
+                            <span class="result-text">Итальянская короткошерстная лег</span>
+                            <span class="result-decor"></span>
+                            <span class="result-text">32123</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="all-dogs">ВСЕ ПОРОДЫ СОБАК</div>
+    </div>
+
+    <div class="people-content">
+        <div class="title-add-button">
+            <h1>ОРГАНИЗАЦИИ</h1>
+
+            <a href="#" class="add btn btn-azure">добавить организацию</a>
+        </div>
+
+        <div class="map-club">
+            <img src="img/example/map.gif" alt="">
+        </div>
+
+        <!-- include "templates/pagination-top-club.html" -->
+
+        <ul class="club-list">
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Северное сияние"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7</li>
+                    <li>Немецкая овчарка, эрдельтерьер, шнауцер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Вечерняя звезда Ташкента"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7, сервис:Авиционная д.24, стр.1</li>
+                    <li>Китайская хохлатая собака, русский той, бишон фризе, американский кокер спаниель, французкий бульдог, голая мексиканская собака, йоркширский терьер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Северное сияние"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7</li>
+                    <li>Немецкая овчарка, эрдельтерьер, шнауцер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Вечерняя звезда Ташкента"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7, сервис:Авиционная д.24, стр.1</li>
+                    <li>Китайская хохлатая собака, русский той, бишон фризе, американский кокер спаниель, французкий бульдог, голая мексиканская собака, йоркширский терьер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Северное сияние"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7</li>
+                    <li>Немецкая овчарка, эрдельтерьер, шнауцер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Вечерняя звезда Ташкента"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7, сервис:Авиционная д.24, стр.1</li>
+                    <li>Китайская хохлатая собака, русский той, бишон фризе, американский кокер спаниель, французкий бульдог, голая мексиканская собака, йоркширский терьер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Северное сияние"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7</li>
+                    <li>Немецкая овчарка, эрдельтерьер, шнауцер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Вечерняя звезда Ташкента"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7, сервис:Авиционная д.24, стр.1</li>
+                    <li>Китайская хохлатая собака, русский той, бишон фризе, американский кокер спаниель, французкий бульдог, голая мексиканская собака, йоркширский терьер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Северное сияние"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7</li>
+                    <li>Немецкая овчарка, эрдельтерьер, шнауцер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+
+            <li class="club-list-item">
+                <ul class="club-list-line">
+                    <li><a href="#">Кинологический клуб "Вечерняя звезда Ташкента"</a></li>
+                    <li>Россия, Москва, Кутузовский проспект, д. 1/7, сервис:Авиционная д.24, стр.1</li>
+                    <li>Китайская хохлатая собака, русский той, бишон фризе, американский кокер спаниель, французкий бульдог, голая мексиканская собака, йоркширский терьер</li>
+                    <li><span class="as-link">Показать на карте</span></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- include "templates/pagination-bottom-club.html" -->
+    </div>
+</div>
+
+<!-- include "templates/footer.html" -->
+
+</body>
+</html>
