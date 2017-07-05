@@ -113,9 +113,11 @@ $slick-opacity-not-active: 0.25 !default;
   margin: 0;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   li {
     position: relative;
     padding: 10px 0;
+    margin: 0 2px;
     cursor: pointer;
     flex: 1 1 auto;
     button {
@@ -132,13 +134,11 @@ $slick-opacity-not-active: 0.25 !default;
       color: transparent;
       cursor: pointer;
       position: static;
-      box-shadow: inset 1px 0 0 0 rgba(#000, .2), inset -1px 0 0px 0px rgba(#000, .2);
       transition: all 0.3s ease;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       &:hover, &:focus {
         outline: none;
       }
-    }
-    &:not(.slick-active):not(:first-of-type):not(:last-of-type) button {
     }
     &:not(.slick-active):hover button {
       background-color: #1bbed2;

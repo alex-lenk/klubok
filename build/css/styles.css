@@ -6200,7 +6200,7 @@ footer span {
 }
 
 .dogs-item .slick-dots {
-  bottom: -10px;
+  bottom: -7px;
 }
 
 .dogs-item-title {
@@ -6225,7 +6225,7 @@ footer span {
 }
 
 .dogs-list-text {
-  padding-top: 5px;
+  padding-top: 9px;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -6266,7 +6266,8 @@ footer span {
     flex-wrap: wrap;
   }
   .dogs-list .slick-dotted.slick-slider {
-    margin-bottom: 3px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
   }
   .dogs-list .single-item {
     margin-right: 20px;

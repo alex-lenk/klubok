@@ -16,7 +16,7 @@
 }
 
 .dogs-item .slick-dots {
-  bottom: -10px;
+  bottom: -7px;
 }
 
 .dogs-item-title {
@@ -41,7 +41,7 @@
 }
 
 .dogs-list-text {
-  padding-top: 5px;
+  padding-top: 9px;
   flex-basis: 100%;
 }
 
@@ -69,7 +69,8 @@
   }
   .dogs-list {
     .slick-dotted.slick-slider {
-      margin-bottom: 3px;
+      margin-bottom: 0;
+      padding-bottom: 13px;
     }
     .single-item {
       margin-right: 20px;
