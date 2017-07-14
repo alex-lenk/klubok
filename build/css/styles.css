@@ -1310,6 +1310,24 @@ select {
   color: #000000;
 }
 
+.ui-error .form-control {
+  border-color: #ed5901;
+}
+
+.ui-error .radio-custom-view {
+  color: #ed5901;
+}
+
+.ui-error .radio-custom-view:before {
+  border-color: #ed5901;
+}
+
+.ui-error-text {
+  padding: 5px 0 10px;
+  color: #ed5901;
+  display: block;
+}
+
 @media (min-width: 720px) {
   .form-label {
     padding-top: 10px;
@@ -6463,8 +6481,7 @@ footer span {
 }
 
 .club-list {
-  padding-top: 15px;
-  padding-left: 0;
+  padding: 20px 0 5px 0;
   margin-bottom: 0;
   list-style: none;
 }

@@ -142,6 +142,23 @@ select {
   color: #000000;
 }
 
+.ui-error {
+  .form-control {
+    border-color: #ed5901;
+  }
+  .radio-custom-view {
+    color: #ed5901;
+  }
+  .radio-custom-view:before {
+    border-color: #ed5901;
+  }
+}
+.ui-error-text {
+  padding: 5px 0 10px;
+  color: #ed5901;
+  display: block;
+}
+
 @include from('m') {
   .form-label {
     padding-top: 10px;
