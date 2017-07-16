@@ -57,6 +57,10 @@
   }
 }
 
+.pagination-bottom {
+  margin-top: 15px;
+}
+
 @include from('l') {
   .pagination-sort-by {
     margin-right: 75px;

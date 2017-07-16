@@ -5934,6 +5934,10 @@ footer span {
   margin-top: 0;
 }
 
+.pagination-bottom {
+  margin-top: 15px;
+}
+
 @media (min-width: 960px) {
   .pagination-sort-by {
     margin-right: 75px;
@@ -6481,7 +6485,7 @@ footer span {
 }
 
 .club-list {
-  padding: 20px 0 5px 0;
+  padding: 35px 0 5px 0;
   margin-bottom: 0;
   list-style: none;
 }
