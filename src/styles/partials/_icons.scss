@@ -1,7 +1,16 @@
 @import "../lib/variables";
 
+@font-face {
+    font-family: 'icomoon';
+    src: url('#{$icomoon-font-path}/icomoon.ttf?iwmamp') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?iwmamp') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?iwmamp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
-    &:before {
+    &::before {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'icomoon' !important;
         speak: none;
@@ -11,25 +20,9 @@
         text-transform: none;
         line-height: 1;
         
-        /* Enable Ligatures ================ */
-        letter-spacing: 0;
-        -webkit-font-feature-settings: "liga";
-        -moz-font-feature-settings: "liga=1";
-        -moz-font-feature-settings: "liga";
-        -ms-font-feature-settings: "liga" 1;
-        font-feature-settings: "liga";
-        -webkit-font-variant-ligatures: discretionary-ligatures;
-        font-variant-ligatures: discretionary-ligatures;
-        
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-    }
-}
-
-.icon-see {
-    &:before {
-        content: $icon-see;
     }
 }
 
@@ -39,9 +32,21 @@
     }
 }
 
+.icon-see {
+    &:before {
+        content: $icon-see;
+    }
+}
+
 .icon-chronicle {
     &:before {
         content: $icon-chronicle;
+    }
+}
+
+.icon-place-localizer {
+    &:before {
+        content: $icon-place-localizer;
     }
 }
 
@@ -51,9 +56,21 @@
     }
 }
 
+.icon-point {
+    &:before {
+        content: $icon-point;
+    }
+}
+
 .icon-dog {
     &:before {
         content: $icon-dog;
+    }
+}
+
+.icon-down {
+    &:before {
+        content: $icon-down;
     }
 }
 
@@ -63,9 +80,21 @@
     }
 }
 
+.icon-prev {
+    &:before {
+        content: $icon-prev;
+    }
+}
+
 .icon-graduates {
     &:before {
         content: $icon-graduates;
+    }
+}
+
+.icon-next {
+    &:before {
+        content: $icon-next;
     }
 }
 
@@ -75,9 +104,39 @@
     }
 }
 
+.icon-top {
+    &:before {
+        content: $icon-top;
+    }
+}
+
 .icon-user {
     &:before {
         content: $icon-user;
+    }
+}
+
+.icon-upload {
+    &:before {
+        content: $icon-upload;
+    }
+}
+
+.icon-clock {
+    &:before {
+        content: $icon-clock;
+    }
+}
+
+.icon-like {
+    &:before {
+        content: $icon-like;
+    }
+}
+
+.icon-dislike {
+    &:before {
+        content: $icon-dislike;
     }
 }
 
@@ -105,15 +164,69 @@
     }
 }
 
-.icon-pencil {
-    &:before {
-        content: $icon-pencil;
-    }
-}
-
 .icon-camera2 {
     &:before {
         content: $icon-camera2;
+    }
+}
+
+.icon-smiling {
+    &:before {
+        content: $icon-smiling;
+    }
+}
+
+.icon-share {
+    &:before {
+        content: $icon-share;
+    }
+}
+
+.icon-from {
+    &:before {
+        content: $icon-from;
+    }
+}
+
+.icon-doubt {
+    &:before {
+        content: $icon-doubt;
+    }
+}
+
+.icon-sad {
+    &:before {
+        content: $icon-sad;
+    }
+}
+
+.icon-pane {
+    &:before {
+        content: $icon-pane;
+    }
+}
+
+.icon-search {
+    &:before {
+        content: $icon-search;
+    }
+}
+
+.icon-bitch {
+    &:before {
+        content: $icon-bitch;
+    }
+}
+
+.icon-male {
+    &:before {
+        content: $icon-male;
+    }
+}
+
+.icon-pencil {
+    &:before {
+        content: $icon-pencil;
     }
 }
 
@@ -159,106 +272,8 @@
     }
 }
 
-.icon-place-localizer {
+.icon-clean {
     &:before {
-        content: $icon-place-localizer;
+        content: $icon-clean;
     }
-}
-
-.icon-down {
-    &:before {
-        content: $icon-down;
-    }
-}
-
-.icon-prev {
-    &:before {
-        content: $icon-prev;
-    }
-}
-
-.icon-next {
-    &:before {
-        content: $icon-next;
-    }
-}
-
-.icon-top {
-    &:before {
-        content: $icon-top;
-    }
-}
-
-.icon-upload {
-    &:before {
-        content: $icon-upload;
-    }
-}
-
-.icon-clock {
-    &:before {
-        content: $icon-clock;
-    }
-}
-
-.icon-like {
-    &:before {
-        content: $icon-like;
-    }
-}
-
-.icon-dislike {
-    &:before {
-        content: $icon-dislike;
-    }
-}
-
-.icon-share {
-    &:before {
-        content: $icon-share;
-    }
-}
-
-.icon-from {
-    &:before {
-        content: $icon-from;
-    }
-}
-
-.icon-smiling {
-    &:before {
-        content: $icon-smiling;
-    }
-}
-
-.icon-doubt {
-    &:before {
-        content: $icon-doubt;
-    }
-}
-
-.icon-sad {
-    &:before {
-        content: $icon-sad;
-    }
-}
-
-.icon-point:before {
-    content: $icon-point;
-}
-
-.icon-pane:before {
-    content: $icon-pane;
-}
-
-.icon-search:before {
-    content: $icon-search;
-}
-
-.icon-bitch:before {
-    content: $icon-bitch;
-}
-
-.icon-male:before {
-    content: $icon-male;
 }
