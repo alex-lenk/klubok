@@ -1,264 +1,264 @@
 @import "../lib/variables";
 
 [class^="icon-"], [class*=" icon-"] {
-  &:before {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Enable Ligatures ================ */
-    letter-spacing: 0;
-    -webkit-font-feature-settings: "liga";
-    -moz-font-feature-settings: "liga=1";
-    -moz-font-feature-settings: "liga";
-    -ms-font-feature-settings: "liga" 1;
-    font-feature-settings: "liga";
-    -webkit-font-variant-ligatures: discretionary-ligatures;
-    font-variant-ligatures: discretionary-ligatures;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    &:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        
+        /* Enable Ligatures ================ */
+        letter-spacing: 0;
+        -webkit-font-feature-settings: "liga";
+        -moz-font-feature-settings: "liga=1";
+        -moz-font-feature-settings: "liga";
+        -ms-font-feature-settings: "liga" 1;
+        font-feature-settings: "liga";
+        -webkit-font-variant-ligatures: discretionary-ligatures;
+        font-variant-ligatures: discretionary-ligatures;
+        
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
 
 .icon-see {
-  &:before {
-    content: $icon-see;
-  }
+    &:before {
+        content: $icon-see;
+    }
 }
 
 .icon-friends {
-  &:before {
-    content: $icon-friends;
-  }
+    &:before {
+        content: $icon-friends;
+    }
 }
 
 .icon-chronicle {
-  &:before {
-    content: $icon-chronicle;
-  }
+    &:before {
+        content: $icon-chronicle;
+    }
 }
 
 .icon-paw {
-  &:before {
-    content: $icon-paw;
-  }
+    &:before {
+        content: $icon-paw;
+    }
 }
 
 .icon-dog {
-  &:before {
-    content: $icon-dog;
-  }
+    &:before {
+        content: $icon-dog;
+    }
 }
 
 .icon-nursery {
-  &:before {
-    content: $icon-nursery;
-  }
+    &:before {
+        content: $icon-nursery;
+    }
 }
 
 .icon-graduates {
-  &:before {
-    content: $icon-graduates;
-  }
+    &:before {
+        content: $icon-graduates;
+    }
 }
 
 .icon-messages {
-  &:before {
-    content: $icon-messages;
-  }
+    &:before {
+        content: $icon-messages;
+    }
 }
 
 .icon-user {
-  &:before {
-    content: $icon-user;
-  }
+    &:before {
+        content: $icon-user;
+    }
 }
 
 .icon-my-friends {
-  &:before {
-    content: $icon-my-friends;
-  }
+    &:before {
+        content: $icon-my-friends;
+    }
 }
 
 .icon-message-load {
-  &:before {
-    content: $icon-message-load;
-  }
+    &:before {
+        content: $icon-message-load;
+    }
 }
 
 .icon-logout {
-  &:before {
-    content: $icon-logout;
-  }
+    &:before {
+        content: $icon-logout;
+    }
 }
 
 .icon-camera {
-  &:before {
-    content: $icon-camera;
-  }
+    &:before {
+        content: $icon-camera;
+    }
 }
 
 .icon-pencil {
-  &:before {
-    content: $icon-pencil;
-  }
+    &:before {
+        content: $icon-pencil;
+    }
 }
 
 .icon-camera2 {
-  &:before {
-    content: $icon-camera2;
-  }
+    &:before {
+        content: $icon-camera2;
+    }
 }
 
 .icon-location {
-  &:before {
-    content: $icon-location;
-  }
+    &:before {
+        content: $icon-location;
+    }
 }
 
 .icon-bin {
-  &:before {
-    content: $icon-bin;
-  }
+    &:before {
+        content: $icon-bin;
+    }
 }
 
 .icon-bin2 {
-  &:before {
-    content: $icon-bin2;
-  }
+    &:before {
+        content: $icon-bin2;
+    }
 }
 
 .icon-minus {
-  &:before {
-    content: $icon-minus;
-  }
+    &:before {
+        content: $icon-minus;
+    }
 }
 
 .icon-cross {
-  &:before {
-    content: $icon-cross;
-  }
+    &:before {
+        content: $icon-cross;
+    }
 }
 
 .icon-enter {
-  &:before {
-    content: $icon-enter;
-  }
+    &:before {
+        content: $icon-enter;
+    }
 }
 
 .icon-exit {
-  &:before {
-    content: $icon-exit;
-  }
+    &:before {
+        content: $icon-exit;
+    }
 }
 
 .icon-place-localizer {
-  &:before {
-    content: $icon-place-localizer;
-  }
+    &:before {
+        content: $icon-place-localizer;
+    }
 }
 
 .icon-down {
-  &:before {
-    content: $icon-down;
-  }
+    &:before {
+        content: $icon-down;
+    }
 }
 
 .icon-prev {
-  &:before {
-    content: $icon-prev;
-  }
+    &:before {
+        content: $icon-prev;
+    }
 }
 
 .icon-next {
-  &:before {
-    content: $icon-next;
-  }
+    &:before {
+        content: $icon-next;
+    }
 }
 
 .icon-top {
-  &:before {
-    content: $icon-top;
-  }
+    &:before {
+        content: $icon-top;
+    }
 }
 
 .icon-upload {
-  &:before {
-    content: $icon-upload;
-  }
+    &:before {
+        content: $icon-upload;
+    }
 }
 
 .icon-clock {
-  &:before {
-    content: $icon-clock;
-  }
+    &:before {
+        content: $icon-clock;
+    }
 }
 
 .icon-like {
-  &:before {
-    content: $icon-like;
-  }
+    &:before {
+        content: $icon-like;
+    }
 }
 
 .icon-dislike {
-  &:before {
-    content: $icon-dislike;
-  }
+    &:before {
+        content: $icon-dislike;
+    }
 }
 
 .icon-share {
-  &:before {
-    content: $icon-share;
-  }
+    &:before {
+        content: $icon-share;
+    }
 }
 
 .icon-from {
-  &:before {
-    content: $icon-from;
-  }
+    &:before {
+        content: $icon-from;
+    }
 }
 
 .icon-smiling {
-  &:before {
-    content: $icon-smiling;
-  }
+    &:before {
+        content: $icon-smiling;
+    }
 }
 
 .icon-doubt {
-  &:before {
-    content: $icon-doubt;
-  }
+    &:before {
+        content: $icon-doubt;
+    }
 }
 
 .icon-sad {
-  &:before {
-    content: $icon-sad;
-  }
+    &:before {
+        content: $icon-sad;
+    }
 }
 
 .icon-point:before {
-  content: $icon-point;
+    content: $icon-point;
 }
 
 .icon-pane:before {
-  content: $icon-pane;
+    content: $icon-pane;
 }
 
 .icon-search:before {
-  content: $icon-search;
+    content: $icon-search;
 }
 
 .icon-bitch:before {
-  content: $icon-bitch;
+    content: $icon-bitch;
 }
 
 .icon-male:before {
-  content: $icon-male;
+    content: $icon-male;
 }
