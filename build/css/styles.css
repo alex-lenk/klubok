@@ -6545,4 +6545,191 @@ footer span {
   }
 }
 
+.talk {
+  padding-bottom: 15px;
+  font-size: 14px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.talk h1 {
+  width: 100%;
+  margin: 0 10px 10px;
+}
+
+.talk h1:after {
+  width: 100%;
+  height: 1px;
+  margin-top: 21px;
+  background-color: #BAB8B9;
+  display: block;
+  content: '';
+}
+
+.talk-left {
+  width: 320px;
+  -webkit-flex-basis: 310px;
+  -ms-flex-preferred-size: 310px;
+  flex-basis: 310px;
+  border-right: 1px solid #BAB8B9;
+}
+
+.talk-panel {
+  min-height: 100px;
+  padding: 10px 10px 15px;
+}
+
+.talk-panel:after {
+  width: 100%;
+  height: 1px;
+  margin-top: 21px;
+  background-color: #BAB8B9;
+  display: block;
+  content: '';
+}
+
+.talk-nav {
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-top: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.talk-nav .active {
+  color: #000;
+}
+
+.talk-nav li:not(:last-child) {
+  cursor: pointer;
+}
+
+.talk-new-message:before {
+  color: #00adbf;
+  vertical-align: middle;
+}
+
+.talk-new-count {
+  color: #ed5901;
+}
+
+.talk-list {
+  max-height: 480px;
+  height: 100%;
+  padding: 5px 0 0;
+  margin-bottom: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.talk-list:hover {
+  overflow-y: scroll;
+}
+
+.talk-item {
+  padding: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+
+.talk-item:not(.talk-item-active):hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.talk-user-media {
+  padding-right: 10px;
+  position: relative;
+  max-width: 70px;
+  -webkit-flex: 1 0 70px;
+  -ms-flex: 1 0 70px;
+  flex: 1 0 70px;
+}
+
+.talk-user-media:after {
+  width: 12px;
+  height: 12px;
+  bottom: 2px;
+  right: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #BAB8B9;
+  content: '';
+}
+
+.talk-user-media img {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+}
+
+.talk-user-online:after {
+  background-color: #00CC00;
+}
+
+.talk-user-info {
+  min-width: 0;
+}
+
+.talk-user-title {
+  padding: 0;
+  margin: 0 0 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #00adbf;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.talk-user-address {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.talk-item-info {
+  margin-top: 7px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.talk-item-info .talk-new-message {
+  margin-left: auto;
+}
+
+.talk-item-date {
+  font-weight: 700;
+}
+
+.talk-item-date .time {
+  margin-right: 10px;
+}
+
+.talk-item-active {
+  background-color: #F5F3F4;
+  cursor: default;
+}
+
+.talk-right {
+  display: none;
+}
+
 /*# sourceMappingURL=../maps/styles.css.map */
