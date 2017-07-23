@@ -108,7 +108,6 @@ $(function () {
 });
 
 $(document).ready(function () {
-
     $(".post-edit").click(
         function () {
             var e = $(this).parent().find('.post-edit-nav');
@@ -140,8 +139,8 @@ $(document).ready(function () {
     });
 
     /*
-    ===================== ancestors scripts =====================
-    */
+     ===================== ancestors scripts =====================
+     */
 
     var generationFather = $(".generation-father"),
         fatherAncestors = $('.father-ancestors'),
@@ -190,6 +189,28 @@ $(document).ready(function () {
             ancestorsList.addClass('grand-list');
         }
     );
+
+    var talkItem = $('.talk-item'),
+        talkRight = $('.talk-right'),
+        talkBack = $('.talk-back'),
+        talkItemActive = 'talk-item-active',
+        talkEmpty = 'talk-empty',
+        showTranslation = $('.show-translation'),
+        dialogTextTranslate = $('.dialog-text-translate');
+
+    talkItem.click(function () {
+        talkItem.removeClass(talkItemActive);
+        $(this).addClass(talkItemActive);
+        talkRight.removeClass(talkEmpty);
+    });
+
+    talkBack.click(function () {
+        talkRight.addClass(talkEmpty);
+    });
+
+    showTranslation.click(function () {
+        dialogTextTranslate.css('display', 'block');
+    });
 });
 
 $('.south-west').powerTip({

@@ -6485,6 +6485,101 @@ footer span {
   }
 }
 
+/* custom-scroll */
+.custom-scroll-tiny_container {
+  overflow: hidden !important;
+  position: relative;
+}
+
+.custom-scroll-tiny_inner {
+  overflow: scroll;
+  height: 100%;
+  *position: absolute;
+  /* ie7 fix */
+  *left: 0;
+  *right: 0;
+}
+
+.custom-scroll-tiny_inner::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.custom-scroll-tiny_inner {
+  -ms-overflow-style: none;
+}
+
+.custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_bar-x {
+  cursor: default;
+  position: absolute;
+  border-radius: 1px;
+  z-index: 1;
+  background: #00adbf;
+  opacity: .4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: opacity .2s;
+}
+
+.custom-scroll-tiny_bar-y {
+  top: 0;
+  right: 1px;
+  width: 8px;
+}
+
+.custom-scroll-tiny_bar-x {
+  left: 0;
+  bottom: 1px;
+  height: 8px;
+  display: none;
+}
+
+.custom-scroll-tiny_bar-y:hover,
+.custom-scroll-tiny_bar-x:hover {
+  opacity: .7;
+}
+
+.custom-scroll-tiny_bar:active,
+.custom-scroll-tiny_bar-x:active {
+  opacity: 1;
+}
+
+.custom-scroll-tiny_hidden-y > .custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_hidden-x > .custom-scroll-tiny_bar-x {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility step-end .3s;
+}
+
+/* changes */
+.custom-scroll-tiny_bar-y {
+  right: -4px;
+  width: 4px;
+  transition: right .2s, background .2s;
+}
+
+.custom-scroll-tiny_bar-x {
+  bottom: -4px;
+  height: 4px;
+  transition: bottom .2s, background .2s;
+}
+
+.custom-scroll-tiny_bar-y:active,
+.custom-scroll-tiny_inner:focus .custom-scroll-tiny_bar-y,
+.custom-scroll-tiny_container:hover .custom-scroll-tiny_bar-y {
+  right: 0;
+}
+
+.custom-scroll-tiny_bar-x:active,
+.custom-scroll-tiny_inner:focus .custom-scroll-tiny_bar-x,
+.custom-scroll-tiny_container:hover .custom-scroll-tiny_bar-x {
+  bottom: 1px;
+}
+
 .map-club {
   margin-bottom: 15px;
   border: 1px solid #00adbf;
@@ -6548,20 +6643,39 @@ footer span {
 .talk {
   padding-bottom: 15px;
   font-size: 14px;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
-.talk h1 {
+.talk .comment-form {
+  width: calc(100% - 20px);
+  margin: 5px 0 0 10px;
+  padding: 15px 10px;
+}
+
+.talk .comment-form-group {
+  padding-left: 0;
+}
+
+.talk .comment-form-action {
+  text-align: right;
+}
+
+.talk .comment-form-control .file_upload {
+  width: auto;
+  height: auto;
+  border: 0;
+}
+
+.talk-title {
   width: 100%;
-  margin: 0 10px 10px;
+  padding: 0 10px;
+  margin: 0 0 8px;
 }
 
-.talk h1:after {
+.talk-title:after {
   width: 100%;
   height: 1px;
   margin-top: 21px;
@@ -6571,25 +6685,27 @@ footer span {
 }
 
 .talk-left {
-  width: 320px;
-  -webkit-flex-basis: 310px;
-  -ms-flex-preferred-size: 310px;
-  flex-basis: 310px;
-  border-right: 1px solid #BAB8B9;
+  width: 100%;
+  height: 100%;
 }
 
 .talk-panel {
-  min-height: 100px;
-  padding: 10px 10px 15px;
+  height: 101px;
+  margin-bottom: 0;
+  padding: 10px 10px 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .talk-panel:after {
-  width: 100%;
+  width: calc(100% + 10px);
   height: 1px;
   margin-top: 21px;
   background-color: #BAB8B9;
-  display: block;
   content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 0;
 }
 
 .talk-nav {
@@ -6624,22 +6740,24 @@ footer span {
   color: #ed5901;
 }
 
-.talk-list {
+.talk-list-wrap {
   max-height: 480px;
   height: 100%;
-  padding: 5px 0 0;
-  margin-bottom: 0;
-  list-style: none;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 
-.talk-list:hover {
-  overflow-y: scroll;
+.talk-list-wrap .btn-azure {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+}
+
+.talk-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .talk-item {
-  padding: 10px;
+  padding: 14px 10px 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -6661,10 +6779,10 @@ footer span {
 }
 
 .talk-user-media:after {
-  width: 12px;
-  height: 12px;
-  bottom: 2px;
-  right: 12px;
+  width: 14px;
+  height: 14px;
+  bottom: -1px;
+  right: 11px;
   border: 1px solid #ffffff;
   border-radius: 50%;
   position: absolute;
@@ -6687,7 +6805,7 @@ footer span {
 
 .talk-user-title {
   padding: 0;
-  margin: 0 0 5px;
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 14px;
   color: #00adbf;
@@ -6705,7 +6823,7 @@ footer span {
 }
 
 .talk-item-info {
-  margin-top: 7px;
+  margin-top: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -6728,8 +6846,225 @@ footer span {
   cursor: default;
 }
 
-.talk-right {
+.talk-empty-content {
+  height: 100%;
   display: none;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.talk-empty-content .as-link {
+  margin-left: 5px;
+}
+
+.talk-user-profile {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.talk-right-content .talk-user-media {
+  padding-right: 10px;
+  max-width: 70px;
+  -webkit-flex: 1 0 70px;
+  -ms-flex: 1 0 70px;
+  flex: 1 0 70px;
+}
+
+.talk-right-content .talk-user-media:after {
+  bottom: 4px;
+}
+
+.talk-right-panel {
+  width: calc(100% - 10px);
+  height: 101px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding: 11px 0 0 10px;
+  border-bottom: 1px solid #BAB8B9;
+}
+
+.talk-control {
+  margin-top: 7px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.talk-control li {
+  font-size: 20px;
+  color: #00adbf;
+}
+
+.talk-control li:not(:last-child) {
+  margin-right: 45px;
+}
+
+.talk-control li:nth-child(3) {
+  font-size: 19px;
+}
+
+.talk-control li:last-child {
+  font-size: 19px;
+}
+
+.dialog-wrap {
+  height: 470px;
+  padding: 15px 10px 0;
+}
+
+.dialog-wrap:hover .custom-scroll-tiny_bar-y {
+  height: 232px;
+}
+
+.dialog-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.dialog-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dialog-item:hover .dialog-delete {
+  opacity: 1;
+}
+
+.dialog-media {
+  padding-right: 10px;
+  max-width: 50px;
+  -webkit-flex: 1 0 50px;
+  -ms-flex: 1 0 50px;
+  flex: 1 0 50px;
+}
+
+.dialog-media img {
+  border-radius: 50%;
+}
+
+.dialog-content {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.dialog-my .dialog-text {
+  background-color: #F5F3F4;
+}
+
+.dialog-your .dialog-media {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.dialog-text {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid #BAB8B9;
+  line-height: 1.2;
+}
+
+.dialog-meta {
+  margin: 7px 0 15px;
+  font-size: 13px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dialog-date .time {
+  margin-right: 8px;
+}
+
+.show-translation {
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.dialog-text-translate {
+  display: none;
+  margin-top: 9px;
+  padding-top: 6px;
+  border-top: 1px solid #bab8b9;
+}
+
+.dialog-delete {
+  margin-left: auto;
+  color: #00adbf;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 720px) {
+  .talk-empty .talk-empty-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .talk-empty .talk-right-content {
+    display: none;
+  }
+  .talk-left {
+    max-width: 320px;
+    -webkit-flex: 1 0 320px;
+    -ms-flex: 1 0 320px;
+    flex: 1 0 320px;
+    border-right: 1px solid #BAB8B9;
+  }
+  .talk-right {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .talk-back {
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  .talk-back {
+    padding: 15px 0 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fff;
+    -webkit-transform: translateY(-55px);
+    -ms-transform: translateY(-55px);
+    transform: translateY(-55px);
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .talk-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
+  }
+  .talk-empty {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */
