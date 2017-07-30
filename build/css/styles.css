@@ -1801,9 +1801,6 @@ h1, .h1 {
   .hidden-vs-sm {
     visibility: hidden;
   }
-  .wrapper {
-    overflow-x: hidden;
-  }
   .cropper-loading {
     width: 100%;
     margin-top: 5px;
@@ -5941,7 +5938,7 @@ footer span {
 }
 
 .pagination-bottom {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 @media (min-width: 960px) {
@@ -6586,7 +6583,8 @@ footer span {
 }
 
 .club-list {
-  padding: 35px 0 5px 0;
+  padding-top: 35px;
+  padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
@@ -6640,6 +6638,43 @@ footer span {
   }
 }
 
+.talk-global {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.talk-global .wrapper {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.talk-global:before {
+  height: 210px;
+}
+
+.talk-global .panel {
+  height: 190px;
+}
+
+.talk-global .header-middle {
+  display: none;
+}
+
+.talk-global .profile-menu {
+  display: none !important;
+}
+
 .talk {
   padding-bottom: 15px;
   font-size: 14px;
@@ -6647,6 +6682,9 @@ footer span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .talk .comment-form {
@@ -6686,7 +6724,6 @@ footer span {
 
 .talk-left {
   width: 100%;
-  height: 100%;
 }
 
 .talk-panel {
@@ -6738,11 +6775,6 @@ footer span {
 
 .talk-new-count {
   color: #ed5901;
-}
-
-.talk-list-wrap {
-  max-height: 480px;
-  height: 100%;
 }
 
 .talk-list-wrap .btn-azure {
@@ -6867,6 +6899,13 @@ footer span {
   display: flex;
 }
 
+.talk-right {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .talk-right-content .talk-user-media {
   padding-right: 10px;
   max-width: 70px;
@@ -6919,7 +6958,6 @@ footer span {
 }
 
 .dialog-wrap {
-  height: 470px;
   padding: 15px 10px 0;
 }
 
@@ -6965,6 +7003,26 @@ footer span {
   background-color: #F5F3F4;
 }
 
+.dialog-my .dialog-text:before, .dialog-my .dialog-text:after {
+  left: -15px;
+  border-right-color: #bab8b9;
+}
+
+.dialog-my .dialog-text:after {
+  left: -14px;
+  border-right-color: #f5f3f4;
+}
+
+.dialog-your .dialog-text:before, .dialog-your .dialog-text:after {
+  right: -15px;
+  border-left-color: #bab8b9;
+}
+
+.dialog-your .dialog-text:after {
+  right: -14px;
+  border-left-color: #fff;
+}
+
 .dialog-your .dialog-media {
   padding-right: 0;
   padding-left: 10px;
@@ -6975,6 +7033,14 @@ footer span {
   border-radius: 4px;
   border: 1px solid #BAB8B9;
   line-height: 1.2;
+  position: relative;
+}
+
+.dialog-text:before, .dialog-text:after {
+  position: absolute;
+  top: 10px;
+  border: 7px solid transparent;
+  content: '';
 }
 
 .dialog-meta {
@@ -7005,11 +7071,19 @@ footer span {
   margin-left: auto;
   color: #00adbf;
   opacity: 0;
+  font-size: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 @media (min-width: 720px) {
+  .talk-list-wrap {
+    max-height: 480px;
+    height: 100%;
+  }
+  .dialog-wrap {
+    height: 470px;
+  }
   .talk-empty .talk-empty-content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7033,9 +7107,22 @@ footer span {
   .talk-back {
     display: none;
   }
+  .talk .comment-form-action {
+    width: 220px;
+  }
 }
 
 @media (max-width: 719px) {
+  .talk-global .wrapper {
+    overflow: hidden;
+  }
+  .talk-global footer {
+    -webkit-transform: translate3d(0, -108px, 0);
+    transform: translate3d(0, -108px, 0);
+    z-index: -1;
+    max-height: 1px;
+    overflow: hidden;
+  }
   .talk-back {
     padding: 15px 0 15px 20px;
     text-transform: uppercase;
@@ -7064,6 +7151,18 @@ footer span {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
+  }
+  .talk-nav {
+    max-width: 365px;
+  }
+}
+
+@media (max-width: 479px) {
+  .show-translation {
+    text-transform: capitalize;
+  }
+  .show-translation span {
+    display: none;
   }
 }
 
