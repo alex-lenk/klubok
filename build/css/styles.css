@@ -6660,11 +6660,11 @@ footer span {
 }
 
 .talk-global:before {
-  height: 210px;
+  height: 148px;
 }
 
 .talk-global .panel {
-  height: 190px;
+  height: 55px;
 }
 
 .talk-global .header-middle {
@@ -6673,6 +6673,10 @@ footer span {
 
 .talk-global .profile-menu {
   display: none !important;
+}
+
+.talk-global .breadcrumbs {
+  display: none;
 }
 
 .talk {
@@ -7078,7 +7082,6 @@ footer span {
 
 @media (min-width: 720px) {
   .talk-list-wrap {
-    max-height: 480px;
     height: 100%;
   }
   .dialog-wrap {

@@ -9,16 +9,19 @@
         flex-direction: column;
     }
     &:before {
-        height: 210px;
+        height: 148px;
     }
     .panel {
-        height: 190px;
+        height: 55px;
     }
     .header-middle {
         display: none;
     }
     .profile-menu {
         display: none !important;
+    }
+    .breadcrumbs {
+        display: none;
     }
 }
 
@@ -362,7 +365,6 @@
 
 @include from('m') {
     .talk-list-wrap {
-        max-height: 480px;
         height: 100%;
     }
     .dialog-wrap {
