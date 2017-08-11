@@ -2427,7 +2427,7 @@ h1, .h1 {
   margin-bottom: 15px;
 }
 
-#add-address .line:nth-of-type(4n+2) {
+#add-address .line:last-of-type {
   margin-bottom: 15px;
 }
 
@@ -4043,6 +4043,46 @@ footer span {
 
 #owners-sale .line, #owners-dogs .line, #transfer-user .line {
   margin-bottom: 15px;
+}
+
+.confirm-delete .modal-content {
+  max-width: 480px;
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.confirm-delete .clearfix {
+  padding-top: 15px;
+  margin: 0 -10px;
+}
+
+.confirm-delete .btn {
+  width: 100%;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.confirm-delete .modal-content {
+  max-width: 480px;
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.confirm-delete .clearfix {
+  padding-top: 15px;
+  margin: 0 -10px;
+}
+
+.confirm-delete .btn {
+  width: 100%;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .nav-arrows li {

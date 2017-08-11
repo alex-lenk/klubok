@@ -1,34 +1,74 @@
 .modal-footer {
-  .btn {
-    margin-bottom: 5px;
-  }
+    .btn {
+        margin-bottom: 5px;
+    }
 }
 
 .modal {
-  @include at('s') {
-    .form-group .form-label {
-      padding-top: 0;
+    @include at('s') {
+        .form-group .form-label {
+            padding-top: 0;
+        }
     }
-  }
 }
 
 .file-uploads {
-  width: 60px;
-  color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  z-index: 6;
-  display: inline-block;
-  vertical-align: top;
-  -webkit-appearance: none !important;
-  input[type=file] {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    clip: rect(0, 0, 0, 0)
-  }
+    width: 60px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-appearance: none !important;
+    input[type=file] {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        clip: rect(0, 0, 0, 0)
+    }
 }
 
 #owners-sale .line, #owners-dogs .line, #transfer-user .line {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.confirm-delete {
+    .modal-content {
+        max-width: 480px;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .clearfix {
+        padding-top: 15px;
+        margin: 0 -10px;
+    }
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.confirm-delete {
+    .modal-content {
+        max-width: 480px;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .clearfix {
+        padding-top: 15px;
+        margin: 0 -10px;
+    }
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
 }
