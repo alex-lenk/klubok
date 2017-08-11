@@ -1,263 +1,297 @@
 .personal-edit {
-  .modal-content {
-    padding: 15px 0;
-  }
-  .line {
-    padding: 0;
-    margin-bottom: 0;
-    list-style: none;
-    &:not(:first-of-type) {
-      margin-top: 5px;
+    .modal-content {
+        padding: 15px 0;
     }
-    @include clearfix;
-    li {
-      outline-offset: -1px;
-      @include to('s') {
-        &:not(:last-of-type) {
-          margin-bottom: 5px;
+    .line {
+        padding: 0;
+        margin-bottom: 0;
+        list-style: none;
+        &:not(:first-of-type) {
+            margin-top: 5px;
         }
-      }
+        @include clearfix;
+        li {
+            outline-offset: -1px;
+            @include to('s') {
+                &:not(:last-of-type) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .btn-edit {
+            margin-right: 20px;
+        }
     }
-    .btn-edit {
-      margin-right: 20px;
+    
+    .col-1, .col-4 {
+        padding-left: 10px;
     }
-  }
-
-  .col-1, .col-4 {
-    padding-left: 10px;
-  }
-  .col-2, .col-5, .col-6 {
-    padding-right: 10px;
-  }
-  .col-3, .col-7, .col-10, .col-11, .col-12, .col-13, .col-14, .col-16, .col-15 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  @include to('s') {
-    .col-2, .col-4 {
-      padding-bottom: 2px;
-      line-height: 1.2;
+    .col-2, .col-5, .col-6 {
+        padding-right: 10px;
     }
-    .col-2 {
-      padding-left: 10px;
+    .col-3, .col-7, .col-10, .col-11, .col-12, .col-13, .col-14, .col-16, .col-15 {
+        padding-right: 10px;
+        padding-left: 10px;
     }
-    .col-5 {
-      padding-left: 10px;
+    
+    @include from('m') {
+        .col-17 {
+            width: 230px;
+            padding-right: 10px;
+        }
     }
-    .col-4 {
-      padding-right: 10px;
+    
+    @include at('s') {
+        .col-8 {
+            width: 120px;
+            float: left;
+        }
+        .col-10 {
+            width: auto;
+            float: right;
+        }
+        .col-17 {
+            padding-right: 10px;
+            width: 180px;
+            padding-left: 10px;
+            float: left;
+        }
     }
-    .col-6 {
-      padding-left: 10px;
+    
+    @include to('xs') {
+        .col-17 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .col-10 {
+            float: left;
+        }
     }
-    .col-8, .col-9 {
-      padding-left: 10px;
-      padding-right: 10px;
+    
+    @include to('s') {
+        .col-2, .col-4 {
+            padding-bottom: 2px;
+            line-height: 1.2;
+        }
+        .col-2 {
+            padding-left: 10px;
+        }
+        .col-5 {
+            padding-left: 10px;
+        }
+        .col-4 {
+            padding-right: 10px;
+        }
+        .col-6 {
+            padding-left: 10px;
+        }
+        .col-8, .col-9 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
-  }
-
-  @include from('m') {
-    .label {
-      padding-top: 10px;
+    
+    @include from('m') {
+        .label {
+            padding-top: 10px;
+        }
+        [class^="col-"] {
+            float: left;
+        }
+        .col-1 {
+            width: 90px;
+        }
+        .col-2 {
+            width: 470px;
+        }
+        .col-3 {
+            width: 160px;
+        }
+        .col-4 {
+            width: 560px;
+        }
+        .col-5 {
+            width: 150px;
+        }
+        .col-6 {
+            width: 630px;
+        }
+        .col-7 {
+            width: 480px;
+        }
+        .col-8 {
+            width: 160px;
+            padding-right: 20px;
+        }
+        .col-9 {
+            width: 150px;
+            padding-right: 10px;
+        }
+        .col-10 {
+            width: 240px;
+        }
+        .col-10-80 {
+            padding-right: 80px;
+        }
+        .col-11 {
+            width: 480px;
+        }
+        .col-12 {
+            width: 80px;
+        }
+        .col-13 {
+            width: 320px;
+        }
+        .col-14 {
+            width: 400px;
+        }
+        .col-15 {
+            width: 275px;
+        }
+        .col-16 {
+            width: 640px;
+        }
     }
-    [class^="col-"] {
-      float: left;
+    .btn-azure {
+        width: 100%;
     }
-    .col-1 {
-      width: 90px;
-    }
-    .col-2 {
-      width: 470px;
-    }
-    .col-3 {
-      width: 160px;
-    }
-    .col-4 {
-      width: 560px;
-    }
-    .col-5 {
-      width: 150px;
-    }
-    .col-6 {
-      width: 630px;
-    }
-    .col-7 {
-      width: 480px;
-    }
-    .col-8 {
-      width: 160px;
-      padding-right: 20px;
-    }
-    .col-9 {
-      width: 150px;
-      padding-right: 10px;
-    }
-    .col-10 {
-      width: 240px;
-    }
-    .col-10-80 {
-      padding-right: 80px;
-    }
-    .col-11 {
-      width: 480px;
-    }
-    .col-12 {
-      width: 80px;
-    }
-    .col-13 {
-      width: 320px;
-    }
-    .col-14 {
-      width: 400px;
-    }
-    .col-15 {
-      width: 275px;
-    }
-    .col-16 {
-      width: 640px;
-    }
-  }
-  .btn-azure {
-    width: 100%;
-  }
 }
 
 #edit-fio {
-  .modal-content {
-    padding-bottom: 15px;
-  }
-  .mention {
-    margin-top: 15px;
-  }
-  .beginning-form {
-    margin-top: 15px;
-  }
-  .modal-bottom {
-    margin-top: 5px;
-  }
+    .modal-content {
+        padding-bottom: 15px;
+    }
+    .mention {
+        margin-top: 15px;
+    }
+    .beginning-form {
+        margin-top: 15px;
+    }
+    .modal-bottom {
+        margin-top: 5px;
+    }
 }
 
 #choose-gender, #date-birth {
-  .line {
-    margin-bottom: 0;
-  }
-  @include to('s') {
-    .col-sm-4 {
-      margin-bottom: 0 !important;
+    .line {
+        margin-bottom: 0;
     }
-    .col-5 {
-      margin-bottom: 15px;
+    @include to('s') {
+        .col-sm-4 {
+            margin-bottom: 0 !important;
+        }
+        .col-5 {
+            margin-bottom: 15px;
+        }
     }
-  }
 }
 
 #add-address {
-  .modal-content {
-    padding-bottom: 15px;
-  }
-  .line {
-    &:first-of-type {
-      margin-bottom: 15px;
+    .modal-content {
+        padding-bottom: 15px;
     }
-    &:last-of-type {
-      margin-bottom: 15px;
+    .line {
+        &:first-of-type {
+            margin-bottom: 15px;
+        }
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
     }
-  }
 }
 
 #add-phone {
-  .line {
-    margin-bottom: 15px;
-  }
-  @include to(s) {
-    .text-right {
-      text-align: left;
+    .line {
+        margin-bottom: 15px;
     }
-  }
+    @include to(s) {
+        .text-right {
+            text-align: left;
+        }
+    }
 }
 
 #add-email {
-  .line {
-    margin-bottom: 15px;
-  }
+    .line {
+        margin-bottom: 15px;
+    }
 }
 
 #edit-password {
-  .line {
-    margin-bottom: 15px;
-  }
+    .line {
+        margin-bottom: 15px;
+    }
 }
 
 #date-receipt {
-  .line {
-    @include to('s') {
-      .col-8 {
-        margin-bottom: 5px;
-      }
-      .col-10 {
-        margin-bottom: 10px;
-      }
+    .line {
+        @include to('s') {
+            .col-8 {
+                margin-bottom: 5px;
+            }
+            .col-10 {
+                margin-bottom: 10px;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
     }
-    &:last-of-type {
-      margin-bottom: 15px;
+    .col-8 {
+        padding-left: 10px;
     }
-  }
-  .col-8 {
-    padding-left: 10px;
-  }
 }
 
 #add-passport {
-  .col-8, .col-4 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .line {
-    @include to('s') {
-      .col-8 {
-        margin-bottom: 10px;
-      }
-      &:not(:last-of-type) {
-        margin-bottom: 10px;
-      }
-      .text-right {
-        text-align: left;
-      }
+    .col-8, .col-4 {
+        padding-right: 10px;
+        padding-left: 10px;
     }
-    &:last-of-type {
-      margin-bottom: 15px;
+    .line {
+        @include to('s') {
+            .col-8 {
+                margin-bottom: 10px;
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 10px;
+            }
+            .text-right {
+                text-align: left;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
     }
-  }
 }
 
 #addskan {
-  .line {
-    margin-bottom: 15px;
-    position: relative;
-  }
-  .format {
-    padding-top: 5px;
-    @include from('m') {
-      position: absolute;
-      bottom: -30px;
-      left: 90px;
+    .line {
+        margin-bottom: 15px;
+        position: relative;
     }
-  }
+    .format {
+        padding-top: 5px;
+        @include from('m') {
+            position: absolute;
+            bottom: -30px;
+            left: 90px;
+        }
+    }
 }
 
 #add-full-name .line {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 #add-owners-address .line {
-  &:last-of-type {
-    margin-bottom: 15px;
-  }
-  @include to('s') {
-    margin-bottom: 10px;
-    li:not(:last-of-type):not(.label) {
-      margin-bottom: 10px;
+    &:last-of-type {
+        margin-bottom: 15px;
     }
-  }
+    @include to('s') {
+        margin-bottom: 10px;
+        li:not(:last-of-type):not(.label) {
+            margin-bottom: 10px;
+        }
+    }
 }

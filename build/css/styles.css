@@ -2305,6 +2305,40 @@ h1, .h1 {
   padding-left: 10px;
 }
 
+@media (min-width: 720px) {
+  .personal-edit .col-17 {
+    width: 230px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .personal-edit .col-8 {
+    width: 120px;
+    float: left;
+  }
+  .personal-edit .col-10 {
+    width: auto;
+    float: right;
+  }
+  .personal-edit .col-17 {
+    padding-right: 10px;
+    width: 180px;
+    padding-left: 10px;
+    float: left;
+  }
+}
+
+@media (max-width: 479px) {
+  .personal-edit .col-17 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .personal-edit .col-10 {
+    float: left;
+  }
+}
+
 @media (max-width: 719px) {
   .personal-edit .col-2, .personal-edit .col-4 {
     padding-bottom: 2px;
@@ -4036,6 +4070,19 @@ footer span {
   display: inline-block;
   vertical-align: top;
   -webkit-appearance: none !important;
+}
+
+.file-uploads::before {
+  pointer-events: none;
+  z-index: 10;
+}
+
+.file-uploads label {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 .file-uploads input[type=file] {
@@ -7211,6 +7258,10 @@ footer span {
   .show-translation span {
     display: none;
   }
+}
+
+.save-area .btn-azure {
+  width: 100%;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */
