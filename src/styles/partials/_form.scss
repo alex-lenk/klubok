@@ -1,195 +1,199 @@
 button:focus, input:focus, select:focus, textarea:focus {
-  outline: none;
+    outline: none;
 }
 
 .hide-placeholder {
-  &::-webkit-input-placeholder {
-    opacity: 1;
-    color: #8b8b8b;
-    transition: opacity 0.3s ease;
-  }
-  &::-moz-placeholder {
-    opacity: 1;
-    color: #8b8b8b;
-    transition: opacity 0.3s ease;
-  }
-  &:-moz-placeholder {
-    opacity: 1;
-    color: #8b8b8b;
-    transition: opacity 0.3s ease;
-  }
-  &:-ms-input-placeholder {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    color: #8b8b8b;
-  }
-  &:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  &:focus::-moz-placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  &:focus:-moz-placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  &:focus:-ms-input-placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        color: #8b8b8b;
+        transition: opacity 0.3s ease;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        color: #8b8b8b;
+        transition: opacity 0.3s ease;
+    }
+    &:-moz-placeholder {
+        opacity: 1;
+        color: #8b8b8b;
+        transition: opacity 0.3s ease;
+    }
+    &:-ms-input-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        color: #8b8b8b;
+    }
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
 .form-control {
-  width: 100%;
-  height: 35px;
-  padding: 2px 5px;
-  font-size: 14px;
-  display: block;
-  background-color: #ffffff;
-  transition: all .3s ease;
-  @include to('s') {
-    padding-left: 5px;
-  }
-  &:not(select) {
-    border: 1px solid #00adbf;
-    color: #000000;
-  }
+    width: 100%;
+    height: 35px;
+    padding: 2px 5px;
+    font-size: 14px;
+    display: block;
+    background-color: #ffffff;
+    transition: all .3s ease;
+    @include to('s') {
+        padding-left: 5px;
+    }
+    &:not(select) {
+        border: 1px solid #00adbf;
+        color: #000000;
+    }
 }
 
 select.form-control {
-  width: calc(100% - 2px);
-  outline: 1px solid #00adbf;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  margin-left: 1px;
-  height: 33px;
-  border: 0;
+    width: calc(100% - 2px);
+    outline: 1px solid #00adbf;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    height: 33px;
+    border: 0;
 }
 
 .form-number {
-  max-width: 80px;
+    max-width: 80px;
 }
 
 .form-btn {
-  text-align: right;
-  padding-left: 0;
+    text-align: right;
+    padding-left: 0;
 }
 
 .form-group {
-  min-height: 35px;
-  margin-bottom: 5px;
-  overflow: hidden;
-  @include to('xs') {
-    padding-top: 5px;
-  }
-  .form-info {
-    &:not(.radio) {
-      padding-top: 10px;
-      @include from('l') {
-        line-height: 1;
-      }
-    }
-  }
-  .radio {
-    padding-top: 7px;
-  }
-  label.form-info {
-    margin-bottom: 0;
-  }
-  .radio {
+    min-height: 35px;
+    margin-bottom: 5px;
+    overflow: hidden;
     @include to('xs') {
-      width: 100%;
-      padding-top: 0;
-      display: block;
+        padding-top: 5px;
     }
-    label {
-      line-height: 1;
-    }
-  }
-  .list-data {
-    margin-bottom: 0;
-    list-style: none;
-    li {
-      @include to('s') {
-        &:not(:last-child):after {
-          display: inline;
-          content: ', ';
+    .form-info {
+        &:not(.radio) {
+            padding-top: 10px;
+            @include from('l') {
+                line-height: 1;
+            }
         }
-      }
-      &:not(:last-child) {
-        margin-bottom: 5px;
-      }
     }
-  }
-  .phone-label {
-    min-width: 77px;
-    display: inline-block;
-  }
+    .radio {
+        padding-top: 7px;
+    }
+    label.form-info {
+        margin-bottom: 0;
+    }
+    .radio {
+        @include to('xs') {
+            width: 100%;
+            padding-top: 0;
+            display: block;
+        }
+        label {
+            line-height: 1;
+        }
+    }
+    .list-data {
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            @include to('s') {
+                &:not(:last-child):after {
+                    display: inline;
+                    content: ', ';
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .phone-label {
+        min-width: 77px;
+        display: inline-block;
+    }
 }
 
 .form-label {
-  margin-bottom: 0;
-  line-height: 1;
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 select {
-  color: #8b8b8b;
+    color: #8b8b8b;
 }
 
 .chose-select {
-  color: #000000;
+    color: #000000;
 }
 
 .ui-error {
-  .form-control {
-    border-color: #ed5901;
-  }
-  .radio-custom-view {
-    color: #ed5901;
-  }
-  .radio-custom-view:before {
-    border-color: #ed5901;
-  }
+    .form-control {
+        border-color: #ed5901;
+    }
+    .radio-custom-view {
+        color: #ed5901;
+    }
+    .radio-custom-view:before {
+        border-color: #ed5901;
+    }
+    select.form-control {
+        outline-color: #ed5901;
+    }
 }
+
 .ui-error-text {
-  padding: 5px 0 10px;
-  color: #ed5901;
-  display: block;
+    padding: 5px 0 10px;
+    color: #ed5901;
+    display: block;
 }
 
 @include from('m') {
-  .form-label {
-    padding-top: 10px;
-  }
+    .form-label {
+        padding-top: 10px;
+    }
 }
 
 @include at('s') {
-  .form-label:not(.text-line-1) {
-    line-height: 35px;
-  }
+    .form-label:not(.text-line-1) {
+        line-height: 35px;
+    }
 }
 
 @include at('m') {
-  .form-number {
-    max-width: 60px;
-    padding-right: 2px;
-  }
+    .form-number {
+        max-width: 60px;
+        padding-right: 2px;
+    }
 }
 
 @include to('s') {
-  .form-label {
-    padding-top: 5px;
-    margin-bottom: 5px;
-  }
-  .form-edit:not(.button-area) {
-    padding-right: 75px;
-  }
+    .form-label {
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+    .form-edit:not(.button-area) {
+        padding-right: 75px;
+    }
 }
 
 @include to('xs') {
-  .form-edit:not(.button-area) .col-xs-7 {
-    width: 100%;
-  }
+    .form-edit:not(.button-area) .col-xs-7 {
+        width: 100%;
+    }
 }

@@ -1322,6 +1322,10 @@ select {
   border-color: #ed5901;
 }
 
+.ui-error select.form-control {
+  outline-color: #ed5901;
+}
+
 .ui-error-text {
   padding: 5px 0 10px;
   color: #ed5901;
