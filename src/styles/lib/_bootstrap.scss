@@ -1,4 +1,5 @@
 @import 'bootstrap/grid';
+@import 'bootstrap/bootstrap';
 
 .fade {
   opacity: 0;
@@ -17,14 +18,6 @@
 
 .collapse.in {
   display: block;
-}
-
-tr.collapse.in {
-  display: table-row;
-}
-
-tbody.collapse.in {
-  display: table-row-group;
 }
 
 .collapsing {

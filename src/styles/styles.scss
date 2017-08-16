@@ -60,3 +60,67 @@
         width: 100%;
     }
 }
+
+.fixed-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .wrapper {
+        flex: 1 1 auto;
+    }
+}
+
+.table-control {
+    margin-bottom: 35px;
+    display: flex;
+    .btn {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .icon-print {
+        margin-bottom: -3px;
+        margin-right: 5px;
+        font-size: 26px;
+    }
+}
+
+.print {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #bab8b9;
+    padding: 8px;
+    border: 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.table tr {
+    transition: all 0.3s ease;
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+.table td {
+    padding: 15px 8px;
+    border: 0;
+}
+
+.table tr:hover {
+    background-color: #e5e5e5;
+}
