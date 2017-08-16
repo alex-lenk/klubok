@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('#{$icomoon-font-path}/icomoon.ttf?iwmamp') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?iwmamp') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?iwmamp#icomoon') format('svg');
+    src: url('#{$icomoon-font-path}icomoon.ttf?iwmamp') format('truetype'),
+    url('#{$icomoon-font-path}icomoon.woff?iwmamp') format('woff'),
+    url('#{$icomoon-font-path}icomoon.svg?iwmamp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -276,4 +276,8 @@
     &:before {
         content: $icon-clean;
     }
+}
+
+.icon-print:before {
+    content: $icon-print;
 }
