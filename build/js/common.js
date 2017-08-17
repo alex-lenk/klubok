@@ -211,6 +211,15 @@ $(document).ready(function () {
     showTranslation.click(function () {
         dialogTextTranslate.css('display', 'block');
     });
+
+    var tableBtnControl = $(".table-btn-control");
+
+    tableBtnControl.click(
+        function () {
+            var e = $(this).parent();
+            e.toggleClass("table-btn-open");
+        }
+    );
 });
 
 $('.south-west').powerTip({

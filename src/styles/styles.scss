@@ -55,10 +55,8 @@
 @import "pages/club-list";
 @import "pages/talk";
 
-.save-area {
-    .btn-azure {
-        width: 100%;
-    }
+.save-area .btn-azure {
+    width: 100%;
 }
 
 .fixed-footer {
@@ -70,31 +68,12 @@
     }
 }
 
-.table-control {
-    margin-bottom: 35px;
-    display: flex;
-    .btn {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .icon-print {
-        margin-bottom: -3px;
-        margin-right: 5px;
-        font-size: 26px;
-    }
-}
-
-.print {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .table {
     width: 100%;
+    max-width: 100%;
     border: 0;
     background-color: transparent;
+    border-spacing: 0;
     border-collapse: collapse;
 }
 
@@ -106,7 +85,8 @@
     padding: 8px;
     border: 0;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.3;
+    vertical-align: top;
 }
 
 .table tr {
@@ -117,10 +97,395 @@
 }
 
 .table td {
-    padding: 15px 8px;
+    padding: 10px 8px;
     border: 0;
+    vertical-align: top;
+    line-height: 1.3;
+}
+
+th.table-date-mating {
+    padding-left: 20px;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        border: 5px solid transparent;
+    }
+    &:before {
+        top: 5px;
+        border-bottom: 10px solid #00adbf;
+    }
+    &:after {
+        bottom: 5px;
+        border-top: 10px solid #fff;
+    }
 }
 
 .table tr:hover {
     background-color: #e5e5e5;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.table-control {
+    max-width: 960px;
+    margin-bottom: 35px;
+    @include clearfix;
+    .btn {
+        padding-left: 0;
+        padding-right: 0;
+        &:not(.btn-uninstall) {
+            width: 100%;
+        }
+    }
+    .icon-print {
+        margin-bottom: -3px;
+        margin-right: 5px;
+        font-size: 26px;
+    }
+}
+
+.filter-table {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    @include clearfix;
+    li:not(:last-child) {
+        margin-right: 15px;
+    }
+    .as-link {
+        font-weight: 700;
+    }
+}
+
+.print-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hide {
+    font-size: 26px;
+    width: 35px;
+    padding: 0;
+    height: 35px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ed5901;
+    &:hover {
+        border-color: #ed5901;
+        color: #ed5901;
+        background-color: #ffffff;
+    }
+}
+
+.table-btn {
+    .btn-edit, .btn-uninstall {
+        width: 35px;
+        font-size: 16px;
+    }
+    .btn {
+        vertical-align: middle;
+        &:not(:last-of-type) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.table-responsive-wrap {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.result-touch {
+    padding: 15px 15px 15px 50px;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -135px;
+    color: #fffefe;
+    line-height: 1.3;
+    border-radius: 5px;
+    background-color: rgba(#000, .8);
+    position: absolute;
+    pointer-events: none;
+    //display: flex;
+    display: none;
+    &::before {
+        top: 22px;
+        left: 18px;
+        font-size: 22px;
+        position: absolute;
+    }
+    .icon-from {
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        color: #000;
+        transform: rotate(-45deg);
+    }
+}
+
+.table-btn {
+    min-width: 195px;
+}
+
+.table-date {
+    min-width: 100px;
+}
+
+.table-btn-control {
+    display: none;
+}
+
+.big-table {
+    .pre-footer {
+        border-radius: 0;
+    }
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1439px) {
+    .big-table .table-responsive {
+        padding-top: 50px;
+        padding-bottom: 120px;
+    }
+    .table-circle {
+        position: relative;
+        &::before {
+            width: 15px;
+            height: 15px;
+            display: block;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            position: relative;
+            content: '';
+        }
+    }
+    .table-circle-text {
+        position: absolute;
+        color: #8B8B8B;
+        white-space: nowrap;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #8B8B8B;
+        }
+        br {
+            display: none;
+        }
+    }
+    .table-circle-first {
+        padding-right: 7px;
+        top: -31px;
+        right: 100%;
+        &::before {
+            width: 16px;
+            height: 1px;
+            top: 9px;
+            left: 100%;
+        }
+        &::after {
+            width: 1px;
+            height: 27px;
+            top: 9px;
+            right: -16px;
+        }
+    }
+    .table-circle-second {
+        padding-right: 7px;
+        top: -47px;
+        right: 100%;
+        white-space: nowrap;
+        &::before {
+            width: 16px;
+            height: 1px;
+            top: 9px;
+            left: 100%;
+        }
+        &::after {
+            width: 1px;
+            height: 43px;
+            top: 9px;
+            right: -16px;
+        }
+    }
+    .table-circle-third {
+        padding-left: 7px;
+        top: -47px;
+        left: 100%;
+        white-space: nowrap;
+        &::before {
+            width: 16px;
+            height: 1px;
+            top: 9px;
+            right: 100%;
+        }
+        &::after {
+            width: 1px;
+            height: 43px;
+            top: 9px;
+            left: -16px;
+        }
+    }
+    .table-circle-fourth {
+        padding-left: 7px;
+        top: -31px;
+        left: 100%;
+        white-space: nowrap;
+        &::before {
+            width: 16px;
+            height: 1px;
+            top: 9px;
+            right: 100%;
+        }
+        &::after {
+            width: 1px;
+            height: 27px;
+            top: 9px;
+            left: -16px;
+        }
+    }
+    .table-btn {
+        min-width: 0;
+        position: relative;
+        &::before {
+            width: 52px;
+            height: 0;
+            right: 0;
+            top: 50px;
+            border-radius: 5px;
+            background-color: #fff;
+            content: '';
+            position: absolute;
+            z-index: 15;
+            transition: all 0.3s ease;
+        }
+        .btn {
+            opacity: 0;
+            position: absolute;
+            pointer-events: none;
+            z-index: 15;
+            left: 8px;
+            bottom: 0;
+        }
+        .icon-search {
+            transition: all 0.3s ease;
+        }
+        .icon-pencil {
+            transition: all 0.5s ease;
+        }
+        .btn-hide {
+            left: auto;
+            right: 10px;
+            transition: all 0.7s ease;
+        }
+    }
+    .table-btn-control {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-color: #00adbf;
+        border-radius: 5px;
+        border: 1px solid #00adbf;
+        position: relative;
+        cursor: pointer;
+        z-index: 5;
+        transition: all 0.3s ease;
+        &::before, &::after {
+            left: 50%;
+            margin-left: -10px;
+            border: 10px solid transparent;
+            position: absolute;
+            content: '';
+            transition: all 0.3s ease;
+        }
+        &::before {
+            top: 50%;
+            margin-top: -5px;
+            border-top-color: #fff;
+        }
+        &::after {
+            bottom: 50%;
+            margin-bottom: -5px;
+            border-bottom-color: #00adbf;
+            opacity: 0;
+        }
+    }
+    .table-btn-open {
+        &::before {
+            height: 125px;
+        }
+        .btn {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .icon-search {
+            bottom: -25px;
+        }
+        .icon-pencil {
+            bottom: -64px;
+        }
+        .btn-hide {
+            bottom: -104px;
+        }
+        .table-btn-control {
+            background-color: #fff;
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .big-table .table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 970px) {
+    .big-table {
+        overflow-x: scroll;
+        width: 960px;
+        .table {
+            font-size: 12px;
+        }
+    }
+    .table-date {
+        min-width: 90px;
+    }
+}
+
+@media (min-width: 960px) {
+    .result-touch {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
 }

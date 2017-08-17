@@ -1760,14 +1760,6 @@ button.close {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("/fonts/icomoon.eot?y5m7y2");
-  src: url("/fonts/icomoon.eot?y5m7y2#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?y5m7y2") format("truetype"), url("/fonts/icomoon.woff?y5m7y2") format("woff"), url("/fonts/icomoon.svg?y5m7y2#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .btn {
   padding: 0;
   border-radius: 5px;
@@ -2543,13 +2535,12 @@ h1, .h1 {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.ttf?iwmamp") format("truetype"), url("../fonts/icomoon.woff?iwmamp") format("woff"), url("../fonts/icomoon.svg?iwmamp#icomoon") format("svg");
+  src: url("../fonts/icomoon.ttf?") format("truetype"), url("../fonts/icomoon.woff?") format("woff"), url("../fonts/icomoon.svg?icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"]::before, [class*=" icon-"]::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -2557,7 +2548,6 @@ h1, .h1 {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2732,6 +2722,14 @@ h1, .h1 {
 
 .icon-print:before {
   content: "";
+}
+
+.icon-touch:before {
+  content: "";
+}
+
+.icon-hidden:before {
+  content: "";
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -7973,41 +7971,12 @@ footer span {
   flex: 1 1 auto;
 }
 
-.table-control {
-  margin-bottom: 35px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.table-control .btn {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.table-control .icon-print {
-  margin-bottom: -3px;
-  margin-right: 5px;
-  font-size: 26px;
-}
-
-.print {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .table {
   width: 100%;
+  max-width: 100%;
   border: 0;
   background-color: transparent;
+  border-spacing: 0;
   border-collapse: collapse;
 }
 
@@ -8019,7 +7988,8 @@ footer span {
   padding: 8px;
   border: 0;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.3;
+  vertical-align: top;
 }
 
 .table tr {
@@ -8031,12 +8001,423 @@ footer span {
 }
 
 .table td {
-  padding: 15px 8px;
+  padding: 10px 8px;
   border: 0;
+  vertical-align: top;
+  line-height: 1.3;
+}
+
+th.table-date-mating {
+  padding-left: 20px;
+  position: relative;
+}
+
+th.table-date-mating:before, th.table-date-mating:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  border: 5px solid transparent;
+}
+
+th.table-date-mating:before {
+  top: 5px;
+  border-bottom: 10px solid #00adbf;
+}
+
+th.table-date-mating:after {
+  bottom: 5px;
+  border-top: 10px solid #fff;
 }
 
 .table tr:hover {
   background-color: #e5e5e5;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+.table-control {
+  max-width: 960px;
+  margin-bottom: 35px;
+}
+
+.table-control:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.table-control .btn {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.table-control .btn:not(.btn-uninstall) {
+  width: 100%;
+}
+
+.table-control .icon-print {
+  margin-bottom: -3px;
+  margin-right: 5px;
+  font-size: 26px;
+}
+
+.filter-table {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter-table:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.filter-table li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.filter-table .as-link {
+  font-weight: 700;
+}
+
+.print-btn {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn-hide {
+  font-size: 26px;
+  width: 35px;
+  padding: 0;
+  height: 35px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ed5901;
+}
+
+.btn-hide:hover {
+  border-color: #ed5901;
+  color: #ed5901;
+  background-color: #ffffff;
+}
+
+.table-btn .btn-edit, .table-btn .btn-uninstall {
+  width: 35px;
+  font-size: 16px;
+}
+
+.table-btn .btn {
+  vertical-align: middle;
+}
+
+.table-btn .btn:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.table-responsive-wrap {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.result-touch {
+  padding: 15px 15px 15px 50px;
+  bottom: -70px;
+  left: 50%;
+  margin-left: -135px;
+  color: #fffefe;
+  line-height: 1.3;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+  display: none;
+}
+
+.result-touch::before {
+  top: 22px;
+  left: 18px;
+  font-size: 22px;
+  position: absolute;
+}
+
+.result-touch .icon-from {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.table-btn {
+  min-width: 195px;
+}
+
+.table-date {
+  min-width: 100px;
+}
+
+.table-btn-control {
+  display: none;
+}
+
+.big-table .pre-footer {
+  border-radius: 0;
+}
+
+.big-table .container {
+  max-width: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 1439px) {
+  .big-table .table-responsive {
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+  .table-circle {
+    position: relative;
+  }
+  .table-circle::before {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: relative;
+    content: '';
+  }
+  .table-circle-text {
+    position: absolute;
+    color: #8B8B8B;
+    white-space: nowrap;
+  }
+  .table-circle-text::before, .table-circle-text::after {
+    content: '';
+    position: absolute;
+    background-color: #8B8B8B;
+  }
+  .table-circle-text br {
+    display: none;
+  }
+  .table-circle-first {
+    padding-right: 7px;
+    top: -31px;
+    right: 100%;
+  }
+  .table-circle-first::before {
+    width: 16px;
+    height: 1px;
+    top: 9px;
+    left: 100%;
+  }
+  .table-circle-first::after {
+    width: 1px;
+    height: 27px;
+    top: 9px;
+    right: -16px;
+  }
+  .table-circle-second {
+    padding-right: 7px;
+    top: -47px;
+    right: 100%;
+    white-space: nowrap;
+  }
+  .table-circle-second::before {
+    width: 16px;
+    height: 1px;
+    top: 9px;
+    left: 100%;
+  }
+  .table-circle-second::after {
+    width: 1px;
+    height: 43px;
+    top: 9px;
+    right: -16px;
+  }
+  .table-circle-third {
+    padding-left: 7px;
+    top: -47px;
+    left: 100%;
+    white-space: nowrap;
+  }
+  .table-circle-third::before {
+    width: 16px;
+    height: 1px;
+    top: 9px;
+    right: 100%;
+  }
+  .table-circle-third::after {
+    width: 1px;
+    height: 43px;
+    top: 9px;
+    left: -16px;
+  }
+  .table-circle-fourth {
+    padding-left: 7px;
+    top: -31px;
+    left: 100%;
+    white-space: nowrap;
+  }
+  .table-circle-fourth::before {
+    width: 16px;
+    height: 1px;
+    top: 9px;
+    right: 100%;
+  }
+  .table-circle-fourth::after {
+    width: 1px;
+    height: 27px;
+    top: 9px;
+    left: -16px;
+  }
+  .table-btn {
+    min-width: 0;
+    position: relative;
+  }
+  .table-btn::before {
+    width: 52px;
+    height: 0;
+    right: 0;
+    top: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    z-index: 15;
+    transition: all 0.3s ease;
+  }
+  .table-btn .btn {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 15;
+    left: 8px;
+    bottom: 0;
+  }
+  .table-btn .icon-search {
+    transition: all 0.3s ease;
+  }
+  .table-btn .icon-pencil {
+    transition: all 0.5s ease;
+  }
+  .table-btn .btn-hide {
+    left: auto;
+    right: 10px;
+    transition: all 0.7s ease;
+  }
+  .table-btn-control {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #00adbf;
+    border-radius: 5px;
+    border: 1px solid #00adbf;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.3s ease;
+  }
+  .table-btn-control::before, .table-btn-control::after {
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    position: absolute;
+    content: '';
+    transition: all 0.3s ease;
+  }
+  .table-btn-control::before {
+    top: 50%;
+    margin-top: -5px;
+    border-top-color: #fff;
+  }
+  .table-btn-control::after {
+    bottom: 50%;
+    margin-bottom: -5px;
+    border-bottom-color: #00adbf;
+    opacity: 0;
+  }
+  .table-btn-open::before {
+    height: 125px;
+  }
+  .table-btn-open .btn {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .table-btn-open .icon-search {
+    bottom: -25px;
+  }
+  .table-btn-open .icon-pencil {
+    bottom: -64px;
+  }
+  .table-btn-open .btn-hide {
+    bottom: -104px;
+  }
+  .table-btn-open .table-btn-control {
+    background-color: #fff;
+  }
+  .table-btn-open .table-btn-control::before {
+    opacity: 0;
+  }
+  .table-btn-open .table-btn-control::after {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .big-table .table {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 970px) {
+  .big-table {
+    overflow-x: scroll;
+    width: 960px;
+  }
+  .big-table .table {
+    font-size: 12px;
+  }
+  .table-date {
+    min-width: 90px;
+  }
+}
+
+@media (min-width: 960px) {
+  .result-touch {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */
