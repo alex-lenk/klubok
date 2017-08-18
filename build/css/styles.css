@@ -8187,6 +8187,37 @@ th.table-date-mating:after {
   border-radius: 0;
 }
 
+.table-wrap .pagination-bottom {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.table-control-data {
+  height: 35px;
+  margin-bottom: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.table-control-data li:not(:last-child) {
+  margin-right: auto;
+}
+
+#print-data {
+  /*    position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;*/
+  display: block;
+}
+
 @media (max-width: 1439px) {
   .big-table .table-responsive {
     padding-top: 50px;
@@ -8389,6 +8420,10 @@ th.table-date-mating:after {
 }
 
 @media (max-width: 970px) {
+  .fixed-table {
+    width: 960px;
+    overflow-x: scroll;
+  }
   .big-table {
     overflow-x: scroll;
     width: 960px;

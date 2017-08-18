@@ -251,6 +251,36 @@ th.table-date-mating {
     }
 }
 
+.table-wrap .pagination-bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table-control-data {
+    height: 35px;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li:not(:last-child) {
+        margin-right: auto;
+    }
+}
+
+//@todo delete
+#print-data {
+    /*    position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;*/
+    display: block;
+}
+
+.print-data {
+}
+
 @media (max-width: 1439px) {
     .big-table .table-responsive {
         padding-top: 50px;
@@ -456,6 +486,11 @@ th.table-date-mating {
 }
 
 @media (max-width: 970px) {
+    .fixed-table {
+        width: 960px;
+        overflow-x: scroll;
+    }
+    
     .big-table {
         overflow-x: scroll;
         width: 960px;

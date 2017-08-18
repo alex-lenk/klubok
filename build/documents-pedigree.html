@@ -32,7 +32,7 @@
 <![endif]-->
 
 </head>
-<body class="do-not-show-header fixed-footer big-table">
+<body class="do-not-show-header fixed-footer fixed-table">
 <div class="loader">
     <div class="loader_inner"></div>
 </div>
@@ -194,89 +194,195 @@
 
 
     <div class="table-wrap">
-        <h1 class="col-xs-12">ВЯЗОКИ С НЕЗАПОЛНЕННЫМИ ПОМЕТАМИ</h1>
+        <h1 class="col-xs-12">РЕЕСТР ДОКУМЕНТОВ ДЛЯ ПОЛУЧЕНИЯ РОДОСЛОВНОЙ ЧЕРЕЗ КЛУБ</h1>
 
-        <table class="table">
-            <thead>
-            <tr>
-                <th>№</th>
-                <th>Дата</th>
-                <th>Порода</th>
-                <th>Кличка суки</th>
-                <th>Кличка кобеля</th>
-                <th>Заводчик</th>
-                <th>&nbsp;</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Контенинтальный той спаниель / ПАПИЙОН</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>998</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Йокширский терьер</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>998</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Йокширский терьер</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Контенинтальный той спаниель / ПАПИЙОН</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>998</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Йокширский терьер</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>998</td>
-                <td class="table-date">23.06.2015 г.</td>
-                <td>Йокширский терьер</td>
-                <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
-                <td><a href="#">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР</a></td>
-                <td><a href="#">Брусничкин В.Ю.</a></td>
-                <td class="table-btn">
-                    <button class="btn btn-edit icon-search south-west" title="посмотреть карточку"></button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="table-control">
+            <ul class="col-xs-5 table-control-data">
+                <li class="text-bold">ВЫБРАНО ЗАПИСЕЙ: 17</li>
+                <li class="text-bold">ДАТА ПОДАЧИ ДОКУМЕНТОВ</li>
+            </ul>
+
+            <div class="col-xs-3">
+                <select class="form-control" title="Выберите дату">
+                    <option disabled selected>Выберите дату</option>
+                    <option>23.06.2015</option>
+                    <option>03.10.2016</option>
+                    <option>16.01.2011</option>
+                    <option>28.11.2014</option>
+                    <option>23.06.2015</option>
+                </select>
+            </div>
+
+            <div class="col-xs-2">
+                <button class="btn btn-azure print-btn"><span class="icon-print"></span>Печать</button>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </th>
+                    <th>№</th>
+                    <th>Порода</th>
+                    <th>Кличка</th>
+                    <th>Заводчик</th>
+                    <th>Клеймо</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom" checked>
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>2</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>3</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>1</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom" checked>
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>2</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label-checkbox">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span class="checkbox-custom-view">&nbsp;</span>
+                        </label>
+                    </td>
+                    <td>3</td>
+                    <td>Контенинтальный той спаниель / ПАПИЙОН</td>
+                    <td><a href="#">SARA TENDERNESS PETAL OF LOTUS</a></td>
+                    <td><a href="#">Брусничкин В.Ю.</a></td>
+                    <td>9912</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav class="pagination-area pagination-bottom">
+    <div class="pagination-sort-by">
+        <div class="text-bold text-nowrap">Сортировать по:</div>
+
+        <select class="form-control" title="Сортировать по">
+            <option>Дате рождения</option>
+            <option>Рейтингу</option>
+            <option>Цене</option>
+        </select>
+    </div>
+
+    <ul class="pagination">
+        <li><span>&lt;&lt;</span></li>
+        <li><span>1</span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#"> ... </a></li>
+        <li><a href="#">25</a></li>
+        <li><a href="#">&gt;&gt;</a></li>
+    </ul>
+
+    <div class="pagination-show">
+        <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+        <select name="выводить по" class="form-control">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+            <option>100</option>
+        </select>
+    </div>
+</nav>
+
+
     </div>
 </div>
 
@@ -1584,19 +1690,6 @@
     </div>
 </div>
 
-
-
-<!-- Modal addPhone -->
-<div class="modal print-data" id="print-data" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="print-data-head">
-                АКТ ВЯЗКИ
-
-            </div>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
