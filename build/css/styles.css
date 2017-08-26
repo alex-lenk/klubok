@@ -8099,7 +8099,7 @@ footer span {
 }
 
 .table tr:nth-child(odd) {
-  background-color: #f9f9f9;
+  background-color: #F5F3F4;
 }
 
 .table td {
@@ -8275,7 +8275,7 @@ th.table-date-mating:after {
 }
 
 .table-date {
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .table-btn-control {
@@ -8578,6 +8578,12 @@ th.table-date-mating:after {
   }
   .table-date {
     min-width: 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .table-btn {
+    width: 155px;
   }
 }
 
