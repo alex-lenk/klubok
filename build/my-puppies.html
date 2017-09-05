@@ -1701,7 +1701,8 @@
             <ul class="line">
                 <li class="col-10 label text-bold">Юридическое название</li>
                 <li class="col-11">
-                    <input type="text" class="form-control hide-placeholder" placeholder="введите юридическое название компании">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите юридическое название компании">
                 </li>
             </ul>
 
@@ -1749,7 +1750,8 @@
             <ul class="line">
                 <li class="col-10 label text-bold">Расчетный счет</li>
                 <li class="col-11">
-                    <input type="text" class="form-control hide-placeholder" placeholder="введите номер расчетного счета">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите номер расчетного счета">
                 </li>
             </ul>
 
@@ -1797,7 +1799,8 @@
             <ul class="line">
                 <li class="col-1 label text-bold">Адрес</li>
                 <li class="col-6">
-                    <input type="text" class="form-control hide-placeholder" placeholder="введите адрес в произвольном виде">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="введите адрес в произвольном виде">
                 </li>
             </ul>
 
@@ -1869,7 +1872,9 @@
             </ul>
 
             <div class="modal-bottom clearfix">
-                <div class="col-sm-4"><button class="btn btn-uninstall icon-bin"></button></div>
+                <div class="col-sm-4">
+                    <button class="btn btn-uninstall icon-bin"></button>
+                </div>
                 <div class="col-sm-4 col-xs-6">
                     <button class="btn btn-azure">сохранить</button>
                 </div>
@@ -1953,6 +1958,164 @@
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Modal edit-table-data -->
+<div class="modal fade edit-table-data" id="edit-table-data" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="edit-table-data_panel">
+                <div><strong class="text-uppercase">ДАТА РОЖДЕНИЯ:</strong> 21 апреля 20016 г.</div>
+                <div>
+                    <strong class="text-uppercase">ДАТА ОБСЛЕДОВАНИЯ ПОМЕТА:</strong>
+                    <select class="form-control" title="Выберите дату">
+                        <option disabled selected>Выберите дату</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>10</option>
+                        <option>02</option>
+                        <option>08</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="edit-table-data_table table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>КЛИЧКА (БЕЗ ЗАВОДСКОЙ ПРИСТАВКИ)</th>
+                        <th>ПОЛ</th>
+                        <th>ОКРАС</th>
+                        <th class="hallmark">№ КЛЕЙМА</th>
+                        <th>ОТБРАКОВКА/ <br> ПЕРЕОСМОТР</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
+                        <td>K</td>
+                        <td>Чёрный</td>
+                        <td>
+                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                        </td>
+                        <td>
+                            <select class="form-control" title="Выберите дату">
+                                <option disabled selected>Без замечаний</option>
+                                <option>Отбраковка</option>
+                                <option>2 мес.</option>
+                                <option>3 мес.</option>
+                                <option>4 мес.</option>
+                                <option>5 мес.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SOFIRA ALKAZAR DE SANT FL CHOCO д-ш</td>
+                        <td>C</td>
+                        <td>Белый с черными отметинами</td>
+                        <td>
+                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                        </td>
+                        <td>
+                            <select class="form-control" title="Выберите дату">
+                                <option disabled>Без замечаний</option>
+                                <option selected>Отбраковка</option>
+                                <option>2 мес.</option>
+                                <option>3 мес.</option>
+                                <option>4 мес.</option>
+                                <option>5 мес.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
+                        <td>K</td>
+                        <td>Белый</td>
+                        <td>
+                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                        </td>
+                        <td>
+                            <select class="form-control" title="Выберите дату">
+                                <option disabled>Без замечаний</option>
+                                <option>Отбраковка</option>
+                                <option>2 мес.</option>
+                                <option selected>3 мес.</option>
+                                <option>4 мес.</option>
+                                <option>5 мес.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
+                        <td>K</td>
+                        <td>Чёрный</td>
+                        <td>
+                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                        </td>
+                        <td>
+                            <select class="form-control" title="Выберите дату">
+                                <option disabled selected>Без замечаний</option>
+                                <option>Отбраковка</option>
+                                <option>2 мес.</option>
+                                <option>3 мес.</option>
+                                <option>4 мес.</option>
+                                <option>5 мес.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
+                        <td>K</td>
+                        <td>Белый</td>
+                        <td>
+                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                        </td>
+                        <td>
+                            <select class="form-control" title="Выберите дату">
+                                <option disabled>Без замечаний</option>
+                                <option>Отбраковка</option>
+                                <option>2 мес.</option>
+                                <option selected>3 мес.</option>
+                                <option>4 мес.</option>
+                                <option>5 мес.</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="edit-table-data_label">ОТБРАКОВАНО</div>
+
+            <div class="edit-table-data_desk">
+                <div>2</div>
+                <div class="text">SOFIRA ALKAZAR DE SANT FL CHOCO г-ш</div>
+
+                <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+            </div>
+
+            <div class="edit-table-data_label">ПЕРЕОСМОТР 3 МЕСЯЦА</div>
+
+            <div class="edit-table-data_desk">
+                <div>4</div>
+                <div class="text">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</div>
+
+                <input type="text" class="hide-placeholder form-control" placeholder="Ведите №" value="Не правильный прикус">
+            </div>
+
+            <div class="edit-table-data_bottom">
+                    <button class="btn btn-azure">Сохранить</button>
+
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
+            </div>
+        </div>
     </div>
 </div>
 
