@@ -1396,7 +1396,8 @@
             <ul class="line">
                 <li class="col-12 label text-bold">Адрес</li>
                 <li class="col-16">
-                    <input type="text" class="form-control hide-placeholder" placeholder="﻿введите страну и населенный пункт">
+                    <input type="text" class="form-control hide-placeholder"
+                           placeholder="﻿введите страну и населенный пункт">
                     <div class="career-record">Россия, Брянская область, Красногорский район, деревня Любовшо</div>
                 </li>
             </ul>
@@ -1774,6 +1775,100 @@
     </div>
 </div>
 
+<!-- Modal print-data -->
+<div class="modal print-data" id="print-data" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="modal-close" data-dismiss="modal">x</button>
+
+            <div class="print-data-head">
+                <div class="print-data-text text-bold">АКТ ВЯЗКИ</div>
+                <button class="btn btn-azure print-btn"><span class="icon-print"></span>Печать</button>
+            </div>
+
+            <br>
+
+            <div class="print-data-line text-bold">ПОРОДА: ЧИХУАХУА</div>
+
+            <br>
+
+            <div class="row clearfix">
+                <div class="col-xs-6">
+                    <div class="color-blue text-bold">КОБЕЛЬ</div>
+
+                    <br>
+
+                    <div class="print-data-item"><span class="color-blue text-bold">Родословная:</span> РКФ №244676
+                    </div>
+                    <div class="print-data-item"><span class="color-blue text-bold">Кличка:</span> ЧАРТЛИВУС ПОМ КЕЙ
+                        МАГИС
+                    </div>
+                    <div class="print-data-item"><span class="color-blue text-bold">Клеймо:</span> CHU 19</div>
+                    <div class="print-data-item"><span class="color-blue text-bold">ЧИП:</span> нет</div>
+
+                    <br>
+
+                    <div class="print-data-item"><span class="text-bold">ФИО хозяина:</span> Соловьева Л.В.</div>
+                    <div class="print-data-item"><span class="text-bold">Адрес, телефоны:</span> 129642 г. Москва,
+                        проезд дежнева, д. 19, корпус
+                        2, кв. 237, т.м. +7 (584) 456-98-12
+                    </div>
+
+                    <br>
+
+                    <div class="print-data-item"><span class="text-bold">Инструктор вязки:</span> Соловьева Л.В.</div>
+                    <div class="print-data-item"><span class="text-bold">Адрес, телефоны:</span> 129642 г. Москва,
+                        проезд дежнева, д. 19, корпус
+                        2, кв. 237, т.м. +7 (584) 456-98-12
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="color-pink text-bold">Сука</div>
+
+                    <br>
+
+                    <div class="print-data-item"><span class="color-pink text-bold">Родословная:</span> РКФ №244676
+                    </div>
+                    <div class="print-data-item"><span class="color-pink text-bold">Кличка:</span> ЧАРТЛИВУС ПОМ КЕЙ
+                        МАГИС
+                    </div>
+                    <div class="print-data-item"><span class="color-pink text-bold">Клеймо:</span> CHU 19</div>
+                    <div class="print-data-item"><span class="color-pink text-bold">ЧИП:</span> нет</div>
+
+                    <br>
+
+                    <div class="print-data-item"><span class="text-bold">ФИО хозяина:</span> Соловьева Л.В.</div>
+                    <div class="print-data-item"><span class="text-bold">Адрес, телефоны:</span> 129642 г. Москва,
+                        проезд дежнева, д. 19, корпус
+                        2, кв. 237, т.м. +7 (584) 456-98-12
+                    </div>
+
+                    <br>
+
+                    <div class="print-data-item">
+                        <span class="text-bold">Дата первоначальной вязки:</span> 14.03.2015 г.
+                    </div>
+
+                    <div class="print-data-item">
+                        <span class="text-bold">Адрес:</span> 129642 г. Москва, проезд дежнева, д. 19, корпус 2, кв.
+                        237, т.м.
+                    </div>
+
+                    <div class="print-data-item">
+                        <span class="text-bold">Дата контрольной вязки:</span> 29.03.2015 г.
+                    </div>
+
+                    <div class="print-data-item">
+                        <span class="text-bold">Адрес:</span> 129642 г. Москва, проезд дежнева, д. 19, корпус 2, кв.
+                        237, т.м.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal edit-table-data -->
 <div class="modal fade edit-table-data" id="edit-table-data" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -1795,111 +1890,111 @@
 
             <table class="edit-table-data_table table">
                 <thead>
-                    <tr>
-                        <th>№</th>
-                        <th>КЛИЧКА (БЕЗ ЗАВОДСКОЙ ПРИСТАВКИ)</th>
-                        <th>ПОЛ</th>
-                        <th>ОКРАС</th>
-                        <th class="hallmark">№ КЛЕЙМА</th>
-                        <th>ОТБРАКОВКА/ <br> ПЕРЕОСМОТР</th>
-                    </tr>
+                <tr>
+                    <th>№</th>
+                    <th>КЛИЧКА (БЕЗ ЗАВОДСКОЙ ПРИСТАВКИ)</th>
+                    <th>ПОЛ</th>
+                    <th>ОКРАС</th>
+                    <th class="hallmark">№ КЛЕЙМА</th>
+                    <th>ОТБРАКОВКА/ <br> ПЕРЕОСМОТР</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
-                        <td>K</td>
-                        <td>Чёрный</td>
-                        <td>
-                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
-                        </td>
-                        <td>
-                            <select class="form-control" title="Выберите дату">
-                                <option disabled selected>Без замечаний</option>
-                                <option>Отбраковка</option>
-                                <option>2 мес.</option>
-                                <option>3 мес.</option>
-                                <option>4 мес.</option>
-                                <option>5 мес.</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>SOFIRA ALKAZAR DE SANT FL CHOCO д-ш</td>
-                        <td>C</td>
-                        <td>Белый с черными отметинами</td>
-                        <td>
-                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
-                        </td>
-                        <td>
-                            <select class="form-control" title="Выберите дату">
-                                <option disabled>Без замечаний</option>
-                                <option selected>Отбраковка</option>
-                                <option>2 мес.</option>
-                                <option>3 мес.</option>
-                                <option>4 мес.</option>
-                                <option>5 мес.</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
-                        <td>K</td>
-                        <td>Белый</td>
-                        <td>
-                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
-                        </td>
-                        <td>
-                            <select class="form-control" title="Выберите дату">
-                                <option disabled>Без замечаний</option>
-                                <option>Отбраковка</option>
-                                <option>2 мес.</option>
-                                <option selected>3 мес.</option>
-                                <option>4 мес.</option>
-                                <option>5 мес.</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
-                        <td>K</td>
-                        <td>Чёрный</td>
-                        <td>
-                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
-                        </td>
-                        <td>
-                            <select class="form-control" title="Выберите дату">
-                                <option disabled selected>Без замечаний</option>
-                                <option>Отбраковка</option>
-                                <option>2 мес.</option>
-                                <option>3 мес.</option>
-                                <option>4 мес.</option>
-                                <option>5 мес.</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
-                        <td>K</td>
-                        <td>Белый</td>
-                        <td>
-                            <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
-                        </td>
-                        <td>
-                            <select class="form-control" title="Выберите дату">
-                                <option disabled>Без замечаний</option>
-                                <option>Отбраковка</option>
-                                <option>2 мес.</option>
-                                <option selected>3 мес.</option>
-                                <option>4 мес.</option>
-                                <option>5 мес.</option>
-                            </select>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>1</td>
+                    <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
+                    <td>K</td>
+                    <td>Чёрный</td>
+                    <td>
+                        <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                    </td>
+                    <td>
+                        <select class="form-control" title="Выберите дату">
+                            <option disabled selected>Без замечаний</option>
+                            <option>Отбраковка</option>
+                            <option>2 мес.</option>
+                            <option>3 мес.</option>
+                            <option>4 мес.</option>
+                            <option>5 мес.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SOFIRA ALKAZAR DE SANT FL CHOCO д-ш</td>
+                    <td>C</td>
+                    <td>Белый с черными отметинами</td>
+                    <td>
+                        <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                    </td>
+                    <td>
+                        <select class="form-control" title="Выберите дату">
+                            <option disabled>Без замечаний</option>
+                            <option selected>Отбраковка</option>
+                            <option>2 мес.</option>
+                            <option>3 мес.</option>
+                            <option>4 мес.</option>
+                            <option>5 мес.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
+                    <td>K</td>
+                    <td>Белый</td>
+                    <td>
+                        <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                    </td>
+                    <td>
+                        <select class="form-control" title="Выберите дату">
+                            <option disabled>Без замечаний</option>
+                            <option>Отбраковка</option>
+                            <option>2 мес.</option>
+                            <option selected>3 мес.</option>
+                            <option>4 мес.</option>
+                            <option>5 мес.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</td>
+                    <td>K</td>
+                    <td>Чёрный</td>
+                    <td>
+                        <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                    </td>
+                    <td>
+                        <select class="form-control" title="Выберите дату">
+                            <option disabled selected>Без замечаний</option>
+                            <option>Отбраковка</option>
+                            <option>2 мес.</option>
+                            <option>3 мес.</option>
+                            <option>4 мес.</option>
+                            <option>5 мес.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ГОЛДЕН ГРОСС ПАНДОРА г-ш</td>
+                    <td>K</td>
+                    <td>Белый</td>
+                    <td>
+                        <input type="text" class="hide-placeholder form-control" placeholder="Ведите №">
+                    </td>
+                    <td>
+                        <select class="form-control" title="Выберите дату">
+                            <option disabled>Без замечаний</option>
+                            <option>Отбраковка</option>
+                            <option>2 мес.</option>
+                            <option selected>3 мес.</option>
+                            <option>4 мес.</option>
+                            <option>5 мес.</option>
+                        </select>
+                    </td>
+                </tr>
                 </tbody>
             </table>
 
@@ -1918,7 +2013,8 @@
                 <div>4</div>
                 <div class="text">МИУЧИ МИРО ВИДЖИЙ БЛЮ НЭЙЧЕР г-ш</div>
 
-                <input type="text" class="hide-placeholder form-control" placeholder="Ведите №" value="Не правильный прикус">
+                <input type="text" class="hide-placeholder form-control" placeholder="Ведите №"
+                       value="Не правильный прикус">
             </div>
 
             <div class="edit-table-data_bottom">
@@ -1930,7 +2026,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Modal edit-table-view -->
 <div class="modal fade edit-table-view" id="edit-table-view" tabindex="-1" role="dialog">
