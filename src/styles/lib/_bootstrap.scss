@@ -450,3 +450,12 @@ button.close {
   border-left-color: #ffffff;
   bottom: -10px;
 }
+
+.row {
+  margin: 0 -10px;
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
