@@ -184,6 +184,7 @@
             content: '';
             position: absolute;
             z-index: 15;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
         .btn {
@@ -246,13 +247,13 @@
             pointer-events: auto;
         }
         .icon-search {
-            bottom: -25px;
+            top: 57px;
         }
         .icon-pencil {
-            bottom: -64px;
+            top: 97px;
         }
         .btn-hide {
-            bottom: -104px;
+            top: 137px;
         }
         .table-btn-control {
             background-color: #fff;

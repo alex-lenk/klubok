@@ -347,9 +347,10 @@
                     <td>9912</td>
                 </tr>
                 </tbody>
-            </table>
-
-        <nav class="pagination-area pagination-bottom">
+                <tfoot>
+                    <tr>
+                        <td class="table-b-nav" colspan="6">
+                            <nav class="pagination-area pagination-bottom">
     <div class="pagination-sort-by">
         <div class="text-bold text-nowrap">Сортировать по:</div>
 
@@ -387,6 +388,10 @@
     </div>
 </nav>
 
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
 
     </div>
 </div>
@@ -1705,8 +1710,6 @@
 <div class="modal print-data" id="print-data" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <button type="button" class="modal-close" data-dismiss="modal">x</button>
-
             <div class="print-data-head">
                 <div class="print-data-text text-bold">АКТ ВЯЗКИ</div>
                 <button class="btn btn-azure print-btn"><span class="icon-print"></span>Печать</button>
@@ -1719,7 +1722,7 @@
             <br>
 
             <div class="row clearfix">
-                <div class="col-xs-6">
+                <div class="col-sm-6 col-xs-12">
                     <div class="color-blue text-bold">КОБЕЛЬ</div>
 
                     <br>
@@ -1749,7 +1752,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-6">
+                <div class="col-sm-6 col-xs-12">
                     <div class="color-pink text-bold">Сука</div>
 
                     <br>
@@ -1789,6 +1792,15 @@
                         <span class="text-bold">Адрес:</span> 129642 г. Москва, проезд дежнева, д. 19, корпус 2, кв.
                         237, т.м.
                     </div>
+                </div>
+            </div>
+
+            <div class="clearfix modal-bottom">
+                <div class="col-sm-8 col-xs-6"></div>
+                <div class="col-sm-4 col-xs-6">
+                    <button class="btn btn-azure" data-dismiss="modal" aria-label="Close">
+                        закрыть окно
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,311 +1,316 @@
 @import "variables";
 
 body, html {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: $color-black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-black;
 }
 
 body {
-  padding-top: 20px;
-  overflow-x: hidden;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 430px;
-    top: 0;
-    background: url(/img/bg-pattern.png) #bfe9ed;
-  }
+    padding-top: 20px;
+    overflow-x: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 430px;
+        top: 0;
+        background: url(/img/bg-pattern.png) #bfe9ed;
+    }
 }
 
 a:active, a:hover, a:link, a:visited {
-  text-decoration: none
+    text-decoration: none
 }
 
 a, .as-link {
-  color: $color-azure-link;
-  transition: all 0.3s ease;
-  &:hover {
-    color: #1bbed2;
-  }
+    color: $color-azure-link;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #1bbed2;
+    }
 }
 
 .as-link {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 b, strong {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 h1, .h1 {
-  padding: 0;
-  margin: 0 0 22px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1;
+    padding: 0;
+    margin: 0 0 22px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .text {
-  &-center {
-    text-align: center
-  }
-  &-left {
-    text-align: left
-  }
-  &-right {
-    text-align: right
-  }
-  &-justify {
-    text-align: justify
-  }
-  &-bold {
-    font-weight: 700
-  }
-  &-uppercase {
-    text-transform: uppercase;
-  }
-  &-nowrap {
-    white-space: nowrap;
-  }
-  &-line-1 {
-    line-height: 1;
-  }
+    &-center {
+        text-align: center
+    }
+    &-left {
+        text-align: left
+    }
+    &-right {
+        text-align: right
+    }
+    &-justify {
+        text-align: justify
+    }
+    &-bold {
+        font-weight: 700
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-line-1 {
+        line-height: 1;
+    }
 }
 
 .pull {
-  &-left {
-    float: left;
-  }
-  &-right {
-    float: right;
-  }
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
 }
 
 /* list-unstyled */
 .list-unstyled {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .color {
-  &-black {
-    color: $color-black;
-  }
-  &-white {
-    color: $color-white;
-  }
-  &-grey {
-    color: $color-grey;
-    &-very-light {
-      color: $color-grey-very-light;
+    &-black {
+        color: $color-black;
     }
-    &-light {
-      color: $color-grey-light;
+    &-white {
+        color: $color-white;
     }
-    &-dark {
-      color: $color-grey-dark;
+    &-grey {
+        color: $color-grey;
+        &-very-light {
+            color: $color-grey-very-light;
+        }
+        &-light {
+            color: $color-grey-light;
+        }
+        &-dark {
+            color: $color-grey-dark;
+        }
     }
-  }
-  &-gray {
-    color: $color-gray;
-  }
-  &-azure {
-    color: $color-azure;
-    &-light {
-      color: $color-azure-light;
+    &-gray {
+        color: $color-gray;
     }
-    &-link {
-      color: $color-azure-link;
+    &-azure {
+        color: $color-azure;
+        &-light {
+            color: $color-azure-light;
+        }
+        &-link {
+            color: $color-azure-link;
+        }
+        &-bottom {
+            color: $color-azure-bottom;
+        }
     }
-    &-bottom {
-      color: $color-azure-bottom;
+    &-orange {
+        color: $color-orange;
     }
-  }
-  &-orange {
-    color: $color-orange;
-  }
-  &-blue {
-    color: $color-blue;
-  }
-  &-pink {
-    color: $color-pink;
-  }
+    &-blue {
+        color: $color-blue;
+    }
+    &-pink {
+        color: $color-pink;
+    }
 }
 
 .bread-crumbs {
-  &-light {
-    color: #8cc2aa;
-  }
-  &-darck {
-    color: #6aa289;
-  }
+    &-light {
+        color: #8cc2aa;
+    }
+    &-darck {
+        color: #6aa289;
+    }
 }
 
 .error-text {
-  color: $color-orange;
+    color: $color-orange;
 }
 
 [class^="indent-"] {
-  display: block;
-  overflow: hidden;
-  clear: both;
-  width: 100%;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
 }
 
 .indent {
-  &-5 {
-    height: 5px;
-  }
-  &-10 {
-    height: 10px;
-  }
-  &-15 {
-    height: 15px;
-  }
+    &-5 {
+        height: 5px;
+    }
+    &-10 {
+        height: 10px;
+    }
+    &-15 {
+        height: 15px;
+    }
 }
 
 .size {
-  &-0 {
-    font-size: 0;
-  }
+    &-0 {
+        font-size: 0;
+    }
 }
 
 .edit-data, .personal-data .form-group {
-  position: relative;
-  @include clearfix;
+    position: relative;
+    @include clearfix;
 }
 
 .clearfix {
-  @include clearfix;
+    @include clearfix;
 }
 
 .container {
-  width: 100%;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
-  position: relative;
-  z-index: 4;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+    position: relative;
+    z-index: 4;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
 }
 
 .tooltip {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .cropper-wrap {
-  padding: 15px 10px;
+    padding: 15px 10px;
 }
 
 .cropper-top {
-  @include clearfix;
+    @include clearfix;
 }
 
 .cropper-title {
-  width: 240px;
-  padding: 0 10px;
-  float: left;
+    width: 240px;
+    padding: 0 10px;
+    float: left;
 }
 
 .cropper-loading {
-  width: 480px;
-  float: left;
-  padding: 0 10px;
+    width: 480px;
+    float: left;
+    padding: 0 10px;
 }
 
 .mating-form {
-  legend {
-    margin-bottom: 15px;
-  }
-  fieldset:first-of-type legend {
-    margin-bottom: 22px;
-  }
+    legend {
+        margin-bottom: 15px;
+    }
+    fieldset:first-of-type legend {
+        margin-bottom: 22px;
+    }
 }
 
 .career-modal {
-  .modal-dialog {
-    overflow: visible;
-  }
-  .col-8 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+    .modal-dialog {
+        overflow: visible;
+    }
+    .col-8 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 .modal-bottom {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 .add-my-dog-radio {
-  input {
-    margin-right: 5px;
-  }
-  label:first-of-type {
-    margin-right: 50px;
-  }
+    input {
+        margin-right: 5px;
+    }
+    label:first-of-type {
+        margin-right: 50px;
+    }
+}
+
+.modal .table {
+    min-width: 0;
 }
 
 @include to('s') {
-  .hidden-sm {
-    display: none !important;
-  }
-  .hidden-vs-sm {
-    visibility: hidden;
-  }
-
-  .cropper-loading {
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .dogs-content .pagination-area {
-    text-align: center;
-  }
+    .hidden-sm {
+        display: none !important;
+    }
+    .hidden-vs-sm {
+        visibility: hidden;
+    }
+    
+    .cropper-loading {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .dogs-content .pagination-area {
+        text-align: center;
+    }
 }
 
 @include to('xs') {
-  .hidden-xs {
-    display: none !important;
-  }
-  .edit-data .btn-edit {
-    top: 5px;
-  }
+    .hidden-xs {
+        display: none !important;
+    }
+    .edit-data .btn-edit {
+        top: 5px;
+    }
 }
 
 @include to('s') {
-  .edit-data .btn-edit {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    width: 60px;
-  }
+    .edit-data .btn-edit {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 60px;
+    }
 }
 
 .do-not-show-header {
-  &:before {
-    height: 120px;
-  }
-  .panel {
-    height: auto;
-  }
-  .breadcrumbs, .header-middle {
-    display: none;
-  }
-  .profile-menu {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    position: absolute;
-  }
+    &:before {
+        min-width: 960px;
+        height: 120px;
+    }
+    .panel {
+        height: auto;
+    }
+    .breadcrumbs, .header-middle {
+        display: none;
+    }
+    .profile-menu {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+    }
 }
