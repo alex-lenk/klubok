@@ -192,7 +192,7 @@
             position: absolute;
             pointer-events: none;
             z-index: 15;
-            left: 8px;
+            left: 10px;
             bottom: 0;
         }
         .icon-search {
@@ -202,8 +202,7 @@
             transition: all 0.5s ease;
         }
         .btn-hide {
-            left: auto;
-            right: 10px;
+            left: 10px;
             transition: all 0.7s ease;
         }
     }

@@ -3605,6 +3605,28 @@ footer .clearfix.text-right {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008290', endColorstr='#0097a7', GradientType=0);
 }
 
+.profile-menu .nav-arrows li:before {
+  bottom: 16px;
+}
+
+.profile-menu .nav-arrows li[data-count] {
+  cursor: pointer;
+}
+
+.profile-menu .nav-arrows li[data-count]:not([data-count='']):before {
+  color: #ffffff;
+}
+
+.profile-menu .nav-arrows li[data-count]:after {
+  bottom: 24px;
+  color: #1497a7;
+  background: #fff;
+}
+
+.profile-menu .nav-arrows li[data-count]:hover:before {
+  color: #6fd2db;
+}
+
 .profile-menu-list {
   width: 100%;
   height: 90px;
@@ -3634,6 +3656,10 @@ footer .clearfix.text-right {
   transition: all .2s ease-in;
 }
 
+.profile-menu-list li:hover {
+  background: #34a2b0;
+}
+
 .profile-menu-list .current {
   background: #fff;
 }
@@ -3649,28 +3675,6 @@ footer .clearfix.text-right {
 .profile-menu-list a {
   color: #ffffff;
   font-size: 20px;
-}
-
-.profile-menu .nav-arrows li:before {
-  bottom: 16px;
-}
-
-.profile-menu .nav-arrows li[data-count] {
-  cursor: pointer;
-}
-
-.profile-menu .nav-arrows li[data-count]:not([data-count='']):before {
-  color: #ffffff;
-}
-
-.profile-menu .nav-arrows li[data-count]:after {
-  bottom: 24px;
-  color: #1497a7;
-  background: #fff;
-}
-
-.profile-menu .nav-arrows li[data-count]:hover:before {
-  color: #6fd2db;
 }
 
 @media only screen and (max-width: 810px) {
@@ -8259,8 +8263,7 @@ footer span {
 }
 
 .table-menu a:hover {
-  background: #cae3e8;
-  background: linear-gradient(#b9e9ea, transparent);
+  background: #34a2b0;
 }
 
 .table-menu-item {
@@ -8733,7 +8736,7 @@ th.table-date-mating:after {
     position: absolute;
     pointer-events: none;
     z-index: 15;
-    left: 8px;
+    left: 10px;
     bottom: 0;
   }
   .table-btn .icon-search {
@@ -8743,8 +8746,7 @@ th.table-date-mating:after {
     transition: all 0.5s ease;
   }
   .table-btn .btn-hide {
-    left: auto;
-    right: 10px;
+    left: 10px;
     transition: all 0.7s ease;
   }
   .table-btn-control {
