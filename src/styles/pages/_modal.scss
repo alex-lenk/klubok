@@ -22,6 +22,10 @@
     &::before {
         pointer-events: none;
         z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
     }
     label {
         width: 100%;
@@ -29,6 +33,7 @@
         left: 0;
         top: 0;
         position: absolute;
+        overflow: hidden;
     }
     input[type=file] {
         position: absolute;
@@ -83,10 +88,12 @@
 }
 
 .edit-table-data .modal-content {
-    padding: 13px 10px 15px;
+    padding: 13px 0 15px;
 }
 
 .edit-table-data_panel {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
@@ -98,9 +105,9 @@
 }
 
 .edit-table-data_table {
-    width: 720px;
+    width: 100%;
     min-width: 0;
-    margin: 0 -10px 15px;
+    margin-bottom: 15px;
     .form-control {
         width: 80px;
     }
@@ -111,12 +118,16 @@
 }
 
 .edit-table-data_label {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-bottom: 5px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .edit-table-data_desk {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-bottom: 15px;
     color: #EF4B22;
     display: flex;
@@ -136,6 +147,8 @@
 }
 
 .edit-table-data_bottom {
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     justify-content: flex-end;
     .btn {

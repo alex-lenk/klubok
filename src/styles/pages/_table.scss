@@ -128,9 +128,11 @@
     line-height: 1.3;
 }
 
-th.table-date-mating {
+.table-date-mating {
+    height: 45px;
     padding-left: 20px;
     position: relative;
+    cursor: pointer;
     &:before, &:after {
         content: '';
         position: absolute;
@@ -138,12 +140,12 @@ th.table-date-mating {
         border: 5px solid transparent;
     }
     &:before {
-        top: 5px;
+        top: 0;
         border-bottom-width: 10px;
         border-bottom-color: #00adbf;
     }
     &:after {
-        bottom: 5px;
+        top: 20px;
         border-top-width: 10px;
         border-top-color: #fff;
     }
@@ -284,9 +286,6 @@ th.table-date-mating {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .pagination-show {
-        margin-left: 75px;
-    }
 }
 
 .table-control-data {
@@ -342,7 +341,6 @@ th.table-date-mating {
     line-height: 1.3;
 }
 
-
 @media (min-width: 1440px) {
     .table-btn .btn:not(:last-of-type) {
         margin-right: 10px;
@@ -352,5 +350,19 @@ th.table-date-mating {
 @media (max-width: 768px) {
     .print-data .row .col-sm-6:first-of-type {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 959px) {
+    .table-wrap {
+        .pagination-bottom .pagination-sort-by,
+        .pagination-bottom .pagination-show {
+            display: flex;
+        }
+    }
+}
+@media (max-width: 719px) {
+    .print-data .modal-dialog {
+        width: 720px;
     }
 }

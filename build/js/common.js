@@ -57,13 +57,6 @@ $(window).on('load', function () {
         }
     );
 
-    $(".option-hide").click(
-        function () {
-            var e = $(this);
-            e.removeClass("option-hide");
-        }
-    );
-
     $(".loader_inner").fadeOut();
     $(".loader").delay(300).fadeOut("slow");
 
