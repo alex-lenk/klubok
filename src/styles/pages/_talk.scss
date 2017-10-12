@@ -1,451 +1,216 @@
-@import "../partials/variables";
+/*************** SCROLLBAR BASE CSS ***************/
 
-.talk-global {
-    display: flex;
-    flex-direction: column;
-    .wrapper {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    &:before {
-        height: 148px;
-    }
-    .panel {
-        height: 55px;
-    }
-    .header-middle {
-        display: none;
-    }
-    .profile-menu {
-        display: none !important;
-    }
-    .breadcrumbs {
-        display: none;
-    }
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
 }
 
-.talk {
-    padding-bottom: 15px;
-    font-size: 14px;
-    position: relative;
-    display: flex;
-    flex: 1 1 auto;
-    .comment-form {
-        width: calc(100% - 20px);
-        margin: 5px 0 0 10px;
-        padding: 15px 10px;
-    }
-    .comment-form-group {
-        padding-left: 0;
-    }
-    .comment-form-action {
-        text-align: right;
-    }
-    .comment-form-control .file_upload {
-        width: auto;
-        height: auto;
-        border: 0;
-    }
+.scroll-element {
+    display: none;
 }
 
-.talk-title {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 0 8px;
-    &:after {
-        width: 100%;
-        height: 1px;
-        margin-top: 21px;
-        background-color: #BAB8B9;
-        display: block;
-        content: '';
-    }
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
 }
 
-.talk-left {
-    width: 100%;
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
 }
 
-.talk-panel {
-    height: 101px;
-    margin-bottom: 0;
-    padding: 10px 10px 0;
-    overflow: hidden;
-    position: relative;
-    &:after {
-        width: calc(100% + 10px);
-        height: 1px;
-        margin-top: 21px;
-        background-color: #BAB8B9;
-        content: '';
-        position: absolute;
-        left: 10px;
-        bottom: 0;
-    }
-}
-
-.talk-nav {
-    margin-bottom: 20px;
-    padding-left: 0;
-    padding-top: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    .active {
-        color: #000;
-    }
-    li:not(:last-child) {
-        cursor: pointer;
-    }
-}
-
-.talk-new-message:before {
-    color: $color-azure;
-    vertical-align: middle;
-}
-
-.talk-new-count {
-    color: $color-orange;
-}
-
-.talk-list-wrap .btn-azure {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-}
-
-.talk-list {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.talk-item {
-    padding: 14px 10px 10px;
-    display: flex;
-    transition: background-color 0.3s ease;
-    &:not(.talk-item-active):hover {
-        background-color: #ebebeb;
-        cursor: pointer;
-    }
-}
-
-.talk-user-media {
-    padding-right: 10px;
-    position: relative;
-    max-width: 70px;
-    flex: 1 0 70px;
-    &:after {
-        width: 14px;
-        height: 14px;
-        bottom: -1px;
-        right: 11px;
-        border: 1px solid #ffffff;
-        border-radius: 50%;
-        position: absolute;
-        background-color: #BAB8B9;
-        content: '';
-    }
-    img {
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
-        border-radius: 50%;
-    }
-}
-
-.talk-user-online:after {
-    background-color: #00CC00;
-}
-
-.talk-user-info {
-    min-width: 0;
-}
-
-.talk-user-title {
-    padding: 0;
-    margin: 0 0 8px;
-    font-weight: 700;
-    font-size: 14px;
-    color: $color-azure;
-    @include truncate(100%);
-}
-
-.talk-user-address {
-    @include truncate(100%);
-}
-
-.talk-item-info {
-    margin-top: 10px;
-    display: flex;
-    .talk-new-message {
-        margin-left: auto;
-    }
-}
-
-.talk-item-date {
-    font-weight: 700;
-    .time {
-        margin-right: 10px;
-    }
-}
-
-.talk-item-active {
-    background-color: #F5F3F4;
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
     cursor: default;
 }
 
-.talk-empty-content {
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+/*************** SCROLLBAR DYNAMIC ***************/
+
+.scrollbar-dynamic > .scroll-element,
+.scrollbar-dynamic > .scroll-element div {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scrollbar-dynamic > .scroll-element div {
+    display: block;
     height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    .as-link {
-        margin-left: 5px;
-    }
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
-.talk-user-profile {
-    display: flex;
+.scrollbar-dynamic > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 7px;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
 }
 
-.talk-right {
-    align-self: center;
+.scrollbar-dynamic > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 2px;
+    top: 0;
+    width: 7px;
 }
 
-.talk-right-content .talk-user-media {
-    padding-right: 10px;
-    max-width: 70px;
-    flex: 1 0 70px;
-    &:after {
-        bottom: 4px;
-    }
+.scrollbar-dynamic > .scroll-element .scroll-element_outer {
+    opacity: 0.3;
+    
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
 }
 
-.talk-right-panel {
-    width: calc(100% - 10px);
-    height: 101px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    padding: 11px 0 0 10px;
-    border-bottom: 1px solid #BAB8B9;
-}
-
-.talk-control {
-    margin-top: 7px;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    li {
-        font-size: 20px;
-        color: $color-azure;
-        &:not(:last-child) {
-            margin-right: 45px;
-        }
-        &:nth-child(3) {
-            font-size: 19px;
-        }
-        &:last-child {
-            font-size: 19px;
-        }
-    }
-}
-
-.dialog-wrap {
-    padding: 15px 10px 0;
-    &:hover {
-        .custom-scroll-tiny_bar-y {
-            height: 232px;
-        }
-    }
-}
-
-.dialog-list {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.dialog-item {
-    display: flex;
-    &:hover {
-        .dialog-delete {
-            opacity: 1;
-        }
-    }
-}
-
-.dialog-media {
-    padding-right: 10px;
-    max-width: 50px;
-    flex: 1 0 50px;
-    img {
-        border-radius: 50%;
-    }
-}
-
-.dialog-content {
-    flex-grow: 1;
-}
-
-.dialog-my .dialog-text {
-    background-color: #F5F3F4;
-    &:before, &:after {
-        left: -15px;
-        border-right-color: #bab8b9;
-    }
-    &:after {
-        left: -14px;
-        border-right-color: #f5f3f4;
-    }
-}
-
-.dialog-your .dialog-text {
-    &:before, &:after {
-        right: -15px;
-        border-left-color: #bab8b9;
-    }
-    &:after {
-        right: -14px;
-        border-left-color: #fff;
-    }
-}
-
-.dialog-your .dialog-media {
-    padding-right: 0;
-    padding-left: 10px;
-}
-
-.dialog-text {
-    padding: 9px;
-    border-radius: 4px;
-    border: 1px solid #BAB8B9;
-    line-height: 1.2;
-    position: relative;
-    &:before, &:after {
-        position: absolute;
-        top: 10px;
-        border: 7px solid transparent;
-        content: '';
-    }
-}
-
-.dialog-meta {
-    margin: 7px 0 15px;
-    font-size: 13px;
-    display: flex;
-}
-
-.dialog-date .time {
-    margin-right: 8px;
-}
-
-.show-translation {
-    margin: 0 auto;
-    font-size: 14px;
-}
-
-.dialog-text-translate {
-    display: none;
-    margin-top: 9px;
-    padding-top: 6px;
-    border-top: 1px solid #bab8b9;
-}
-
-.dialog-delete {
-    margin-left: auto;
-    color: $color-azure;
+.scrollbar-dynamic > .scroll-element .scroll-element_size {
+    background-color: #cccccc;
     opacity: 0;
-    font-size: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    transition: opacity 0.2s;
 }
 
-@include from('m') {
-    .talk-list-wrap {
-        height: 100%;
-    }
-    .dialog-wrap {
-        height: 470px;
-    }
+.scrollbar-dynamic > .scroll-element .scroll-bar {
+    background-color: #6c6e71;
     
-    .talk-empty {
-        .talk-empty-content {
-            display: flex;
-        }
-        .talk-right-content {
-            display: none;
-        }
-    }
-    
-    .talk-left {
-        max-width: 320px;
-        flex: 1 0 320px;
-        border-right: 1px solid #BAB8B9;
-    }
-    .talk-right {
-        flex: 1 1 auto;
-    }
-    
-    .talk-back {
-        display: none;
-    }
-    
-    .talk .comment-form-action {
-        width: 220px;
-    }
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
 }
 
-@include to('s') {
-    .talk-global .wrapper {
-        overflow: hidden;
-    }
-    
-    .talk-global footer {
-        transform: translate3d(0, -108px, 0);
-        z-index: -1;
-        max-height: 1px;
-        overflow: hidden;
-    }
-    .talk-back {
-        padding: 15px 0 15px 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-        background-color: #fff;
-        transform: translateY(-55px);
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
-    
-    .talk-right {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        transition: transform 0.5s;
-        will-change: transform;
-    }
-    
-    .talk-empty {
-        transform: translateX(100%);
-    }
-    
-    .talk-nav {
-        max-width: 365px;
-    }
+/* scrollbar height/width & offset from container borders */
+
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar {
+    bottom: 0;
+    height: 7px;
+    min-width: 24px;
+    top: auto;
 }
 
-@include to('xs') {
-    .show-translation {
-        text-transform: capitalize;
-        span {
-            display: none;
-        }
-    }
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-bar {
+    left: auto;
+    min-height: 24px;
+    right: 0;
+    width: 7px;
 }
 
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_outer {
+    bottom: 0;
+    top: auto;
+    left: 2px;
+    
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    -ms-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_outer {
+    left: auto;
+    right: 0;
+    top: 2px;
+    
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    -ms-transition: width 0.2s;
+    transition: width 0.2s;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_size {
+    left: -4px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_size {
+    top: -4px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -11px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -11px;
+}
+
+/* hover & drag */
+
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer {
+    overflow: hidden;
+    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-element_size,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size {
+    opacity: 1;
+}
+
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-bar {
+    height: 100%;
+    width: 100%;
+    
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
+    height: 20px;
+    min-height: 7px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-draggable .scroll-element_outer {
+    min-width: 7px;
+    width: 20px;
+}
