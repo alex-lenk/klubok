@@ -7911,7 +7911,7 @@ footer span {
   transition: all 0.3s ease;
 }
 
-.table tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
   background-color: #F5F3F4;
 }
 
@@ -7948,7 +7948,7 @@ footer span {
   border-top-color: #fff;
 }
 
-.table tr:hover {
+.table tbody tr:hover {
   background-color: #e5e5e5;
 }
 
@@ -8708,6 +8708,109 @@ footer span {
   position: relative;
 }
 
+.pagination-tr-top .pagination-bottom {
+  margin-top: 0;
+}
+
+.contributions-page {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contributions-page .people-item {
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.people-item__bottom {
+  margin-top: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.people-item__bottom .label-checkbox {
+  margin-left: 20px;
+}
+
+.people-item__bottom .btn-azure {
+  min-width: 220px;
+  margin-left: auto;
+}
+
+.people-info__user {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.debt {
+  margin-left: auto;
+}
+
+.contributions-table {
+  padding: 5px;
+  bottom: 50px;
+  right: 0;
+  position: absolute;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px #f2f2f2;
+  display: none;
+}
+
+.contributions-modal {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contributions-modal .btn {
+  width: 100%;
+}
+
+.contributions-modal__radio {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contributions-modal__btn {
+  margin-top: 10px;
+}
+
+#contributions-modal .modal-dialog {
+  max-width: 480px;
+}
+
+@media (min-width: 480px) {
+  .contributions-modal__item {
+    max-width: calc(100% / 2 - 10px);
+    -webkit-flex-basis: calc(100% / 2 - 10px);
+    -ms-flex-preferred-size: calc(100% / 2 - 10px);
+    flex-basis: calc(100% / 2 - 10px);
+  }
+}
+
 @media (min-width: 720px) {
   .talk-list-wrap {
     height: 100%;
@@ -8791,6 +8894,20 @@ footer span {
   }
   .show-translation span {
     display: none;
+  }
+  .contributions-modal {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contributions-modal__item {
+    width: 100%;
+  }
+  .contributions-modal__radio {
+    margin-bottom: 10px;
+  }
+  #contributions-modal .modal-dialog {
+    max-width: 300px;
   }
 }
 

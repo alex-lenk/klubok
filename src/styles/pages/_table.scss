@@ -116,9 +116,10 @@
 
 .table tr {
     transition: all 0.3s ease;
-    &:nth-child(even) {
-        background-color: #F5F3F4;
-    }
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #F5F3F4;
 }
 
 .table td {
@@ -151,7 +152,7 @@
     }
 }
 
-.table tr:hover {
+.table tbody tr:hover {
     background-color: #e5e5e5;
 }
 
@@ -361,6 +362,7 @@
         }
     }
 }
+
 @media (max-width: 719px) {
     .print-data .modal-dialog {
         width: 720px;
