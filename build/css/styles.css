@@ -8724,6 +8724,19 @@ footer span {
   flex-basis: 100%;
 }
 
+.contributions-page .pagination-bottom {
+  margin-top: 33px;
+}
+
+.contributions-page select.form-control {
+  margin-right: 1px;
+}
+
+.big-table .contributions-page {
+  max-width: 960px;
+  margin-left: 0;
+}
+
 .people-item__bottom {
   margin-top: auto;
   position: relative;
@@ -8752,16 +8765,6 @@ footer span {
 
 .debt {
   margin-left: auto;
-}
-
-.contributions-table {
-  padding: 5px;
-  bottom: 50px;
-  right: 0;
-  position: absolute;
-  background-color: #f2f2f2;
-  box-shadow: 0 0 10px #f2f2f2;
-  display: none;
 }
 
 .contributions-modal {
@@ -8800,6 +8803,87 @@ footer span {
 
 #contributions-modal .modal-dialog {
   max-width: 480px;
+}
+
+.contributions-table {
+  max-width: 480px;
+}
+
+.contributions-table table {
+  width: 100%;
+}
+
+.contributions-table thead {
+  width: 100%;
+  background-color: #BAB8B9;
+  color: #fff;
+}
+
+.contributions-table th {
+  padding: 15px;
+  text-align: center;
+}
+
+.contributions-table th:last-child {
+  width: 225px;
+  text-align: left;
+}
+
+.contributions-table td {
+  margin-bottom: 10px;
+  padding: 14px 10px;
+}
+
+.contributions-table td:first-child {
+  text-align: right;
+}
+
+.contributions-table tbody tr:first-child td {
+  padding-top: 26px;
+}
+
+.contributions-table__head {
+  padding: 0 10px;
+  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contributions-table__footer {
+  padding: 0 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.contributions-table__footer div {
+  max-width: calc(100% / 2 - 10px);
+  -webkit-flex-basis: calc(100% / 2 - 10px);
+  -ms-flex-preferred-size: calc(100% / 2 - 10px);
+  flex-basis: calc(100% / 2 - 10px);
+}
+
+.contributions-table__footer .form-control {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contributions-table__footer .btn {
+  width: 100%;
+}
+
+#contributions-table .modal-dialog {
+  width: 480px;
 }
 
 @media (min-width: 480px) {
@@ -8844,6 +8928,9 @@ footer span {
 }
 
 @media (max-width: 719px) {
+  .form-btn {
+    position: static;
+  }
   .talk-global .wrapper {
     overflow: hidden;
   }

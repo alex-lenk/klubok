@@ -19,22 +19,6 @@
             </button>
         </div>
 
-
-        <br>
-        <br>
-        <br>
-
-        <div class="contributions-table">
-            <div class="contributions-table__head">
-                <div class="text-bold"></div>
-            </div>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-
         <nav class="pagination-area pagination-bottom">
             <div class="pagination-sort-by">
                 <div class="text-bold text-nowrap">Сортировать по:</div>
@@ -74,7 +58,6 @@
         </nav>
 
         <div class="people-list">
-
             <!-- people-item -->
             <div class="people-item">
                 <div class="people-media">
@@ -97,7 +80,8 @@
                             <span class="checkbox-custom-view">взымать взносы</span>
                         </label>
 
-                        <button class="contributions-table__btn btn btn-azure">взносы</button>
+                        <button class="contributions-table__btn btn btn-azure" data-toggle="modal"
+                                data-backdrop="static" data-target="#contributions-table">взносы</button>
                     </div>
                 </div>
             </div>
@@ -299,6 +283,44 @@
             </div>
             <!-- END people-item -->
         </div>
+
+        <nav class="pagination-area pagination-bottom">
+            <div class="pagination-sort-by">
+                <div class="text-bold text-nowrap">Сортировать по:</div>
+
+                <select class="form-control" title="Сортировать по">
+                    <option>ФИО</option>
+                    <option>Дате рождения</option>
+                    <option>Цене</option>
+                </select>
+            </div>
+
+            <ul class="pagination">
+                <li><span>&lt;&lt;</span></li>
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#"> ... </a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+
+            <div class="pagination-show">
+                <div class="pagination-show-by text-bold text-nowrap">выводить по:</div>
+                <select name="выводить по" class="form-control">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+        </nav>
     </div>
 
 </div>
