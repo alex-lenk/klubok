@@ -819,7 +819,6 @@ output {
   background: transparent;
   cursor: default;
   overflow: visible;
-  -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
   background-size: 100% 100%;
@@ -845,12 +844,10 @@ output {
 }
 
 .fancybox-controls--canzoomOut .fancybox-placeholder {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
 
 .fancybox-controls--canzoomIn .fancybox-placeholder {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
@@ -883,7 +880,6 @@ output {
   left: 50%;
   width: 380px;
   max-width: 100%;
-  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #fff;
@@ -1032,7 +1028,6 @@ output {
   background: transparent;
   border-top: solid 2px currentColor;
   border-right: solid 2px currentColor;
-  -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
@@ -1045,7 +1040,6 @@ output {
   background: transparent;
   border-top: solid 2px currentColor;
   border-right: solid 2px currentColor;
-  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -1073,13 +1067,11 @@ output {
 }
 
 .fancybox-button--close::before {
-  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .fancybox-button--close::after {
-  -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
@@ -1091,7 +1083,6 @@ output {
   border-radius: 100%;
   height: 50px;
   width: 50px;
-  -webkit-animation: fancybox-rotate .8s infinite linear;
   animation: fancybox-rotate .8s infinite linear;
   background: transparent;
   position: absolute;
@@ -1102,24 +1093,11 @@ output {
   z-index: 99999;
 }
 
-@-webkit-keyframes fancybox-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
 @keyframes fancybox-rotate {
   from {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
@@ -1618,7 +1596,6 @@ li.fancybox-thumbs-loading {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -1628,6 +1605,8 @@ li.fancybox-thumbs-loading {
   left: 0;
   top: 0;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-track:before, .slick-track:after {
@@ -1702,7 +1681,6 @@ li.fancybox-thumbs-loading {
   background: transparent;
   color: transparent;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
@@ -1786,10 +1764,8 @@ li.fancybox-thumbs-loading {
   padding: 0 5px;
   margin: 0;
   width: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
@@ -1799,7 +1775,6 @@ li.fancybox-thumbs-loading {
   padding: 10px 0;
   margin: 0 2px;
   cursor: pointer;
-  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
