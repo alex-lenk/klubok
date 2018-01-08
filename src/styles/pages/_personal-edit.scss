@@ -42,7 +42,7 @@
     }
     
     @include at('s') {
-        .col-8 {
+        /*.col-8 {
             width: 120px;
             float: left;
         }
@@ -50,6 +50,7 @@
             width: auto;
             float: right;
         }
+*/
         .col-17 {
             padding-right: 10px;
             width: 180px;
@@ -62,9 +63,6 @@
         .col-17 {
             padding-right: 10px;
             padding-left: 10px;
-        }
-        .col-10 {
-            float: left;
         }
     }
     
@@ -121,7 +119,7 @@
         }
         .col-8 {
             width: 160px;
-            padding-right: 20px;
+            padding-right: 10px;
         }
         .col-9 {
             width: 150px;

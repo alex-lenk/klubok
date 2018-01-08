@@ -463,9 +463,6 @@
   .grand-list .ancestors-grandfather .about-dog {
     margin-bottom: 15px;
   }
-}
-
-@media (max-width: 719px) {
   .personal-data-line .label {
     width: 100%;
     margin-bottom: 5px;
@@ -523,6 +520,12 @@
   }
   .pagination-show {
     display: none;
+  }
+  .personal-data-line .label {
+    padding-right: 0;
+  }
+  .personal-data-line .label-custom:not(:last-of-type) {
+    margin-bottom: 5px;
   }
 }
 
