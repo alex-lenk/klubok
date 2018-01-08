@@ -3,13 +3,10 @@
     display: inline-block;
   }
   .ancestors-current-dog {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -20,13 +17,10 @@
     right: 0;
     padding-left: 70px;
     padding-right: 10px;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
@@ -67,13 +61,10 @@
     padding-right: 150px;
     top: 0;
     height: 100%;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
@@ -114,13 +105,10 @@
     left: 0;
     padding-left: 150px;
     top: 0;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
@@ -236,26 +224,20 @@
 
 @media (min-width: 720px) and (max-width: 959px) {
   .personal-data-line .text {
-    -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -webkit-flex-basis: 41.3%;
     -ms-flex-preferred-size: 41.3%;
     flex-basis: 41.3%;
   }
   .personal-data-line .label {
-    -webkit-flex-basis: 320px;
     -ms-flex-preferred-size: 320px;
     flex-basis: 320px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
   }
   .personal-data-line {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -266,18 +248,14 @@
     padding-right: 80px;
   }
   .personal-data-line .button {
-    -webkit-flex-basis: 80px;
     -ms-flex-preferred-size: 80px;
     flex-basis: 80px;
-    -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
   }
   .personal-data-line .radio-block {
-    -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -webkit-flex-basis: 47%;
     -ms-flex-preferred-size: 47%;
     flex-basis: 47%;
   }
@@ -306,16 +284,13 @@
     content: '';
   }
   .about-dog {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
   .ancestors-info {
     padding-left: 10px;
-    -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
   }
@@ -339,13 +314,10 @@
     height: 160px;
     top: 165px;
     left: 8px;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
@@ -475,36 +447,30 @@
     top: 0;
   }
   .personal-data-line .text {
-    -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     padding-right: 80px;
-    -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
   }
   .personal-data-line .show-more-full-name {
     padding: 5px 80px 0 0;
-    -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
   }
   .personal-data-line .hidden-full-name {
     padding-left: 0;
-    -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
   }
   .personal-data-line .show-address {
     padding-right: 80px;
     padding-left: 0;
-    -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
   }
   .personal-data-line .hidden-address {
     padding-left: 0;
-    -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
   }
