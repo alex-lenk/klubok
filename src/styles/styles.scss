@@ -586,10 +586,6 @@
         width: 480px;
 }
 
-.slick-track {
-  height: 255px;
-}
-
 @include from('s') {
     .contributions-modal__item {
         max-width: calc(100% / 2 - 10px);
