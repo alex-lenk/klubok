@@ -8896,10 +8896,6 @@ footer span {
   width: 480px;
 }
 
-.slick-track {
-  height: 255px;
-}
-
 @media (min-width: 480px) {
   .contributions-modal__item {
     max-width: calc(100% / 2 - 10px);
